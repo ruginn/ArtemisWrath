@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Mountains from '@/public/Images/Mountains.svg'
+import CardBack from '@/public/Images/cardback.png'
 import { LibraryBig, ArrowRightLeft, Swords } from "lucide-react"
 
 const MidSection = () => {
@@ -22,6 +23,13 @@ const MidSection = () => {
                     <h3 className="text-5xl font-bold text-white">Collect</h3>
                     <LibraryBig className="w-36 h-36 stroke-white"/>
                 </div> 
+            </div>
+            <div className="w-full flex justify-evenly gap-5">
+            <Image src={CardBack} alt='CardBack' className="w-64 h-auto rounded-xl border-[#436561] border-8"/>
+            <Image src={CardBack} alt='CardBack' className="w-64 h-auto rounded-xl border-[#436561] border-8"/>
+            <Image src={CardBack} alt='CardBack' className="w-64 h-auto rounded-xl border-[#436561] border-8"/>
+            <Image src={CardBack} alt='CardBack' className="w-64 h-auto rounded-xl border-[#436561] border-8"/>
+            <Image src={CardBack} alt='CardBack' className="w-64 h-auto rounded-xl border-[#436561] border-8"/>
             </div>
             <Image 
                 src={Mountains}
