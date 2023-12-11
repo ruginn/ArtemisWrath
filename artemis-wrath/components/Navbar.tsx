@@ -22,7 +22,7 @@ const NavBar = () => {
                 {/* <h1 className="text-white ml-2">Artemis&apos; Wrath</h1> */}
             </div>
             <div>
-                <button className="text-sm">
+                <button className="text-sm text-white mr-10">
                     <SignedIn>
                        <UserButton afterSignOutUrl="/" />
                     </SignedIn>
