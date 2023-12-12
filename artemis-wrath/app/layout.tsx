@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { Poppins, Ysabeau_SC } from 'next/font/google'
 import './globals.css'
 import NavBar from '@/components/Navbar'
 import { ClerkProvider } from '@clerk/nextjs'
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['100', '200', '500', '300', '400', '600', '700', '800', '900'] })
+const poppins = Ysabeau_SC({ subsets: ['latin'], weight: ['100', '200', '500', '300', '400', '600', '700', '800', '900'] })
 
 export const metadata: Metadata = {
   title: "Artemis' Wrath",
