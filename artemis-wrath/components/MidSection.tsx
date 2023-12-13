@@ -10,8 +10,8 @@ const MidSection = () => {
     return (
         <div className="mt-28 w-full flex flex-col justify-center">
             <div className="w-full flex flex-col items-center">
-                <h1 className="text-4xl font-bold">Unleash the power of creatures in Artemis&apos; Wrath – Where Strategy Meets Myth!</h1>
-                <h3 className="text-2xl">Artemis&apos; Wrath isn&apos;t just a game; it&apos;s a battleground of wits. Craft your deck, anticipate your foes, and ascend to victory.</h3>
+                <h1 className="text-4xl font-bold text-center">Unleash the power of creatures in Artemis&apos; Wrath – Where Strategy Meets Myth!</h1>
+                <h3 className="text-2xl text-center">Artemis&apos; Wrath isn&apos;t just a game; it&apos;s a battleground of wits. Craft your deck, anticipate your foes, and ascend to victory.</h3>
             </div>
             <div className="w-full flex justify-evenly p-12 gap-3">
                 <div className="w-64 h-72 bg-[#436561] rounded-xl flex flex-col items-center justify-center drop-shadow-2xl relative">
