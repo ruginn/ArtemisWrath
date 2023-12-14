@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Mountains from '@/public/Images/Mountains.svg'
+import Mountains from '/public/Images/Mountains.svg'
 import CardBack from '@/public/Images/cardback.png'
 import BattleGold from '@/public/Images/backgrounds/BattleGold.png'
 import CollectRed from '@/public/Images/backgrounds/CollectRed.jpeg'
