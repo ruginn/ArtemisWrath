@@ -5,13 +5,28 @@ import {useEffect} from 'react'
 const Dashboard = () => {
     const {user} = useUser()
     
-    useEffect(() => {
-        const info = fetch('https://localhost:3000/api/auth')
-    }, [])
+    const userLogin = async () => {
+        const userInfo = {
+            id: user?.id, 
+            firstName: user?.firstName, 
+            lastName: user?.lastName, 
+        }
+        const res = await fetch('api/auth', {
+            method: 'POST', 
+            body: JSON.stringify(userInfo), 
+            headers: {
+                'Content-Type': 'application/json'
+            }, 
+        })
+        console.log(res)
+    }
+    
+    
 
     return (
         <div>
             <h1>Hello {user?.firstName}</h1>
+            <button onClick={userLogin}>Click me</button>
         </div>
     )
 }
