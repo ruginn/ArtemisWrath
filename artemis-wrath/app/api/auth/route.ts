@@ -3,7 +3,7 @@ import {NextResponse} from 'next/server'
 
 
 interface userInfo {
-    id: string, 
+    id: string | any, 
     firstName: string, 
     lastName: string, 
 }
@@ -11,12 +11,21 @@ interface userInfo {
 
 export async function POST(req: Request) {
     const userInfo: userInfo = await req.json()
-    const user = await prisma.user.create({
-        data:{
-            id: userInfo.id, 
-            name: userInfo.firstName + ' ' + userInfo.lastName, 
+    const establishedUser = await prisma.user.findUnique({
+        where: {
+            id: userInfo.id
         }
     })
+
+    if (!establishedUser) {
+        const user = await prisma.user.create({
+            data:{
+                id: userInfo.id, 
+                name: userInfo.firstName + ' ' + userInfo.lastName, 
+            }
+        })
+    }
+
     console.log(userInfo)
    return NextResponse.json('testing')
 }

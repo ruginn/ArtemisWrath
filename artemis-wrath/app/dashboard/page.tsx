@@ -21,12 +21,14 @@ const Dashboard = () => {
         console.log(res)
     }
     
-    
+    useEffect(() => {
+        userLogin()
+    },[])
 
     return (
         <div>
             <h1>Hello {user?.firstName}</h1>
-            <button onClick={userLogin}>Click me</button>
+            {/* <button onClick={userLogin}>Click me</button> */}
         </div>
     )
 }
