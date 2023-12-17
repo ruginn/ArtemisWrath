@@ -17,6 +17,7 @@ export async function POST(req: Request) {
         }
     })
 
+
     if (!establishedUser) {
         const user = await prisma.user.create({
             data:{
@@ -24,8 +25,8 @@ export async function POST(req: Request) {
                 name: userInfo.firstName + ' ' + userInfo.lastName, 
             }
         })
+        return NextResponse.json(user)
     }
 
-    console.log(userInfo)
-   return NextResponse.json('testing')
+   return NextResponse.json(establishedUser)
 }

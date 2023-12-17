@@ -1,10 +1,11 @@
 'use client'
 import { useUser } from "@clerk/nextjs"
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
+import PackSelector from "./_components/PackSelector"
 
 const Dashboard = () => {
     const {user} = useUser()
-    
+    const [userInfo, setUserInfo] = useState({})
     const userLogin = async () => {
         const userInfo = {
             id: user?.id, 
@@ -17,18 +18,24 @@ const Dashboard = () => {
             headers: {
                 'Content-Type': 'application/json'
             }, 
+            cache: 'no-cache'
         })
-        console.log(res)
+        const finRes = await res.json()
+        setUserInfo(finRes)
     }
     
     useEffect(() => {
-        userLogin()
-    },[])
+        if (user) {
+            userLogin()
+        }
+    },[user])
+
+   
 
     return (
         <div>
             <h1>Hello {user?.firstName}</h1>
-            {/* <button onClick={userLogin}>Click me</button> */}
+            <PackSelector />
         </div>
     )
 }
