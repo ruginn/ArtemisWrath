@@ -3,7 +3,7 @@ import {NextResponse} from 'next/server'
 
 
 interface userInfo {
-    id: string | any, 
+    id: string, 
     firstName: string, 
     lastName: string, 
 }
