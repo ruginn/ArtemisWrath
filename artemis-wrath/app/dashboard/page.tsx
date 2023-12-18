@@ -34,7 +34,7 @@ const Dashboard = () => {
 
     return (
         <div>
-            <h1>Hello {user?.firstName}</h1>
+            <h1>Welcome {user?.firstName}!</h1>
             <PackSelector />
         </div>
     )
