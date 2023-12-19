@@ -1,9 +1,9 @@
 'use client'
 import { useState } from "react"
 import Image from "next/image"
-import AwSet1 from '@/public/Images/Packs/AwSet1.jpg'
-import AwSet2 from '@/public/Images/Packs/AWset2CS.png'
-import AwSet3 from '@/public/Images/Packs/AWset3CS.png'
+import AwSet1 from '../../../public/Images/Packs/AwSet1.jpg'
+import AwSet2 from '../../../public/Images/Packs/AWset2CS.png'
+import AwSet3 from '../../../public/Images/Packs/AWset3CS.png'
 
 const PackSelector = ()=> {
     const [selectedPack, setSelectedPack] = useState(false)
