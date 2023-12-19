@@ -34,8 +34,8 @@ const Dashboard = () => {
 
     return (
         <div className="ml-64">
-            <h1>Welcome {user?.firstName}!</h1>
-            <PackSelector />
+            <h1 className="text-8xl">Welcome {user?.firstName}!</h1>
+            {/* <PackSelector /> */}
         </div>
     )
 }
