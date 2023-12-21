@@ -6,7 +6,7 @@ import { SignInButton, UserButton, SignedIn, SignedOut } from "@clerk/nextjs"
 const NavBar = () => {
     return (
         // <nav className="h-24 flex items-center bg-gradient-to-r from-sky-950 via-cyan-950 to-gray-900">
-        <nav className="h-20 flex items-center bg-gray-900 justify-between">
+        <nav className="h-20 flex items-center bg-gray-900 justify-between fixed z-[99999] w-full -mt-20">
             {/* <p className='from-sky-950 via-cyan-950 to-gray-900'></p> */}
             <div className='flex flex-row items-center ml-5'>
                 <Image 
