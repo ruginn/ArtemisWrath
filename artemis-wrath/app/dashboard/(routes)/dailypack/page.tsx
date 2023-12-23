@@ -1,4 +1,4 @@
-import PackSelector from "../_components/PackSelector"
+import PackSelector from "../../_components/PackSelector"
 
 const DailyPack = () => {
     return (

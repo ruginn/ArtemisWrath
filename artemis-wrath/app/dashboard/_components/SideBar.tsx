@@ -17,30 +17,42 @@ const SideBar = () => {
                     <h3>Daily Pack</h3>
                 </div>
             </Link>
-            <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
-                <Layers className="mr-2" />
-                <h3>Collection</h3>
-            </div>
-            <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
-                <Library className="mr-2"/>
-                <h3>Deck Builder</h3>
-            </div>
-            <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
-                <ArrowRightLeft className="mr-2" />
-                <h3>Trade Center</h3>
-            </div>
-            <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
-                <Shield className="mr-2" />
-                <h3>Guild</h3>
-            </div>
-            <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
-                <Swords className="mr-2"/>
-                <h3>Battle</h3>
-            </div>
+            <Link href={'/dashboard/collection'}>
+                <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
+                    <Layers className="mr-2" />
+                    <h3>Collection</h3>
+                </div>
+            </Link>
+            <Link href={'/dashboard/deckbuilder'}>
+                <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
+                    <Library className="mr-2"/>
+                    <h3>Deck Builder</h3>
+                </div>
+            </Link>
+            <Link href={'/dashboard/tradecenter'}>
+                <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
+                    <ArrowRightLeft className="mr-2" />
+                    <h3>Trade Center</h3>
+                </div>
+            </Link>
+            <Link href={'/dashboard/guild'}>
+                <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
+                    <Shield className="mr-2" />
+                    <h3>Guild</h3>
+                </div>
+            </Link>
+            <Link href={'/dashboard/battle'}>
+                <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
+                    <Swords className="mr-2"/>
+                    <h3>Battle</h3>
+                </div>
+            </Link>
+            <Link href={'/dashboard/settings'}>
             <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
                 <Settings className="mr-2"/>
                 <h3>Settings</h3>
             </div>
+            </Link>
         </div>
     )
 }
