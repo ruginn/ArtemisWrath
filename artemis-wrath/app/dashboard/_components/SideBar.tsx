@@ -1,7 +1,16 @@
+'use client'
+import  {useSideBar} from '@/hooks/use-sidebar'
 import { Calendar, ArrowRightLeft, Shield, Swords, Settings, Layers, Library, Home } from "lucide-react"
 import Link from "next/link"
+import { useEffect } from 'react'
 
 const SideBar = () => {
+    const activeSidebar = useSideBar()
+
+    const clickSideTab = () => {
+        activeSidebar.onChange('stringer')
+    }
+  
 
     return (
         <div className="w-64 h-[calc(100vh-80px)]  fixed bg-gray-900 text-amber-400">
@@ -11,7 +20,7 @@ const SideBar = () => {
                     <h3>Home</h3>
                 </div>
             </Link>
-            <Link href={'/dashboard/dailypack'}>
+            <Link href={'/dashboard/dailypack'} onClick={clickSideTab}>
                 <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
                     <Calendar className="mr-2"/>
                     <h3>Daily Pack</h3>
