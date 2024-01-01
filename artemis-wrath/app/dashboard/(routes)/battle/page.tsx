@@ -1,6 +1,7 @@
 const Battle = () => {
   return (
-    <div>Battle</div>
+    <div className="w-[calc(100vw-256px)] bg-red-400"
+    >Battle</div>
   )
 }
 
