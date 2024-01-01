@@ -8,6 +8,16 @@ import AwSet3 from '@/public/Images/Packs/AWset3CS.png'
 const PackSelector = ()=> {
     const [selectedPack, setSelectedPack] = useState(false)
 
+    const CollectPack = async () => {
+        const res = await fetch('/api/cardpack/medievalcreatures', {
+            cache: 'no-cache'
+        })
+        // .then((res) => res.json()) 
+        const cards = await res.json()
+        console.log(cards)
+    }
+
+
     return (
         <div className="w-full flex flex-col items-center">
             <h1 className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[96px]">Select your daily pack</h1>
@@ -17,6 +27,7 @@ const PackSelector = ()=> {
                     src={AwSet1}
                     alt='Medieval Creatures'
                     className="w-[20%] h-auto border-t-[12px] border-b-[12px] border-gray-400 cursor-pointer"
+                    onClick={CollectPack}
                 />
                 <Image 
                     src={AwSet2}
