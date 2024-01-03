@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import {prisma} from '@/lib/prisma'
 
 interface Card {
     id: number, 
@@ -7,6 +8,11 @@ interface Card {
     randomNumber: number
 }
 
+interface userInfo {
+  id: string, 
+  firstName: string, 
+  lastName: string
+}
 
 const cardSet: Card[] = [
     {
@@ -744,9 +750,28 @@ const cardSet: Card[] = [
 ]
 
 
-export async function GET() {
-    let randomCards: Card[] = []
+export async function POST(req: Request) {
+  const userInfo: userInfo = await req.json()
+  let randomCards: Card[] = []
 
+  const establishedUser = await prisma.user.findUnique({
+      where: {
+          id: userInfo.id
+      }
+  })
+  const currentDate = await fetch('http://worldtimeapi.org/api/timezone/America/New_York').then((res) => res.json())
+  
+  console.log(currentDate.datetime)
+  const startOfToday = new Date(currentDate.datetime).setHours(0, 0, 0, 0)
+  const rightNow = new Date().setHours(0,0,0,0)
+  console.log(startOfToday, rightNow)
+  
+  
+
+
+
+
+  console.log(establishedUser)
     const getCards = () => {
         for(let i = 0;i< 10; i++){
             let randomNumber = Math.floor(Math.random() * 122)
@@ -755,6 +780,6 @@ export async function GET() {
 
     }
     getCards()
-    console.log(randomCards)
+    // console.log(randomCards)
     return NextResponse.json(randomCards)
 }

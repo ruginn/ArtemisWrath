@@ -4,12 +4,27 @@ import Image from "next/image"
 import AwSet1 from '@/public/Images/Packs/AWset1.jpg'
 import AwSet2 from '@/public/Images/Packs/AWset2CS.png'
 import AwSet3 from '@/public/Images/Packs/AWset3CS.png'
+import { useUser } from "@clerk/nextjs"
+
 
 const PackSelector = ()=> {
     const [selectedPack, setSelectedPack] = useState(false)
+    const [userInfo, setUserInfo] = useState({})
+    const {user} = useUser()
+
 
     const CollectPack = async () => {
+        const userInfo = {
+            id: user?.id, 
+            firstName: user?.firstName, 
+            lastName: user?.lastName, 
+        }
         const res = await fetch('/api/cardpack/medievalcreatures', {
+            method: 'POST', 
+            body: JSON.stringify(userInfo),
+            headers:{
+                'Context-Type': 'application/json'
+            },
             cache: 'no-cache'
         })
         // .then((res) => res.json()) 

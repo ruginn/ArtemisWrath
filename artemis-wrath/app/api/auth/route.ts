@@ -16,7 +16,7 @@ export async function POST(req: Request) {
             id: userInfo.id
         }
     })
-
+   
 
     if (!establishedUser) {
         const user = await prisma.user.create({
