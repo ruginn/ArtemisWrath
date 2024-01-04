@@ -12,6 +12,7 @@ interface userInfo {
   id: string, 
   firstName: string, 
   lastName: string
+  lastPackDate?: Date, 
 }
 
 const cardSet: Card[] = [
@@ -759,27 +760,48 @@ export async function POST(req: Request) {
           id: userInfo.id
       }
   })
+
+  // fetch real time **need to add try-catch**
   const currentDate = await fetch('http://worldtimeapi.org/api/timezone/America/New_York').then((res) => res.json())
+  // needs to be converted into date
+  const dayStart = new Date(currentDate.datetime)
+  // need to set everything to zero
+  const todayYear = dayStart.getFullYear()
+  const todayDate = dayStart.getDate() 
+  const todayMonth = dayStart.getMonth()
+  // create new date to set time to zero 
+  const realDateStart = new Date(todayYear, todayMonth, todayDate, 0, 0, 0, 0)
   
-  console.log(currentDate.datetime)
-  const startOfToday = new Date(currentDate.datetime).setHours(0, 0, 0, 0)
-  const rightNow = new Date().setHours(0,0,0,0)
-  console.log(startOfToday, rightNow)
   
+  const getCards = () => {
+      for(let i = 0;i< 10; i++){
+          let randomNumber = Math.floor(Math.random() * 122)
+          randomCards.push(cardSet[randomNumber])
+      }
+
+  }
   
 
+  
 
-
-
-  console.log(establishedUser)
-    const getCards = () => {
-        for(let i = 0;i< 10; i++){
-            let randomNumber = Math.floor(Math.random() * 122)
-            randomCards.push(cardSet[randomNumber])
-        }
-
-    }
+  if (establishedUser?.lastPackDate?.toString() !== realDateStart.toString()){
     getCards()
-    // console.log(randomCards)
+    await prisma.user.update({
+      where: {
+        id: userInfo.id
+      },
+      data: {
+        lastPackDate: realDateStart
+      }
+    })
+    console.log('pack updated')
     return NextResponse.json(randomCards)
+  } else{
+    console.log('same day')
+    return NextResponse.json('you have already gotten a pack')
+  }
+
+
+    // console.log(randomCards)
+    // return NextResponse.json(randomCards)
 }
