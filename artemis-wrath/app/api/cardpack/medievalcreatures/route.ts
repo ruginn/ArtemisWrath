@@ -776,14 +776,14 @@ export async function POST(req: Request) {
   const getCards = () => {
       for(let i = 0;i< 10; i++){
           let randomNumber = Math.floor(Math.random() * 122)
-          randomCards.push(cardSet[randomNumber])
+          const newCard = cardSet.splice(randomNumber, 1)
+          // console.log(cardSet[randomNumber])
+          // randomCards.push(cardSet[randomNumber])
+          randomCards.push(newCard[0])
       }
 
   }
   
-
-  
-
   if (establishedUser?.lastPackDate?.toString() !== realDateStart.toString()){
     getCards()
     await prisma.user.update({
