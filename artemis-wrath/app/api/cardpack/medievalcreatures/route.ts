@@ -5,7 +5,8 @@ interface Card {
     id: number, 
     name: string, 
     description: string, 
-    randomNumber: number
+    randomNumber: number,
+    image?: string, 
 }
 
 interface userInfo {
@@ -20,13 +21,15 @@ const cardSet: Card[] = [
       id: 458,
       name: "Swordsworn Sparrow",
       description: "A small, agile sparrow wielding a tiny sword, known for its swift and precise strikes in aerial duels.",
-      randomNumber: 654
+      randomNumber: 654, 
+      image: 'https://i.ibb.co/wZkr5L2/A-small-agile-sparrow-wielding-a-tiny-sword-kn.png'
     },
     {
       id: 372,
       name: "Battleaxe Badger",
       description: "A sturdy badger carrying a miniature battleaxe, often seen defending its burrow with unmatched ferocity.",
-      randomNumber: 211
+      randomNumber: 211, 
+      image:' '
     },
     {
       id: 819,
