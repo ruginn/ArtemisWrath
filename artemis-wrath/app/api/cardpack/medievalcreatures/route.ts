@@ -731,6 +731,195 @@ const cardSet: Card[] = [
         randomNumber: 213, 
         image: 'https://i.ibb.co/zxzV9Kd/A-tranquil-tortoise-with-a-shell-resembling-a-bl.png'
     },
+    {
+      id: 789,
+      name: "Chrono Chameleon",
+      description: "A chameleon with scales that shift through the colors of time, blending into the temporal fabric of medieval landscapes.",
+      randomNumber: 543,
+      image: "https://i.ibb.co/3m004k7/A-chameleon-with-scales-that-shift-through-the-c.png"
+    },
+    {
+      id: 321,
+      name: "Lava Lizard Lynx",
+      description: "A lynx adapted to volcanic landscapes, with fur resembling flowing lava and eyes that burn like molten rock.",
+      randomNumber: 876,
+      image: "https://i.ibb.co/QrG0k9h/A-lynx-adapted-to-volcanic-landscapes-with-fur.png"
+    },
+    {
+      id: 645,
+      name: "Frostfall Fennec Fox",
+      description: "A small fox with fur that changes color with the seasons, blending seamlessly into snow-covered medieval landscapes.",
+      randomNumber: 321,
+      image: "https://i.ibb.co/0jXk6BJ/A-small-fox-with-fur-that-changes-color-with-the.png"
+    },
+    {
+      id: 456,
+      name: "Aetherial Angelfish",
+      description: "A celestial fish with iridescent scales, swimming in medieval ponds and bringing a sense of enchantment.",
+      randomNumber: 654,
+      image: "https://i.ibb.co/Fwg6vwM/A-celestial-fish-with-iridescent-scales-swimmin.png"
+    },
+    {
+      id: 823,
+      name: "Tempest Tortoise",
+      description: "A giant tortoise with a shell that generates storms, creating swirling winds and rain as it travels through the medieval countryside.",
+      randomNumber: 213,
+      image: "https://i.ibb.co/Bykfn5y/A-giant-tortoise-with-a-shell-that-generates-sto.png"
+    },
+    {
+      id: 134,
+      name: "Runebound Raven",
+      description: "A raven with feathers inscribed with ancient runes, carrying messages between wizards in medieval realms.",
+      randomNumber: 876,
+      image: "https://i.ibb.co/Xx4rXSY/A-raven-with-feathers-inscribed-with-ancient-run.png"
+    },
+    {
+      id: 422,
+      name: "Mystic Mole",
+      description: "A subterranean creature with fur that glows in the dark, navigating through medieval tunnels with unseen magical senses.",
+      randomNumber: 543,
+      image: "https://i.ibb.co/VHRzpC5/A-subterranean-creature-with-fur-that-glows-in-t.png"
+    },
+    {
+      id: 576,
+      name: "Coral Crowned Crab",
+      description: "A crab with a shell adorned with living coral, scuttling through the shallows of enchanted medieval shores.",
+      randomNumber: 321,
+      image: "https://i.ibb.co/72DpgXs/A-crab-with-a-shell-adorned-with-living-coral-s.png"
+    },
+    {
+      id: 246,
+      name: "Starwhisper Spider",
+      description: "A spider with webs that echo the patterns of constellations, weaving ethereal traps in hidden corners of medieval castles.",
+      randomNumber: 654,
+      image: "https://i.ibb.co/8PvY25S/A-spider-with-webs-that-echo-the-patterns-of-con.png"
+    },
+    {
+      id: 853,
+      name: "Thunderstrike Thorny Toad",
+      description: "A toad with thorns that crackle with electricity, lurking in medieval swamps and wetlands.",
+      randomNumber: 213,
+      image: "https://i.ibb.co/wzgSSCr/A-toad-with-thorns-that-crackle-with-electricity.png"
+    },
+    {
+      id: 764,
+      name: "Ebonwinged Echidna",
+      description: "A spiky creature with wings as dark as night, said to be guardians of ancient subterranean treasures.",
+      randomNumber: 876,
+      image: "https://i.ibb.co/X2SKHvH/A-spiky-creature-with-wings-as-dark-as-night-sa.png"
+    },
+    {
+      id: 512,
+      name: "Stellar Skunk",
+      description: "A small skunk with a tail that releases stardust, leaving behind a trail of celestial fragrance in medieval meadows.",
+      randomNumber: 543,
+      image: "https://i.ibb.co/KhFzCmm/A-small-skunk-with-a-tail-that-releases-stardust.png"
+    }, 
+    {
+      id: 123,
+      name: "Mystical Moonlight Moth",
+      description: "A majestic moth with wings that shimmer like moonlight, often spotted near enchanted meadows.",
+      randomNumber: 789,
+      image: "https://i.ibb.co/4ZGtky7/A-majestic-moth-in-armor-with-wings-that-shimmer-1.png"
+    },
+    {
+      id: 456,
+      name: "Lunar Griffin",
+      description: "A graceful creature with the body of a lion and wings resembling a crescent moon, said to be guardians of ancient celestial secrets.",
+      randomNumber: 321,
+      image: "https://i.ibb.co/PCs6JDt/A-graceful-creature-with-the-body-of-a-lion-and.png"
+    },
+    {
+      id: 789,
+      name: "Stoneheart Stag",
+      description: "A regal stag with antlers made of enchanted crystal, said to be the spirit of the forest itself.",
+      randomNumber: 654,
+      image: "https://i.ibb.co/8m5sdhP/A-regal-stag-with-antlers-made-of-enchanted-crys.png"
+    },
+    {
+      id: 234,
+      name: "Aetherial Serpent",
+      description: "A serpent that glides through the air, leaving trails of sparkling stardust as it weaves through the clouds.",
+      randomNumber: 987,
+      image: "https://i.ibb.co/b7SdwdF/A-serpent-that-glides-through-the-air-leaving-t.png"
+    },
+    {
+      id: 567,
+      name: "Ember Phoenix",
+      description: "A mythical bird with feathers that flicker like embers, said to rise from the ashes of great fires to bring both destruction and renewal.",
+      randomNumber: 432,
+      image: "https://i.ibb.co/R0Mdmc2/A-mythical-bird-with-feathers-that-flicker-like.png"
+    },
+    {
+      id: 890,
+      name: "Gilded Gryphon",
+      description: "A gryphon adorned with golden feathers and a mane that glows like the sun, known to guard ancient treasures.",
+      randomNumber: 765,
+      image: "https://i.ibb.co/gZ7nkdw/A-gryphon-adorned-with-golden-feathers-and-a-man.png"
+    },
+    {
+      id: 345,
+      name: "Shadow Weaver Spider",
+      description: "A giant spider with the ability to manipulate shadows, lurking in dark corners of forgotten castles.",
+      randomNumber: 210,
+      image: "https://i.ibb.co/fr00R41/A-giant-spider-with-the-ability-to-manipulate-sh.png"
+    },
+    {
+      id: 678,
+      name: "Frostbite Wyvern",
+      description: "A fearsome dragon-like creature with icy breath, dwelling in the frosty peaks of a distant mountain range.",
+      randomNumber: 543,
+      image: "https://i.ibb.co/S6k9pZH/A-fearsome-dragonlike-creature-with-icy-breath.png"
+    },
+    {
+      id: 123,
+      name: "Silverhorn Unicorn",
+      description: "A unicorn with a silver horn that radiates healing energy, often sought after for its mythical powers.",
+      randomNumber: 876,
+      image: "https://i.ibb.co/n6QskHx/A-unicorn-with-a-silver-horn-that-radiates-heali.png"
+    },
+    {
+      id: 456,
+      name: "Arcane Owl",
+      description: "A wise owl with feathers that change colors based on the type of magic present in its surroundings.",
+      randomNumber: 321,
+      image: "https://i.ibb.co/WDjyJpQ/A-wise-owl-with-feathers-that-change-colors-base.png"
+    },
+    {
+      id: 789,
+      name: "Celestial Seahorse",
+      description: "A seahorse that navigates the skies, trailing stardust in its wake, protecting sailors from mystical storms.",
+      randomNumber: 654,
+      image: "https://i.ibb.co/zrXL6Cp/A-seahorse-that-navigates-the-skies-trailing-st.png"
+    },
+    {
+      id: 234,
+      name: "Stone Sentinel Tortoise",
+      description: "A massive tortoise with a shell resembling ancient ruins, believed to carry the wisdom of the ages.",
+      randomNumber: 987,
+      image: "https://i.ibb.co/WtdjBXJ/A-massive-tortoise-with-a-shell-resembling-ancie.png"
+    },
+    {
+      id: 567,
+      name: "Ebon Pegasus",
+      description: "A majestic black-winged horse with a mane that flows like shadows, only appearing to those with pure hearts.",
+      randomNumber: 432,
+      image: "https://i.ibb.co/wZkr5L2/A-small-agile-sparrow-wielding-a-tiny-sword-kn.png"
+    },
+    {
+      id: 890,
+      name: "Spectral Panther",
+      description: "A phantom panther that prowls the haunted forests, its ghostly form camouflaging with the mist.",
+      randomNumber: 765,
+      image: "https://i.ibb.co/vJJcZ6m/phantom-panther-that-prowls-the-haunted-forests.png"
+    },
+    {
+      id: 345,
+      name: "Crimson Griffin",
+      description: "A rare breed of griffin with fiery red plumage, associated with the legendary Phoenix and thought to bring good fortune.",
+      randomNumber: 210,
+      image: "https://i.ibb.co/swLC6C0/A-rare-breed-of-griffin-with-fiery-red-plumage.png"
+    }
 ]
 
 
