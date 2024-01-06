@@ -6,11 +6,20 @@ import AwSet2 from '@/public/Images/Packs/AWset2CS.png'
 import AwSet3 from '@/public/Images/Packs/AWset3CS.png'
 import { useUser } from "@clerk/nextjs"
 
+interface Card {
+    id: number, 
+    name: string, 
+    description: string, 
+    randomNumber: number,
+    image?: string, 
+}
+
 
 const PackSelector = ()=> {
     const [selectedPack, setSelectedPack] = useState(false)
     const [userInfo, setUserInfo] = useState({})
     const {user} = useUser()
+    const [collectedCards, setCollectedCards] = useState([{id: 1, name: 'fsda', description: 'fsda', randomNumbe: 1, image: AwSet1}])
 
 
     const CollectPack = async () => {
@@ -30,6 +39,8 @@ const PackSelector = ()=> {
         // .then((res) => res.json()) 
         const cards = await res.json()
         console.log(cards)
+        setCollectedCards(cards)
+        console.log(collectedCards)
     }
 
 
@@ -60,6 +71,23 @@ const PackSelector = ()=> {
             <div>
                 <h3>You have already selected your pack for the day</h3>
             </div>
+            }
+            {collectedCards && 
+            collectedCards.map((card) => {
+                return (
+                    <div>
+
+                        <h1>{card.name}</h1>
+                        <Image 
+                            src={card.image}
+                            alt=''
+                            width={200}
+                            height={800}
+                            // className="w-60 h-auto"
+                        ></Image>
+                    </div>
+                )
+            })
             }
         </div>
     )

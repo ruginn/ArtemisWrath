@@ -947,9 +947,11 @@ export async function POST(req: Request) {
   
   const getCards = () => {
       for(let i = 0;i< 10; i++){
-          let randomNumber = Math.floor(Math.random() * 101)
+          let cardCount = cardSet.length - i
+          let randomNumber = Math.floor(Math.random() * (cardCount + 1))
           const newCard = cardSet.splice(randomNumber, 1)
-          // console.log(cardSet[randomNumber])
+          console.log(randomNumber)
+          console.log(cardSet[randomNumber])
           // randomCards.push(cardSet[randomNumber])
           randomCards.push(newCard[0])
       }
