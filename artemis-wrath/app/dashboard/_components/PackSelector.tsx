@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import AwSet1 from '@/public/Images/Packs/AWset1.jpg'
 import AwSet2 from '@/public/Images/Packs/AWset2CS.png'
 import AwSet3 from '@/public/Images/Packs/AWset3CS.png'
@@ -11,7 +11,7 @@ interface Card {
     name: string, 
     description: string, 
     randomNumber: number,
-    image?: string, 
+    image?: string | StaticImageData, 
 }
 
 
@@ -19,7 +19,7 @@ const PackSelector = ()=> {
     const [selectedPack, setSelectedPack] = useState(false)
     const [userInfo, setUserInfo] = useState({})
     const {user} = useUser()
-    const [collectedCards, setCollectedCards] = useState([{id: 1, name: 'fsda', description: 'fsda', randomNumbe: 1, image: AwSet1}])
+    const [collectedCards, setCollectedCards] = useState<Card[]>([{id: 1, name: 'fsda', description: 'fsda', randomNumber: 1, image: AwSet1}])
 
 
     const CollectPack = async () => {
@@ -37,7 +37,7 @@ const PackSelector = ()=> {
             cache: 'no-cache'
         })
         // .then((res) => res.json()) 
-        const cards = await res.json()
+        const cards: Card[] = await res.json()
         console.log(cards)
         setCollectedCards(cards)
         console.log(collectedCards)
@@ -79,6 +79,7 @@ const PackSelector = ()=> {
                         <div className="h-96 w-64 bg-amber-200 flex flex-col rounded-md items-center">
 
                             <h1 className="text-l self-start">{card.name}</h1>
+                            {card.image &&
                             <Image 
                                 src={card.image}
                                 alt=''
@@ -86,6 +87,7 @@ const PackSelector = ()=> {
                                 height={800}
                                 // className="w-60 h-auto"
                             ></Image>
+                            }
                             <div className="w-[250px] h-[80px] border-2 border-black mt-3 rounded">
                                 <p className="text-sm leading-none">{card.description}</p>
                             </div>
