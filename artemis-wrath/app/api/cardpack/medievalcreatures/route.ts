@@ -421,392 +421,316 @@ const cardSet: Card[] = [
       name: "Frostfire Phoenix",
       description: "A phoenix with feathers that alternate between icy blue and fiery red, symbolizing the eternal dance of winter and summer.",
       randomNumber: 789, 
-      image: ''
+      image: 'https://i.ibb.co/jfFxrV4/A-phoenix-with-feathers-that-alternate-between-i.png'
     },
     {
       id: 122,
       name: "Verdant Drake",
       description: "A dragon with scales that mimic the lush greenery of the forest, dwelling in hidden glades and protecting the woodland creatures.",
-      randomNumber: 321
+      randomNumber: 321, 
+      image: 'https://i.ibb.co/HXNyWY2/a-dragon-with-scales-that-mimic-the-lush-greener.png'
     },
     {
       id: 567,
       name: "Cerulean Wyvern",
       description: "A winged creature with scales that mirror the deep blue of the sky, soaring gracefully over medieval landscapes.",
-      randomNumber: 645
+      randomNumber: 645, 
+      image: 'https://i.ibb.co/d53tjY6/A-winged-creature-with-scales-that-mirror-the-de.png'
     },
     {
       id: 934,
       name: "Moonshadow Lynx",
       description: "A stealthy lynx with fur that absorbs and reflects moonlight, becoming nearly invisible as it stalks its prey.",
-      randomNumber: 456
+      randomNumber: 456, 
+      image: 'https://i.ibb.co/DWx4JWg/A-stealthy-lynx-with-fur-that-absorbs-and-reflec.png'
     },
     {
       id: 789,
       name: "Nebula Nymph",
       description: "A small, ethereal creature with wings resembling swirling galaxies, bringing cosmic magic to enchanted gardens.",
-      randomNumber: 823
+      randomNumber: 823, 
+      image: 'https://i.ibb.co/qCL5Tbd/A-small-ethereal-creature-with-wings-resembling.png'
     },
     {
       id: 312,
       name: "Amethyst Armadillo",
       description: "A mystical armadillo with a shell made of shimmering amethyst, rolling into a protective ball when threatened.",
-      randomNumber: 134
+      randomNumber: 134, 
+      image: 'https://i.ibb.co/qRjMFVN/A-mystical-armadillo-with-a-shell-made-of-shimme.png'
     },
     {
       id: 576,
       name: "Stardust Seahorse",
       description: "A seahorse with a mane of stardust, swimming gracefully in celestial seas beneath a starlit sky.",
-      randomNumber: 422
+      randomNumber: 422, 
+      image: 'https://i.ibb.co/d7bBwgw/A-seahorse-with-a-mane-of-stardust-swimming-gra.png'
     },
     {
       id: 189,
       name: "Molten Gryphon",
       description: "A gryphon with feathers that resemble flowing lava, perched on the peaks of volcanoes as a guardian of the fiery realms.",
-      randomNumber: 576
+      randomNumber: 576, 
+      image: 'https://i.ibb.co/QfbGkvj/A-gryphon-with-feathers-that-resemble-flowing-la.png'
     },
     {
       id: 482,
       name: "Ironhide Rhino",
       description: "A massive rhinoceros with a hide as tough as iron, charging through medieval battlefields with unwavering strength.",
-      randomNumber: 246
+      randomNumber: 246, 
+      image: 'https://i.ibb.co/mGhXx2k/A-massive-rhinoceros-with-a-hide-as-tough-as-iro.png'
     },
     {
       id: 746,
       name: "Whimsical Woodpecker Warg",
       description: "A large, colorful woodpecker with the intelligence of a wolf, often tamed by woodland elves as loyal companions.",
-      randomNumber: 853
+      randomNumber: 853, 
+      image: 'https://i.ibb.co/rtpy6M8/A-large-colorful-woodpecker-with-the-intelligen.png'
     },
     {
       id: 645,
       name: "Eldritch Elk",
       description: "An elk with antlers that channel otherworldly energies, said to have the ability to open portals to distant realms.",
-      randomNumber: 764
+      randomNumber: 764, 
+      image:'https://i.ibb.co/4ZJmxJM/An-elk-with-antlers-that-channel-otherworldly-en.png'
     },
     {
       id: 348,
       name: "Sable Shapeshifter Snake",
       description: "A serpent with the ability to transform into various shapes, rumored to be a guardian of ancient magical artifacts.",
-      randomNumber: 512
+      randomNumber: 512,
+      image: 'https://i.ibb.co/g613kJF/A-serpent-with-the-ability-to-transform-into-var.png'
     },
     {
       id: 901,
       name: "Iridescent Iguana",
       description: "A lizard with scales that shimmer in a myriad of colors, basking in the medieval sun on ancient castle walls.",
-      randomNumber: 675
+      randomNumber: 675, 
+      image: 'https://i.ibb.co/SVZqd0S/A-lizard-with-scales-that-shimmer-in-a-myriad-of.png'
     },
     {
       id: 284,
       name: "Vortex Vulture",
       description: "A scavenger bird with wings that create miniature tornadoes, soaring above battlefields to pick at the remnants of war.",
-      randomNumber: 931
+      randomNumber: 931, 
+      image: 'https://i.ibb.co/N7dbpHd/A-scavenger-bird-with-wings-that-create-miniatur.png'
     },
     {
       id: 577,
       name: "Mystic Mantis",
       description: "A giant mantis with eyes that glow with ancient knowledge, often sought by alchemists for its mystical properties.",
-      randomNumber: 328
+      randomNumber: 328, 
+      image: 'https://i.ibb.co/Sm78BrL/A-giant-mantis-with-eyes-that-glow-with-ancient.png'
     },
     {
       id: 211,
-      name: "Crimson Chimera",
+      name: "Verdant Chimera",
       description: "A multi-headed beast with each head representing a different element, dwelling in caverns filled with molten lava.",
-      randomNumber: 654
+      randomNumber: 654, 
+      image: 'https://i.ibb.co/kX2WbRq/A-maroon-multiheaded-beast-in-green-armor-n-gre.png'
     },
     {
       id: 468,
       name: "Ephemeral Elephant",
       description: "An elephant with a transparent, ghostly appearance, said to be a manifestation of the spirits of the forest.",
-      randomNumber: 299
+      randomNumber: 299, 
+      image: 'https://i.ibb.co/ncHJtz3/A-pale-white-elephant-with-a-transparent-ghostl.png'
     },
     {
       id: 722,
       name: "Celestial Cheetah",
       description: "A swift cheetah with fur that sparkles like stars, racing through the night under the gaze of the moon.",
-      randomNumber: 415
+      randomNumber: 415, 
+      image: 'https://i.ibb.co/qD7Bcgf/A-swift-cheetah-with-fur-that-sparkles-like-star.png'
     },
     {
       id: 874,
       name: "Frostbite Ferret",
       description: "A small ferret with fur that freezes anything it touches, often kept as a companion by ice sorcerers.",
-      randomNumber: 567
+      randomNumber: 567, 
+      image: 'https://i.ibb.co/8gHL9kq/A-small-ferret-with-fur-that-freezes-anything-it.png'
     },
     {
       id: 156,
       name: "Starlight Stingray",
       description: "A graceful stingray with a pattern of glowing stars on its back, gliding through medieval rivers.",
-      randomNumber: 789
+      randomNumber: 789, 
+      image: 'https://i.ibb.co/sgL73NC/A-graceful-stingray-with-a-pattern-of-glowing-st.png'
     },
     {
       id: 633,
       name: "Aurora Armored Antelope",
       description: "An antelope with armor that reflects the colors of the aurora borealis, leaping through meadows with grace.",
-      randomNumber: 823
+      randomNumber: 823, 
+      image: 'https://i.ibb.co/T4KjnKD/An-antelope-with-armor-that-reflects-the-colors.png'
     },
     {
       id: 357,
       name: "Harmonic Hummingbird",
       description: "A hummingbird with feathers that emit melodic tones, bringing music to enchanted gardens.",
-      randomNumber: 134
+      randomNumber: 134, 
+      image: 'https://i.ibb.co/mb4x1mC/A-hummingbird-with-feathers-that-emit-melodic-to.png'
     },
     {
       id: 588,
       name: "Obsidian Ocelot",
       description: "A sleek ocelot with fur as dark as obsidian, stalking silently through the shadows of ancient ruins.",
-      randomNumber: 576
+      randomNumber: 576, 
+      image: 'https://i.ibb.co/SnpVgSn/A-sleek-ocelot-with-fur-as-dark-as-obsidian-sta.png'
     },
     {
       id: 205,
       name: "Thunderstrike Tarantula",
       description: "A giant tarantula with legs that generate electric charges, dwelling in stormy caverns and guarding ancient artifacts.",
-      randomNumber: 246
+      randomNumber: 246, 
+      image: 'https://i.ibb.co/7ypX5mF/A-giant-tarantula-with-legs-that-generate-electr.png'
     },
     {
       id: 799,
       name: "Whisperwind Weasel",
       description: "A small weasel with fur that ripples like the wind, known for its elusive and playful nature.",
-      randomNumber: 853
+      randomNumber: 853, 
+      image: 'https://i.ibb.co/sw0N3b7/A-small-weasel-with-fur-that-ripples-like-the-wi-1.png'
     },
    {
     id: 789,
     name: "Labyrinthine Minotaur Beetle",
     description: "A giant beetle with an intricate maze pattern on its shell, dwelling in ancient ruins and guarding hidden passages.",
-    randomNumber: 543
+    randomNumber: 543, 
+    image: 'https://i.ibb.co/5hz69K2/A-giant-beetle-with-an-intricate-maze-pattern-on.png'
     },
     {
         id: 321,
         name: "Sapphire Wyrm",
         description: "A serpent-like dragon covered in shimmering sapphire scales, known to slumber within the heart of a mystical blue cavern.",
-        randomNumber: 876
+        randomNumber: 876, 
+        image: 'https://i.ibb.co/BPWLDGT/A-serpentlike-dragon-covered-in-shimmering-sapp.png'
     },
     {
         id: 645,
         name: "Enchanted Griffin Owlbear",
         description: "A hybrid creature with the body of a bear, wings of a griffin, and the wisdom of an owl, often sought as a companion by adventurers.",
-        randomNumber: 321
+        randomNumber: 321, 
+        image: 'https://i.ibb.co/Gd4cLN4/A-hybrid-creature-with-the-body-of-a-bear-wings.png'
     },
     {
         id: 456,
         name: "Silvershade Fox",
         description: "A silver fox with fur that blends seamlessly with moonlit shadows, rumored to guide lost travelers to safety.",
-        randomNumber: 654
+        randomNumber: 654, 
+        image: 'https://i.ibb.co/17ZmN4h/A-silver-fox-with-fur-that-blends-seamlessly-wit.png'
     },
     {
         id: 823,
         name: "Thunderclaw Roc",
         description: "A colossal bird with thunderstorm feathers, creating storms as it soars across the medieval skies.",
-        randomNumber: 213
+        randomNumber: 213, 
+        image: 'https://i.ibb.co/v16FVVc/A-colossal-bird-with-thunderstorm-feathers-crea.png'
     },
     {
         id: 134,
         name: "Obsidian Direwolf",
         description: "A massive, jet-black wolf with eyes that gleam like polished obsidian, leading packs through the mystical forest.",
-        randomNumber: 876
+        randomNumber: 876, 
+        image: 'https://i.ibb.co/0Yv0B9X/A-massive-jetblack-wolf-with-eyes-that-gleam-l.png'
     },
     {
         id: 422,
         name: "Amberwinged Dragonfly",
         description: "A delicate dragonfly with wings resembling transparent amber, weaving through sunbeams and spreading a sense of tranquility.",
-        randomNumber: 543
+        randomNumber: 543, 
+        image: 'https://i.ibb.co/YTbwmFd/A-delicate-dragonfly-with-wings-resembling-trans.png'
     },
     {
         id: 576,
         name: "Timeless Tortoise",
         description: "A wise tortoise with a shell that reflects the changing seasons, said to have witnessed centuries unfold.",
-        randomNumber: 321
+        randomNumber: 321, 
+        image: 'https://i.ibb.co/q7n2nK1/A-wise-tortoise-with-a-shell-that-reflects-the-c.png'
     },
     {
         id: 246,
         name: "Molten Salamander",
         description: "A fiery salamander that glides through rivers of molten lava, guarding the entrance to subterranean realms.",
-        randomNumber: 654
+        randomNumber: 654, 
+        image: 'https://i.ibb.co/br42wP9/A-fiery-salamander-that-glides-through-rivers-of.png'
     },
     {
         id: 853,
         name: "Eclipse Hare",
         description: "A magical hare with fur that changes color during solar and lunar eclipses, appearing in sacred groves.",
-        randomNumber: 213
+        randomNumber: 213, 
+        image: 'https://i.ibb.co/ZSXGZhk/A-magical-hare-with-fur-that-changes-color-durin.png'
     },
     {
         id: 764,
         name: "Abyssal Leviathan",
         description: "A colossal sea serpent with bioluminescent patterns, lurking in the depths of a mysterious underwater abyss.",
-        randomNumber: 876
+        randomNumber: 876, 
+        image: 'https://i.ibb.co/rb5DbLX/A-colossal-sea-serpent-with-bioluminescent-patte.png'
     },
     {
         id: 512,
         name: "Thorned Basilisk",
         description: "A serpent with thorny scales and the ability to turn creatures to stone with a single gaze, inhabiting ancient gardens.",
-        randomNumber: 543
+        randomNumber: 543,
+        image: 'https://i.ibb.co/T1vXtT6/A-serpent-with-thorny-scales-and-the-ability-to.png'
     },
     {
         id: 675,
         name: "Whispering Wisp Wombat",
         description: "A small, furry creature with the ability to communicate through ethereal wisps, aiding those in need.",
-        randomNumber: 321
+        randomNumber: 321, 
+        image: 'https://i.ibb.co/jR39PvX/A-small-furry-creature-with-the-ability-to-comm.png'
     },
     {
         id: 931,
         name: "Aurora Elk",
         description: "A majestic elk with antlers that light up with the colors of the aurora borealis, roaming the northernmost realms.",
-        randomNumber: 654
+        randomNumber: 654, 
+        image: 'https://i.ibb.co/pR1T9vk/A-majestic-elk-with-antlers-that-light-up-with-t.png'
     },
     {
         id: 328,
         name: "Solar Seraphim Butterfly",
         description: "A radiant butterfly with wings that resemble stained glass, said to be messengers from the celestial realms.",
-        randomNumber: 213
+        randomNumber: 213, 
+        image: 'https://i.ibb.co/3Tp7QT5/A-radiant-butterfly-with-wings-that-resemble-sta.png'
     },
     {
         id: 654,
         name: "Celestial Peryton",
         description: "A mythical creature with the body of a deer and wings of an angel, said to embody the union of earth and sky.",
-        randomNumber: 876
+        randomNumber: 876, 
+        image: 'https://i.ibb.co/0h4BK3b/A-mythical-creature-with-the-body-of-a-deer-and.png'
     },
     {
         id: 299,
         name: "Chromatic Chameleon",
         description: "A chameleon with scales that shift in color to match its surroundings, blending seamlessly into the vibrant medieval landscapes.",
-        randomNumber: 543
+        randomNumber: 543, 
+        image:'https://i.ibb.co/c6P7MW0/A-chameleon-with-scales-that-shift-in-color-to-m.png'
     },
     {
         id: 415,
         name: "Vorpal Viper",
         description: "A venomous snake with fangs so sharp they can cut through reality itself, often associated with ancient curses.",
-        randomNumber: 321
+        randomNumber: 321, 
+        image: 'https://i.ibb.co/ygLYvrK/A-venomous-snake-with-fangs-so-sharp-they-can-cu.png'
     },
     {
         id: 567,
         name: "Wraithwing Raven",
         description: "A spectral raven with feathers that carry whispers of the afterlife, guiding lost souls to their eternal rest.",
-        randomNumber: 654
+        randomNumber: 654, 
+        image: 'https://i.ibb.co/1TQGvSg/A-spectral-raven-with-feathers-that-carry-whispe.png'
     },
     {
         id: 789,
         name: "Lunar Lotus Tortoise",
         description: "A tranquil tortoise with a shell resembling a blooming lotus, often found in serene moonlit ponds.",
-        randomNumber: 213
+        randomNumber: 213, 
+        image: 'https://i.ibb.co/zxzV9Kd/A-tranquil-tortoise-with-a-shell-resembling-a-bl.png'
     },
-    {
-        id: 789,
-        name: "Labyrinthine Minotaur Beetle",
-        description: "A giant beetle with an intricate maze pattern on its shell, dwelling in ancient ruins and guarding hidden passages.",
-        randomNumber: 543
-    },
-    {
-        id: 321,
-        name: "Sapphire Wyrm",
-        description: "A serpent-like dragon covered in shimmering sapphire scales, known to slumber within the heart of a mystical blue cavern.",
-        randomNumber: 876
-    },
-    {
-        id: 645,
-        name: "Enchanted Griffin Owlbear",
-        description: "A hybrid creature with the body of a bear, wings of a griffin, and the wisdom of an owl, often sought as a companion by adventurers.",
-        randomNumber: 321
-    },
-    {
-        id: 456,
-        name: "Silvershade Fox",
-        description: "A silver fox with fur that blends seamlessly with moonlit shadows, rumored to guide lost travelers to safety.",
-        randomNumber: 654
-    },
-    {
-        id: 823,
-        name: "Thunderclaw Roc",
-        description: "A colossal bird with thunderstorm feathers, creating storms as it soars across the medieval skies.",
-        randomNumber: 213
-    },
-    {
-        id: 134,
-        name: "Obsidian Direwolf",
-        description: "A massive, jet-black wolf with eyes that gleam like polished obsidian, leading packs through the mystical forest.",
-        randomNumber: 876
-    },
-    {
-        id: 422,
-        name: "Amberwinged Dragonfly",
-        description: "A delicate dragonfly with wings resembling transparent amber, weaving through sunbeams and spreading a sense of tranquility.",
-        randomNumber: 543
-    },
-    {
-        id: 576,
-        name: "Timeless Tortoise",
-        description: "A wise tortoise with a shell that reflects the changing seasons, said to have witnessed centuries unfold.",
-        randomNumber: 321
-    },
-    {
-        id: 246,
-        name: "Molten Salamander",
-        description: "A fiery salamander that glides through rivers of molten lava, guarding the entrance to subterranean realms.",
-        randomNumber: 654
-    },
-    {
-        id: 853,
-        name: "Eclipse Hare",
-        description: "A magical hare with fur that changes color during solar and lunar eclipses, appearing in sacred groves.",
-        randomNumber: 213
-    },
-    {
-        id: 764,
-        name: "Abyssal Leviathan",
-        description: "A colossal sea serpent with bioluminescent patterns, lurking in the depths of a mysterious underwater abyss.",
-        randomNumber: 876
-    },
-    {
-        id: 512,
-        name: "Thorned Basilisk",
-        description: "A serpent with thorny scales and the ability to turn creatures to stone with a single gaze, inhabiting ancient gardens.",
-        randomNumber: 543
-    },
-    {
-        id: 675,
-        name: "Whispering Wisp Wombat",
-        description: "A small, furry creature with the ability to communicate through ethereal wisps, aiding those in need.",
-        randomNumber: 321
-    },
-    {
-        id: 931,
-        name: "Aurora Elk",
-        description: "A majestic elk with antlers that light up with the colors of the aurora borealis, roaming the northernmost realms.",
-        randomNumber: 654
-    },
-    {
-        id: 328,
-        name: "Solar Seraphim Butterfly",
-        description: "A radiant butterfly with wings that resemble stained glass, said to be messengers from the celestial realms.",
-        randomNumber: 213
-    },
-    {
-        id: 654,
-        name: "Celestial Peryton",
-        description: "A mythical creature with the body of a deer and wings of an angel, said to embody the union of earth and sky.",
-        randomNumber: 876
-    },
-    {
-        id: 299,
-        name: "Chromatic Chameleon",
-        description: "A chameleon with scales that shift in color to match its surroundings, blending seamlessly into the vibrant medieval landscapes.",
-        randomNumber: 543
-    },
-    {
-        id: 415,
-        name: "Vorpal Viper",
-        description: "A venomous snake with fangs so sharp they can cut through reality itself, often associated with ancient curses.",
-        randomNumber: 321
-    },
-    {
-        id: 567,
-        name: "Wraithwing Raven",
-        description: "A spectral raven with feathers that carry whispers of the afterlife, guiding lost souls to their eternal rest.",
-        randomNumber: 654
-    },
-    {
-        id: 789,
-        name: "Lunar Lotus Tortoise",
-        description: "A tranquil tortoise with a shell resembling a blooming lotus, often found in serene moonlit ponds.",
-        randomNumber: 213
-    }
 ]
 
 
@@ -830,11 +754,11 @@ export async function POST(req: Request) {
   const todayMonth = dayStart.getMonth()
   // create new date to set time to zero 
   const realDateStart = new Date(todayYear, todayMonth, todayDate, 0, 0, 0, 0)
-  
+  console.log(cardSet.length)
   
   const getCards = () => {
       for(let i = 0;i< 10; i++){
-          let randomNumber = Math.floor(Math.random() * 122)
+          let randomNumber = Math.floor(Math.random() * 101)
           const newCard = cardSet.splice(randomNumber, 1)
           // console.log(cardSet[randomNumber])
           // randomCards.push(cardSet[randomNumber])
@@ -854,6 +778,7 @@ export async function POST(req: Request) {
       }
     })
     console.log('pack updated')
+    console.log(randomCards)
     return NextResponse.json(randomCards)
   } else{
     console.log('same day')
