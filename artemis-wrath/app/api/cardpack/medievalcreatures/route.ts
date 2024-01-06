@@ -29,489 +29,545 @@ const cardSet: Card[] = [
       name: "Battleaxe Badger",
       description: "A sturdy badger carrying a miniature battleaxe, often seen defending its burrow with unmatched ferocity.",
       randomNumber: 211, 
-      image:' '
+      image:'https://i.ibb.co/Ykv5Brr/A-sturdy-badger-carrying-a-miniature-battleaxe.png'
     },
     {
       id: 819,
       name: "Lancewielder Lemur",
       description: "A lemur brandishing a lance, leaping between treetops in medieval jungles as a guardian of the ancient canopy.",
-      randomNumber: 899
+      randomNumber: 899, 
+      image: 'https://i.ibb.co/PN7MymF/A-lemur-brandishing-a-lance-leaping-between-tre.png'
     },
     {
       id: 147,
       name: "Warhammer Wolf",
       description: "A majestic wolf carrying a warhammer, leading a pack of armored wolves through medieval forests on moonlit patrols.",
-      randomNumber: 742
+      randomNumber: 742, 
+      image: 'https://i.ibb.co/4Nd4CZ6/A-majestic-wolf-carrying-a-warhammer-leading-a.png'
     },
     {
       id: 583,
       name: "Halberd Hawk",
       description: "A hawk with a halberd in its talons, soaring above medieval landscapes as the aerial protector of castle realms.",
-      randomNumber: 401
+      randomNumber: 401, 
+      image: 'https://i.ibb.co/JKxxgyj/A-hawk-with-a-halberd-in-its-talons-soaring-abo.png'
     },
     {
       id: 287,
       name: "Crossbow Cobra",
       description: "A sleek cobra holding a crossbow, its venomous bite coupled with deadly accuracy in ranged combat.",
-      randomNumber: 865
+      randomNumber: 865, 
+      image: 'https://i.ibb.co/ggvvv1s/A-sleek-cobra-holding-a-crossbow-its-venomous-b.png'
     },
     {
       id: 726,
       name: "Mace Macaque",
       description: "A mischievous macaque wielding a mace, known for causing chaos in medieval marketplaces with its unexpected swings.",
-      randomNumber: 173
+      randomNumber: 173, 
+      image: 'https://i.ibb.co/djFxfCp/A-mischievous-macaque-wielding-a-mace-known-for.png'
     },
     {
       id: 931,
       name: "Flail Falcon",
       description: "A falcon with a flail attached to its talons, performing aerial acrobatics while defending its medieval territory.",
-      randomNumber: 543
+      randomNumber: 543, 
+      image: 'https://i.ibb.co/rtJT614/A-falcon-with-a-flail-attached-to-its-talons-pe.png'
     },
     {
       id: 612,
       name: "Morningstar Mouse",
       description: "A tiny mouse gripping a morningstar, bravely standing against larger foes in the corners of medieval barns.",
-      randomNumber: 998
+      randomNumber: 998, 
+      image: 'https://i.ibb.co/LJfbXvy/A-tiny-mouse-gripping-a-morningstar-bravely-sta.png'
     },
     {
       id: 208,
       name: "Spearfish Swordfish",
       description: "A swordfish using its sharp bill as a spear, patrolling the coastal waters of medieval kingdoms.",
-      randomNumber: 300
+      randomNumber: 300, 
+      image: 'https://i.ibb.co/2vc1Y30/A-swordfish-using-its-sharp-bill-as-a-spear-pat.png'
     },
     {
       id: 475,
       name: "Daggered Dragonfly",
       description: "A dragonfly with miniature daggers attached to its wings, hovering over medieval ponds as a tiny aerial knight.",
-      randomNumber: 756
+      randomNumber: 756, 
+      image: 'https://i.ibb.co/PTZcs5k/A-dragonfly-with-miniature-daggers-attached-to-i.png'
     },
     {
       id: 639,
       name: "Javelin Jackal",
       description: "A jackal with a javelin, skillfully throwing it at approaching threats in the medieval deserts.",
-      randomNumber: 432
+      randomNumber: 432, 
+      image: 'https://i.ibb.co/XZLR5LM/A-jackal-with-a-javelin-skillfully-throwing-it.png'
     },
     {
       id: 784,
       name: "Warhorn Hornet",
       description: "A giant hornet sounding a warhorn, leading swarms into battle against medieval intruders.",
-      randomNumber: 637
+      randomNumber: 637, 
+      image: 'https://i.ibb.co/XY3JGhs/A-giant-hornet-sounding-a-warhorn-leading-swarm.png'
     },
     {
       id: 243,
       name: "Shieldbearer Shrew",
       description: "A shrew carrying a tiny shield, leading underground defenses against threats in medieval burrows.",
-      randomNumber: 125
+      randomNumber: 125, 
+      image:'https://i.ibb.co/fdt3fN9/A-shrew-carrying-a-tiny-shield-leading-undergro.png'
     },
     {
       id: 509,
       name: "Longbow Lynx",
       description: "A lynx with a longbow, blending into the shadows of medieval forests while expertly sniping distant foes.",
-      randomNumber: 874
+      randomNumber: 874, 
+      image: 'https://i.ibb.co/sKfQmgc/A-lynx-with-a-longbow-blending-into-the-shadows.png'
     },
     {
       id: 319,
       name: "Scepter Snail",
       description: "A snail with a small scepter, slowly making its way through medieval gardens as a dignified ruler of the miniature realm.",
-      randomNumber: 502
+      randomNumber: 502, 
+      image: 'https://i.ibb.co/4pfF8xq/A-snail-with-a-small-scepter-slowly-making-its.png'
     },
     {
       id: 680,
       name: "Pike Pika",
       description: "A pika holding a pike, standing sentinel in rocky crevices of medieval mountain ranges.",
-      randomNumber: 256
+      randomNumber: 256, 
+      image: 'https://i.ibb.co/G0F68Mm/A-pika-holding-a-pike-standing-sentinel-in-rock.png'
     },
     {
       id: 158,
       name: "Whip Weasel",
       description: "A weasel with a tiny whip, agilely navigating through medieval castle corridors.",
-      randomNumber: 789
+      randomNumber: 789, 
+      image: 'https://i.ibb.co/4RN4VCh/A-weasel-with-a-tiny-whip-agile-and-cunning-in.png'
     },
     {
       id: 796,
       name: "Broadsword Butterfly",
       description: "A butterfly with wings resembling broadswords, fluttering gracefully in medieval meadows.",
-      randomNumber: 178
+      randomNumber: 178, 
+      image: 'https://i.ibb.co/xSSqPCx/A-butterfly-with-wings-resembling-broadswords-f.png'
     },
     {
       id: 380,
       name: "Rapier Rabbit",
       description: "A swift rabbit with a rapier, showcasing dazzling swordplay in the open fields of medieval landscapes.",
-      randomNumber: 632
+      randomNumber: 632, 
+      image: 'https://i.ibb.co/4j6XzDT/A-swift-rabbit-with-a-rapier-showcasing-dazzlin.png'
     },
     {
       id: 271,
       name: "Glaive Gecko",
       description: "A gecko with a glaive, climbing medieval walls and striking from unexpected angles.",
-      randomNumber: 901
+      randomNumber: 901, 
+      image: 'https://i.ibb.co/YT244Dt/A-gecko-with-a-glaive-climbing-medieval-walls-a.png'
     },
     {
       id: 607,
       name: "Morningstar Moth",
       description: "A moth with wings that unfold into morningstars, resting peacefully in medieval lantern-lit gardens.",
-      randomNumber: 456
+      randomNumber: 456, 
+      image: 'https://i.ibb.co/JH4y9Bq/A-moth-with-wings-that-unfold-into-morningstars.png'
     },
     {
       id: 378,
       name: "Axe Anteater",
       description: "An anteater with a small battle axe, using its powerful claws and weapon to defend against medieval threats.",
-      randomNumber: 783
+      randomNumber: 783, 
+      image: 'https://i.ibb.co/Lr5rfTr/An-anteater-with-a-small-battle-axe-using-its-p.png'
     },
     {
       id: 911,
       name: "Flanged Falcon",
       description: "A falcon with a flanged mace, diving from the skies to strike with powerful blows in medieval skirmishes.",
-      randomNumber: 234
+      randomNumber: 234, 
+      image: 'https://i.ibb.co/gvMM9fy/A-falcon-with-a-flanged-mace-diving-from-the-sk.png'
     },
     {
       id: 568,
       name: "Scepter Seahorse",
       description: "A seahorse with a tiny scepter, patrolling the depths of medieval oceans as a regal guardian.",
-      randomNumber: 618
+      randomNumber: 618, 
+      image: 'https://i.ibb.co/gPdW2S5/A-seahorse-with-a-tiny-scimitar-patrolling-the.png'
     },
     {
       id: 796,
       name: "Cudgel Crow",
       description: "A crow wielding a cudgel, using its intelligence to outsmart opponents in medieval castle courtyards.",
-      randomNumber: 371
+      randomNumber: 371, 
+      image: 'https://i.ibb.co/mqrbkwY/A-crow-wielding-a-cudgel-using-its-intelligence.png'
     },
     {
       id: 194,
       name: "Staffed Stoat",
       description: "A stoat with a staff, leading other woodland creatures in medieval quests for justice.",
-      randomNumber: 743
+      randomNumber: 743, 
+      image: 'https://i.ibb.co/w4s7Prf/A-stoat-with-a-staff-leading-other-woodland-cre.png'
     },
     {
       id: 444,
       name: "Giant Crossbow Gecko",
       description: "A large gecko operating a giant crossbow, stationed on medieval castle walls to defend against aerial threats.",
-      randomNumber: 522
+      randomNumber: 522, 
+      image: 'https://i.ibb.co/ZzYK3s1/A-large-gecko-operating-a-giant-crossbow-statio.png'
     }, 
     {
-        id: 873,
-        name: "Coral Crested Griffin",
-        description: "A griffin with feathers resembling vibrant coral, found perched on the cliffs overlooking medieval coastal kingdoms.",
-        randomNumber: 567
-      },
-      {
-        id: 512,
-        name: "Balefire Bat",
-        description: "A bat with wings that flicker like flames, dwelling in ancient caverns where magical fire deposits illuminate the darkness.",
-        randomNumber: 879
-      },
-      {
-        id: 162,
-        name: "Ebon Eelhound",
-        description: "A sleek aquatic creature with the body of an eel and the loyalty of a hound, patrolling underwater realms.",
-        randomNumber: 324
-      },
-      {
-        id: 749,
-        name: "Glowshroom Gazelle",
-        description: "A graceful gazelle with bioluminescent spots, grazing in mystical meadows filled with giant luminescent mushrooms.",
-        randomNumber: 451
-      },
-      {
-        id: 634,
-        name: "Wispwing Wyrm",
-        description: "A slender dragon with wings made of floating, glowing orbs, drifting through medieval skies like a constellation.",
-        randomNumber: 732
-      },
-      {
-        id: 198,
-        name: "Gilded Gorgon Cobra",
-        description: "A serpent with scales that turn creatures to gold with a gaze, said to guard the entrance to hidden treasure troves.",
-        randomNumber: 110
-      },
-      {
-        id: 423,
-        name: "Quicksilver Quetzal",
-        description: "A magnificent bird with iridescent feathers that mimic the appearance of liquid mercury, soaring through ancient jungles.",
-        randomNumber: 635
-      },
-      {
-        id: 896,
-        name: "Topaz Tiger Beetle",
-        description: "A large beetle with a carapace that gleams like golden topaz, scuttling through sunlit medieval gardens.",
-        randomNumber: 269
-      },
-      {
-        id: 347,
-        name: "Venomous Vine Viper",
-        description: "A snake with vines growing from its scales, camouflaging it within overgrown enchanted forests.",
-        randomNumber: 802
-      },
-      {
-        id: 598,
-        name: "Astral Axolotl",
-        description: "An aquatic creature with translucent skin, adorned with celestial patterns, swimming in sacred medieval lakes.",
-        randomNumber: 168
-      },
-      {
-        id: 785,
-        name: "Moonlit Meridian Mantis",
-        description: "A praying mantis with lunar patterns on its exoskeleton, known to meditate under the light of the moon.",
-        randomNumber: 942
-      },
-      {
-        id: 146,
-        name: "Spectral Stag",
-        description: "A ghostly stag with antlers that emit an otherworldly glow, appearing in mist-covered medieval woodlands.",
-        randomNumber: 501
-      },
-      {
-        id: 612,
-        name: "Silvershade Sloth",
-        description: "A slow-moving sloth with fur that shimmers like moonlight, often spotted hanging from ancient trees.",
-        randomNumber: 787
-      },
-      {
-        id: 278,
-        name: "Ironbark Ibis",
-        description: "A bird with wings made of living ironbark, nesting in the ancient branches of mystical trees.",
-        randomNumber: 243
-      },
-      {
-        id: 768,
-        name: "Thunderhoof Toad",
-        description: "A giant toad with thunderous croaks that echo through medieval valleys, heralding impending storms.",
-        randomNumber: 376
-      },
-      {
-        id: 431,
-        name: "Crimson Claw Crab",
-        description: "A crab with pincers that glow like rubies, scuttling along the shores of enchanted medieval beaches.",
-        randomNumber: 912
-      },
-      {
-        id: 596,
-        name: "Quasar Quokka",
-        description: "A small, adorable creature with fur that twinkles like distant quasars, hopping through magical meadows.",
-        randomNumber: 724
-      },
-      {
-        id: 155,
-        name: "Lunar Lantern Lemur",
-        description: "A lemur with a tail that glows softly like a lantern, guiding nocturnal travelers through medieval jungles.",
-        randomNumber: 824
-      },
-      {
-        id: 822,
-        name: "Starshade Squirrel",
-        description: "A squirrel with a tail that sparkles with the brilliance of distant stars, leaping between medieval treetops.",
-        randomNumber: 399
-      },
-      {
-        id: 507,
-        name: "Frostbite Firefly Fox",
-        description: "A fox with fur that mimics the luminescence of fireflies, flickering in the frosty air of ancient woodlands.",
-        randomNumber: 655
-      },
-      {
-        id: 189,
-        name: "Nebula Nudibranch",
-        description: "An ocean-dwelling creature with iridescent tendrils that mimic swirling nebulae, drifting through underwater kingdoms.",
-        randomNumber: 177
-      },
-      {
-        id: 877,
-        name: "Thunderstrike Tarsier",
-        description: "A small primate with eyes that flash with lightning, inhabiting the stormy reaches of medieval canopies.",
-        randomNumber: 888
-      },
-      {
-        id: 243,
-        name: "Majestic Manticore",
-        description: "A mythical creature with the body of a lion, wings of a dragon, and a tail ending in a cluster of venomous spikes.",
-        randomNumber: 366
-      },
-      {
-        id: 541,
-        name: "Abyssal Albatross",
-        description: "A giant bird with feathers that absorb light, soaring over medieval seas and disappearing into the dark abyss below.",
-        randomNumber: 586
-      },
-      {
-        id: 900,
-        name: "Ethereal Elephant Eel",
-        description: "A majestic aquatic creature with the body of an elephant and the tail of an eel, gliding through mysterious underwater realms.",
-        randomNumber: 943
-      },
-      {
-        id: 387,
-        name: "Grove Guardian Gargoyle",
-        description: "A stone gargoyle brought to life by ancient magic, protecting sacred groves and medieval monuments.",
-        randomNumber: 111
-      },
-      {
-        id: 654,
-        name: "Luminous Liger",
-        description: "A hybrid creature with the strength of a lion and the grace of a tiger, its fur radiating a gentle glow.",
-        randomNumber: 455
-      },
-      {
-        id: 328,
-        name: "Sapphire Snail",
-        description: "A slow-moving snail with a shell that glistens like precious sapphire, leaving a trail of magical luminescence.",
-        randomNumber: 723
-      },
-      {
-        id: 897,
-        name: "Chrono Chameleon",
-        description: "A chameleon with scales that shift through the colors of time, blending into the temporal fabric of medieval landscapes.",
-        randomNumber: 567
-      },
-      {
-        id: 444,
-        name: "Frostfire Phoenix",
-        description: "A phoenix with feathers that alternate between icy blue and fiery red, symbolizing the eternal dance of winter and summer.",
-        randomNumber: 789
-      },
-      {
-        id: 122,
-        name: "Verdant Drake",
-        description: "A dragon with scales that mimic the lush greenery of the forest, dwelling in hidden glades and protecting the woodland creatures.",
-        randomNumber: 321
-      },
-      {
-        id: 567,
-        name: "Cerulean Wyvern",
-        description: "A winged creature with scales that mirror the deep blue of the sky, soaring gracefully over medieval landscapes.",
-        randomNumber: 645
-      },
-      {
-        id: 934,
-        name: "Moonshadow Lynx",
-        description: "A stealthy lynx with fur that absorbs and reflects moonlight, becoming nearly invisible as it stalks its prey.",
-        randomNumber: 456
-      },
-      {
-        id: 789,
-        name: "Nebula Nymph",
-        description: "A small, ethereal creature with wings resembling swirling galaxies, bringing cosmic magic to enchanted gardens.",
-        randomNumber: 823
-      },
-      {
-        id: 312,
-        name: "Amethyst Armadillo",
-        description: "A mystical armadillo with a shell made of shimmering amethyst, rolling into a protective ball when threatened.",
-        randomNumber: 134
-      },
-      {
-        id: 576,
-        name: "Stardust Seahorse",
-        description: "A seahorse with a mane of stardust, swimming gracefully in celestial seas beneath a starlit sky.",
-        randomNumber: 422
-      },
-      {
-        id: 189,
-        name: "Molten Gryphon",
-        description: "A gryphon with feathers that resemble flowing lava, perched on the peaks of volcanoes as a guardian of the fiery realms.",
-        randomNumber: 576
-      },
-      {
-        id: 482,
-        name: "Ironhide Rhino",
-        description: "A massive rhinoceros with a hide as tough as iron, charging through medieval battlefields with unwavering strength.",
-        randomNumber: 246
-      },
-      {
-        id: 746,
-        name: "Whimsical Woodpecker Warg",
-        description: "A large, colorful woodpecker with the intelligence of a wolf, often tamed by woodland elves as loyal companions.",
-        randomNumber: 853
-      },
-      {
-        id: 645,
-        name: "Eldritch Elk",
-        description: "An elk with antlers that channel otherworldly energies, said to have the ability to open portals to distant realms.",
-        randomNumber: 764
-      },
-      {
-        id: 348,
-        name: "Sable Shapeshifter Snake",
-        description: "A serpent with the ability to transform into various shapes, rumored to be a guardian of ancient magical artifacts.",
-        randomNumber: 512
-      },
-      {
-        id: 901,
-        name: "Iridescent Iguana",
-        description: "A lizard with scales that shimmer in a myriad of colors, basking in the medieval sun on ancient castle walls.",
-        randomNumber: 675
-      },
-      {
-        id: 284,
-        name: "Vortex Vulture",
-        description: "A scavenger bird with wings that create miniature tornadoes, soaring above battlefields to pick at the remnants of war.",
-        randomNumber: 931
-      },
-      {
-        id: 577,
-        name: "Mystic Mantis",
-        description: "A giant mantis with eyes that glow with ancient knowledge, often sought by alchemists for its mystical properties.",
-        randomNumber: 328
-      },
-      {
-        id: 211,
-        name: "Crimson Chimera",
-        description: "A multi-headed beast with each head representing a different element, dwelling in caverns filled with molten lava.",
-        randomNumber: 654
-      },
-      {
-        id: 468,
-        name: "Ephemeral Elephant",
-        description: "An elephant with a transparent, ghostly appearance, said to be a manifestation of the spirits of the forest.",
-        randomNumber: 299
-      },
-      {
-        id: 722,
-        name: "Celestial Cheetah",
-        description: "A swift cheetah with fur that sparkles like stars, racing through the night under the gaze of the moon.",
-        randomNumber: 415
-      },
-      {
-        id: 874,
-        name: "Frostbite Ferret",
-        description: "A small ferret with fur that freezes anything it touches, often kept as a companion by ice sorcerers.",
-        randomNumber: 567
-      },
-      {
-        id: 156,
-        name: "Starlight Stingray",
-        description: "A graceful stingray with a pattern of glowing stars on its back, gliding through medieval rivers.",
-        randomNumber: 789
-      },
-      {
-        id: 633,
-        name: "Aurora Armored Antelope",
-        description: "An antelope with armor that reflects the colors of the aurora borealis, leaping through meadows with grace.",
-        randomNumber: 823
-      },
-      {
-        id: 357,
-        name: "Harmonic Hummingbird",
-        description: "A hummingbird with feathers that emit melodic tones, bringing music to enchanted gardens.",
-        randomNumber: 134
-      },
-      {
-        id: 588,
-        name: "Obsidian Ocelot",
-        description: "A sleek ocelot with fur as dark as obsidian, stalking silently through the shadows of ancient ruins.",
-        randomNumber: 576
-      },
-      {
-        id: 205,
-        name: "Thunderstrike Tarantula",
-        description: "A giant tarantula with legs that generate electric charges, dwelling in stormy caverns and guarding ancient artifacts.",
-        randomNumber: 246
-      },
-      {
-        id: 799,
-        name: "Whisperwind Weasel",
-        description: "A small weasel with fur that ripples like the wind, known for its elusive and playful nature.",
-        randomNumber: 853
-      },
-  {
+      id: 873,
+      name: "Coral Crested Griffin",
+      description: "A griffin with feathers resembling vibrant coral, found perched on the cliffs overlooking medieval coastal kingdoms.",
+      randomNumber: 567, 
+      image: 'https://i.ibb.co/8DfFhH5/A-griffin-with-feathers-resembling-vibrant-coral.png'
+    },
+    {
+      id: 512,
+      name: "Balefire Bat",
+      description: "A bat with wings that flicker like flames, dwelling in ancient caverns where magical fire deposits illuminate the darkness.",
+      randomNumber: 879, 
+      image: 'https://i.ibb.co/TwrWHJm/A-bat-with-wings-that-flicker-like-flames-dwell.png'
+    },
+    {
+      id: 162,
+      name: "Ebon Eelhound",
+      description: "A sleek aquatic creature with the body of an eel and the loyalty of a hound, patrolling underwater realms.",
+      randomNumber: 324, 
+      image: 'https://i.ibb.co/9NQGt35/A-sleek-aquatic-creature-with-the-body-of-an-eel.png'
+    },
+    {
+      id: 749,
+      name: "Glowshroom Gazelle",
+      description: "A graceful gazelle with bioluminescent spots, grazing in mystical meadows filled with giant luminescent mushrooms.",
+      randomNumber: 451, 
+      image: 'https://i.ibb.co/h1StHQX/A-graceful-gazelle-with-bioluminescent-spots-gr.png'
+    },
+    {
+      id: 634,
+      name: "Wispwing Wyrm",
+      description: "A slender dragon with wings made of floating, glowing orbs, drifting through medieval skies like a constellation.",
+      randomNumber: 732, 
+      image: 'https://i.ibb.co/8g3BnvW/A-slender-dragon-with-wings-made-of-floating-gl.png'
+    },
+    {
+      id: 198,
+      name: "Gilded Gorgon Cobra",
+      description: "A serpent with scales that turn creatures to gold with a gaze, said to guard the entrance to hidden treasure troves.",
+      randomNumber: 110, 
+      image: 'https://i.ibb.co/c8rr3wx/A-serpent-with-scales-that-turn-creatures-to-gol.png'
+    },
+    {
+      id: 423,
+      name: "Quicksilver Quetzal",
+      description: "A magnificent bird with iridescent feathers that mimic the appearance of liquid mercury, soaring through ancient jungles.",
+      randomNumber: 635, 
+      image: 'https://i.ibb.co/c8rr3wx/A-serpent-with-scales-that-turn-creatures-to-gol.png'
+    },
+    {
+      id: 896,
+      name: "Topaz Tiger Beetle",
+      description: "A large beetle with a carapace that gleams like golden topaz, scuttling through sunlit medieval gardens.",
+      randomNumber: 269, 
+      image: 'https://i.ibb.co/QXvc73k/A-large-beetle-with-a-carapace-that-gleams-like.png'
+    },
+    {
+      id: 347,
+      name: "Venomous Vine Viper",
+      description: "A snake with vines growing from its scales, camouflaging it within overgrown enchanted forests.",
+      randomNumber: 802, 
+      image: 'https://i.ibb.co/LChDWLm/A-snake-with-vines-growing-from-its-scales-camo.png'
+    },
+    {
+      id: 598,
+      name: "Astral Axolotl",
+      description: "An aquatic creature with translucent skin, adorned with celestial patterns, swimming in sacred medieval lakes.",
+      randomNumber: 168, 
+      image: 'https://i.ibb.co/dgwMYXc/An-aquatic-creature-with-translucent-skin-adorn.png'
+    },
+    {
+      id: 785,
+      name: "Moonlit Meridian Mantis",
+      description: "A praying mantis with lunar patterns on its exoskeleton, known to meditate under the light of the moon.",
+      randomNumber: 942, 
+      image: 'https://i.ibb.co/MN26yZV/A-praying-mantis-with-lunar-patterns-on-its-exos.png'
+    },
+    {
+      id: 146,
+      name: "Spectral Stag",
+      description: "A ghostly stag with antlers that emit an otherworldly glow, appearing in mist-covered medieval woodlands.",
+      randomNumber: 501, 
+      image: 'https://i.ibb.co/h1StHQX/A-graceful-gazelle-with-bioluminescent-spots-gr.png'
+    },
+    {
+      id: 612,
+      name: "Silvershade Sloth",
+      description: "A slow-moving sloth with fur that shimmers like moonlight, often spotted hanging from ancient trees.",
+      randomNumber: 787, 
+      image: 'https://i.ibb.co/gT6C8wz/A-slowmoving-sloth-with-fur-that-shimmers-like.png'
+    },
+    {
+      id: 278,
+      name: "Ironbark Ibis",
+      description: "A bird with wings made of living ironbark, nesting in the ancient branches of mystical trees.",
+      randomNumber: 243, 
+      image: 'https://i.ibb.co/SwK9LZB/A-bird-with-wings-made-of-living-ironbark-nesti.png'
+    },
+    {
+      id: 768,
+      name: "Thunderhoof Toad",
+      description: "A giant toad with thunderous croaks that echo through medieval valleys, heralding impending storms.",
+      randomNumber: 376, 
+      image: 'https://i.ibb.co/yFdwX7J/A-giant-toad-with-thunderous-croaks-that-echo-th.png'
+    },
+    {
+      id: 431,
+      name: "Crimson Claw Crab",
+      description: "A crab with pincers that glow like rubies, scuttling along the shores of enchanted medieval beaches.",
+      randomNumber: 912, 
+      image: 'https://i.ibb.co/f8bGn8q/A-crab-with-pincers-that-glow-like-rubies-scutt.png'
+    },
+    {
+      id: 596,
+      name: "Quasar Quokka",
+      description: "A small, adorable creature with fur that twinkles like distant quasars, hopping through magical meadows.",
+      randomNumber: 724, 
+      image: 'https://i.ibb.co/0CtHxrn/A-small-adorable-creature-with-fur-that-twinkle.png'
+    },
+    {
+      id: 155,
+      name: "Lunar Lantern Lemur",
+      description: "A lemur with a tail that glows softly like a lantern, guiding nocturnal travelers through medieval jungles.",
+      randomNumber: 824, 
+      image: 'https://i.ibb.co/DRHbnv7/A-lemur-with-a-tail-that-glows-softly-like-a-lan.png'
+    },
+    {
+      id: 822,
+      name: "Starshade Squirrel",
+      description: "A squirrel with a tail that sparkles with the brilliance of distant stars, leaping between medieval treetops.",
+      randomNumber: 399, 
+      image: 'https://i.ibb.co/ZfJPSW9/A-squirrel-with-a-tail-that-sparkles-with-the-br.png'
+    },
+    {
+      id: 507,
+      name: "Frostbite Firefly Fox",
+      description: "A fox with fur that mimics the luminescence of fireflies, flickering in the frosty air of ancient woodlands.",
+      randomNumber: 655, 
+      image: 'https://i.ibb.co/8dSzhQN/A-fox-with-fur-that-mimics-the-luminescence-of-f.png'
+    },
+    {
+      id: 189,
+      name: "Nebula Nudibranch",
+      description: "An ocean-dwelling creature with iridescent tendrils that mimic swirling nebulae, drifting through underwater kingdoms.",
+      randomNumber: 177, 
+      image: 'https://i.ibb.co/YtNkwtz/An-oceandwelling-creature-with-iridescent-tendr.png'
+    },
+    {
+      id: 877,
+      name: "Thunderstrike Tarsier",
+      description: "A small primate with eyes that flash with lightning, inhabiting the stormy reaches of medieval canopies.",
+      randomNumber: 888, 
+      image: 'https://i.ibb.co/yVV34m5/A-small-primate-with-eyes-that-flash-with-lightn.png'
+    },
+    {
+      id: 243,
+      name: "Majestic Manticore",
+      description: "A mythical creature with the body of a lion, wings of a dragon, and a tail ending in a cluster of venomous spikes.",
+      randomNumber: 366, 
+      image: 'https://i.ibb.co/QbGDqbR/A-mythical-creature-with-the-body-of-a-lion-win.png'
+    },
+    {
+      id: 541,
+      name: "Abyssal Albatross",
+      description: "A giant bird with feathers that absorb light, soaring over medieval seas and disappearing into the dark abyss below.",
+      randomNumber: 586, 
+      image: 'https://i.ibb.co/tXKDNSm/A-giant-bird-with-feathers-that-absorb-light-so.png'
+    },
+    {
+      id: 900,
+      name: "Ethereal Elephant Eel",
+      description: "A majestic aquatic creature with the body of an elephant and the tail of an eel, gliding through mysterious underwater realms.",
+      randomNumber: 943, 
+      image: 'https://i.ibb.co/DQxSt0F/A-majestic-aquatic-creature-with-the-body-of-an.png'
+    },
+    {
+      id: 387,
+      name: "Grove Guardian Gargoyle",
+      description: "A stone gargoyle brought to life by ancient magic, protecting sacred groves and medieval monuments.",
+      randomNumber: 111, 
+      image: 'https://i.ibb.co/2tkgG9F/A-stone-gargoyle-brought-to-life-by-ancient-magi.png'
+    },
+    {
+      id: 654,
+      name: "Luminous Liger",
+      description: "A hybrid creature with the strength of a lion and the grace of a tiger, its fur radiating a gentle glow.",
+      randomNumber: 455, 
+      image: 'https://i.ibb.co/1bnPX0D/A-hybrid-creature-with-the-strength-of-a-lion-an.png'
+    },
+    {
+      id: 328,
+      name: "Sapphire Snail",
+      description: "A slow-moving snail with a shell that glistens like precious sapphire, leaving a trail of magical luminescence.",
+      randomNumber: 723, 
+      image: 'https://i.ibb.co/ggq2QXD/A-slowmoving-snail-with-a-shell-that-glistens-l.png'
+    },
+    {
+      id: 897,
+      name: "Chrono Chameleon",
+      description: "A chameleon with scales that shift through the colors of time, blending into the temporal fabric of medieval landscapes.",
+      randomNumber: 567, 
+      image: 'https://i.ibb.co/3m004k7/A-chameleon-with-scales-that-shift-through-the-c.png'
+    },
+    {
+      id: 444,
+      name: "Frostfire Phoenix",
+      description: "A phoenix with feathers that alternate between icy blue and fiery red, symbolizing the eternal dance of winter and summer.",
+      randomNumber: 789, 
+      image: ''
+    },
+    {
+      id: 122,
+      name: "Verdant Drake",
+      description: "A dragon with scales that mimic the lush greenery of the forest, dwelling in hidden glades and protecting the woodland creatures.",
+      randomNumber: 321
+    },
+    {
+      id: 567,
+      name: "Cerulean Wyvern",
+      description: "A winged creature with scales that mirror the deep blue of the sky, soaring gracefully over medieval landscapes.",
+      randomNumber: 645
+    },
+    {
+      id: 934,
+      name: "Moonshadow Lynx",
+      description: "A stealthy lynx with fur that absorbs and reflects moonlight, becoming nearly invisible as it stalks its prey.",
+      randomNumber: 456
+    },
+    {
+      id: 789,
+      name: "Nebula Nymph",
+      description: "A small, ethereal creature with wings resembling swirling galaxies, bringing cosmic magic to enchanted gardens.",
+      randomNumber: 823
+    },
+    {
+      id: 312,
+      name: "Amethyst Armadillo",
+      description: "A mystical armadillo with a shell made of shimmering amethyst, rolling into a protective ball when threatened.",
+      randomNumber: 134
+    },
+    {
+      id: 576,
+      name: "Stardust Seahorse",
+      description: "A seahorse with a mane of stardust, swimming gracefully in celestial seas beneath a starlit sky.",
+      randomNumber: 422
+    },
+    {
+      id: 189,
+      name: "Molten Gryphon",
+      description: "A gryphon with feathers that resemble flowing lava, perched on the peaks of volcanoes as a guardian of the fiery realms.",
+      randomNumber: 576
+    },
+    {
+      id: 482,
+      name: "Ironhide Rhino",
+      description: "A massive rhinoceros with a hide as tough as iron, charging through medieval battlefields with unwavering strength.",
+      randomNumber: 246
+    },
+    {
+      id: 746,
+      name: "Whimsical Woodpecker Warg",
+      description: "A large, colorful woodpecker with the intelligence of a wolf, often tamed by woodland elves as loyal companions.",
+      randomNumber: 853
+    },
+    {
+      id: 645,
+      name: "Eldritch Elk",
+      description: "An elk with antlers that channel otherworldly energies, said to have the ability to open portals to distant realms.",
+      randomNumber: 764
+    },
+    {
+      id: 348,
+      name: "Sable Shapeshifter Snake",
+      description: "A serpent with the ability to transform into various shapes, rumored to be a guardian of ancient magical artifacts.",
+      randomNumber: 512
+    },
+    {
+      id: 901,
+      name: "Iridescent Iguana",
+      description: "A lizard with scales that shimmer in a myriad of colors, basking in the medieval sun on ancient castle walls.",
+      randomNumber: 675
+    },
+    {
+      id: 284,
+      name: "Vortex Vulture",
+      description: "A scavenger bird with wings that create miniature tornadoes, soaring above battlefields to pick at the remnants of war.",
+      randomNumber: 931
+    },
+    {
+      id: 577,
+      name: "Mystic Mantis",
+      description: "A giant mantis with eyes that glow with ancient knowledge, often sought by alchemists for its mystical properties.",
+      randomNumber: 328
+    },
+    {
+      id: 211,
+      name: "Crimson Chimera",
+      description: "A multi-headed beast with each head representing a different element, dwelling in caverns filled with molten lava.",
+      randomNumber: 654
+    },
+    {
+      id: 468,
+      name: "Ephemeral Elephant",
+      description: "An elephant with a transparent, ghostly appearance, said to be a manifestation of the spirits of the forest.",
+      randomNumber: 299
+    },
+    {
+      id: 722,
+      name: "Celestial Cheetah",
+      description: "A swift cheetah with fur that sparkles like stars, racing through the night under the gaze of the moon.",
+      randomNumber: 415
+    },
+    {
+      id: 874,
+      name: "Frostbite Ferret",
+      description: "A small ferret with fur that freezes anything it touches, often kept as a companion by ice sorcerers.",
+      randomNumber: 567
+    },
+    {
+      id: 156,
+      name: "Starlight Stingray",
+      description: "A graceful stingray with a pattern of glowing stars on its back, gliding through medieval rivers.",
+      randomNumber: 789
+    },
+    {
+      id: 633,
+      name: "Aurora Armored Antelope",
+      description: "An antelope with armor that reflects the colors of the aurora borealis, leaping through meadows with grace.",
+      randomNumber: 823
+    },
+    {
+      id: 357,
+      name: "Harmonic Hummingbird",
+      description: "A hummingbird with feathers that emit melodic tones, bringing music to enchanted gardens.",
+      randomNumber: 134
+    },
+    {
+      id: 588,
+      name: "Obsidian Ocelot",
+      description: "A sleek ocelot with fur as dark as obsidian, stalking silently through the shadows of ancient ruins.",
+      randomNumber: 576
+    },
+    {
+      id: 205,
+      name: "Thunderstrike Tarantula",
+      description: "A giant tarantula with legs that generate electric charges, dwelling in stormy caverns and guarding ancient artifacts.",
+      randomNumber: 246
+    },
+    {
+      id: 799,
+      name: "Whisperwind Weasel",
+      description: "A small weasel with fur that ripples like the wind, known for its elusive and playful nature.",
+      randomNumber: 853
+    },
+   {
     id: 789,
     name: "Labyrinthine Minotaur Beetle",
     description: "A giant beetle with an intricate maze pattern on its shell, dwelling in ancient ruins and guarding hidden passages.",
