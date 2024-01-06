@@ -76,7 +76,7 @@ const PackSelector = ()=> {
                 {collectedCards && 
                 collectedCards.map((card) => {
                     return (
-                        <div className="h-96 w-64 bg-amber-200 flex flex-col rounded-md items-center">
+                        <div className="h-96 w-64 bg-amber-200 flex flex-col rounded-md items-center" key={card.id}>
 
                             <h1 className="text-l self-start">{card.name}</h1>
                             {card.image &&
