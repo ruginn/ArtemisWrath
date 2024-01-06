@@ -19,7 +19,8 @@ const PackSelector = ()=> {
     const [selectedPack, setSelectedPack] = useState(false)
     const [userInfo, setUserInfo] = useState({})
     const {user} = useUser()
-    const [collectedCards, setCollectedCards] = useState<Card[]>([{id: 1, name: 'fsda', description: 'fsda', randomNumber: 1, image: AwSet1}])
+    // const [collectedCards, setCollectedCards] = useState<Card[]>([{id: 1, name: 'fsda', description: 'fsda', randomNumber: 1, image: AwSet1}])
+    const [collectedCards, setCollectedCards] = useState<Card[]>([])
 
 
     const CollectPack = async () => {
