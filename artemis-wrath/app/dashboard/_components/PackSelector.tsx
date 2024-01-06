@@ -72,23 +72,28 @@ const PackSelector = ()=> {
                 <h3>You have already selected your pack for the day</h3>
             </div>
             }
-            {collectedCards && 
-            collectedCards.map((card) => {
-                return (
-                    <div>
+            <div className="grid grid-cols-5 gap-5 m-10">
+                {/* {collectedCards && 
+                collectedCards.map((card) => {
+                    return (
+                        <div className="h-96 w-64 bg-amber-200 flex flex-col rounded-md items-center">
 
-                        <h1>{card.name}</h1>
-                        <Image 
-                            src={card.image}
-                            alt=''
-                            width={200}
-                            height={800}
-                            // className="w-60 h-auto"
-                        ></Image>
-                    </div>
-                )
-            })
-            }
+                            <h1 className="text-l self-start">{card.name}</h1>
+                            <Image 
+                                src={card.image}
+                                alt=''
+                                width={256}
+                                height={800}
+                                // className="w-60 h-auto"
+                            ></Image>
+                            <div className="w-[250px] h-[80px] border-2 border-black mt-3 rounded">
+                                <p className="text-sm leading-none">{card.description}</p>
+                            </div>
+                        </div>
+                    )
+                })
+                } */}
+            </div>
         </div>
     )
 }
