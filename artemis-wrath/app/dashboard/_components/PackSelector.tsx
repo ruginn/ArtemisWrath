@@ -73,7 +73,7 @@ const PackSelector = ()=> {
             </div>
             }
             <div className="grid grid-cols-5 gap-5 m-10">
-                {/* {collectedCards && 
+                {collectedCards && 
                 collectedCards.map((card) => {
                     return (
                         <div className="h-96 w-64 bg-amber-200 flex flex-col rounded-md items-center">
@@ -92,7 +92,7 @@ const PackSelector = ()=> {
                         </div>
                     )
                 })
-                } */}
+                }
             </div>
         </div>
     )
