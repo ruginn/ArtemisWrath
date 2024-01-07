@@ -1,34 +1,32 @@
 'use client'
+import Image, { StaticImageData } from 'next/image'
 import {useState, useEffect} from 'react'
 
 
 
-const MedievalCreaturesSet = () => {
-    const [cardSet, setCardSet] = useState()
-    // const CollectPack = async () => {
-    //     const userInfo = {
-    //         id: user?.id, 
-    //         firstName: user?.firstName, 
-    //         lastName: user?.lastName, 
-    //     }
-    //     const res = await fetch('/api/cardpack/medievalcreatures', {
-    //         method: 'POST', 
-    //         body: JSON.stringify(userInfo),
-    //         headers:{
-    //             'Context-Type': 'application/json'
-    //         },
-    //         cache: 'no-cache'
-    //     })
-    //     // .then((res) => res.json()) 
-    //     const cards: Card[] = await res.json()
-    //     console.log(cards)
-    //     setCollectedCards(cards)
-    //     console.log(collectedCards)
-    // }
+interface Card {
+    id: number, 
+    name: string, 
+    description: string, 
+    randomNumber: number,
+    image?: string | StaticImageData, 
+}
 
-    useEffect(()=> {    
-        const res = fetch('/api/sets/medievalcreatures').then((res) => res.json())
-        console.log(res)
+const MedievalCreaturesSet = () => {
+    const [cardSet, setCardSet] = useState<Card[]>([])
+    const [cardsLoaded, setCardsLoaded] = useState(false)
+    
+
+    useEffect(()=> {   
+
+        const getCards = async () => {
+            const res : Card[] = await fetch('/api/sets/medievalcreatures').then((res) => res.json())
+            console.log(res)
+            setCardSet(res)
+            setCardsLoaded(true)
+        }
+        getCards()
+
     }, [])
 
 
@@ -36,6 +34,30 @@ const MedievalCreaturesSet = () => {
     return (
         <div>
             <h1>Medieval Creatures</h1>
+            <div className="grid grid-cols-5 gap-5 m-10">
+            {cardsLoaded &&
+                cardSet.map((card) => {
+                    return (
+                        <div className="h-96 w-64 bg-amber-200 flex flex-col rounded-md items-center" key={card.id}>
+                                <h1 className="text-l self-start">{card.name}</h1>
+                                {card.image &&
+                                <Image 
+                                src={card.image}
+                                alt=''
+                                width={256}
+                                height={800}
+                                // className="w-60 h-auto"
+                                ></Image>
+                            }
+                                <div className="w-[250px] h-[80px] border-2 border-black mt-3 rounded">
+                                    <p className="text-sm leading-none">{card.description}</p>
+                                </div>
+                            </div>
+                    )
+                })
+                
+            }
+            </div>
         </div>
     )
 }

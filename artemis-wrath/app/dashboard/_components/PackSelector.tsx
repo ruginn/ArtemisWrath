@@ -21,6 +21,7 @@ const PackSelector = ()=> {
     const {user} = useUser()
     // const [collectedCards, setCollectedCards] = useState<Card[]>([{id: 1, name: 'fsda', description: 'fsda', randomNumber: 1, image: AwSet1}])
     const [collectedCards, setCollectedCards] = useState<Card[]>([])
+    const [getCards, setGetCards] = useState<boolean>(false)
 
 
     const CollectPack = async () => {
@@ -38,10 +39,15 @@ const PackSelector = ()=> {
             cache: 'no-cache'
         })
         // .then((res) => res.json()) 
-        const cards: Card[] = await res.json()
-        console.log(cards)
-        setCollectedCards(cards)
-        console.log(collectedCards)
+        const cards: Card[] = await res.json() 
+        // console.log(typeof cards === 'object')
+        if (typeof cards === 'object'){
+            setCollectedCards(cards)
+            setGetCards(true)
+            console.log(collectedCards)
+        } else{
+            setGetCards(false)
+        }
     }
 
 
@@ -68,33 +74,33 @@ const PackSelector = ()=> {
             />
             </div>
             }
-            {selectedPack &&     
+            {selectedPack  &&     
             <div>
                 <h3>You have already selected your pack for the day</h3>
             </div>
             }
             <div className="grid grid-cols-5 gap-5 m-10">
-                {collectedCards && 
-                collectedCards.map((card) => {
-                    return (
-                        <div className="h-96 w-64 bg-amber-200 flex flex-col rounded-md items-center" key={card.id}>
+                {getCards && 
+                    collectedCards.map((card) => {
+                        return (
+                            <div className="h-96 w-64 bg-amber-200 flex flex-col rounded-md items-center" key={card.id}>
 
-                            <h1 className="text-l self-start">{card.name}</h1>
-                            {card.image &&
-                            <Image 
+                                <h1 className="text-l self-start">{card.name}</h1>
+                                {card.image &&
+                                <Image 
                                 src={card.image}
                                 alt=''
                                 width={256}
                                 height={800}
                                 // className="w-60 h-auto"
-                            ></Image>
+                                ></Image>
                             }
-                            <div className="w-[250px] h-[80px] border-2 border-black mt-3 rounded">
-                                <p className="text-sm leading-none">{card.description}</p>
+                                <div className="w-[250px] h-[80px] border-2 border-black mt-3 rounded">
+                                    <p className="text-sm leading-none">{card.description}</p>
+                                </div>
                             </div>
-                        </div>
-                    )
-                })
+                        )
+                    })
                 }
             </div>
         </div>

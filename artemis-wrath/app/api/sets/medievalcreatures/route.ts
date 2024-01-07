@@ -9,12 +9,6 @@ interface Card {
     image?: string, 
 }
 
-interface userInfo {
-  id: string, 
-  firstName: string, 
-  lastName: string
-  lastPackDate?: Date, 
-}
 
 const cardSet: Card[] = [
     {
@@ -924,7 +918,7 @@ const cardSet: Card[] = [
 
 
 export async function GET(req: Request) {
-  
+  console.log(cardSet)
   return NextResponse.json(cardSet)
 
 }
