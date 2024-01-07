@@ -1,6 +1,6 @@
 'use client'
 import  {useSideBar} from '@/hooks/use-sidebar'
-import { Calendar, ArrowRightLeft, Shield, Swords, Settings, Layers, Library, Home } from "lucide-react"
+import { Calendar, ArrowRightLeft, Shield, Swords, Settings, Layers, Library, Home, Globe } from "lucide-react"
 import Link from "next/link"
 import { useEffect } from 'react'
 
@@ -30,6 +30,12 @@ const SideBar = () => {
                 <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
                     <Layers className="mr-2" />
                     <h3>Collection</h3>
+                </div>
+            </Link>
+            <Link href={'/dashboard/exploresets'}>
+                <div className="flex flex-row items-center ml-4 text-xl cursor-pointer">
+                    <Globe className="mr-2"/>
+                    <h3>Explore Sets</h3>
                 </div>
             </Link>
             <Link href={'/dashboard/deckbuilder'}>
