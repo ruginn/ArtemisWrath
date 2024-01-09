@@ -16,14 +16,14 @@ const cardSet: Card[] = [
       name: "Swordsworn Sparrow",
       description: "A small, agile sparrow wielding a tiny sword, known for its swift and precise strikes in aerial duels.",
       randomNumber: 654, 
-      image: 'https://i.ibb.co/wZkr5L2/A-small-agile-sparrow-wielding-a-tiny-sword-kn.png'
+      image: 'https://i.ibb.co/TBD1grq/A-small-agile-sparrow-wielding-a-tiny-sword-wit.png'
     },
     {
       id: 372,
       name: "Battleaxe Badger",
       description: "A sturdy badger carrying a miniature battleaxe, often seen defending its burrow with unmatched ferocity.",
       randomNumber: 211, 
-      image:'https://i.ibb.co/Ykv5Brr/A-sturdy-badger-carrying-a-miniature-battleaxe.png'
+      image:'https://i.ibb.co/0jrpQLF/A-sturdy-badger-in-blue-armor-carrying-a-miniatu.png'
     },
     {
       id: 819,
@@ -37,7 +37,7 @@ const cardSet: Card[] = [
       name: "Warhammer Wolf",
       description: "A majestic wolf carrying a warhammer, leading a pack of armored wolves through medieval forests on moonlit patrols.",
       randomNumber: 742, 
-      image: 'https://i.ibb.co/4Nd4CZ6/A-majestic-wolf-carrying-a-warhammer-leading-a.png'
+      image: 'https://i.ibb.co/VjLLd33/A-majestic-wolf-carrying-a-warhammer-leading-a.png'
     },
     {
       id: 583,
@@ -254,7 +254,7 @@ const cardSet: Card[] = [
       name: "Quicksilver Quetzal",
       description: "A magnificent bird with iridescent feathers that mimic the appearance of liquid mercury, soaring through ancient jungles.",
       randomNumber: 635, 
-      image: 'https://i.ibb.co/c8rr3wx/A-serpent-with-scales-that-turn-creatures-to-gol.png'
+      image: 'https://i.ibb.co/v1yRtzs/A-magnificent-bird-with-iridescent-feathers-that.png'
     },
     {
       id: 896,
@@ -716,7 +716,7 @@ const cardSet: Card[] = [
         name: "Wraithwing Raven",
         description: "A spectral raven with feathers that carry whispers of the afterlife, guiding lost souls to their eternal rest.",
         randomNumber: 654, 
-        image: 'https://i.ibb.co/1TQGvSg/A-spectral-raven-with-feathers-that-carry-whispe.png'
+        image: 'https://i.ibb.co/DKYBT9b/A-spectral-raven-with-feathers-that-carry-whispe.png'
     },
     {
         id: 789,
@@ -898,7 +898,7 @@ const cardSet: Card[] = [
       name: "Ebon Pegasus",
       description: "A majestic black-winged horse with a mane that flows like shadows, only appearing to those with pure hearts.",
       randomNumber: 432,
-      image: "https://i.ibb.co/wZkr5L2/A-small-agile-sparrow-wielding-a-tiny-sword-kn.png"
+      image: "https://i.ibb.co/GPpxcPZ/A-majestic-blackwinged-horse-with-a-mane-that-f.png"
     },
     {
       id: 890,

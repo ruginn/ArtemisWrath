@@ -20,7 +20,9 @@ const MedievalCreaturesSet = () => {
     useEffect(()=> {   
 
         const getCards = async () => {
-            const res : Card[] = await fetch('/api/sets/medievalcreatures').then((res) => res.json())
+            const res : Card[] = await fetch('/api/sets/medievalcreatures', {
+                cache: 'no-cache'
+            }).then((res) => res.json())
             console.log(res)
             setCardSet(res)
             setCardsLoaded(true)
@@ -38,19 +40,21 @@ const MedievalCreaturesSet = () => {
             {cardsLoaded &&
                 cardSet.map((card) => {
                     return (
-                        <div className="h-96 w-64 bg-amber-200 flex flex-col rounded-md items-center" key={card.id}>
-                                <h1 className="text-l self-start">{card.name}</h1>
+                        <div className="h-96 w-72 bg-amber-200 flex flex-col rounded-md items-center border-gray-800 border-8" key={card.id}>
+                                <h1 className="text-l self-start ml-2">{card.name}</h1>
                                 {card.image &&
                                 <Image 
                                 src={card.image}
                                 alt=''
                                 width={256}
-                                height={800}
+                                height={256}
+                                placeholder='empty'
+                                className='object-cover rounded-lg'
                                 // className="w-60 h-auto"
                                 ></Image>
                             }
-                                <div className="w-[250px] h-[80px] border-2 border-black mt-3 rounded">
-                                    <p className="text-sm leading-none">{card.description}</p>
+                                <div className="w-[250px] h-[70px] border-2 border-black mt-3 rounded">
+                                    <p className="text-[11px] leading-none">{card.description}</p>
                                 </div>
                             </div>
                     )
