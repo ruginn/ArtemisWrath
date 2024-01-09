@@ -43,7 +43,7 @@ const cardSet: Card[] = [
       name: "Warhammer Wolf",
       description: "A majestic wolf carrying a warhammer, leading a pack of armored wolves through medieval forests on moonlit patrols.",
       randomNumber: 742, 
-      image: 'https://i.ibb.co/4Nd4CZ6/A-majestic-wolf-carrying-a-warhammer-leading-a.png'
+      image: 'https://i.ibb.co/VjLLd33/A-majestic-wolf-carrying-a-warhammer-leading-a.png'
     },
     {
       id: 583,
