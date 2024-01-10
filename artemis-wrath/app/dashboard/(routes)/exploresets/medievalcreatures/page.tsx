@@ -1,6 +1,7 @@
 'use client'
 import Image, { StaticImageData } from 'next/image'
 import {useState, useEffect} from 'react'
+import { useSideBar } from "@/hooks/use-sidebar"
 
 
 
@@ -15,7 +16,11 @@ interface Card {
 const MedievalCreaturesSet = () => {
     const [cardSet, setCardSet] = useState<Card[]>([])
     const [cardsLoaded, setCardsLoaded] = useState(false)
+    const activeSidebar = useSideBar()
     
+    useEffect(() => {
+        activeSidebar.onChange('explore')
+    },[])
 
     useEffect(()=> {   
 
