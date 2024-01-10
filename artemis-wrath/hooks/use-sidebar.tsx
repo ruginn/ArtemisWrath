@@ -7,6 +7,6 @@ type SideBarStore = {
 
 
 export const useSideBar = create<SideBarStore>((set) => ({
-    selected: 'home',
+    selected: '',
     onChange: (newSelected:string) => set({selected: newSelected})
 }))

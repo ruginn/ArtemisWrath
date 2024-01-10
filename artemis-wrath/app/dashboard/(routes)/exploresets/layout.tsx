@@ -1,20 +1,17 @@
 'use client'
-
 import { useEffect } from "react"
 import { useSideBar } from "@/hooks/use-sidebar"
 
-const Settings = () => {
+function layout({children}: {children: React.ReactNode}) {
     const activeSidebar = useSideBar()
-
+    
     useEffect(() => {
-        activeSidebar.onChange('settings')
+        activeSidebar.onChange('explore')
     },[])
 
-    return (
-        <div>
-            Settings
-        </div>
-    )
+  return (
+    <>{children}</>
+  )
 }
 
-export default Settings
+export default layout
