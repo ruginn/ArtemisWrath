@@ -5,9 +5,16 @@ import AwSet2 from '@/public/Images/Packs/AWset2CS.png'
 import AwSet3 from '@/public/Images/Packs/AWset3CS.png'
 import Link from "next/link"
 import MedievalCreaturesSet from "./medievalcreatures/page"
+import { useEffect } from "react"
+import { useSideBar } from "@/hooks/use-sidebar"
 
 
 const ExploreSets = () => {
+    const activeSidebar = useSideBar()
+
+    useEffect(() => {
+        activeSidebar.onChange('explore')
+    },[])
     return (
         <div className="w-full flex flex-col items-center">
             <h1 className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[96px]">Explore Sets</h1>  

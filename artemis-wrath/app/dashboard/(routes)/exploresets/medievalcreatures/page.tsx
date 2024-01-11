@@ -2,6 +2,7 @@
 import Image, { StaticImageData } from 'next/image'
 import {useState, useEffect} from 'react'
 import { useSideBar } from "@/hooks/use-sidebar"
+import { cn } from '@/lib/utils'
 
 
 
@@ -10,6 +11,7 @@ interface Card {
     name: string, 
     description: string, 
     randomNumber: number,
+    inclination?: string
     image?: string | StaticImageData, 
 }
 
@@ -28,14 +30,23 @@ const MedievalCreaturesSet = () => {
             const res : Card[] = await fetch('/api/sets/medievalcreatures', {
                 cache: 'no-cache'
             }).then((res) => res.json())
-            console.log(res)
+            // console.log(res)
             setCardSet(res)
             setCardsLoaded(true)
         }
         getCards()
 
+        
     }, [])
 
+    // useEffect(() => {
+    //     const inclinations = ['Love', 'Pride', 'Wisdom', 'Mischief', 'Wrath']
+    //     cardSet.map((card)=> {
+    //         const randomNumber = Math.floor(Math.random() * 6)
+    //         card.inclination = inclinations[randomNumber]
+    //     })
+    //     console.log(cardSet)
+    // },[cardsLoaded])
 
 
     return (
@@ -45,7 +56,13 @@ const MedievalCreaturesSet = () => {
             {cardsLoaded &&
                 cardSet.map((card) => {
                     return (
-                        <div className="h-96 w-72 bg-amber-200 flex flex-col rounded-md items-center border-gray-800 border-8" key={card.id}>
+                        <div className={cn("h-96 w-72 bg-amber-200 flex flex-col rounded-md items-center border-gray-800 border-8", 
+                            card.inclination === 'Wrath' && 'bg-red-800',
+                            card.inclination === 'Wisdom' && 'bg-blue-400',
+                            card.inclination === 'Love' && 'bg-pink-300', 
+                            card.inclination === 'Mischief' && 'bg-gray-600', 
+                            card.inclination === 'Pride' && 'bg-purple-600'
+                        )} key={card.id}>
                                 <h1 className="text-l self-start ml-2">{card.name}</h1>
                                 {card.image &&
                                 <Image 
