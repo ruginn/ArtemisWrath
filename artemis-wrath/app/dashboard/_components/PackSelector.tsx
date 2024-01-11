@@ -5,6 +5,7 @@ import AwSet1 from '@/public/Images/Packs/AWset1.jpg'
 import AwSet2 from '@/public/Images/Packs/AWset2CS.png'
 import AwSet3 from '@/public/Images/Packs/AWset3CS.png'
 import { useUser } from "@clerk/nextjs"
+import CardElement from "@/app/components/Card"
 
 interface Card {
     id: number, 
@@ -83,22 +84,23 @@ const PackSelector = ()=> {
                 {getCards && 
                     collectedCards.map((card) => {
                         return (
-                            <div className="h-96 w-64 bg-amber-200 flex flex-col rounded-md items-center" key={card.id}>
+                            // <div className="h-96 w-64 bg-amber-200 flex flex-col rounded-md items-center" key={card.id}>
 
-                                <h1 className="text-l self-start">{card.name}</h1>
-                                {card.image &&
-                                <Image 
-                                src={card.image}
-                                alt=''
-                                width={256}
-                                height={800}
-                                // className="w-60 h-auto"
-                                ></Image>
-                            }
-                                <div className="w-[250px] h-[80px] border-2 border-black mt-3 rounded">
-                                    <p className="text-sm leading-none">{card.description}</p>
-                                </div>
-                            </div>
+                            //     <h1 className="text-l self-start">{card.name}</h1>
+                            //     {card.image &&
+                            //     <Image 
+                            //     src={card.image}
+                            //     alt=''
+                            //     width={256}
+                            //     height={800}
+                            //     // className="w-60 h-auto"
+                            //     ></Image>
+                            // }
+                            //     <div className="w-[250px] h-[80px] border-2 border-black mt-3 rounded">
+                            //         <p className="text-sm leading-none">{card.description}</p>
+                            //     </div>
+                            // </div>
+                            <CardElement card={card}/>
                         )
                     })
                 }
