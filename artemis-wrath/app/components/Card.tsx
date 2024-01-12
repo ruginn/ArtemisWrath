@@ -14,7 +14,7 @@ interface Card {
 const CardElement = ({card}:{card:Card}) => {
     return (
         <div className={cn("h-96 w-72 bg-amber-200 flex flex-col rounded-xl items-center border-gray-800 border-8", 
-            card.inclination === 'Wrath' && 'bg-[#75352F]',
+            card.inclination === 'Wrath' && ' bg-gradient-to-bl to-red-600 via-red-800 from-[#75352F]',
             card.inclination === 'Wisdom' && 'bg-[#5876b2]',
             card.inclination === 'Love' && 'bg-[#f58a87]', 
             card.inclination === 'Mischief' && 'bg-[#3f392c]', 
