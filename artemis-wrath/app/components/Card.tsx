@@ -14,11 +14,11 @@ interface Card {
 const CardElement = ({card}:{card:Card}) => {
     return (
         <div className={cn("h-96 w-72 bg-amber-200 flex flex-col rounded-md items-center border-gray-800 border-8", 
-            card.inclination === 'Wrath' && 'bg-red-800',
-            card.inclination === 'Wisdom' && 'bg-blue-400',
-            card.inclination === 'Love' && 'bg-pink-300', 
-            card.inclination === 'Mischief' && 'bg-gray-600', 
-            card.inclination === 'Pride' && 'bg-purple-600'
+            card.inclination === 'Wrath' && 'bg-[#75352F]',
+            card.inclination === 'Wisdom' && 'bg-[#5876b2]',
+            card.inclination === 'Love' && 'bg-[#f58a87]', 
+            card.inclination === 'Mischief' && 'bg-[#3f392c]', 
+            card.inclination === 'Pride' && 'bg-[#454380]'
         )} key={card.id}>
                 <h1 className="text-l self-start ml-2">{card.name}</h1>
                 {card.image &&

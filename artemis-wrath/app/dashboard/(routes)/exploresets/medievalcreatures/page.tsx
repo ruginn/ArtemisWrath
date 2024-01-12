@@ -80,7 +80,7 @@ const MedievalCreaturesSet = () => {
                         //             <p className="text-[11px] leading-none">{card.description}</p>
                         //         </div>
                         //     </div>
-                        <CardElement card={card}/>
+                        <CardElement card={card} key={card.id}/>
                     )
                 })
                 
