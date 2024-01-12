@@ -80,7 +80,7 @@ const PackSelector = ()=> {
                 <h3>You have already selected your pack for the day</h3>
             </div>
             }
-            <div className="grid grid-cols-5 gap-5 m-10">
+            <div className="grid grid-cols-4 gap-5 m-10">
                 {getCards && 
                     collectedCards.map((card) => {
                         return (
