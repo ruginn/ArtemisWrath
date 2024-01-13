@@ -47,7 +47,7 @@ const Timer = () => {
             <div className="flex flex-row gap-5">
                 <div className="flex flex-col items-center">
                     {/* horrendousinlinecode.com */}
-                    <p>{typeof hours === 'number' && hours.toString().length === 1 ? `0${hours}` : hours}</p>
+                    <p>{hours && hours.toString().length === 1 ? `0${hours}` : hours}</p>
                     <p>{hours === 1 ? 'Hour' : 'Hours'}</p>
                 </div>
                 <div className="flex flex-col items-center">
