@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useSideBar } from "@/hooks/use-sidebar"
 import PackSelector from "../../_components/PackSelector"
 import Timer from "./_components/Timer"
@@ -8,6 +8,8 @@ import Timer from "./_components/Timer"
 
 const DailyPack = () => {
     const activeSidebar = useSideBar()
+    const [collectedPack, setCollectedPack] = useState<boolean>(false)
+
 
     useEffect(() => {
         activeSidebar.onChange('dailypack')
@@ -15,9 +17,10 @@ const DailyPack = () => {
 
 
     return (
-        <div>
-            <PackSelector />
-            <Timer />
+        <div className="w-[calc(100vw-16rem)] flex flex-col items-center">
+            <h1 className="text-8xl">Daily Pack</h1>
+            {collectedPack && <PackSelector />}
+            {!collectedPack && <Timer />}
         </div>
     )
 }

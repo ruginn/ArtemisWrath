@@ -2,26 +2,29 @@
 import { useUser } from "@clerk/nextjs"
 import {useEffect, useState} from 'react'
 import PackSelector from "./_components/PackSelector"
+import { useUserInfo } from "@/hooks/use-userInfo"
 
 const Dashboard = () => {
     const {user} = useUser()
+    const userState = useUserInfo()
     const [userInfo, setUserInfo] = useState({})
+    
     const userLogin = async () => {
-        const userInfo = {
+        const userData = {
             id: user?.id, 
             firstName: user?.firstName, 
             lastName: user?.lastName, 
         }
         const res = await fetch('api/auth', {
             method: 'POST', 
-            body: JSON.stringify(userInfo), 
+            body: JSON.stringify(userData), 
             headers: {
                 'Content-Type': 'application/json'
             }, 
             cache: 'no-cache'
         })
         const finRes = await res.json()
-        setUserInfo(finRes)
+        userState.UpdateAll(finRes)
     }
     
     useEffect(() => {
