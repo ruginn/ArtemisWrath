@@ -25,8 +25,9 @@ const Timer = () => {
     useEffect(() =>{
         setTimeout(() => {
             if (hours && seconds === 0 && minutes ===0){
-                setHour(-1)
+                setHour(hours-1)
                 setMinutes(59)
+                setSeconds(59)
             }
             if (minutes && seconds === 0){
                 setMinutes(minutes-1)
@@ -45,15 +46,16 @@ const Timer = () => {
             <h3>Your next pack will be availible in </h3>
             <div className="flex flex-row gap-5">
                 <div className="flex flex-col items-center">
-                    <p>{hours && hours.toString().length === 1 ? `0${hours}` : hours}</p>
+                    {/* horrendousinlinecode.com */}
+                    <p>{typeof hours === 'number' && hours.toString().length === 1 ? `0${hours}` : hours}</p>
                     <p>{hours === 1 ? 'Hour' : 'Hours'}</p>
                 </div>
                 <div className="flex flex-col items-center">
-                    <p>{minutes && minutes.toString().length === 1 ? `0${minutes}` : minutes}</p>
+                    <p>{typeof minutes === 'number' && minutes.toString().length === 1 ? `0${minutes}` : minutes}</p>
                     <p>Minutes</p>
                 </div>
                 <div className="flex flex-col items-center">
-                    <p>{seconds && seconds.toString().length === 1 ? `0${seconds}` : seconds }</p>
+                    <p>{typeof seconds === 'number' && seconds.toString().length === 1 ? `0${seconds}` : seconds }</p>
                     <p>Seconds</p>
                 </div>
             </div>
