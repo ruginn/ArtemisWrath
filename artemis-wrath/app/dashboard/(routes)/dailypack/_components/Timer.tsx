@@ -41,7 +41,7 @@ const Timer = () => {
     
     return (
         <div className="w-full items-center flex flex-col">
-            <h1>Its seems like you've already collected your pack for today.</h1>
+            <h1>Its seems like you&apos;ve already collected your pack for today.</h1>
             <h3>Your next pack will be availible in </h3>
             <div className="flex flex-row gap-5">
                 <div className="flex flex-col items-center">
@@ -53,7 +53,7 @@ const Timer = () => {
                     <p>Minutes</p>
                 </div>
                 <div className="flex flex-col items-center">
-                    <p>{seconds && seconds.toString().length === 1 ? `0${seconds}` : seconds}</p>
+                    <p>{seconds && seconds.toString().length === 1 ? `0${seconds}` : seconds }</p>
                     <p>Seconds</p>
                 </div>
             </div>
