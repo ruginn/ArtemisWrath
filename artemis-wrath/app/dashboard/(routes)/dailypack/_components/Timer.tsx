@@ -21,13 +21,42 @@ const Timer = () => {
     useEffect(() => {
         getDate()
     }, [])
+
+    useEffect(() =>{
+        setTimeout(() => {
+            if (hours && seconds === 0 && minutes ===0){
+                setHour(-1)
+                setMinutes(59)
+            }
+            if (minutes && seconds === 0){
+                setMinutes(minutes-1)
+                setSeconds(59)
+            }
+            if (seconds){
+                setSeconds(seconds -1)
+            }
+        }, 1000)
+    }, [seconds])
     
     
     return (
-        <div className="flex flex-row">
-            <span>{hours}</span>
-            <span>{minutes}</span>
-            <span>{seconds}</span>
+        <div className="w-full items-center flex flex-col">
+            <h1>Its seems like you've already collected your pack for today.</h1>
+            <h3>Your next pack will be availible in </h3>
+            <div className="flex flex-row gap-5">
+                <div className="flex flex-col items-center">
+                    <p>{hours && hours.toString().length === 1 ? `0${hours}` : hours}</p>
+                    <p>Hours</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <p>{minutes && minutes.toString().length === 1 ? `0${minutes}` : minutes}</p>
+                    <p>Minutes</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <p>{seconds && seconds.toString().length === 1 ? `0${seconds}` : seconds}</p>
+                    <p>Seconds</p>
+                </div>
+            </div>
         </div>
     )
 }
