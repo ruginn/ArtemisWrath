@@ -9,7 +9,7 @@ const Timer = () => {
     const getDate = async()=> {
         const today = await fetch('https://worldtimeapi.org/api/timezone/America/New_York').then((res)=> res.json())
         const actualToday = new Date(today.datetime)
-        const secondsLeft = 60 - actualToday.getSeconds()
+        const secondsLeft = 59 - actualToday.getSeconds()
         const minutesLeft = 59 - actualToday.getMinutes()
         const hoursLeft = 23 - actualToday.getHours()
         console.log(hoursLeft, minutesLeft, secondsLeft)
