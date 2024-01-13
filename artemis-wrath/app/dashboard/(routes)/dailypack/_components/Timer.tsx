@@ -7,7 +7,7 @@ const Timer = () => {
     const [seconds, setSeconds] = useState<number>()
 
     const getDate = async()=> {
-        const today = await fetch('http://worldtimeapi.org/api/timezone/America/New_York').then((res)=> res.json())
+        const today = await fetch('https://worldtimeapi.org/api/timezone/America/New_York').then((res)=> res.json())
         const actualToday = new Date(today.datetime)
         const secondsLeft = 60 - actualToday.getSeconds()
         const minutesLeft = 59 - actualToday.getMinutes()
