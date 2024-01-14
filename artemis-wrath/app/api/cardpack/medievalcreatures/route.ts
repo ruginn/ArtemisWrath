@@ -1043,7 +1043,7 @@ export async function POST(req: Request) {
   })
 
   // fetch real time **need to add try-catch**
-  const currentDate = await fetch('http://worldtimeapi.org/api/timezone/America/New_York').then((res) => res.json())
+  const currentDate = await fetch('https://worldtimeapi.org/api/timezone/America/New_York').then((res) => res.json())
   // needs to be converted into date
   const dayStart = new Date(currentDate.datetime)
   // need to set everything to zero
@@ -1066,7 +1066,7 @@ export async function POST(req: Request) {
       }
 
   }
-  
+  console.log(establishedUser?.lastPackDate?.toString(), realDateStart.toString())
   if (establishedUser?.lastPackDate?.toString() !== realDateStart.toString()){
     getCards()
     await prisma.user.update({
@@ -1078,14 +1078,9 @@ export async function POST(req: Request) {
       }
     })
     console.log('pack updated')
-    console.log(randomCards)
     return NextResponse.json(randomCards)
   } else{
     console.log('same day')
     return NextResponse.json('you have already gotten a pack')
   }
-
-
-    // console.log(randomCards)
-    // return NextResponse.json(randomCards)
 }

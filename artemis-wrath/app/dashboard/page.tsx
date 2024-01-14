@@ -1,44 +1,42 @@
 'use client'
 import { useUser } from "@clerk/nextjs"
 import {useEffect, useState} from 'react'
-import PackSelector from "./_components/PackSelector"
 import { useUserInfo } from "@/hooks/use-userInfo"
 
 const Dashboard = () => {
     const {user} = useUser()
-    const userState = useUserInfo()
-    const [userInfo, setUserInfo] = useState({})
+    const userInfo = useUserInfo()
+
     
-    const userLogin = async () => {
-        const userData = {
-            id: user?.id, 
-            firstName: user?.firstName, 
-            lastName: user?.lastName, 
-        }
-        const res = await fetch('api/auth', {
-            method: 'POST', 
-            body: JSON.stringify(userData), 
-            headers: {
-                'Content-Type': 'application/json'
-            }, 
-            cache: 'no-cache'
-        })
-        const finRes = await res.json()
-        userState.UpdateAll(finRes)
-    }
+    // const userLogin = async () => {
+    //     const userData = {
+    //         id: user?.id, 
+    //         firstName: user?.firstName, 
+    //         lastName: user?.lastName, 
+    //     }
+    //     const res = await fetch('api/auth', {
+    //         method: 'POST', 
+    //         body: JSON.stringify(userData), 
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         }, 
+    //         cache: 'no-cache'
+    //     })
+    //     const finRes = await res.json()
+    //     userInfo.UpdateAll(finRes)
+    // }
     
-    useEffect(() => {
-        if (user) {
-            userLogin()
-        }
-    },[user])
+    // useEffect(() => {
+    //     if (user) {
+    //         userLogin()
+    //     }
+    // },[user])
 
    
 
     return (
-        <div className="ml-64">
-            <h1 className="text-8xl">Welcome {user?.firstName}!</h1>
-            {/* <PackSelector /> */}
+        <div className="w-[calc(100vw-16rem)] flex flex-col items-center">
+            <h1 className="text-7xl">Welcome {userInfo?.name.split(' ')[0]}!</h1>
         </div>
     )
 }

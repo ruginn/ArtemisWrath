@@ -12,7 +12,6 @@ const Timer = () => {
         const secondsLeft = 59 - actualToday.getSeconds()
         const minutesLeft = 59 - actualToday.getMinutes()
         const hoursLeft = 23 - actualToday.getHours()
-        console.log(hoursLeft, minutesLeft, secondsLeft)
         setHour(hoursLeft)
         setMinutes(minutesLeft)
         setSeconds(secondsLeft)

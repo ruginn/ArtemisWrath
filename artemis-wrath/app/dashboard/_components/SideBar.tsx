@@ -4,14 +4,44 @@ import { Calendar, ArrowRightLeft, Shield, Swords, Settings, Layers, Library, Ho
 import Link from "next/link"
 import { useEffect, useState } from 'react'
 import { cn } from '@/lib/utils'
+import { useUser } from '@clerk/nextjs'
+import { useUserInfo } from '@/hooks/use-userInfo'
+
 
 const SideBar = () => {
     const activeSidebar = useSideBar()
-
-
     const clickSideTab = (page:string) => {
         activeSidebar.onChange(page)
     }
+    const {user} = useUser()
+    const userInfo = useUserInfo()
+
+    
+    const userLogin = async () => {
+        const userData = {
+            id: user?.id, 
+            firstName: user?.firstName, 
+            lastName: user?.lastName, 
+        }
+        const res = await fetch('/api/auth', {
+            method: 'POST', 
+            body: JSON.stringify(userData), 
+            headers: {
+                'Content-Type': 'application/json'
+            }, 
+            cache: 'no-cache'
+        })
+        const finRes = await res.json()
+        userInfo.UpdateAll(finRes)
+    }
+    
+    useEffect(() => {
+        if (user) {
+            userLogin()
+        }
+    },[user])
+
+    
   
     
 

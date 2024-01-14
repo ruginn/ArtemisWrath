@@ -1,11 +1,12 @@
 'use client'
-import { useState } from "react"
+import { FC, useState } from "react"
 import Image, { StaticImageData } from "next/image"
 import AwSet1 from '@/public/Images/Packs/AWset1.jpg'
 import AwSet2 from '@/public/Images/Packs/AWset2CS.png'
 import AwSet3 from '@/public/Images/Packs/AWset3CS.png'
 import { useUser } from "@clerk/nextjs"
 import CardElement from "@/app/components/Card"
+import { useUserInfo } from "@/hooks/use-userInfo"
 
 interface Card {
     id: number, 
@@ -15,25 +16,27 @@ interface Card {
     image?: string | StaticImageData, 
 }
 
+interface Props {
+    todayDate: string
+}
 
-const PackSelector = ()=> {
+const PackSelector: FC<Props> = (props)=> {
     const [selectedPack, setSelectedPack] = useState(false)
-    const [userInfo, setUserInfo] = useState({})
     const {user} = useUser()
     // const [collectedCards, setCollectedCards] = useState<Card[]>([{id: 1, name: 'fsda', description: 'fsda', randomNumber: 1, image: AwSet1}])
     const [collectedCards, setCollectedCards] = useState<Card[]>([])
     const [getCards, setGetCards] = useState<boolean>(false)
-
+    const userInfo = useUserInfo()
 
     const CollectPack = async () => {
-        const userInfo = {
+        const userData = {
             id: user?.id, 
             firstName: user?.firstName, 
             lastName: user?.lastName, 
         }
         const res = await fetch('/api/cardpack/medievalcreatures', {
             method: 'POST', 
-            body: JSON.stringify(userInfo),
+            body: JSON.stringify(userData),
             headers:{
                 'Context-Type': 'application/json'
             },
@@ -45,6 +48,9 @@ const PackSelector = ()=> {
         if (typeof cards === 'object'){
             setCollectedCards(cards)
             setGetCards(true)
+            // setTimeout(() => {
+            //     userInfo.UpdateLastPack(props.todayDate)
+            // }, 2000)
             console.log(collectedCards)
         } else{
             setGetCards(false)
