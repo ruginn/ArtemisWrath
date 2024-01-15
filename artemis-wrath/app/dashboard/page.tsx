@@ -1,7 +1,7 @@
-"use client";
-import { useUser } from "@clerk/nextjs";
-import { useEffect, useState } from "react";
-import { useUserInfo } from "@/hooks/use-userInfo";
+'use client';
+import { useUser } from '@clerk/nextjs';
+import { useEffect, useState } from 'react';
+import { useUserInfo } from '@/hooks/use-userInfo';
 
 const Dashboard = () => {
   const { user } = useUser();
@@ -32,8 +32,8 @@ const Dashboard = () => {
   // },[user])
 
   return (
-    <div className="w-[calc(100vw-16rem)] flex flex-col items-center">
-      <h1 className="text-7xl">Welcome {userInfo?.name.split(" ")[0]}!</h1>
+    <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px)] flex flex-col items-center'>
+      <h1 className='text-7xl'>Welcome {userInfo?.name.split(' ')[0]}!</h1>
     </div>
   );
 };
