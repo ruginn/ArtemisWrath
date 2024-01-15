@@ -1,21 +1,15 @@
-'use client'
-import { useEffect } from "react"
-import { useSideBar } from "@/hooks/use-sidebar"
+"use client";
+import { useEffect } from "react";
+import { useSideBar } from "@/hooks/use-sidebar";
 
 const Battle = () => {
-  const activeSidebar = useSideBar()
-  
-  useEffect(()=>{
-    activeSidebar.onChange('battle')
-  },[])
+  const activeSidebar = useSideBar();
 
-  return (
-    <div className="w-[calc(100vw-256px)] bg-red-400"
-    >Battle
-  
-    
-    </div>
-  )
-}
+  useEffect(() => {
+    activeSidebar.onChange("battle");
+  }, []);
 
-export default Battle 
+  return <div className="w-[calc(100vw-256px)] bg-red-400">Battle</div>;
+};
+
+export default Battle;

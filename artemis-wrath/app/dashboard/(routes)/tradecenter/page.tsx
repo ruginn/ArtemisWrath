@@ -1,19 +1,15 @@
-'use client'
-import { useEffect } from "react"
-import { useSideBar } from "@/hooks/use-sidebar"
+"use client";
+import { useEffect } from "react";
+import { useSideBar } from "@/hooks/use-sidebar";
 
 const TradeCenter = () => {
-    const activeSidebar = useSideBar()
+  const activeSidebar = useSideBar();
 
-    useEffect(() => {
-        activeSidebar.onChange('tradecenter')
-    },[])
-    
-    return (
-        <div className="w-[calc(100vw-256px)] bg-green-300">
-            Trade Center
-        </div>
-    )
-}
+  useEffect(() => {
+    activeSidebar.onChange("tradecenter");
+  }, []);
 
-export default TradeCenter
+  return <div className="w-[calc(100vw-256px)] bg-green-300">Trade Center</div>;
+};
+
+export default TradeCenter;

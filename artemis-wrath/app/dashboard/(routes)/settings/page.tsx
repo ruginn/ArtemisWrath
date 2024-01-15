@@ -1,20 +1,16 @@
-'use client'
+"use client";
 
-import { useEffect } from "react"
-import { useSideBar } from "@/hooks/use-sidebar"
+import { useEffect } from "react";
+import { useSideBar } from "@/hooks/use-sidebar";
 
 const Settings = () => {
-    const activeSidebar = useSideBar()
+  const activeSidebar = useSideBar();
 
-    useEffect(() => {
-        activeSidebar.onChange('settings')
-    },[])
+  useEffect(() => {
+    activeSidebar.onChange("settings");
+  }, []);
 
-    return (
-        <div>
-            Settings
-        </div>
-    )
-}
+  return <div>Settings</div>;
+};
 
-export default Settings
+export default Settings;
