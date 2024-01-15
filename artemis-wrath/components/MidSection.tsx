@@ -42,13 +42,13 @@ const MidSection = () => {
                     <LibraryBig className="w-36 h-36 stroke-black"/>
                 </div> 
             </div>
-            <div className="w-full flex justify-evenly gap-5">
+            {/* <div className="w-full flex justify-evenly gap-5">
             <Image src={CardBack} alt='CardBack' className="w-64 h-auto rounded-xl border-[#436561] border-8"/>
             <Image src={CardBack} alt='CardBack' className="w-64 h-auto rounded-xl border-[#436561] border-8"/>
             <Image src={CardBack} alt='CardBack' className="w-64 h-auto rounded-xl border-[#436561] border-8"/>
             <Image src={CardBack} alt='CardBack' className="w-64 h-auto rounded-xl border-[#436561] border-8"/>
             <Image src={CardBack} alt='CardBack' className="w-64 h-auto rounded-xl border-[#436561] border-8"/>
-            </div>
+            </div> */}
             <Image 
                 src={Mountains}
                 alt='Mountains'
