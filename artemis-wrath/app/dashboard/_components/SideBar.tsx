@@ -60,7 +60,7 @@ const SideBar = () => {
   return (
     <div
       className={cn(
-        'w-24 lg:w-64 h-[calc(100vh-80px)]  fixed bg-gray-900 text-amber-400',
+        'w-24 lg:w-64 h-[calc(100vh-80px)]  fixed bg-gray-900 text-amber-400 z-[99999]',
         !activeSidebar.mobile && 'hidden sm:block'
       )}
     >

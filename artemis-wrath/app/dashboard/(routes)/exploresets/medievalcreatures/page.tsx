@@ -1,9 +1,9 @@
-"use client";
-import Image, { StaticImageData } from "next/image";
-import { useState, useEffect } from "react";
-import { useSideBar } from "@/hooks/use-sidebar";
-import { cn } from "@/lib/utils";
-import CardElement from "@/app/components/Card";
+'use client';
+import Image, { StaticImageData } from 'next/image';
+import { useState, useEffect } from 'react';
+import { useSideBar } from '@/hooks/use-sidebar';
+import { cn } from '@/lib/utils';
+import CardElement from '@/app/components/Card';
 
 interface Card {
   id: number;
@@ -20,13 +20,13 @@ const MedievalCreaturesSet = () => {
   const activeSidebar = useSideBar();
 
   useEffect(() => {
-    activeSidebar.onChange("explore");
+    activeSidebar.onChange('explore');
   }, []);
 
   useEffect(() => {
     const getCards = async () => {
-      const res: Card[] = await fetch("/api/sets/medievalcreatures", {
-        cache: "no-cache",
+      const res: Card[] = await fetch('/api/sets/medievalcreatures', {
+        cache: 'no-cache',
       }).then((res) => res.json());
       // console.log(res)
       setCardSet(res);
@@ -45,9 +45,9 @@ const MedievalCreaturesSet = () => {
   // },[cardsLoaded])
 
   return (
-    <div>
+    <div className='flex flex-col items-center'>
       <h1>Medieval Creatures</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10">
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10'>
         {cardsLoaded &&
           cardSet.map((card) => {
             return (

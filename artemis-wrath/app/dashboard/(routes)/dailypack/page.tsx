@@ -63,7 +63,7 @@ const DailyPack = () => {
   }, [userInfo]);
 
   return (
-    <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px)] flex flex-col items-center'>
+    <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px)] flex flex-col items-center justify-center'>
       <h1 className='text-7xl'>Daily Pack</h1>
       {!collectedPack && today && (
         <PackSelector todayDate={today?.toString()} />
