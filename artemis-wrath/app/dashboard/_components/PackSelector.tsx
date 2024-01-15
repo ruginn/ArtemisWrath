@@ -7,13 +7,15 @@ import AwSet3 from '@/public/Images/Packs/AWset3CS.png'
 import { useUser } from "@clerk/nextjs"
 import CardElement from "@/app/components/Card"
 import { useUserInfo } from "@/hooks/use-userInfo"
+import { useCollectedCards } from "@/hooks/use-collectedCards"
 
 interface Card {
     id: number, 
     name: string, 
     description: string, 
     randomNumber: number,
-    image?: string | StaticImageData, 
+    image?: string, 
+    inclination?: string
 }
 
 interface Props {
@@ -23,6 +25,7 @@ interface Props {
 const PackSelector: FC<Props> = (props)=> {
     const [selectedPack, setSelectedPack] = useState(false)
     const {user} = useUser()
+    const gatheredCards = useCollectedCards()
     // const [collectedCards, setCollectedCards] = useState<Card[]>([{id: 1, name: 'fsda', description: 'fsda', randomNumber: 1, image: AwSet1}])
     const [collectedCards, setCollectedCards] = useState<Card[]>([])
     const [getCards, setGetCards] = useState<boolean>(false)
@@ -47,13 +50,16 @@ const PackSelector: FC<Props> = (props)=> {
         // console.log(typeof cards === 'object')
         if (typeof cards === 'object'){
             setCollectedCards(cards)
+            gatheredCards.addCards(cards)
+            gatheredCards.setCollected(true)
             setGetCards(true)
-            // setTimeout(() => {
-            //     userInfo.UpdateLastPack(props.todayDate)
-            // }, 2000)
+            setTimeout(() => {
+                userInfo.UpdateLastPack(props.todayDate)
+            }, 2000)
             console.log(collectedCards)
         } else{
             setGetCards(false)
+            gatheredCards.setCollected(false)
         }
     }
 
@@ -87,7 +93,7 @@ const PackSelector: FC<Props> = (props)=> {
             </div>
             }
             <div className="grid grid-cols-4 gap-5 m-10">
-                {getCards && 
+                {/* {getCards && 
                     collectedCards.map((card) => {
                         return (
                             // <div className="h-96 w-64 bg-amber-200 flex flex-col rounded-md items-center" key={card.id}>
@@ -109,7 +115,7 @@ const PackSelector: FC<Props> = (props)=> {
                             <CardElement card={card} key={card.id}/>
                         )
                     })
-                }
+                } */}
             </div>
         </div>
     )

@@ -5,6 +5,8 @@ import { useSideBar } from "@/hooks/use-sidebar"
 import PackSelector from "../../_components/PackSelector"
 import Timer from "./_components/Timer"
 import { useUserInfo } from "@/hooks/use-userInfo"
+import { useCollectedCards } from "@/hooks/use-collectedCards"
+import CollectedDailyPack from "./_components/CollectedDailyPack"
 
 
 const DailyPack = () => {
@@ -12,6 +14,7 @@ const DailyPack = () => {
     const activeSidebar = useSideBar()
     const [collectedPack, setCollectedPack] = useState<boolean>(true)
     const [today, setToday] = useState<Date>()
+    const collectedCards = useCollectedCards()
 
 
     useEffect(() => {
@@ -59,6 +62,7 @@ const DailyPack = () => {
             <h1 className="text-7xl">Daily Pack</h1>
             {!collectedPack && today && <PackSelector todayDate={today?.toString()}/>}
             {collectedPack && <Timer />}
+            {collectedCards.collected && <CollectedDailyPack />}
         </div>
     )
 }
