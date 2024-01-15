@@ -50,7 +50,12 @@ const SideBar = () => {
   }, [user]);
 
   return (
-    <div className='w-24 lg:w-64 h-[calc(100vh-80px)]  fixed bg-gray-900 text-amber-400'>
+    <div
+      className={cn(
+        'w-24 lg:w-64 h-[calc(100vh-80px)]  fixed bg-gray-900 text-amber-400',
+        !activeSidebar.mobile && 'hidden sm:block'
+      )}
+    >
       <Link
         href={'/dashboard'}
         onClick={() => {
@@ -91,7 +96,7 @@ const SideBar = () => {
       >
         <div
           className={cn(
-            'w-11/12 flex flex-col lg:flex-row items-center justify-center lg:justify-start ml-1 lg:ml-4 cursor-pointer rounded-md hover:bg-gray-700 py-1 lg:pl-2 my-1',
+            'flex w-11/12 flex-col lg:flex-row items-center justify-center lg:justify-start ml-1 lg:ml-4 cursor-pointer rounded-md hover:bg-gray-700 py-1 lg:pl-2 my-1',
             activeSidebar.selected === 'collection' && 'bg-gray-700'
           )}
         >
