@@ -21,6 +21,9 @@ const SideBar = () => {
   const activeSidebar = useSideBar();
   const clickSideTab = (page: string) => {
     activeSidebar.onChange(page);
+    if (activeSidebar.mobile === true) {
+      activeSidebar.toggleMobileClose();
+    }
   };
   const { user } = useUser();
   const userInfo = useUserInfo();
@@ -49,6 +52,11 @@ const SideBar = () => {
     }
   }, [user]);
 
+  const closeSideBar = () => {
+    if (activeSidebar.mobile === true) {
+      activeSidebar.toggleMobileClose();
+    }
+  };
   return (
     <div
       className={cn(
