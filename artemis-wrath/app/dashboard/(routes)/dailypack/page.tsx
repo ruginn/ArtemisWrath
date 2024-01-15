@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import { useSideBar } from "@/hooks/use-sidebar";
-import PackSelector from "../../_components/PackSelector";
-import Timer from "./_components/Timer";
-import { useUserInfo } from "@/hooks/use-userInfo";
-import { useCollectedCards } from "@/hooks/use-collectedCards";
-import CollectedDailyPack from "./_components/CollectedDailyPack";
+import { useEffect, useState } from 'react';
+import { useSideBar } from '@/hooks/use-sidebar';
+import PackSelector from '../../_components/PackSelector';
+import Timer from './_components/Timer';
+import { useUserInfo } from '@/hooks/use-userInfo';
+import { useCollectedCards } from '@/hooks/use-collectedCards';
+import CollectedDailyPack from './_components/CollectedDailyPack';
 
 const DailyPack = () => {
   const userInfo = useUserInfo();
@@ -16,12 +16,12 @@ const DailyPack = () => {
   const collectedCards = useCollectedCards();
 
   useEffect(() => {
-    activeSidebar.onChange("dailypack");
+    activeSidebar.onChange('dailypack');
   }, []);
 
   const getDate = async () => {
     const currentDate = await fetch(
-      "https://worldtimeapi.org/api/timezone/America/New_York",
+      'https://worldtimeapi.org/api/timezone/America/New_York'
     ).then((res) => res.json());
     // needs to be converted into date
     const dayStart = new Date(currentDate.datetime);
@@ -37,7 +37,7 @@ const DailyPack = () => {
       0,
       0,
       0,
-      0,
+      0
     );
     setToday(realDateStart);
     console.log(realDateStart);
@@ -50,12 +50,12 @@ const DailyPack = () => {
   useEffect(() => {
     const res = getDate().then((act) => {
       if (act?.toString() === new Date(userInfo?.lastPackDate).toString()) {
-        console.log("hello");
+        console.log('hello');
         setCollectedPack(true);
       } else {
-        console.log("testing");
+        console.log('testing');
         const todayString = act?.toString();
-        if (typeof todayString === "string") {
+        if (typeof todayString === 'string') {
         }
         setCollectedPack(false);
       }
@@ -63,8 +63,8 @@ const DailyPack = () => {
   }, [userInfo]);
 
   return (
-    <div className="w-[calc(100vw-16rem)] flex flex-col items-center">
-      <h1 className="text-7xl">Daily Pack</h1>
+    <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px)] flex flex-col items-center'>
+      <h1 className='text-7xl'>Daily Pack</h1>
       {!collectedPack && today && (
         <PackSelector todayDate={today?.toString()} />
       )}
