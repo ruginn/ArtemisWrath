@@ -46,7 +46,7 @@ const MedievalCreaturesSet = () => {
 
   return (
     <div className='flex flex-col items-center'>
-      <h1>Medieval Creatures</h1>
+      <h1 className='ml-12 self-start'>Medieval Creatures</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10'>
         {cardsLoaded &&
           cardSet.map((card) => {
