@@ -25,7 +25,7 @@ const cardSet: Card[] = [
       'A small, agile sparrow wielding a tiny sword, known for its swift and precise strikes in aerial duels.',
     randomNumber: 654,
     image:
-      'https://i.ibb.co/TBD1grq/A-small-agile-sparrow-wielding-a-tiny-sword-wit.png',
+      'https://i.ibb.co/5RhmnbV/A-small-agile-sparrow-wielding-a-tiny-sword-wit.png',
     inclination: 'Love',
   },
   {
@@ -141,7 +141,7 @@ const cardSet: Card[] = [
       'A giant hornet sounding a warhorn, leading swarms into battle against medieval intruders.',
     randomNumber: 637,
     image:
-      'https://i.ibb.co/XY3JGhs/A-giant-hornet-sounding-a-warhorn-leading-swarm.png',
+      'https://i.ibb.co/HKc9Nny/A-giant-hornet-sounding-a-warhorn-leading-swarm.png',
     inclination: 'Pride',
   },
   {
@@ -239,7 +239,7 @@ const cardSet: Card[] = [
       'An anteater with a small battle axe, using its powerful claws and weapon to defend against medieval threats.',
     randomNumber: 783,
     image:
-      'https://i.ibb.co/Lr5rfTr/An-anteater-with-a-small-battle-axe-using-its-p.png',
+      'https://i.ibb.co/fr9Px5P/an-giant-anteater-using-its-powerful-claws-to-d.png',
     inclination: 'Love',
   },
   {
@@ -269,7 +269,7 @@ const cardSet: Card[] = [
       'A crow wielding a cudgel, using its intelligence to outsmart opponents in medieval castle courtyards.',
     randomNumber: 371,
     image:
-      'https://i.ibb.co/mqrbkwY/A-crow-wielding-a-cudgel-using-its-intelligence.png',
+      'https://i.ibb.co/hB9PSv1/A-crow-carrying-a-stick-in-its-beak-with-jeweled.png',
     inclination: 'Pride',
   },
   {
@@ -308,7 +308,7 @@ const cardSet: Card[] = [
       'A bat with wings that flicker like flames, dwelling in ancient caverns where magical fire deposits illuminate the darkness.',
     randomNumber: 879,
     image:
-      'https://i.ibb.co/TwrWHJm/A-bat-with-wings-that-flicker-like-flames-dwell.png',
+      'https://i.ibb.co/236kQgd/A-giant-bat-with-purple-armor-and-wings-that-fli.png',
   },
   {
     id: 31,
@@ -849,7 +849,7 @@ const cardSet: Card[] = [
       'A hybrid creature with the body of a bear, wings of a griffin, and the wisdom of an owl, often sought as a companion by adventurers.',
     randomNumber: 321,
     image:
-      'https://i.ibb.co/Gd4cLN4/A-hybrid-creature-with-the-body-of-a-bear-wings.png',
+      'https://i.ibb.co/bbqnKbh/A-hybrid-creature-with-the-body-of-a-bear-wings.png',
     inclination: 'Pride',
   },
   {
@@ -1127,7 +1127,7 @@ const cardSet: Card[] = [
       'A spiky creature with wings as dark as night, said to be guardians of ancient subterranean treasures.',
     randomNumber: 876,
     image:
-      'https://i.ibb.co/X2SKHvH/A-spiky-creature-with-wings-as-dark-as-night-sa.png',
+      'https://i.ibb.co/JKgJVN0/a-dark-spiky-Echidna-with-giant-angel-like-wings.png',
     inclination: 'Pride',
   },
   {
