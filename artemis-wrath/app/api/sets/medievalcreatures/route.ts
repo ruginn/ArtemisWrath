@@ -106,7 +106,7 @@ const cardSet: Card[] = [
       'A swordfish using its sharp bill as a spear, patrolling the coastal waters of medieval kingdoms.',
     randomNumber: 300,
     image:
-      'https://i.ibb.co/2vc1Y30/A-swordfish-using-its-sharp-bill-as-a-spear-pat.png',
+      'https://i.ibb.co/WKNZqdF/A-majestic-swordfish-in-gold-and-jewels-swimming.png',
   },
   {
     id: 11,
@@ -124,7 +124,7 @@ const cardSet: Card[] = [
       'A jackal with a javelin, skillfully throwing it at approaching threats in the medieval deserts.',
     randomNumber: 432,
     image:
-      'https://i.ibb.co/XZLR5LM/A-jackal-with-a-javelin-skillfully-throwing-it.png',
+      'https://i.ibb.co/s903Mhw/A-jackal-with-a-long-javelin-attached-to-its-bac.png',
   },
   {
     id: 13,
@@ -153,7 +153,7 @@ const cardSet: Card[] = [
       'A lynx with a longbow, blending into the shadows of medieval forests while expertly sniping distant foes.',
     randomNumber: 874,
     image:
-      'https://i.ibb.co/sKfQmgc/A-lynx-with-a-longbow-blending-into-the-shadows.png',
+      'https://i.ibb.co/r7kvD4X/A-lynx-with-a-longbow-blending-into-the-shadows.png',
     inclination: 'Pride',
   },
   {
@@ -192,7 +192,7 @@ const cardSet: Card[] = [
       'A butterfly with wings resembling broadswords, fluttering gracefully in medieval meadows.',
     randomNumber: 178,
     image:
-      'https://i.ibb.co/xSSqPCx/A-butterfly-with-wings-resembling-broadswords-f.png',
+      'https://i.ibb.co/FnF8fmF/A-butterfly-with-wings-resembling-broadswords-f.png',
     inclination: 'Pride',
   },
   {
@@ -475,7 +475,7 @@ const cardSet: Card[] = [
       'A fox with fur that mimics the luminescence of fireflies, flickering in the frosty air of ancient woodlands.',
     randomNumber: 655,
     image:
-      'https://i.ibb.co/8dSzhQN/A-fox-with-fur-that-mimics-the-luminescence-of-f.png',
+      'https://i.ibb.co/5ncyjLf/A-fox-jumping-looking-away-with-fur-that-mimics.png',
     inclination: 'Wisdom',
   },
   {
@@ -1039,7 +1039,7 @@ const cardSet: Card[] = [
       'A small fox with fur that changes color with the seasons, blending seamlessly into snow-covered medieval landscapes.',
     randomNumber: 321,
     image:
-      'https://i.ibb.co/0jXk6BJ/A-small-fox-with-fur-that-changes-color-with-the.png',
+      'https://i.ibb.co/BfZzR71/A-small-white-fox-with-fur-that-changes-color-wi.png',
     inclination: 'Mischief',
   },
   {

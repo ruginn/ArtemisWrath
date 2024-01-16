@@ -43,7 +43,7 @@ const CardElement = ({ card }: { card: Card }) => {
           // className="w-60 h-auto"
         ></Image>
       )}
-      <div className='w-[250px] h-[70px] border-2 border-black mt-3 rounded bg-gray-100 z-10 opacity-50'>
+      <div className='w-[250px] h-[70px] border-2 border-black mt-3 rounded bg-gray-100 z-0 opacity-50'>
         <p className='text-[11px] leading-none'>{card.description}</p>
       </div>
     </div>
