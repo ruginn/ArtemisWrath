@@ -12,7 +12,7 @@ import {
   Globe,
 } from 'lucide-react';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { useUser } from '@clerk/nextjs';
 import { useUserInfo } from '@/hooks/use-userInfo';
@@ -46,6 +46,23 @@ const SideBar = () => {
     userInfo.UpdateAll(finRes);
   };
 
+  const sideBarRef = useRef<HTMLInputElement>(null);
+
+  // useEffect(() => {
+  //   let handler = (e) => {
+  //     if (!sideBarRef.current.contains(e.target)) {
+  //       setOpen(false);
+  //       console.log(sideBarRef.current);
+  //     }
+  //   };
+
+  //   document.addEventListener('mousedown', handler);
+
+  //   return () => {
+  //     document.removeEventListener('mousedown', handler);
+  //   };
+  // });
+
   useEffect(() => {
     if (user) {
       userLogin();
@@ -57,8 +74,10 @@ const SideBar = () => {
       activeSidebar.toggleMobileClose();
     }
   };
+
   return (
     <div
+      ref={sideBarRef}
       className={cn(
         'w-24 lg:w-64 h-[calc(100vh-80px)]  fixed bg-gray-900 text-amber-400 z-[99999]',
         !activeSidebar.mobile && 'hidden sm:block'
