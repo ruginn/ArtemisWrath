@@ -6,7 +6,7 @@ interface Card {
   description: string;
   randomNumber: number;
   image?: string;
-  inclination?: string;
+  inclination?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
 }
 
 const cardSet: Card[] = [
@@ -28,7 +28,7 @@ const cardSet: Card[] = [
     randomNumber: 211,
     image:
       'https://i.ibb.co/0jrpQLF/A-sturdy-badger-in-blue-armor-carrying-a-miniatu.png',
-    inclination: 'Wisdom',
+    inclination: 'Pride',
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const cardSet: Card[] = [
     randomNumber: 899,
     image:
       'https://i.ibb.co/PN7MymF/A-lemur-brandishing-a-lance-leaping-between-tre.png',
-    inclination: 'Love',
+    inclination: 'Mischief',
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const cardSet: Card[] = [
     randomNumber: 742,
     image:
       'https://i.ibb.co/VjLLd33/A-majestic-wolf-carrying-a-warhammer-leading-a.png',
-    inclination: 'Love',
+    inclination: 'Pride',
   },
   {
     id: 5,
@@ -88,7 +88,7 @@ const cardSet: Card[] = [
     randomNumber: 543,
     image:
       'https://i.ibb.co/rtJT614/A-falcon-with-a-flail-attached-to-its-talons-pe.png',
-    inclination: 'Wisdom',
+    inclination: 'Wrath',
   },
   {
     id: 9,
@@ -98,6 +98,7 @@ const cardSet: Card[] = [
     randomNumber: 998,
     image:
       'https://i.ibb.co/LJfbXvy/A-tiny-mouse-gripping-a-morningstar-bravely-sta.png',
+    inclination: 'Love',
   },
   {
     id: 10,
@@ -107,6 +108,7 @@ const cardSet: Card[] = [
     randomNumber: 300,
     image:
       'https://i.ibb.co/WKNZqdF/A-majestic-swordfish-in-gold-and-jewels-swimming.png',
+    inclination: 'Pride',
   },
   {
     id: 11,
@@ -116,6 +118,7 @@ const cardSet: Card[] = [
     randomNumber: 756,
     image:
       'https://i.ibb.co/PTZcs5k/A-dragonfly-with-miniature-daggers-attached-to-i.png',
+    inclination: 'Wrath',
   },
   {
     id: 12,
@@ -125,6 +128,7 @@ const cardSet: Card[] = [
     randomNumber: 432,
     image:
       'https://i.ibb.co/s903Mhw/A-jackal-with-a-long-javelin-attached-to-its-bac.png',
+    inclination: 'Mischief',
   },
   {
     id: 13,
@@ -134,7 +138,7 @@ const cardSet: Card[] = [
     randomNumber: 637,
     image:
       'https://i.ibb.co/HKc9Nny/A-giant-hornet-sounding-a-warhorn-leading-swarm.png',
-    inclination: 'Pride',
+    inclination: 'Wrath',
   },
   {
     id: 14,
@@ -144,7 +148,7 @@ const cardSet: Card[] = [
     randomNumber: 125,
     image:
       'https://i.ibb.co/fdt3fN9/A-shrew-carrying-a-tiny-shield-leading-undergro.png',
-    inclination: 'Wisdom',
+    inclination: 'Love',
   },
   {
     id: 15,
@@ -164,7 +168,7 @@ const cardSet: Card[] = [
     randomNumber: 502,
     image:
       'https://i.ibb.co/4pfF8xq/A-snail-with-a-small-scepter-slowly-making-its.png',
-    inclination: 'Mischief',
+    inclination: 'Wisdom',
   },
   {
     id: 17,
@@ -174,6 +178,7 @@ const cardSet: Card[] = [
     randomNumber: 256,
     image:
       'https://i.ibb.co/G0F68Mm/A-pika-holding-a-pike-standing-sentinel-in-rock.png',
+    inclination: 'Pride',
   },
   {
     id: 18,
@@ -183,7 +188,7 @@ const cardSet: Card[] = [
     randomNumber: 789,
     image:
       'https://i.ibb.co/4RN4VCh/A-weasel-with-a-tiny-whip-agile-and-cunning-in.png',
-    inclination: 'Wisdom',
+    inclination: 'Love',
   },
   {
     id: 19,
@@ -213,6 +218,7 @@ const cardSet: Card[] = [
     randomNumber: 901,
     image:
       'https://i.ibb.co/YT244Dt/A-gecko-with-a-glaive-climbing-medieval-walls-a.png',
+    inclination: 'Mischief',
   },
   {
     id: 22,
@@ -222,7 +228,7 @@ const cardSet: Card[] = [
     randomNumber: 456,
     image:
       'https://i.ibb.co/JH4y9Bq/A-moth-with-wings-that-unfold-into-morningstars.png',
-    inclination: 'Mischief',
+    inclination: 'Wisdom',
   },
   {
     id: 23,
@@ -232,7 +238,7 @@ const cardSet: Card[] = [
     randomNumber: 783,
     image:
       'https://i.ibb.co/fr9Px5P/an-giant-anteater-using-its-powerful-claws-to-d.png',
-    inclination: 'Love',
+    inclination: 'Wrath',
   },
   {
     id: 24,
@@ -252,7 +258,7 @@ const cardSet: Card[] = [
     randomNumber: 618,
     image:
       'https://i.ibb.co/gPdW2S5/A-seahorse-with-a-tiny-scimitar-patrolling-the.png',
-    inclination: 'Wrath',
+    inclination: 'Pride',
   },
   {
     id: 26,
@@ -262,7 +268,7 @@ const cardSet: Card[] = [
     randomNumber: 371,
     image:
       'https://i.ibb.co/hB9PSv1/A-crow-carrying-a-stick-in-its-beak-with-jeweled.png',
-    inclination: 'Pride',
+    inclination: 'Wrath',
   },
   {
     id: 27,
@@ -272,7 +278,7 @@ const cardSet: Card[] = [
     randomNumber: 743,
     image:
       'https://i.ibb.co/w4s7Prf/A-stoat-with-a-staff-leading-other-woodland-cre.png',
-    inclination: 'Pride',
+    inclination: 'Love',
   },
   {
     id: 28,
@@ -292,6 +298,7 @@ const cardSet: Card[] = [
     randomNumber: 567,
     image:
       'https://i.ibb.co/8DfFhH5/A-griffin-with-feathers-resembling-vibrant-coral.png',
+    inclination: 'Wisdom',
   },
   {
     id: 30,
@@ -301,6 +308,7 @@ const cardSet: Card[] = [
     randomNumber: 879,
     image:
       'https://i.ibb.co/236kQgd/A-giant-bat-with-purple-armor-and-wings-that-fli.png',
+    inclination: 'Wrath',
   },
   {
     id: 31,
@@ -310,7 +318,7 @@ const cardSet: Card[] = [
     randomNumber: 324,
     image:
       'https://i.ibb.co/9NQGt35/A-sleek-aquatic-creature-with-the-body-of-an-eel.png',
-    inclination: 'Wrath',
+    inclination: 'Wisdom',
   },
   {
     id: 32,
@@ -320,7 +328,7 @@ const cardSet: Card[] = [
     randomNumber: 451,
     image:
       'https://i.ibb.co/h1StHQX/A-graceful-gazelle-with-bioluminescent-spots-gr.png',
-    inclination: 'Pride',
+    inclination: 'Wisdom',
   },
   {
     id: 33,
@@ -330,6 +338,7 @@ const cardSet: Card[] = [
     randomNumber: 732,
     image:
       'https://i.ibb.co/8g3BnvW/A-slender-dragon-with-wings-made-of-floating-gl.png',
+    inclination: 'Mischief',
   },
   {
     id: 34,
@@ -359,7 +368,7 @@ const cardSet: Card[] = [
     randomNumber: 269,
     image:
       'https://i.ibb.co/QXvc73k/A-large-beetle-with-a-carapace-that-gleams-like.png',
-    inclination: 'Wrath',
+    inclination: 'Pride',
   },
   {
     id: 37,
@@ -379,6 +388,7 @@ const cardSet: Card[] = [
     randomNumber: 168,
     image:
       'https://i.ibb.co/dgwMYXc/An-aquatic-creature-with-translucent-skin-adorn.png',
+    inclination: 'Wisdom',
   },
   {
     id: 39,
@@ -398,6 +408,7 @@ const cardSet: Card[] = [
     randomNumber: 501,
     image:
       'https://i.ibb.co/h1StHQX/A-graceful-gazelle-with-bioluminescent-spots-gr.png',
+    inclination: 'Love',
   },
   {
     id: 41,
@@ -407,7 +418,7 @@ const cardSet: Card[] = [
     randomNumber: 787,
     image:
       'https://i.ibb.co/gT6C8wz/A-slowmoving-sloth-with-fur-that-shimmers-like.png',
-    inclination: 'Mischief',
+    inclination: 'Love',
   },
   {
     id: 42,
@@ -417,7 +428,7 @@ const cardSet: Card[] = [
     randomNumber: 243,
     image:
       'https://i.ibb.co/SwK9LZB/A-bird-with-wings-made-of-living-ironbark-nesti.png',
-    inclination: 'Pride',
+    inclination: 'Mischief',
   },
   {
     id: 43,
@@ -427,6 +438,7 @@ const cardSet: Card[] = [
     randomNumber: 376,
     image:
       'https://i.ibb.co/yFdwX7J/A-giant-toad-with-thunderous-croaks-that-echo-th.png',
+    inclination: 'Pride',
   },
   {
     id: 44,
@@ -446,7 +458,7 @@ const cardSet: Card[] = [
     randomNumber: 724,
     image:
       'https://i.ibb.co/0CtHxrn/A-small-adorable-creature-with-fur-that-twinkle.png',
-    inclination: 'Wrath',
+    inclination: 'Love',
   },
   {
     id: 46,
@@ -466,7 +478,7 @@ const cardSet: Card[] = [
     randomNumber: 399,
     image:
       'https://i.ibb.co/ZfJPSW9/A-squirrel-with-a-tail-that-sparkles-with-the-br.png',
-    inclination: 'Wisdom',
+    inclination: 'Love',
   },
   {
     id: 48,
@@ -486,7 +498,7 @@ const cardSet: Card[] = [
     randomNumber: 177,
     image:
       'https://i.ibb.co/YtNkwtz/An-oceandwelling-creature-with-iridescent-tendr.png',
-    inclination: 'Mischief',
+    inclination: 'Wisdom',
   },
   {
     id: 50,
@@ -506,7 +518,7 @@ const cardSet: Card[] = [
     randomNumber: 366,
     image:
       'https://i.ibb.co/0KKQ8w5/A-mythical-creature-with-the-body-of-a-lion-win-1.png',
-    inclination: 'Wisdom',
+    inclination: 'Wrath',
   },
   {
     id: 52,
@@ -556,7 +568,7 @@ const cardSet: Card[] = [
     randomNumber: 723,
     image:
       'https://i.ibb.co/ggq2QXD/A-slowmoving-snail-with-a-shell-that-glistens-l.png',
-    inclination: 'Pride',
+    inclination: 'Wisdom',
   },
   {
     id: 57,
@@ -605,7 +617,7 @@ const cardSet: Card[] = [
     randomNumber: 456,
     image:
       'https://i.ibb.co/NFv5TZc/A-stealthy-lynx-with-fur-that-absorbs-and-reflec-1.png',
-    inclination: 'Wisdom',
+    inclination: 'Mischief',
   },
   {
     id: 62,
@@ -615,6 +627,7 @@ const cardSet: Card[] = [
     randomNumber: 823,
     image:
       'https://i.ibb.co/qCL5Tbd/A-small-ethereal-creature-with-wings-resembling.png',
+    inclination: 'Love',
   },
   {
     id: 63,
@@ -624,7 +637,7 @@ const cardSet: Card[] = [
     randomNumber: 134,
     image:
       'https://i.ibb.co/qRjMFVN/A-mystical-armadillo-with-a-shell-made-of-shimme.png',
-    inclination: 'Love',
+    inclination: 'Wrath',
   },
   {
     id: 64,
@@ -664,7 +677,7 @@ const cardSet: Card[] = [
     randomNumber: 853,
     image:
       'https://i.ibb.co/rtpy6M8/A-large-colorful-woodpecker-with-the-intelligen.png',
-    inclination: 'Wrath',
+    inclination: 'Mischief',
   },
   {
     id: 68,
@@ -674,7 +687,7 @@ const cardSet: Card[] = [
     randomNumber: 764,
     image:
       'https://i.ibb.co/4ZJmxJM/An-elk-with-antlers-that-channel-otherworldly-en.png',
-    inclination: 'Wrath',
+    inclination: 'Wisdom',
   },
   {
     id: 69,
@@ -714,7 +727,7 @@ const cardSet: Card[] = [
     randomNumber: 328,
     image:
       'https://i.ibb.co/Sm78BrL/A-giant-mantis-with-eyes-that-glow-with-ancient.png',
-    inclination: 'Pride',
+    inclination: 'Wrath',
   },
   {
     id: 73,
@@ -744,7 +757,7 @@ const cardSet: Card[] = [
     randomNumber: 415,
     image:
       'https://i.ibb.co/qD7Bcgf/A-swift-cheetah-with-fur-that-sparkles-like-star.png',
-    inclination: 'Love',
+    inclination: 'Pride',
   },
   {
     id: 76,
@@ -754,7 +767,7 @@ const cardSet: Card[] = [
     randomNumber: 567,
     image:
       'https://i.ibb.co/8gHL9kq/A-small-ferret-with-fur-that-freezes-anything-it.png',
-    inclination: 'Pride',
+    inclination: 'Love',
   },
   {
     id: 77,
@@ -764,7 +777,7 @@ const cardSet: Card[] = [
     randomNumber: 789,
     image:
       'https://i.ibb.co/sgL73NC/A-graceful-stingray-with-a-pattern-of-glowing-st.png',
-    inclination: 'Wrath',
+    inclination: 'Wisdom',
   },
   {
     id: 78,
@@ -784,7 +797,7 @@ const cardSet: Card[] = [
     randomNumber: 134,
     image:
       'https://i.ibb.co/mb4x1mC/A-hummingbird-with-feathers-that-emit-melodic-to.png',
-    inclination: 'Mischief',
+    inclination: 'Love',
   },
   {
     id: 80,
@@ -794,7 +807,7 @@ const cardSet: Card[] = [
     randomNumber: 576,
     image:
       'https://i.ibb.co/PT4j6bL/A-of-sleek-ocelot-with-fur-as-dark-as-obsidian-w.png',
-    inclination: 'Wrath',
+    inclination: 'Pride',
   },
   {
     id: 81,
@@ -804,6 +817,7 @@ const cardSet: Card[] = [
     randomNumber: 246,
     image:
       'https://i.ibb.co/7ypX5mF/A-giant-tarantula-with-legs-that-generate-electr.png',
+    inclination: 'Wrath',
   },
   {
     id: 82,
@@ -813,6 +827,7 @@ const cardSet: Card[] = [
     randomNumber: 853,
     image:
       'https://i.ibb.co/sw0N3b7/A-small-weasel-with-fur-that-ripples-like-the-wi-1.png',
+    inclination: 'Love',
   },
   {
     id: 83,
@@ -822,7 +837,7 @@ const cardSet: Card[] = [
     randomNumber: 543,
     image:
       'https://i.ibb.co/5hz69K2/A-giant-beetle-with-an-intricate-maze-pattern-on.png',
-    inclination: 'Love',
+    inclination: 'Pride',
   },
   {
     id: 84,
@@ -832,7 +847,7 @@ const cardSet: Card[] = [
     randomNumber: 876,
     image:
       'https://i.ibb.co/BPWLDGT/A-serpentlike-dragon-covered-in-shimmering-sapp.png',
-    inclination: 'Wrath',
+    inclination: 'Mischief',
   },
   {
     id: 85,
@@ -902,7 +917,7 @@ const cardSet: Card[] = [
     randomNumber: 654,
     image:
       'https://i.ibb.co/br42wP9/A-fiery-salamander-that-glides-through-rivers-of.png',
-    inclination: 'Wisdom',
+    inclination: 'Pride',
   },
   {
     id: 92,
@@ -922,6 +937,7 @@ const cardSet: Card[] = [
     randomNumber: 876,
     image:
       'https://i.ibb.co/rb5DbLX/A-colossal-sea-serpent-with-bioluminescent-patte.png',
+    inclination: 'Wrath',
   },
   {
     id: 94,
@@ -931,7 +947,7 @@ const cardSet: Card[] = [
     randomNumber: 543,
     image:
       'https://i.ibb.co/T1vXtT6/A-serpent-with-thorny-scales-and-the-ability-to.png',
-    inclination: 'Love',
+    inclination: 'Wrath',
   },
   {
     id: 95,
@@ -951,7 +967,7 @@ const cardSet: Card[] = [
     randomNumber: 654,
     image:
       'https://i.ibb.co/pR1T9vk/A-majestic-elk-with-antlers-that-light-up-with-t.png',
-    inclination: 'Mischief',
+    inclination: 'Love',
   },
   {
     id: 97,
@@ -961,7 +977,7 @@ const cardSet: Card[] = [
     randomNumber: 213,
     image:
       'https://i.ibb.co/kGsCH4h/A-radiant-fuzzy-butterfly-with-wings-that-resemb.png',
-    inclination: 'Mischief',
+    inclination: 'Love',
   },
   {
     id: 98,
@@ -971,6 +987,7 @@ const cardSet: Card[] = [
     randomNumber: 876,
     image:
       'https://i.ibb.co/F8hTZXK/A-mythical-creature-with-the-body-of-a-deer-and.png',
+    inclination: 'Wisdom',
   },
   {
     id: 99,
@@ -980,7 +997,7 @@ const cardSet: Card[] = [
     randomNumber: 543,
     image:
       'https://i.ibb.co/c6P7MW0/A-chameleon-with-scales-that-shift-in-color-to-m.png',
-    inclination: 'Love',
+    inclination: 'Pride',
   },
   {
     id: 100,
@@ -1000,7 +1017,7 @@ const cardSet: Card[] = [
     randomNumber: 654,
     image:
       'https://i.ibb.co/DKYBT9b/A-spectral-raven-with-feathers-that-carry-whispe.png',
-    inclination: 'Love',
+    inclination: 'Wrath',
   },
   {
     id: 102,
@@ -1010,7 +1027,7 @@ const cardSet: Card[] = [
     randomNumber: 213,
     image:
       'https://i.ibb.co/zxzV9Kd/A-tranquil-tortoise-with-a-shell-resembling-a-bl.png',
-    inclination: 'Mischief',
+    inclination: 'Wisdom',
   },
   {
     id: 103,
@@ -1040,7 +1057,7 @@ const cardSet: Card[] = [
     randomNumber: 321,
     image:
       'https://i.ibb.co/BfZzR71/A-small-white-fox-with-fur-that-changes-color-wi.png',
-    inclination: 'Mischief',
+    inclination: 'Pride',
   },
   {
     id: 106,
@@ -1050,7 +1067,7 @@ const cardSet: Card[] = [
     randomNumber: 654,
     image:
       'https://i.ibb.co/Fwg6vwM/A-celestial-fish-with-iridescent-scales-swimmin.png',
-    inclination: 'Pride',
+    inclination: 'Wisdom',
   },
   {
     id: 107,
@@ -1120,7 +1137,7 @@ const cardSet: Card[] = [
     randomNumber: 876,
     image:
       'https://i.ibb.co/JKgJVN0/a-dark-spiky-Echidna-with-giant-angel-like-wings.png',
-    inclination: 'Pride',
+    inclination: 'Love',
   },
   {
     id: 114,
@@ -1130,7 +1147,7 @@ const cardSet: Card[] = [
     randomNumber: 543,
     image:
       'https://i.ibb.co/KhFzCmm/A-small-skunk-with-a-tail-that-releases-stardust.png',
-    inclination: 'Pride',
+    inclination: 'Love',
   },
   {
     id: 115,
@@ -1150,7 +1167,7 @@ const cardSet: Card[] = [
     randomNumber: 321,
     image:
       'https://i.ibb.co/PCs6JDt/A-graceful-creature-with-the-body-of-a-lion-and.png',
-    inclination: 'Mischief',
+    inclination: 'Pride',
   },
   {
     id: 117,
@@ -1160,7 +1177,7 @@ const cardSet: Card[] = [
     randomNumber: 654,
     image:
       'https://i.ibb.co/8m5sdhP/A-regal-stag-with-antlers-made-of-enchanted-crys.png',
-    inclination: 'Wrath',
+    inclination: 'Wisdom',
   },
   {
     id: 118,
@@ -1180,6 +1197,7 @@ const cardSet: Card[] = [
     randomNumber: 432,
     image:
       'https://i.ibb.co/R0Mdmc2/A-mythical-bird-with-feathers-that-flicker-like.png',
+    inclination: 'Mischief',
   },
   {
     id: 120,
@@ -1189,6 +1207,7 @@ const cardSet: Card[] = [
     randomNumber: 765,
     image:
       'https://i.ibb.co/gZ7nkdw/A-gryphon-adorned-with-golden-feathers-and-a-man.png',
+    inclination: 'Love',
   },
   {
     id: 121,
@@ -1218,6 +1237,7 @@ const cardSet: Card[] = [
     randomNumber: 876,
     image:
       'https://i.ibb.co/n6QskHx/A-unicorn-with-a-silver-horn-that-radiates-heali.png',
+    inclination: 'Love',
   },
   {
     id: 124,
@@ -1227,7 +1247,7 @@ const cardSet: Card[] = [
     randomNumber: 321,
     image:
       'https://i.ibb.co/WDjyJpQ/A-wise-owl-with-feathers-that-change-colors-base.png',
-    inclination: 'Wrath',
+    inclination: 'Wisdom',
   },
   {
     id: 125,
@@ -1247,7 +1267,7 @@ const cardSet: Card[] = [
     randomNumber: 987,
     image:
       'https://i.ibb.co/WtdjBXJ/A-massive-tortoise-with-a-shell-resembling-ancie.png',
-    inclination: 'Wrath',
+    inclination: 'Wisdom',
   },
   {
     id: 127,
@@ -1277,11 +1297,26 @@ const cardSet: Card[] = [
     randomNumber: 210,
     image:
       'https://i.ibb.co/swLC6C0/A-rare-breed-of-griffin-with-fiery-red-plumage.png',
-    inclination: 'Wrath',
+    inclination: 'Pride',
   },
 ];
 
 export async function GET(req: Request) {
-  console.log(cardSet);
+  const listInclination = {
+    Love: 0,
+    Wisdom: 0,
+    Wrath: 0,
+    Mischief: 0,
+    Pride: 0,
+  };
+
+  cardSet.map((card) => {
+    if (card.inclination) {
+      let inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief' =
+        card.inclination;
+      listInclination[inclination] += 1;
+    }
+  });
+  console.log(listInclination);
   return NextResponse.json(cardSet);
 }
