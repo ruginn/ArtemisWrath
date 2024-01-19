@@ -41,14 +41,17 @@ const DailyPack = () => {
     );
     setToday(realDateStart);
     console.log(realDateStart);
-    console.log(userInfo);
-    console.log(new Date());
     console.log(33, today?.toString(), today);
     return realDateStart;
   };
 
   useEffect(() => {
     const res = getDate().then((act) => {
+      console.log(
+        // userInfo.lastPackDate,
+        userInfo.lastPackDate,
+        act
+      );
       if (act?.toString() === new Date(userInfo?.lastPackDate).toString()) {
         console.log('hello');
         setCollectedPack(true);

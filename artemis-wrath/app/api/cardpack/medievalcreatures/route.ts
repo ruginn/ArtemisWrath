@@ -1332,7 +1332,7 @@ export async function POST(req: Request) {
   // create new date to set time to zero
   const realDateStart = new Date(todayYear, todayMonth, todayDate, 0, 0, 0, 0);
   console.log(cardSet.length);
-
+  console.log(realDateStart);
   const getCards = () => {
     for (let i = 0; i < 10; i++) {
       let cardCount = cardSet.length - i;

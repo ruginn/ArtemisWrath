@@ -1,5 +1,5 @@
-import { prisma } from "@/lib/prisma";
-import { NextResponse } from "next/server";
+import { prisma } from '@/lib/prisma';
+import { NextResponse } from 'next/server';
 
 interface userInfo {
   id: string;
@@ -19,11 +19,12 @@ export async function POST(req: Request) {
     const user = await prisma.user.create({
       data: {
         id: userInfo.id,
-        name: userInfo.firstName + " " + userInfo.lastName,
+        name: userInfo.firstName + ' ' + userInfo.lastName,
       },
     });
+    console.log(user);
     return NextResponse.json(user);
   }
-
+  console.log(establishedUser);
   return NextResponse.json(establishedUser);
 }
