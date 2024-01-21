@@ -8,7 +8,8 @@ interface Card {
   image?: string;
   inclination?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
   effect?: string;
-  type?: string;
+  biome?: string;
+  function?: string;
 }
 
 const cardSet: Card[] = [
@@ -219,7 +220,7 @@ const cardSet: Card[] = [
       'A gecko with a glaive, climbing medieval walls and striking from unexpected angles.',
     randomNumber: 901,
     image:
-      'https://i.ibb.co/YT244Dt/A-gecko-with-a-glaive-climbing-medieval-walls-a.png',
+      'https://i.ibb.co/FxkxBKN/A-gecko-with-a-glaive-climbing-medieval-walls-a.png',
     inclination: 'Mischief',
   },
   {
@@ -330,7 +331,7 @@ const cardSet: Card[] = [
     randomNumber: 451,
     image:
       'https://i.ibb.co/h1StHQX/A-graceful-gazelle-with-bioluminescent-spots-gr.png',
-    inclination: 'Wisdom',
+    inclination: 'Love',
   },
   {
     id: 33,
@@ -409,8 +410,8 @@ const cardSet: Card[] = [
       'A ghostly stag with antlers that emit an otherworldly glow, appearing in mist-covered medieval woodlands.',
     randomNumber: 501,
     image:
-      'https://i.ibb.co/h1StHQX/A-graceful-gazelle-with-bioluminescent-spots-gr.png',
-    inclination: 'Love',
+      'https://i.ibb.co/y59VYSY/A-ghostly-stag-with-antlers-that-emit-an-otherwo.png',
+    inclination: 'Wisdom',
   },
   {
     id: 41,
@@ -589,7 +590,8 @@ const cardSet: Card[] = [
       'A phoenix with feathers that alternate between icy blue and fiery red, symbolizing the eternal dance of winter and summer.',
     randomNumber: 789,
     image:
-      'https://i.ibb.co/jfFxrV4/A-phoenix-with-feathers-that-alternate-between-i.png',
+      'https://i.ibb.co/YtCGJGj/A-phoenix-with-feathers-that-alternate-between-i.png',
+    inclination: 'Wisdom',
   },
   {
     id: 59,
@@ -1325,7 +1327,7 @@ export async function GET(req: Request) {
     const cardEdit = cardSet[i];
     console.log(cardEdit, i);
     cardEdit.effect = '';
-    cardEdit.type = '';
+    cardEdit.biome = '';
     newCards.push(cardEdit);
   }
   console.log(newCards);
