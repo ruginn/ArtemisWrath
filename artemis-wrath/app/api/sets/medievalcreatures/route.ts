@@ -7,6 +7,8 @@ interface Card {
   randomNumber: number;
   image?: string;
   inclination?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+  effect?: string;
+  type?: string;
 }
 
 const cardSet: Card[] = [
@@ -1317,6 +1319,17 @@ export async function GET(req: Request) {
       listInclination[inclination] += 1;
     }
   });
+
+  const newCards = [];
+  for (let i = 0; i <= cardSet.length - 1; i++) {
+    const cardEdit = cardSet[i];
+    console.log(cardEdit, i);
+    cardEdit.effect = '';
+    cardEdit.type = '';
+    newCards.push(cardEdit);
+  }
+  console.log(newCards);
+
   console.log(listInclination);
   return NextResponse.json(cardSet);
 }
