@@ -6,8 +6,15 @@ interface Card {
   name: string;
   description: string;
   randomNumber: number;
-  inclination?: string;
-  image?: string | StaticImageData;
+  image?: string;
+  inclination?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+  effect?: string;
+  biome?: string;
+  effectFunction?: string;
+  rarity?: string;
+  type?: string;
+  attackPower?: number;
+  hp?: number;
 }
 
 const CardElement = ({ card }: { card: Card }) => {

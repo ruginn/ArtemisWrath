@@ -8,8 +8,23 @@ interface Card {
   image?: string;
   inclination?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
   effect?: string;
-  biome?: string;
-  function?: string;
+  biome?:
+    | 'Jungle'
+    | 'Tundra'
+    | 'Alpine'
+    | 'Forest'
+    | 'Wetland'
+    | 'Grassland'
+    | 'Aquatic'
+    | 'Island'
+    | 'Cave'
+    | 'Desert'
+    | '';
+  effectFunction?: string;
+  rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare';
+  type?: string;
+  attackPower?: number;
+  hp?: number;
 }
 
 const cardSet: Card[] = [
@@ -22,6 +37,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/5RhmnbV/A-small-agile-sparrow-wielding-a-tiny-sword-wit.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 200,
+    hp: 200,
   },
   {
     id: 2,
@@ -32,6 +54,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/0jrpQLF/A-sturdy-badger-in-blue-armor-carrying-a-miniatu.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 300,
+    hp: 400,
   },
   {
     id: 3,
@@ -42,6 +71,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/PN7MymF/A-lemur-brandishing-a-lance-leaping-between-tre.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 300,
+    hp: 300,
   },
   {
     id: 4,
@@ -52,6 +88,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/VjLLd33/A-majestic-wolf-carrying-a-warhammer-leading-a.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 700,
+    hp: 700,
   },
   {
     id: 5,
@@ -62,17 +105,31 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/JKxxgyj/A-hawk-with-a-halberd-in-its-talons-soaring-abo.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
-  {
-    id: 6,
-    name: 'Crossbow Cobra',
-    description:
-      'A sleek cobra holding a crossbow, its venomous bite coupled with deadly accuracy in ranged combat.',
-    randomNumber: 865,
-    image:
-      'https://i.ibb.co/ggvvv1s/A-sleek-cobra-holding-a-crossbow-its-venomous-b.png',
-    inclination: 'Pride',
-  },
+  // {
+  //   id: 6,
+  //   name: 'Crossbow Cobra',
+  //   description:
+  //     'A sleek cobra holding a crossbow, its venomous bite coupled with deadly accuracy in ranged combat.',
+  //   randomNumber: 865,
+  //   image:
+  //     'https://i.ibb.co/ggvvv1s/A-sleek-cobra-holding-a-crossbow-its-venomous-b.png',
+  //   inclination: 'Pride',
+  //   effect: '',
+  //   biome: '',
+  //   rarity: '',
+  //   type: 'creature',
+  //   effectFunction: '',
+  //   attackPower: 0,
+  //   hp: 0,
+  // },
   {
     id: 7,
     name: 'Mace Macaque',
@@ -82,6 +139,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/djFxfCp/A-mischievous-macaque-wielding-a-mace-known-for.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 8,
@@ -92,6 +156,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/rtJT614/A-falcon-with-a-flail-attached-to-its-talons-pe.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 9,
@@ -102,6 +173,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/LJfbXvy/A-tiny-mouse-gripping-a-morningstar-bravely-sta.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 10,
@@ -112,6 +190,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/WKNZqdF/A-majestic-swordfish-in-gold-and-jewels-swimming.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 11,
@@ -122,6 +207,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/PTZcs5k/A-dragonfly-with-miniature-daggers-attached-to-i.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 12,
@@ -132,6 +224,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/s903Mhw/A-jackal-with-a-long-javelin-attached-to-its-bac.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 13,
@@ -142,6 +241,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/HKc9Nny/A-giant-hornet-sounding-a-warhorn-leading-swarm.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 14,
@@ -152,6 +258,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/fdt3fN9/A-shrew-carrying-a-tiny-shield-leading-undergro.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 15,
@@ -162,6 +275,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/r7kvD4X/A-lynx-with-a-longbow-blending-into-the-shadows.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 16,
@@ -172,17 +292,31 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/4pfF8xq/A-snail-with-a-small-scepter-slowly-making-its.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
-  {
-    id: 17,
-    name: 'Pike Pika',
-    description:
-      'A pika holding a pike, standing sentinel in rocky crevices of medieval mountain ranges.',
-    randomNumber: 256,
-    image:
-      'https://i.ibb.co/G0F68Mm/A-pika-holding-a-pike-standing-sentinel-in-rock.png',
-    inclination: 'Pride',
-  },
+  // {
+  //   id: 17,
+  //   name: 'Pike Pika',
+  //   description:
+  //     'A pika holding a pike, standing sentinel in rocky crevices of medieval mountain ranges.',
+  //   randomNumber: 256,
+  //   image:
+  //     'https://i.ibb.co/G0F68Mm/A-pika-holding-a-pike-standing-sentinel-in-rock.png',
+  //   inclination: 'Pride',
+  //   effect: '',
+  //   biome: '',
+  //   rarity: '',
+  //   type: 'creature',
+  //   effectFunction: '',
+  //   attackPower: 0,
+  //   hp: 0,
+  // },
   {
     id: 18,
     name: 'Whip Weasel',
@@ -192,6 +326,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/4RN4VCh/A-weasel-with-a-tiny-whip-agile-and-cunning-in.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 19,
@@ -202,6 +343,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/FnF8fmF/A-butterfly-with-wings-resembling-broadswords-f.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 20,
@@ -212,6 +360,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/4j6XzDT/A-swift-rabbit-with-a-rapier-showcasing-dazzlin.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 21,
@@ -222,6 +377,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/FxkxBKN/A-gecko-with-a-glaive-climbing-medieval-walls-a.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 22,
@@ -232,6 +394,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/JH4y9Bq/A-moth-with-wings-that-unfold-into-morningstars.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 23,
@@ -242,6 +411,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/fr9Px5P/an-giant-anteater-using-its-powerful-claws-to-d.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 24,
@@ -252,6 +428,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/gvMM9fy/A-falcon-with-a-flanged-mace-diving-from-the-sk.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 25,
@@ -262,6 +445,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/gPdW2S5/A-seahorse-with-a-tiny-scimitar-patrolling-the.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 26,
@@ -272,6 +462,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/hB9PSv1/A-crow-carrying-a-stick-in-its-beak-with-jeweled.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 27,
@@ -282,6 +479,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/w4s7Prf/A-stoat-with-a-staff-leading-other-woodland-cre.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 28,
@@ -292,6 +496,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ZzYK3s1/A-large-gecko-operating-a-giant-crossbow-statio.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 29,
@@ -302,6 +513,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/8DfFhH5/A-griffin-with-feathers-resembling-vibrant-coral.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 30,
@@ -312,6 +530,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/236kQgd/A-giant-bat-with-purple-armor-and-wings-that-fli.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 31,
@@ -322,6 +547,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/9NQGt35/A-sleek-aquatic-creature-with-the-body-of-an-eel.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 32,
@@ -332,6 +564,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/h1StHQX/A-graceful-gazelle-with-bioluminescent-spots-gr.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 33,
@@ -342,6 +581,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/8g3BnvW/A-slender-dragon-with-wings-made-of-floating-gl.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'SuperRare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 34,
@@ -352,6 +598,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/c8rr3wx/A-serpent-with-scales-that-turn-creatures-to-gol.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 35,
@@ -362,6 +615,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/v1yRtzs/A-magnificent-bird-with-iridescent-feathers-that.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 36,
@@ -372,6 +632,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/QXvc73k/A-large-beetle-with-a-carapace-that-gleams-like.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 37,
@@ -382,6 +649,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/LChDWLm/A-snake-with-vines-growing-from-its-scales-camo.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 38,
@@ -392,6 +666,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/dgwMYXc/An-aquatic-creature-with-translucent-skin-adorn.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 39,
@@ -402,6 +683,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/MN26yZV/A-praying-mantis-with-lunar-patterns-on-its-exos.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 40,
@@ -412,6 +700,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/y59VYSY/A-ghostly-stag-with-antlers-that-emit-an-otherwo.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 41,
@@ -422,6 +717,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/gT6C8wz/A-slowmoving-sloth-with-fur-that-shimmers-like.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 42,
@@ -432,6 +734,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/SwK9LZB/A-bird-with-wings-made-of-living-ironbark-nesti.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 43,
@@ -442,6 +751,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/yFdwX7J/A-giant-toad-with-thunderous-croaks-that-echo-th.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Wetland',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 44,
@@ -452,6 +768,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/f8bGn8q/A-crab-with-pincers-that-glow-like-rubies-scutt.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 45,
@@ -462,6 +785,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/0CtHxrn/A-small-adorable-creature-with-fur-that-twinkle.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 46,
@@ -472,6 +802,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/DRHbnv7/A-lemur-with-a-tail-that-glows-softly-like-a-lan.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 47,
@@ -482,6 +819,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ZfJPSW9/A-squirrel-with-a-tail-that-sparkles-with-the-br.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 48,
@@ -492,6 +836,14 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/5ncyjLf/A-fox-jumping-looking-away-with-fur-that-mimics.png',
     inclination: 'Wisdom',
+    effect:
+      'Search you deck for a creature with the biome of Tundra. Place that card on the top of your deck.',
+    biome: 'Tundra',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 49,
@@ -502,6 +854,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/YtNkwtz/An-oceandwelling-creature-with-iridescent-tendr.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'SuperRare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 50,
@@ -512,6 +871,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/yVV34m5/A-small-primate-with-eyes-that-flash-with-lightn.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 51,
@@ -522,6 +888,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/0KKQ8w5/A-mythical-creature-with-the-body-of-a-lion-win-1.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Tundra',
+    rarity: 'SuperRare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 52,
@@ -532,6 +905,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/tXKDNSm/A-giant-bird-with-feathers-that-absorb-light-so.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Island',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 53,
@@ -542,6 +922,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/DQxSt0F/A-majestic-aquatic-creature-with-the-body-of-an.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 54,
@@ -552,6 +939,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/2tkgG9F/A-stone-gargoyle-brought-to-life-by-ancient-magi.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 55,
@@ -562,6 +956,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/9HBSqZs/A-hybrid-creature-with-the-strength-of-a-lion-an.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 56,
@@ -572,6 +973,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ggq2QXD/A-slowmoving-snail-with-a-shell-that-glistens-l.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 57,
@@ -582,6 +990,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/3m004k7/A-chameleon-with-scales-that-shift-through-the-c.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 58,
@@ -592,6 +1007,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/YtCGJGj/A-phoenix-with-feathers-that-alternate-between-i.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'SuperRare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 59,
@@ -602,6 +1024,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/HXNyWY2/a-dragon-with-scales-that-mimic-the-lush-greener.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 60,
@@ -612,6 +1041,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/d53tjY6/A-winged-creature-with-scales-that-mirror-the-de.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 61,
@@ -622,6 +1058,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/NFv5TZc/A-stealthy-lynx-with-fur-that-absorbs-and-reflec-1.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 62,
@@ -632,6 +1075,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/qCL5Tbd/A-small-ethereal-creature-with-wings-resembling.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 63,
@@ -642,6 +1092,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/qRjMFVN/A-mystical-armadillo-with-a-shell-made-of-shimme.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 64,
@@ -652,6 +1109,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/d7bBwgw/A-seahorse-with-a-mane-of-stardust-swimming-gra.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 65,
@@ -662,6 +1126,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/QfbGkvj/A-gryphon-with-feathers-that-resemble-flowing-la.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 66,
@@ -672,6 +1143,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/mGhXx2k/A-massive-rhinoceros-with-a-hide-as-tough-as-iro.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 67,
@@ -682,6 +1160,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/rtpy6M8/A-large-colorful-woodpecker-with-the-intelligen.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 68,
@@ -692,6 +1177,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/4ZJmxJM/An-elk-with-antlers-that-channel-otherworldly-en.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 69,
@@ -702,6 +1194,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/g613kJF/A-serpent-with-the-ability-to-transform-into-var.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 70,
@@ -712,6 +1211,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/SVZqd0S/A-lizard-with-scales-that-shimmer-in-a-myriad-of.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 71,
@@ -722,6 +1228,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/N7dbpHd/A-scavenger-bird-with-wings-that-create-miniatur.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 72,
@@ -732,6 +1245,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/Sm78BrL/A-giant-mantis-with-eyes-that-glow-with-ancient.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 73,
@@ -742,6 +1262,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/kX2WbRq/A-maroon-multiheaded-beast-in-green-armor-n-gre.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Tundra',
+    rarity: 'SuperRare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 74,
@@ -752,6 +1279,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ncHJtz3/A-pale-white-elephant-with-a-transparent-ghostl.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 75,
@@ -762,6 +1296,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/qD7Bcgf/A-swift-cheetah-with-fur-that-sparkles-like-star.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 76,
@@ -772,6 +1313,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/8gHL9kq/A-small-ferret-with-fur-that-freezes-anything-it.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Tundra',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 77,
@@ -782,6 +1330,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/sgL73NC/A-graceful-stingray-with-a-pattern-of-glowing-st.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 78,
@@ -792,6 +1347,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/T4KjnKD/An-antelope-with-armor-that-reflects-the-colors.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 79,
@@ -802,6 +1364,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/mb4x1mC/A-hummingbird-with-feathers-that-emit-melodic-to.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 80,
@@ -812,6 +1381,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/PT4j6bL/A-of-sleek-ocelot-with-fur-as-dark-as-obsidian-w.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 81,
@@ -822,6 +1398,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/7ypX5mF/A-giant-tarantula-with-legs-that-generate-electr.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 82,
@@ -832,6 +1415,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/sw0N3b7/A-small-weasel-with-fur-that-ripples-like-the-wi-1.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 83,
@@ -842,6 +1432,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/5hz69K2/A-giant-beetle-with-an-intricate-maze-pattern-on.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 84,
@@ -852,6 +1449,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/BPWLDGT/A-serpentlike-dragon-covered-in-shimmering-sapp.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 85,
@@ -862,6 +1466,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/bbqnKbh/A-hybrid-creature-with-the-body-of-a-bear-wings.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'SuperRare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 86,
@@ -872,6 +1483,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/Sc6fwbG/A-silver-fox-with-fur-that-blends-seamlessly-wit.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Tundra',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 87,
@@ -882,6 +1500,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/v16FVVc/A-colossal-bird-with-thunderstorm-feathers-crea.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 88,
@@ -892,6 +1517,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/0Yv0B9X/A-massive-jetblack-wolf-with-eyes-that-gleam-l.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 89,
@@ -902,6 +1534,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/YTbwmFd/A-delicate-dragonfly-with-wings-resembling-trans.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 90,
@@ -912,6 +1551,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/q7n2nK1/A-wise-tortoise-with-a-shell-that-reflects-the-c.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Wetland',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 91,
@@ -922,6 +1568,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/br42wP9/A-fiery-salamander-that-glides-through-rivers-of.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 92,
@@ -932,6 +1585,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ZSXGZhk/A-magical-hare-with-fur-that-changes-color-durin.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 93,
@@ -942,6 +1602,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/rb5DbLX/A-colossal-sea-serpent-with-bioluminescent-patte.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 94,
@@ -952,6 +1619,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/T1vXtT6/A-serpent-with-thorny-scales-and-the-ability-to.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 95,
@@ -962,6 +1636,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/jR39PvX/A-small-furry-creature-with-the-ability-to-comm.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Tundra',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 96,
@@ -972,6 +1653,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/pR1T9vk/A-majestic-elk-with-antlers-that-light-up-with-t.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Tundra',
+    rarity: 'SuperRare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 97,
@@ -982,6 +1670,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/kGsCH4h/A-radiant-fuzzy-butterfly-with-wings-that-resemb.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 98,
@@ -992,6 +1687,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/F8hTZXK/A-mythical-creature-with-the-body-of-a-deer-and.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'SuperRare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 99,
@@ -1002,6 +1704,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/c6P7MW0/A-chameleon-with-scales-that-shift-in-color-to-m.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 100,
@@ -1012,6 +1721,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ygLYvrK/A-venomous-snake-with-fangs-so-sharp-they-can-cu.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 101,
@@ -1022,6 +1738,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/DKYBT9b/A-spectral-raven-with-feathers-that-carry-whispe.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 102,
@@ -1032,6 +1755,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/zxzV9Kd/A-tranquil-tortoise-with-a-shell-resembling-a-bl.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Wetland',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 103,
@@ -1042,6 +1772,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/3m004k7/A-chameleon-with-scales-that-shift-through-the-c.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Wetland',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 104,
@@ -1052,6 +1789,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ZNQcBmP/A-leaping-lynx-wearing-leather-armor-adapted-to.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 105,
@@ -1062,6 +1806,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/BfZzR71/A-small-white-fox-with-fur-that-changes-color-wi.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Tundra',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 106,
@@ -1072,6 +1823,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/Fwg6vwM/A-celestial-fish-with-iridescent-scales-swimmin.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 107,
@@ -1082,6 +1840,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/Bykfn5y/A-giant-tortoise-with-a-shell-that-generates-sto.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Island',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 108,
@@ -1092,6 +1857,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/Xx4rXSY/A-raven-with-feathers-inscribed-with-ancient-run.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 109,
@@ -1102,6 +1874,14 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/FY9CyDq/A-mystic-mole-creature-with-fur-that-glows-in-th.png',
     inclination: 'Love',
+    effect:
+      'On play this card may search for any Cave biome creatures. Place the card on the top of your deck.',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 110,
@@ -1112,6 +1892,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/72DpgXs/A-crab-with-a-shell-adorned-with-living-coral-s.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 111,
@@ -1122,6 +1909,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/8PvY25S/A-spider-with-webs-that-echo-the-patterns-of-con.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 112,
@@ -1132,6 +1926,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/wzgSSCr/A-toad-with-thorns-that-crackle-with-electricity.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Wetland',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 113,
@@ -1142,6 +1943,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/JKgJVN0/a-dark-spiky-Echidna-with-giant-angel-like-wings.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 114,
@@ -1152,6 +1960,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/KhFzCmm/A-small-skunk-with-a-tail-that-releases-stardust.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 115,
@@ -1162,6 +1977,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/4ZGtky7/A-majestic-moth-in-armor-with-wings-that-shimmer-1.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 116,
@@ -1172,6 +1994,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/PCs6JDt/A-graceful-creature-with-the-body-of-a-lion-and.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 117,
@@ -1182,6 +2011,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/8m5sdhP/A-regal-stag-with-antlers-made-of-enchanted-crys.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 118,
@@ -1192,6 +2028,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/b7SdwdF/A-serpent-that-glides-through-the-air-leaving-t.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 119,
@@ -1202,6 +2045,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/R0Mdmc2/A-mythical-bird-with-feathers-that-flicker-like.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 120,
@@ -1212,6 +2062,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/gZ7nkdw/A-gryphon-adorned-with-golden-feathers-and-a-man.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 121,
@@ -1222,6 +2079,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/fr00R41/A-giant-spider-with-the-ability-to-manipulate-sh.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 122,
@@ -1232,6 +2096,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/S6k9pZH/A-fearsome-dragonlike-creature-with-icy-breath.png',
     inclination: 'Wrath',
+    effect: '',
+    biome: 'Tundra',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 123,
@@ -1242,6 +2113,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/n6QskHx/A-unicorn-with-a-silver-horn-that-radiates-heali.png',
     inclination: 'Love',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 124,
@@ -1252,6 +2130,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/WDjyJpQ/A-wise-owl-with-feathers-that-change-colors-base.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 125,
@@ -1262,6 +2147,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/zrXL6Cp/A-seahorse-that-navigates-the-skies-trailing-st.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 126,
@@ -1272,6 +2164,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/WtdjBXJ/A-massive-tortoise-with-a-shell-resembling-ancie.png',
     inclination: 'Wisdom',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 127,
@@ -1281,7 +2180,14 @@ const cardSet: Card[] = [
     randomNumber: 432,
     image:
       'https://i.ibb.co/GPpxcPZ/A-majestic-blackwinged-horse-with-a-mane-that-f.png',
-    inclination: 'Mischief',
+    inclination: 'Love',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 128,
@@ -1292,6 +2198,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/p15q56G/A-phantom-panther-wearing-black-armor-staring-in.png',
     inclination: 'Mischief',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
   {
     id: 129,
@@ -1302,6 +2215,13 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/swLC6C0/A-rare-breed-of-griffin-with-fiery-red-plumage.png',
     inclination: 'Pride',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
   },
 ];
 
@@ -1314,24 +2234,37 @@ export async function GET(req: Request) {
     Pride: 0,
   };
 
+  const listRarity = {
+    Common: 0,
+    Uncommon: 0,
+    Rare: 0,
+    SuperRare: 0,
+  };
+
   cardSet.map((card) => {
     if (card.inclination) {
       let inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief' =
         card.inclination;
       listInclination[inclination] += 1;
+      let rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' = card.rarity;
+      listRarity[rarity] += 1;
     }
   });
 
-  const newCards = [];
-  for (let i = 0; i <= cardSet.length - 1; i++) {
-    const cardEdit = cardSet[i];
-    console.log(cardEdit, i);
-    cardEdit.effect = '';
-    cardEdit.biome = '';
-    newCards.push(cardEdit);
-  }
-  console.log(newCards);
-
+  // const newCards = [];
+  // for (let i = 0; i <= cardSet.length - 1; i++) {
+  //   const cardEdit = cardSet[i];
+  //   console.log(cardEdit, i);
+  //   cardEdit.effect = '';
+  //   cardEdit.biome = '';
+  //   cardEdit.rarity = '';
+  //   cardEdit.attackPower = 0;
+  //   cardEdit.hp = 0;
+  //   cardEdit.type = 'creature';
+  //   cardEdit.effectFunction = '';
+  //   newCards.push(cardEdit);
+  // }
+  console.log(listRarity);
   console.log(listInclination);
   return NextResponse.json(cardSet);
 }

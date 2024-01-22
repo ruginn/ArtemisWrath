@@ -10,8 +10,13 @@ interface Card {
   name: string;
   description: string;
   randomNumber: number;
-  inclination?: string;
-  image?: string | StaticImageData;
+  image?: string;
+  inclination?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+  effect?: string;
+  biome?: string;
+  effectFunction?: string;
+  rarity?: string;
+  type?: string;
 }
 
 const MedievalCreaturesSet = () => {
@@ -30,6 +35,7 @@ const MedievalCreaturesSet = () => {
       }).then((res) => res.json());
       // console.log(res)
       setCardSet(res);
+      console.log(res);
       setCardsLoaded(true);
     };
     getCards();
