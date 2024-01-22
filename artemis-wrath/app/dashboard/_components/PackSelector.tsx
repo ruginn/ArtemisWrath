@@ -1,13 +1,13 @@
-"use client";
-import { FC, useState } from "react";
-import Image, { StaticImageData } from "next/image";
-import AwSet1 from "@/public/Images/Packs/AWset1.jpg";
-import AwSet2 from "@/public/Images/Packs/AWset2CS.png";
-import AwSet3 from "@/public/Images/Packs/AWset3CS.png";
-import { useUser } from "@clerk/nextjs";
-import CardElement from "@/app/components/Card";
-import { useUserInfo } from "@/hooks/use-userInfo";
-import { useCollectedCards } from "@/hooks/use-collectedCards";
+'use client';
+import { FC, useState } from 'react';
+import Image, { StaticImageData } from 'next/image';
+import AwSet1 from '@/public/Images/Packs/AWset1.jpg';
+import AwSet2 from '@/public/Images/Packs/AWset2CS.png';
+import AwSet3 from '@/public/Images/Packs/AWset3CS.png';
+import { useUser } from '@clerk/nextjs';
+import CardElement from '@/app/components/Card';
+import { useUserInfo } from '@/hooks/use-userInfo';
+import { useCollectedCards } from '@/hooks/use-collectedCards';
 
 interface Card {
   id: number;
@@ -15,7 +15,25 @@ interface Card {
   description: string;
   randomNumber: number;
   image?: string;
-  inclination?: string;
+  inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+  effect?: string;
+  biome?:
+    | 'Jungle'
+    | 'Tundra'
+    | 'Alpine'
+    | 'Forest'
+    | 'Wetland'
+    | 'Grassland'
+    | 'Aquatic'
+    | 'Island'
+    | 'Cave'
+    | 'Desert'
+    | '';
+  effectFunction?: string;
+  rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare';
+  type?: string;
+  attackPower?: number;
+  hp?: number;
 }
 
 interface Props {
@@ -37,18 +55,18 @@ const PackSelector: FC<Props> = (props) => {
       firstName: user?.firstName,
       lastName: user?.lastName,
     };
-    const res = await fetch("/api/cardpack/medievalcreatures", {
-      method: "POST",
+    const res = await fetch('/api/cardpack/medievalcreatures', {
+      method: 'POST',
       body: JSON.stringify(userData),
       headers: {
-        "Context-Type": "application/json",
+        'Context-Type': 'application/json',
       },
-      cache: "no-cache",
+      cache: 'no-cache',
     });
     // .then((res) => res.json())
     const cards: Card[] = await res.json();
     // console.log(typeof cards === 'object')
-    if (typeof cards === "object") {
+    if (typeof cards === 'object') {
       setCollectedCards(cards);
       gatheredCards.addCards(cards);
       gatheredCards.setCollected(true);
@@ -64,27 +82,27 @@ const PackSelector: FC<Props> = (props) => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center">
-      <h1 className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[96px]">
+    <div className='w-full flex flex-col items-center'>
+      <h1 className='text-[36px] sm:text-[48px] md:text-[64px] lg:text-[96px]'>
         Select your daily pack
       </h1>
       {!selectedPack && (
-        <div className="flex flex-row gap-4 w-full justify-center">
+        <div className='flex flex-row gap-4 w-full justify-center'>
           <Image
             src={AwSet1}
-            alt="Medieval Creatures"
-            className="w-[20%] h-auto border-t-[12px] border-b-[12px] border-gray-400 cursor-pointer"
+            alt='Medieval Creatures'
+            className='w-[20%] h-auto border-t-[12px] border-b-[12px] border-gray-400 cursor-pointer'
             onClick={CollectPack}
           />
           <Image
             src={AwSet2}
-            alt="Bushido Blades"
-            className="w-[20%] h-auto border-t-[12px] border-b-[12px] border-gray-400 cursor-pointer"
+            alt='Bushido Blades'
+            className='w-[20%] h-auto border-t-[12px] border-b-[12px] border-gray-400 cursor-pointer'
           />
           <Image
             src={AwSet3}
-            alt="Desert Past"
-            className="w-[20%] h-auto border-t-[12px] border-b-[12px] border-gray-400 cursor-pointer"
+            alt='Desert Past'
+            className='w-[20%] h-auto border-t-[12px] border-b-[12px] border-gray-400 cursor-pointer'
           />
         </div>
       )}
@@ -93,7 +111,7 @@ const PackSelector: FC<Props> = (props) => {
           <h3>You have already selected your pack for the day</h3>
         </div>
       )}
-      <div className="grid grid-cols-4 gap-5 m-10">
+      <div className='grid grid-cols-4 gap-5 m-10'>
         {/* {getCards && 
                     collectedCards.map((card) => {
                         return (
