@@ -47,8 +47,8 @@ const CardElement = ({ card }: { card: Card }) => {
       key={card.id}
     >
       <div className='flex w-full flex-row justify-between'>
-        <h1 className='text-l self-start ml-2 font-bold'>{card.name}</h1>
-        <p className='mr-2'>{card.id}</p>
+        <h1 className='text-l self-start ml-2 font-extrabold'>{card.name}</h1>
+        {/* <p className='mr-2'>{card.id}</p> */}
       </div>
       {card.image && (
         <Image
@@ -61,8 +61,16 @@ const CardElement = ({ card }: { card: Card }) => {
           // className="w-60 h-auto"
         ></Image>
       )}
-      <div className='w-[250px] h-[70px] border-2 border-black mt-3 rounded bg-gray-100 z-0 opacity-50'>
+      <div className='w-[260px] h-[70px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50'>
         <p className='text-[11px] leading-none'>{card.description}</p>
+      </div>
+      <div className='flex flex-row w-full justify-between items-center'>
+        <p className='leading-none ml-1 text-[10px] font-bold'>
+          MC-{card.id}/129
+        </p>
+        <p className='leading-none mr-1 text-[10px] font-bold'>
+          {card.rarity?.split('')[0]}
+        </p>
       </div>
     </div>
   );
