@@ -46,10 +46,10 @@ const CardElement = ({ card }: { card: Card }) => {
       )}
       key={card.id}
     >
-      <div className='flex w-full flex-row justify-between'>
-        <h1 className='text-l self-start ml-2 font-extrabold'>{card.name}</h1>
-        {/* <p className='mr-2'>{card.id}</p> */}
-      </div>
+      {/* <div className='flex w-full flex-row justify-between'> */}
+      {/* <h1 className='text-l self-start ml-2 font-extrabold'>{card.name}</h1> */}
+      {/* <p className='mr-2'>{card.id}</p> */}
+      {/* </div> */}
       {card.image && (
         <Image
           src={card.image}
@@ -57,10 +57,14 @@ const CardElement = ({ card }: { card: Card }) => {
           width={256}
           height={256}
           placeholder='empty'
-          className='object-cover rounded-lg border-4 border-gray-800'
+          className='object-cover rounded-lg border-4 border-gray-800 mt-2'
           // className="w-60 h-auto"
         ></Image>
       )}
+      <div className='flex w-full flex-row justify-between items-center'>
+        <h1 className='text-sm self-start ml-2 font-extrabold'>{card.name}</h1>
+        <p className='text-[11px] mr-2'>{card.biome}</p>
+      </div>
       <div className='w-[260px] h-[70px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50'>
         <p className='text-[11px] leading-none'>{card.description}</p>
       </div>
