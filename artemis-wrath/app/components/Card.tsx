@@ -32,7 +32,7 @@ const CardElement = ({ card }: { card: Card }) => {
   return (
     <div
       className={cn(
-        'h-96 w-72 bg-amber-200 flex flex-col rounded-xl items-center border-gray-800 border-8',
+        'h-96 w-72 bg-amber-200 flex flex-col rounded-xl items-center border-gray-800 border-8 relative',
         card.inclination === 'Wrath' &&
           ' bg-gradient-to-bl to-red-600 via-red-800 from-[#75352F]',
         card.inclination === 'Wisdom' &&
@@ -50,6 +50,9 @@ const CardElement = ({ card }: { card: Card }) => {
       {/* <h1 className='text-l self-start ml-2 font-extrabold'>{card.name}</h1> */}
       {/* <p className='mr-2'>{card.id}</p> */}
       {/* </div> */}
+      <div className='absolute rounded-full bg-amber-200 text-black w-10 h-10 flex justify-center items-center right-0.5 top-0.5 border-4 border-gray-800 font-serif'>
+        0
+      </div>
       {card.image && (
         <Image
           src={card.image}
@@ -75,7 +78,7 @@ const CardElement = ({ card }: { card: Card }) => {
         </p>
       </div>
       <div className='flex flex-row w-full justify-between items-center'>
-        <p className='leading-none ml-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+        <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
           MC-{card.id}/129
         </p>
         <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
