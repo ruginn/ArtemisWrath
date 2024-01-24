@@ -12,8 +12,10 @@ const NavBar = () => {
   const toggleSidebar = () => {
     if (sidebar.mobile === false) {
       sidebar.toggleMobileOpen();
+      console.log('open', sidebar.mobile);
     } else {
       sidebar.toggleMobileClose();
+      console.log('close', sidebar.mobile);
     }
   };
 

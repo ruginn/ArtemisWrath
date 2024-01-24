@@ -50,10 +50,9 @@ const SideBar = () => {
 
   useEffect(() => {
     let handler = (e: any) => {
-      if (!sideBarRef.current.contains(e.target)) {
+      if (!sideBarRef.current.contains(e.target) && e.clientY > 60) {
         activeSidebar.toggleMobileClose();
-      } else {
-        console.log('clicked inside');
+        console.log('clicked outside');
       }
     };
 
@@ -62,7 +61,7 @@ const SideBar = () => {
     return () => {
       document.removeEventListener('mousedown', handler);
     };
-  });
+  }, []);
 
   useEffect(() => {
     if (user) {
