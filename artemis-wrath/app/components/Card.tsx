@@ -38,7 +38,7 @@ const CardElement = ({ card }: { card: Card }) => {
         card.inclination === 'Wisdom' &&
           'bg-gradient-to-r via-[#5876b2] from-blue-800 to-cyan-900',
         card.inclination === 'Love' &&
-          'bg-gradient-to-r from-pink-200 to-pink-400 bg-[#f58a87]',
+          'bg-gradient-to-r from-[#f58a87] to-pink-700 via-[#f58a87]',
         card.inclination === 'Mischief' &&
           'bg-gradient-to-bl via-[#3f392c] to-gray-700 from-slate-600',
         card.inclination === 'Pride' &&
@@ -62,17 +62,23 @@ const CardElement = ({ card }: { card: Card }) => {
         ></Image>
       )}
       <div className='flex w-full flex-row justify-between items-center'>
-        <h1 className='text-sm self-start ml-2 font-extrabold'>{card.name}</h1>
-        <p className='text-[11px] mr-2'>{card.biome}</p>
+        <h1 className='text-sm self-start ml-2 font-extrabold text-amber-400 drop-shadow-[1.2px_1.2px_1.2px_rgba(0,0,0,0.8)]'>
+          {card.name}
+        </h1>
+        <p className='text-[11px] mr-2  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+          {card.biome}
+        </p>
       </div>
       <div className='w-[260px] h-[70px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50'>
-        <p className='text-[11px] leading-none'>{card.description}</p>
+        <p className='text-[11px] leading-none  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+          {card.description}
+        </p>
       </div>
       <div className='flex flex-row w-full justify-between items-center'>
-        <p className='leading-none ml-1 text-[10px] font-bold'>
+        <p className='leading-none ml-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
           MC-{card.id}/129
         </p>
-        <p className='leading-none mr-1 text-[10px] font-bold'>
+        <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
           {card.rarity?.split('')[0]}
         </p>
       </div>
