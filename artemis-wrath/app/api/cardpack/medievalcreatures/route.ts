@@ -2277,7 +2277,7 @@ export async function POST(req: Request) {
     const CommonCards = cardSet.filter((card) => card.rarity === 'Common');
     const UncommonCards = cardSet.filter((card) => card.rarity === 'Uncommon');
     const RareCards = cardSet.filter(
-      (card) => card.rarity === 'Rare' || 'SuperRare'
+      (card) => card.rarity === 'Rare' || card.rarity === 'SuperRare'
     );
     // const SuperCards = cardSet.filter((card) => card.rarity === 'SuperRare');
 
