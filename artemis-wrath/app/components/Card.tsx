@@ -68,7 +68,7 @@ const CardElement = ({ card }: { card: Card }) => {
         <h1 className='text-sm self-start ml-2 font-extrabold text-amber-200 drop-shadow-[1.2px_1.2px_1.2px_rgba(0,0,0,0.8)]'>
           {card.name}
         </h1>
-        <p className='text-[11px] mr-2  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+        <p className='text-[11px] mr-2  text-amber-200 drop-shadow-[1.2px_1.2px_1.2px_rgba(0,0,0,0.8)]'>
           {card.biome}
         </p>
       </div>

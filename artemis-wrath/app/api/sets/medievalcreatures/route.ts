@@ -511,7 +511,7 @@ const cardSet: Card[] = [
       'A griffin with feathers resembling vibrant coral, found perched on the cliffs overlooking medieval coastal kingdoms.',
     randomNumber: 567,
     image:
-      'https://i.ibb.co/8DfFhH5/A-griffin-with-feathers-resembling-vibrant-coral.png',
+      'https://i.ibb.co/fvCr4RK/A-griffin-with-feathers-resembling-vibrant-coral.png',
     inclination: 'Wisdom',
     effect: '',
     biome: 'Alpine',
@@ -2250,19 +2250,61 @@ export async function GET(req: Request) {
       listRarity[rarity] += 1;
     }
   });
-
+  // probably need to make a loop to make this better
   const loveSet = cardSet.filter((card) => card.inclination === 'Love');
+  const commonLove = loveSet.filter((card) => card.rarity === 'Common');
+  const uncommonLove = loveSet.filter((card) => card.rarity === 'Uncommon');
+  const rareLove = loveSet.filter((card) => card.rarity === 'Rare');
+  const superLove = loveSet.filter((card) => card.rarity === 'SuperRare');
+
   const wisdomSet = cardSet.filter((card) => card.inclination === 'Wisdom');
+  const commonWisdom = wisdomSet.filter((card) => card.rarity === 'Common');
+  const uncommonWisdom = wisdomSet.filter((card) => card.rarity === 'Uncommon');
+  const rareWisdom = wisdomSet.filter((card) => card.rarity === 'Rare');
+  const superWisdom = wisdomSet.filter((card) => card.rarity === 'SuperRare');
+
   const wrathSet = cardSet.filter((card) => card.inclination === 'Wrath');
+  const commonWrath = wrathSet.filter((card) => card.rarity === 'Common');
+  const uncommonWrath = wrathSet.filter((card) => card.rarity === 'Uncommon');
+  const rareWrath = wrathSet.filter((card) => card.rarity === 'Rare');
+  const superWrath = wrathSet.filter((card) => card.rarity === 'SuperRare');
+
   const mischiefSet = cardSet.filter((card) => card.inclination === 'Mischief');
+  const commonMischief = mischiefSet.filter((card) => card.rarity === 'Common');
+  const uncommonMischief = mischiefSet.filter(
+    (card) => card.rarity === 'Uncommon'
+  );
+  const rareMischief = mischiefSet.filter((card) => card.rarity === 'Rare');
+  const superMischief = mischiefSet.filter(
+    (card) => card.rarity === 'SuperRare'
+  );
+
   const prideSet = cardSet.filter((card) => card.inclination === 'Pride');
+  const commonPride = prideSet.filter((card) => card.rarity === 'Common');
+  const uncommonPride = prideSet.filter((card) => card.rarity === 'Uncommon');
+  const rarePride = prideSet.filter((card) => card.rarity === 'Rare');
+  const superPride = prideSet.filter((card) => card.rarity === 'SuperRare');
 
-  const newSet: Card[] = loveSet
-    .concat(wisdomSet)
-    .concat(wrathSet)
-    .concat(mischiefSet)
-    .concat(prideSet);
-
+  const newSet: Card[] = commonLove
+    .concat(uncommonLove)
+    .concat(rareLove)
+    .concat(superLove)
+    .concat(commonWisdom)
+    .concat(uncommonWisdom)
+    .concat(rareWisdom)
+    .concat(superWisdom)
+    .concat(commonWrath)
+    .concat(uncommonWrath)
+    .concat(rareWrath)
+    .concat(superWrath)
+    .concat(commonMischief)
+    .concat(uncommonMischief)
+    .concat(rareMischief)
+    .concat(superMischief)
+    .concat(commonPride)
+    .concat(uncommonPride)
+    .concat(rarePride)
+    .concat(superPride);
   // const newCards = [];
   // for (let i = 0; i <= cardSet.length - 1; i++) {
   //   const cardEdit = cardSet[i];
