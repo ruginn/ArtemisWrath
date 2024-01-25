@@ -2257,15 +2257,47 @@ export async function POST(req: Request) {
   const realDateStart = new Date(todayYear, todayMonth, todayDate, 0, 0, 0, 0);
   console.log(cardSet.length);
   console.log(realDateStart);
+  const setTotal = {
+    Common: 5,
+    Uncommon: 3,
+    Rare: 2,
+  };
   const getCards = () => {
-    for (let i = 0; i < 10; i++) {
-      let cardCount = cardSet.length - i;
-      let randomNumber = Math.floor(Math.random() * (cardCount + 1));
-      const newCard = cardSet.splice(randomNumber, 1);
-      console.log(randomNumber);
-      console.log(cardSet[randomNumber]);
-      // randomCards.push(cardSet[randomNumber])
+    // for (let i = 0; i < 10; i++) {
+    //   let cardCount = cardSet.length - i;
+    //   let randomNumber = Math.floor(Math.random() * (cardCount + 1));
+    //   const newCard = cardSet.splice(randomNumber, 1);
+    //   console.log(randomNumber);
+    //   console.log(cardSet[randomNumber]);
+    //   // randomCards.push(cardSet[randomNumber])
+    //   randomCards.push(newCard[0]);
+    // }
+
+    // Maybe i should just filter out different rarities first then while loop
+    const CommonCards = cardSet.filter((card) => card.rarity === 'Common');
+    const UncommonCards = cardSet.filter((card) => card.rarity === 'Uncommon');
+    const RareCards = cardSet.filter(
+      (card) => card.rarity === 'Rare' || 'SuperRare'
+    );
+    // const SuperCards = cardSet.filter((card) => card.rarity === 'SuperRare');
+
+    while (setTotal.Common > 0) {
+      let randomNumber = Math.floor(Math.random() * (CommonCards.length + 1));
+      const newCard = CommonCards.splice(randomNumber, 1);
       randomCards.push(newCard[0]);
+      setTotal.Common -= 1;
+    }
+    while (setTotal.Uncommon > 0) {
+      let randomNumber = Math.floor(Math.random() * (UncommonCards.length + 1));
+      const newCard = UncommonCards.splice(randomNumber, 1);
+      randomCards.push(newCard[0]);
+      setTotal.Uncommon -= 1;
+    }
+    while (setTotal.Rare > 0) {
+      let randomNumber = Math.floor(Math.random() * (RareCards.length + 1));
+      const newCard = RareCards.splice(randomNumber, 1);
+      randomCards.push(newCard[0]);
+      setTotal.Rare -= 1;
     }
   };
   console.log(
