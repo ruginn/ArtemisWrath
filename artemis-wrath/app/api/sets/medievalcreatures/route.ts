@@ -158,7 +158,7 @@ const cardSet: Card[] = [
     inclination: 'Wrath',
     effect: '',
     biome: 'Forest',
-    rarity: 'Rare',
+    rarity: 'Uncommon',
     type: 'creature',
     effectFunction: '',
     attackPower: 0,
@@ -379,7 +379,7 @@ const cardSet: Card[] = [
     inclination: 'Mischief',
     effect: '',
     biome: 'Forest',
-    rarity: 'Rare',
+    rarity: 'Uncommon',
     type: 'creature',
     effectFunction: '',
     attackPower: 0,
@@ -447,7 +447,7 @@ const cardSet: Card[] = [
     inclination: 'Pride',
     effect: '',
     biome: 'Aquatic',
-    rarity: 'Rare',
+    rarity: 'Uncommon',
     type: 'creature',
     effectFunction: '',
     attackPower: 0,
@@ -515,7 +515,7 @@ const cardSet: Card[] = [
     inclination: 'Wisdom',
     effect: '',
     biome: 'Alpine',
-    rarity: 'Rare',
+    rarity: 'Uncommon',
     type: 'creature',
     effectFunction: '',
     attackPower: 0,
@@ -753,7 +753,7 @@ const cardSet: Card[] = [
     inclination: 'Pride',
     effect: '',
     biome: 'Wetland',
-    rarity: 'Rare',
+    rarity: 'Uncommon',
     type: 'creature',
     effectFunction: '',
     attackPower: 0,
@@ -2251,6 +2251,18 @@ export async function GET(req: Request) {
     }
   });
 
+  const loveSet = cardSet.filter((card) => card.inclination === 'Love');
+  const wisdomSet = cardSet.filter((card) => card.inclination === 'Wisdom');
+  const wrathSet = cardSet.filter((card) => card.inclination === 'Wrath');
+  const mischiefSet = cardSet.filter((card) => card.inclination === 'Mischief');
+  const prideSet = cardSet.filter((card) => card.inclination === 'Pride');
+
+  const newSet: Card[] = loveSet
+    .concat(wisdomSet)
+    .concat(wrathSet)
+    .concat(mischiefSet)
+    .concat(prideSet);
+
   // const newCards = [];
   // for (let i = 0; i <= cardSet.length - 1; i++) {
   //   const cardEdit = cardSet[i];
@@ -2266,5 +2278,5 @@ export async function GET(req: Request) {
   // }
   console.log(listRarity);
   console.log(listInclination);
-  return NextResponse.json(cardSet);
+  return NextResponse.json(newSet);
 }
