@@ -30,6 +30,7 @@ interface Card {
   type?: string;
   attackPower?: number;
   hp?: number;
+  cost?: number;
 }
 
 const MedievalCreaturesSet = () => {

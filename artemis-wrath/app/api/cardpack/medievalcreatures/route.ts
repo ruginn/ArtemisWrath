@@ -26,6 +26,7 @@ interface Card {
   type?: string;
   attackPower?: number;
   hp?: number;
+  cost?: number;
 }
 
 interface userInfo {

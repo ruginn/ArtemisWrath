@@ -24,6 +24,7 @@ interface Card {
   type?: string;
   attackPower?: number;
   hp?: number;
+  cost?: number;
 }
 
 const cardSet: Card[] = [
@@ -43,6 +44,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 200,
     hp: 200,
+    cost: 2,
   },
   {
     id: 2,
@@ -60,6 +62,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 3,
@@ -77,6 +80,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 4,
@@ -94,6 +98,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 5,
@@ -111,6 +116,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 6,
@@ -128,6 +134,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 7,
@@ -145,6 +152,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 8,
@@ -162,6 +170,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 9,
@@ -179,125 +188,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 10,
-    name: 'Whip Weasel',
-    description:
-      'A weasel with a tiny whip, agilely navigating through medieval castle corridors.',
-    randomNumber: 789,
-    image:
-      'https://i.ibb.co/4RN4VCh/A-weasel-with-a-tiny-whip-agile-and-cunning-in.png',
-    inclination: 'Love',
-    effect: '',
-    biome: 'Grassland',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 11,
-    name: 'Whisperwind Weasel',
-    description:
-      'A small weasel with fur that ripples like the wind, known for its elusive and playful nature.',
-    randomNumber: 853,
-    image:
-      'https://i.ibb.co/sw0N3b7/A-small-weasel-with-fur-that-ripples-like-the-wi-1.png',
-    inclination: 'Love',
-    effect: '',
-    biome: 'Forest',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 12,
-    name: 'Stellar Skunk',
-    description:
-      'A small skunk with a tail that releases stardust, leaving behind a trail of celestial fragrance in medieval meadows.',
-    randomNumber: 543,
-    image:
-      'https://i.ibb.co/KhFzCmm/A-small-skunk-with-a-tail-that-releases-stardust.png',
-    inclination: 'Love',
-    effect: '',
-    biome: 'Grassland',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 13,
-    name: 'Glowshroom Gazelle',
-    description:
-      'A graceful gazelle with bioluminescent spots, grazing in mystical meadows filled with giant luminescent mushrooms.',
-    randomNumber: 451,
-    image:
-      'https://i.ibb.co/h1StHQX/A-graceful-gazelle-with-bioluminescent-spots-gr.png',
-    inclination: 'Love',
-    effect: '',
-    biome: 'Forest',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 14,
-    name: 'Silvershade Sloth',
-    description:
-      'A slow-moving sloth with fur that shimmers like moonlight, often spotted hanging from ancient trees.',
-    randomNumber: 787,
-    image:
-      'https://i.ibb.co/gT6C8wz/A-slowmoving-sloth-with-fur-that-shimmers-like.png',
-    inclination: 'Love',
-    effect: '',
-    biome: 'Jungle',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 15,
-    name: 'Starshade Squirrel',
-    description:
-      'A squirrel with a tail that sparkles with the brilliance of distant stars, leaping between medieval treetops.',
-    randomNumber: 399,
-    image:
-      'https://i.ibb.co/ZfJPSW9/A-squirrel-with-a-tail-that-sparkles-with-the-br.png',
-    inclination: 'Love',
-    effect: '',
-    biome: 'Forest',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 16,
-    name: 'Nebula Nymph',
-    description:
-      'A small, ethereal creature with wings resembling swirling galaxies, bringing cosmic magic to enchanted gardens.',
-    randomNumber: 823,
-    image:
-      'https://i.ibb.co/qCL5Tbd/A-small-ethereal-creature-with-wings-resembling.png',
-    inclination: 'Love',
-    effect: '',
-    biome: 'Forest',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 17,
@@ -315,6 +206,115 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
+  },
+  {
+    id: 23,
+    name: 'Ebon Pegasus',
+    description:
+      'A majestic black-winged horse with a mane that flows like shadows, only appearing to those with pure hearts.',
+    randomNumber: 432,
+    image:
+      'https://i.ibb.co/GPpxcPZ/A-majestic-blackwinged-horse-with-a-mane-that-f.png',
+    inclination: 'Love',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Common',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 10,
+    name: 'Whip Weasel',
+    description:
+      'A weasel with a tiny whip, agilely navigating through medieval castle corridors.',
+    randomNumber: 789,
+    image:
+      'https://i.ibb.co/4RN4VCh/A-weasel-with-a-tiny-whip-agile-and-cunning-in.png',
+    inclination: 'Love',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 11,
+    name: 'Whisperwind Weasel',
+    description:
+      'A small weasel with fur that ripples like the wind, known for its elusive and playful nature.',
+    randomNumber: 853,
+    image:
+      'https://i.ibb.co/sw0N3b7/A-small-weasel-with-fur-that-ripples-like-the-wi-1.png',
+    inclination: 'Love',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 12,
+    name: 'Stellar Skunk',
+    description:
+      'A small skunk with a tail that releases stardust, leaving behind a trail of celestial fragrance in medieval meadows.',
+    randomNumber: 543,
+    image:
+      'https://i.ibb.co/KhFzCmm/A-small-skunk-with-a-tail-that-releases-stardust.png',
+    inclination: 'Love',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 15,
+    name: 'Starshade Squirrel',
+    description:
+      'A squirrel with a tail that sparkles with the brilliance of distant stars, leaping between medieval treetops.',
+    randomNumber: 399,
+    image:
+      'https://i.ibb.co/ZfJPSW9/A-squirrel-with-a-tail-that-sparkles-with-the-br.png',
+    inclination: 'Love',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 16,
+    name: 'Nebula Nymph',
+    description:
+      'A small, ethereal creature with wings resembling swirling galaxies, bringing cosmic magic to enchanted gardens.',
+    randomNumber: 823,
+    image:
+      'https://i.ibb.co/qCL5Tbd/A-small-ethereal-creature-with-wings-resembling.png',
+    inclination: 'Love',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
   },
   {
     id: 18,
@@ -332,23 +332,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 19,
-    name: 'Solar Seraphim Butterfly',
-    description:
-      'A radiant butterfly with wings that resemble stained glass, said to be messengers from the celestial realms.',
-    randomNumber: 213,
-    image:
-      'https://i.ibb.co/kGsCH4h/A-radiant-fuzzy-butterfly-with-wings-that-resemb.png',
-    inclination: 'Love',
-    effect: '',
-    biome: 'Grassland',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 20,
@@ -367,23 +351,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 21,
-    name: 'Ebonwinged Echidna',
-    description:
-      'A spiky creature with wings as dark as night, said to be guardians of ancient subterranean treasures.',
-    randomNumber: 876,
-    image:
-      'https://i.ibb.co/JKgJVN0/a-dark-spiky-Echidna-with-giant-angel-like-wings.png',
-    inclination: 'Love',
-    effect: '',
-    biome: 'Cave',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 22,
@@ -401,23 +369,79 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
-    id: 23,
-    name: 'Ebon Pegasus',
+    id: 13,
+    name: 'Glowshroom Gazelle',
     description:
-      'A majestic black-winged horse with a mane that flows like shadows, only appearing to those with pure hearts.',
-    randomNumber: 432,
+      'A graceful gazelle with bioluminescent spots, grazing in mystical meadows filled with giant luminescent mushrooms.',
+    randomNumber: 451,
     image:
-      'https://i.ibb.co/GPpxcPZ/A-majestic-blackwinged-horse-with-a-mane-that-f.png',
+      'https://i.ibb.co/h1StHQX/A-graceful-gazelle-with-bioluminescent-spots-gr.png',
     inclination: 'Love',
     effect: '',
-    biome: 'Desert',
-    rarity: 'Common',
+    biome: 'Forest',
+    rarity: 'Rare',
     type: 'creature',
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
+  },
+  {
+    id: 14,
+    name: 'Silvershade Sloth',
+    description:
+      'A slow-moving sloth with fur that shimmers like moonlight, often spotted hanging from ancient trees.',
+    randomNumber: 787,
+    image:
+      'https://i.ibb.co/gT6C8wz/A-slowmoving-sloth-with-fur-that-shimmers-like.png',
+    inclination: 'Love',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 19,
+    name: 'Solar Seraphim Butterfly',
+    description:
+      'A radiant butterfly with wings that resemble stained glass, said to be messengers from the celestial realms.',
+    randomNumber: 213,
+    image:
+      'https://i.ibb.co/kGsCH4h/A-radiant-fuzzy-butterfly-with-wings-that-resemb.png',
+    inclination: 'Love',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 21,
+    name: 'Ebonwinged Echidna',
+    description:
+      'A spiky creature with wings as dark as night, said to be guardians of ancient subterranean treasures.',
+    randomNumber: 876,
+    image:
+      'https://i.ibb.co/JKgJVN0/a-dark-spiky-Echidna-with-giant-angel-like-wings.png',
+    inclination: 'Love',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
   },
   {
     id: 24,
@@ -435,6 +459,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 25,
@@ -452,6 +477,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 26,
@@ -469,6 +495,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 27,
@@ -487,6 +514,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 28,
@@ -504,6 +532,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 29,
@@ -521,6 +550,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 30,
@@ -538,6 +568,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 31,
@@ -555,6 +586,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 32,
@@ -572,108 +604,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 33,
-    name: 'Coral Crested Griffin',
-    description:
-      'A griffin with feathers resembling vibrant coral, found perched on the cliffs overlooking medieval coastal kingdoms.',
-    randomNumber: 567,
-    image:
-      'https://i.ibb.co/fvCr4RK/A-griffin-with-feathers-resembling-vibrant-coral.png',
-    inclination: 'Wisdom',
-    effect: '',
-    biome: 'Alpine',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 34,
-    name: 'Venomous Vine Viper',
-    description:
-      'A snake with vines growing from its scales, camouflaging it within overgrown enchanted forests.',
-    randomNumber: 802,
-    image:
-      'https://i.ibb.co/LChDWLm/A-snake-with-vines-growing-from-its-scales-camo.png',
-    inclination: 'Wisdom',
-    effect: '',
-    biome: 'Jungle',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 35,
-    name: 'Molten Gryphon',
-    description:
-      'A gryphon with feathers that resemble flowing lava, perched on the peaks of volcanoes as a guardian of the fiery realms.',
-    randomNumber: 576,
-    image:
-      'https://i.ibb.co/QfbGkvj/A-gryphon-with-feathers-that-resemble-flowing-la.png',
-    inclination: 'Wisdom',
-    effect: '',
-    biome: 'Alpine',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 36,
-    name: 'Sable Shapeshifter Snake',
-    description:
-      'A serpent with the ability to transform into various shapes, rumored to be a guardian of ancient magical artifacts.',
-    randomNumber: 512,
-    image:
-      'https://i.ibb.co/g613kJF/A-serpent-with-the-ability-to-transform-into-var.png',
-    inclination: 'Wisdom',
-    effect: '',
-    biome: 'Desert',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 37,
-    name: 'Aetherial Angelfish',
-    description:
-      'A celestial fish with iridescent scales, swimming in medieval ponds and bringing a sense of enchantment.',
-    randomNumber: 654,
-    image:
-      'https://i.ibb.co/Fwg6vwM/A-celestial-fish-with-iridescent-scales-swimmin.png',
-    inclination: 'Wisdom',
-    effect: '',
-    biome: 'Aquatic',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 38,
-    name: 'Stone Sentinel Tortoise',
-    description:
-      'A massive tortoise with a shell resembling ancient ruins, believed to carry the wisdom of the ages.',
-    randomNumber: 987,
-    image:
-      'https://i.ibb.co/WtdjBXJ/A-massive-tortoise-with-a-shell-resembling-ancie.png',
-    inclination: 'Wisdom',
-    effect: '',
-    biome: 'Desert',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 39,
@@ -691,6 +622,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 40,
@@ -708,57 +640,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 41,
-    name: 'Astral Axolotl',
-    description:
-      'An aquatic creature with translucent skin, adorned with celestial patterns, swimming in sacred medieval lakes.',
-    randomNumber: 168,
-    image:
-      'https://i.ibb.co/dgwMYXc/An-aquatic-creature-with-translucent-skin-adorn.png',
-    inclination: 'Wisdom',
-    effect: '',
-    biome: 'Aquatic',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 42,
-    name: 'Ethereal Elephant Eel',
-    description:
-      'A majestic aquatic creature with the body of an elephant and the tail of an eel, gliding through mysterious underwater realms.',
-    randomNumber: 943,
-    image:
-      'https://i.ibb.co/DQxSt0F/A-majestic-aquatic-creature-with-the-body-of-an.png',
-    inclination: 'Wisdom',
-    effect: '',
-    biome: 'Aquatic',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 43,
-    name: 'Sapphire Snail',
-    description:
-      'A slow-moving snail with a shell that glistens like precious sapphire, leaving a trail of magical luminescence.',
-    randomNumber: 723,
-    image:
-      'https://i.ibb.co/ggq2QXD/A-slowmoving-snail-with-a-shell-that-glistens-l.png',
-    inclination: 'Wisdom',
-    effect: '',
-    biome: 'Forest',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 44,
@@ -776,23 +658,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 45,
-    name: 'Ephemeral Elephant',
-    description:
-      'An elephant with a transparent, ghostly appearance, said to be a manifestation of the spirits of the forest.',
-    randomNumber: 299,
-    image:
-      'https://i.ibb.co/ncHJtz3/A-pale-white-elephant-with-a-transparent-ghostl.png',
-    inclination: 'Wisdom',
-    effect: '',
-    biome: 'Jungle',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 46,
@@ -810,6 +676,187 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
+  },
+  {
+    id: 33,
+    name: 'Coral Crested Griffin',
+    description:
+      'A griffin with feathers resembling vibrant coral, found perched on the cliffs overlooking medieval coastal kingdoms.',
+    randomNumber: 567,
+    image:
+      'https://i.ibb.co/fvCr4RK/A-griffin-with-feathers-resembling-vibrant-coral.png',
+    inclination: 'Wisdom',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 34,
+    name: 'Venomous Vine Viper',
+    description:
+      'A snake with vines growing from its scales, camouflaging it within overgrown enchanted forests.',
+    randomNumber: 802,
+    image:
+      'https://i.ibb.co/LChDWLm/A-snake-with-vines-growing-from-its-scales-camo.png',
+    inclination: 'Wisdom',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 35,
+    name: 'Molten Gryphon',
+    description:
+      'A gryphon with feathers that resemble flowing lava, perched on the peaks of volcanoes as a guardian of the fiery realms.',
+    randomNumber: 576,
+    image:
+      'https://i.ibb.co/QfbGkvj/A-gryphon-with-feathers-that-resemble-flowing-la.png',
+    inclination: 'Wisdom',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 36,
+    name: 'Sable Shapeshifter Snake',
+    description:
+      'A serpent with the ability to transform into various shapes, rumored to be a guardian of ancient magical artifacts.',
+    randomNumber: 512,
+    image:
+      'https://i.ibb.co/g613kJF/A-serpent-with-the-ability-to-transform-into-var.png',
+    inclination: 'Wisdom',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 37,
+    name: 'Aetherial Angelfish',
+    description:
+      'A celestial fish with iridescent scales, swimming in medieval ponds and bringing a sense of enchantment.',
+    randomNumber: 654,
+    image:
+      'https://i.ibb.co/Fwg6vwM/A-celestial-fish-with-iridescent-scales-swimmin.png',
+    inclination: 'Wisdom',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 38,
+    name: 'Stone Sentinel Tortoise',
+    description:
+      'A massive tortoise with a shell resembling ancient ruins, believed to carry the wisdom of the ages.',
+    randomNumber: 987,
+    image:
+      'https://i.ibb.co/WtdjBXJ/A-massive-tortoise-with-a-shell-resembling-ancie.png',
+    inclination: 'Wisdom',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 45,
+    name: 'Ephemeral Elephant',
+    description:
+      'An elephant with a transparent, ghostly appearance, said to be a manifestation of the spirits of the forest.',
+    randomNumber: 299,
+    image:
+      'https://i.ibb.co/ncHJtz3/A-pale-white-elephant-with-a-transparent-ghostl.png',
+    inclination: 'Wisdom',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 41,
+    name: 'Astral Axolotl',
+    description:
+      'An aquatic creature with translucent skin, adorned with celestial patterns, swimming in sacred medieval lakes.',
+    randomNumber: 168,
+    image:
+      'https://i.ibb.co/dgwMYXc/An-aquatic-creature-with-translucent-skin-adorn.png',
+    inclination: 'Wisdom',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 42,
+    name: 'Ethereal Elephant Eel',
+    description:
+      'A majestic aquatic creature with the body of an elephant and the tail of an eel, gliding through mysterious underwater realms.',
+    randomNumber: 943,
+    image:
+      'https://i.ibb.co/DQxSt0F/A-majestic-aquatic-creature-with-the-body-of-an.png',
+    inclination: 'Wisdom',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 43,
+    name: 'Sapphire Snail',
+    description:
+      'A slow-moving snail with a shell that glistens like precious sapphire, leaving a trail of magical luminescence.',
+    randomNumber: 723,
+    image:
+      'https://i.ibb.co/ggq2QXD/A-slowmoving-snail-with-a-shell-that-glistens-l.png',
+    inclination: 'Wisdom',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
   },
   {
     id: 47,
@@ -827,6 +874,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 48,
@@ -844,6 +892,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 49,
@@ -861,6 +910,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 50,
@@ -878,6 +928,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 51,
@@ -895,6 +946,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 52,
@@ -912,6 +964,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 53,
@@ -929,6 +982,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 54,
@@ -946,6 +1000,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 55,
@@ -963,6 +1018,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 56,
@@ -980,6 +1036,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 57,
@@ -997,6 +1054,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 58,
@@ -1014,23 +1072,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 59,
-    name: 'Warhorn Hornet',
-    description:
-      'A giant hornet sounding a warhorn, leading swarms into battle against medieval intruders.',
-    randomNumber: 637,
-    image:
-      'https://i.ibb.co/HKc9Nny/A-giant-hornet-sounding-a-warhorn-leading-swarm.png',
-    inclination: 'Wrath',
-    effect: '',
-    biome: 'Grassland',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 60,
@@ -1048,6 +1090,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 61,
@@ -1065,57 +1108,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 62,
-    name: 'Axe Anteater',
-    description:
-      'An anteater with a small battle axe, using its powerful claws and weapon to defend against medieval threats.',
-    randomNumber: 783,
-    image:
-      'https://i.ibb.co/fr9Px5P/an-giant-anteater-using-its-powerful-claws-to-d.png',
-    inclination: 'Wrath',
-    effect: '',
-    biome: 'Grassland',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 63,
-    name: 'Balefire Bat',
-    description:
-      'A bat with wings that flicker like flames, dwelling in ancient caverns where magical fire deposits illuminate the darkness.',
-    randomNumber: 879,
-    image:
-      'https://i.ibb.co/236kQgd/A-giant-bat-with-purple-armor-and-wings-that-fli.png',
-    inclination: 'Wrath',
-    effect: '',
-    biome: 'Cave',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 64,
-    name: 'Grove Guardian Gargoyle',
-    description:
-      'A stone gargoyle brought to life by ancient magic, protecting sacred groves and medieval monuments.',
-    randomNumber: 111,
-    image:
-      'https://i.ibb.co/2tkgG9F/A-stone-gargoyle-brought-to-life-by-ancient-magi.png',
-    inclination: 'Wrath',
-    effect: '',
-    biome: 'Cave',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 65,
@@ -1133,74 +1126,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 66,
-    name: 'Thunderstrike Tarantula',
-    description:
-      'A giant tarantula with legs that generate electric charges, dwelling in stormy caverns and guarding ancient artifacts.',
-    randomNumber: 246,
-    image:
-      'https://i.ibb.co/7ypX5mF/A-giant-tarantula-with-legs-that-generate-electr.png',
-    inclination: 'Wrath',
-    effect: '',
-    biome: 'Cave',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 67,
-    name: 'Thunderclaw Roc',
-    description:
-      'A colossal bird with thunderstorm feathers, creating storms as it soars across the medieval skies.',
-    randomNumber: 213,
-    image:
-      'https://i.ibb.co/v16FVVc/A-colossal-bird-with-thunderstorm-feathers-crea.png',
-    inclination: 'Wrath',
-    effect: '',
-    biome: 'Desert',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 68,
-    name: 'Abyssal Leviathan',
-    description:
-      'A colossal sea serpent with bioluminescent patterns, lurking in the depths of a mysterious underwater abyss.',
-    randomNumber: 876,
-    image:
-      'https://i.ibb.co/rb5DbLX/A-colossal-sea-serpent-with-bioluminescent-patte.png',
-    inclination: 'Wrath',
-    effect: '',
-    biome: 'Aquatic',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 69,
-    name: 'Vorpal Viper',
-    description:
-      'A venomous snake with fangs so sharp they can cut through reality itself, often associated with ancient curses.',
-    randomNumber: 321,
-    image:
-      'https://i.ibb.co/ygLYvrK/A-venomous-snake-with-fangs-so-sharp-they-can-cu.png',
-    inclination: 'Wrath',
-    effect: '',
-    biome: 'Cave',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 70,
@@ -1218,6 +1144,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 71,
@@ -1235,23 +1162,97 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
-    id: 72,
-    name: 'Aetherial Serpent',
+    id: 59,
+    name: 'Warhorn Hornet',
     description:
-      'A serpent that glides through the air, leaving trails of sparkling stardust as it weaves through the clouds.',
-    randomNumber: 987,
+      'A giant hornet sounding a warhorn, leading swarms into battle against medieval intruders.',
+    randomNumber: 637,
     image:
-      'https://i.ibb.co/b7SdwdF/A-serpent-that-glides-through-the-air-leaving-t.png',
+      'https://i.ibb.co/HKc9Nny/A-giant-hornet-sounding-a-warhorn-leading-swarm.png',
     inclination: 'Wrath',
     effect: '',
-    biome: 'Alpine',
-    rarity: 'Rare',
+    biome: 'Grassland',
+    rarity: 'Uncommon',
     type: 'creature',
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
+  },
+  {
+    id: 62,
+    name: 'Axe Anteater',
+    description:
+      'An anteater with a small battle axe, using its powerful claws and weapon to defend against medieval threats.',
+    randomNumber: 783,
+    image:
+      'https://i.ibb.co/fr9Px5P/an-giant-anteater-using-its-powerful-claws-to-d.png',
+    inclination: 'Wrath',
+    effect: '',
+    biome: 'Grassland',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 64,
+    name: 'Grove Guardian Gargoyle',
+    description:
+      'A stone gargoyle brought to life by ancient magic, protecting sacred groves and medieval monuments.',
+    randomNumber: 111,
+    image:
+      'https://i.ibb.co/2tkgG9F/A-stone-gargoyle-brought-to-life-by-ancient-magi.png',
+    inclination: 'Wrath',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 68,
+    name: 'Abyssal Leviathan',
+    description:
+      'A colossal sea serpent with bioluminescent patterns, lurking in the depths of a mysterious underwater abyss.',
+    randomNumber: 876,
+    image:
+      'https://i.ibb.co/rb5DbLX/A-colossal-sea-serpent-with-bioluminescent-patte.png',
+    inclination: 'Wrath',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 69,
+    name: 'Vorpal Viper',
+    description:
+      'A venomous snake with fangs so sharp they can cut through reality itself, often associated with ancient curses.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/ygLYvrK/A-venomous-snake-with-fangs-so-sharp-they-can-cu.png',
+    inclination: 'Wrath',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
   },
   {
     id: 73,
@@ -1269,6 +1270,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 74,
@@ -1286,6 +1288,79 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
+  },
+  {
+    id: 63,
+    name: 'Balefire Bat',
+    description:
+      'A bat with wings that flicker like flames, dwelling in ancient caverns where magical fire deposits illuminate the darkness.',
+    randomNumber: 879,
+    image:
+      'https://i.ibb.co/236kQgd/A-giant-bat-with-purple-armor-and-wings-that-fli.png',
+    inclination: 'Wrath',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 66,
+    name: 'Thunderstrike Tarantula',
+    description:
+      'A giant tarantula with legs that generate electric charges, dwelling in stormy caverns and guarding ancient artifacts.',
+    randomNumber: 246,
+    image:
+      'https://i.ibb.co/7ypX5mF/A-giant-tarantula-with-legs-that-generate-electr.png',
+    inclination: 'Wrath',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 67,
+    name: 'Thunderclaw Roc',
+    description:
+      'A colossal bird with thunderstorm feathers, creating storms as it soars across the medieval skies.',
+    randomNumber: 213,
+    image:
+      'https://i.ibb.co/v16FVVc/A-colossal-bird-with-thunderstorm-feathers-crea.png',
+    inclination: 'Wrath',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 72,
+    name: 'Aetherial Serpent',
+    description:
+      'A serpent that glides through the air, leaving trails of sparkling stardust as it weaves through the clouds.',
+    randomNumber: 987,
+    image:
+      'https://i.ibb.co/b7SdwdF/A-serpent-that-glides-through-the-air-leaving-t.png',
+    inclination: 'Wrath',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
   },
   {
     id: 75,
@@ -1303,6 +1378,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 76,
@@ -1320,23 +1396,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 77,
-    name: 'Spectral Stag',
-    description:
-      'A ghostly stag with antlers that emit an otherworldly glow, appearing in mist-covered medieval woodlands.',
-    randomNumber: 501,
-    image:
-      'https://i.ibb.co/y59VYSY/A-ghostly-stag-with-antlers-that-emit-an-otherwo.png',
-    inclination: 'Mischief',
-    effect: '',
-    biome: 'Forest',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 78,
@@ -1354,6 +1414,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 79,
@@ -1371,6 +1432,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 300,
     hp: 300,
+    cost: 0,
   },
   {
     id: 80,
@@ -1388,6 +1450,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 81,
@@ -1405,6 +1468,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 82,
@@ -1422,6 +1486,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 83,
@@ -1439,6 +1504,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 84,
@@ -1456,6 +1522,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 85,
@@ -1473,6 +1540,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 86,
@@ -1490,6 +1558,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 87,
@@ -1507,6 +1576,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 88,
@@ -1524,91 +1594,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 89,
-    name: 'Morningstar Moth',
-    description:
-      'A moth with wings that unfold into morningstars, resting peacefully in medieval lantern-lit gardens.',
-    randomNumber: 456,
-    image:
-      'https://i.ibb.co/JH4y9Bq/A-moth-with-wings-that-unfold-into-morningstars.png',
-    inclination: 'Mischief',
-    effect: '',
-    biome: 'Forest',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 90,
-    name: 'Glaive Gecko',
-    description:
-      'A gecko with a glaive, climbing medieval walls and striking from unexpected angles.',
-    randomNumber: 901,
-    image:
-      'https://i.ibb.co/FxkxBKN/A-gecko-with-a-glaive-climbing-medieval-walls-a.png',
-    inclination: 'Mischief',
-    effect: '',
-    biome: 'Forest',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 91,
-    name: 'Crimson Claw Crab',
-    description:
-      'A crab with pincers that glow like rubies, scuttling along the shores of enchanted medieval beaches.',
-    randomNumber: 912,
-    image:
-      'https://i.ibb.co/f8bGn8q/A-crab-with-pincers-that-glow-like-rubies-scutt.png',
-    inclination: 'Mischief',
-    effect: '',
-    biome: 'Aquatic',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 92,
-    name: 'Spectral Panther',
-    description:
-      'A phantom panther that prowls the haunted forests, its ghostly form camouflaging with the mist.',
-    randomNumber: 765,
-    image:
-      'https://i.ibb.co/p15q56G/A-phantom-panther-wearing-black-armor-staring-in.png',
-    inclination: 'Mischief',
-    effect: '',
-    biome: 'Jungle',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 93,
-    name: 'Lunar Lotus Tortoise',
-    description:
-      'A tranquil tortoise with a shell resembling a blooming lotus, often found in serene moonlit ponds.',
-    randomNumber: 213,
-    image:
-      'https://i.ibb.co/zxzV9Kd/A-tranquil-tortoise-with-a-shell-resembling-a-bl.png',
-    inclination: 'Mischief',
-    effect: '',
-    biome: 'Wetland',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 94,
@@ -1626,23 +1612,97 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
-    id: 95,
-    name: 'Thunderstrike Tarsier',
+    id: 89,
+    name: 'Morningstar Moth',
     description:
-      'A small primate with eyes that flash with lightning, inhabiting the stormy reaches of medieval canopies.',
-    randomNumber: 888,
+      'A moth with wings that unfold into morningstars, resting peacefully in medieval lantern-lit gardens.',
+    randomNumber: 456,
     image:
-      'https://i.ibb.co/yVV34m5/A-small-primate-with-eyes-that-flash-with-lightn.png',
+      'https://i.ibb.co/JH4y9Bq/A-moth-with-wings-that-unfold-into-morningstars.png',
     inclination: 'Mischief',
     effect: '',
-    biome: 'Jungle',
-    rarity: 'Rare',
+    biome: 'Forest',
+    rarity: 'Uncommon',
     type: 'creature',
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
+  },
+  {
+    id: 90,
+    name: 'Glaive Gecko',
+    description:
+      'A gecko with a glaive, climbing medieval walls and striking from unexpected angles.',
+    randomNumber: 901,
+    image:
+      'https://i.ibb.co/FxkxBKN/A-gecko-with-a-glaive-climbing-medieval-walls-a.png',
+    inclination: 'Mischief',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 91,
+    name: 'Crimson Claw Crab',
+    description:
+      'A crab with pincers that glow like rubies, scuttling along the shores of enchanted medieval beaches.',
+    randomNumber: 912,
+    image:
+      'https://i.ibb.co/f8bGn8q/A-crab-with-pincers-that-glow-like-rubies-scutt.png',
+    inclination: 'Mischief',
+    effect: '',
+    biome: 'Aquatic',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 92,
+    name: 'Spectral Panther',
+    description:
+      'A phantom panther that prowls the haunted forests, its ghostly form camouflaging with the mist.',
+    randomNumber: 765,
+    image:
+      'https://i.ibb.co/p15q56G/A-phantom-panther-wearing-black-armor-staring-in.png',
+    inclination: 'Mischief',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 93,
+    name: 'Lunar Lotus Tortoise',
+    description:
+      'A tranquil tortoise with a shell resembling a blooming lotus, often found in serene moonlit ponds.',
+    randomNumber: 213,
+    image:
+      'https://i.ibb.co/zxzV9Kd/A-tranquil-tortoise-with-a-shell-resembling-a-bl.png',
+    inclination: 'Mischief',
+    effect: '',
+    biome: 'Wetland',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
   },
   {
     id: 96,
@@ -1660,57 +1720,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 97,
-    name: 'Moonshadow Lynx',
-    description:
-      'A stealthy lynx with fur that absorbs and reflects moonlight, becoming nearly invisible as it stalks its prey.',
-    randomNumber: 456,
-    image:
-      'https://i.ibb.co/NFv5TZc/A-stealthy-lynx-with-fur-that-absorbs-and-reflec-1.png',
-    inclination: 'Mischief',
-    effect: '',
-    biome: 'Forest',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 98,
-    name: 'Sapphire Wyrm',
-    description:
-      'A serpent-like dragon covered in shimmering sapphire scales, known to slumber within the heart of a mystical blue cavern.',
-    randomNumber: 876,
-    image:
-      'https://i.ibb.co/BPWLDGT/A-serpentlike-dragon-covered-in-shimmering-sapp.png',
-    inclination: 'Mischief',
-    effect: '',
-    biome: 'Cave',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 99,
-    name: 'Obsidian Direwolf',
-    description:
-      'A massive, jet-black wolf with eyes that gleam like polished obsidian, leading packs through the mystical forest.',
-    randomNumber: 876,
-    image:
-      'https://i.ibb.co/0Yv0B9X/A-massive-jetblack-wolf-with-eyes-that-gleam-l.png',
-    inclination: 'Mischief',
-    effect: '',
-    biome: 'Forest',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 100,
@@ -1728,6 +1738,97 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
+  },
+  {
+    id: 77,
+    name: 'Spectral Stag',
+    description:
+      'A ghostly stag with antlers that emit an otherworldly glow, appearing in mist-covered medieval woodlands.',
+    randomNumber: 501,
+    image:
+      'https://i.ibb.co/y59VYSY/A-ghostly-stag-with-antlers-that-emit-an-otherwo.png',
+    inclination: 'Mischief',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 95,
+    name: 'Thunderstrike Tarsier',
+    description:
+      'A small primate with eyes that flash with lightning, inhabiting the stormy reaches of medieval canopies.',
+    randomNumber: 888,
+    image:
+      'https://i.ibb.co/yVV34m5/A-small-primate-with-eyes-that-flash-with-lightn.png',
+    inclination: 'Mischief',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 97,
+    name: 'Moonshadow Lynx',
+    description:
+      'A stealthy lynx with fur that absorbs and reflects moonlight, becoming nearly invisible as it stalks its prey.',
+    randomNumber: 456,
+    image:
+      'https://i.ibb.co/NFv5TZc/A-stealthy-lynx-with-fur-that-absorbs-and-reflec-1.png',
+    inclination: 'Mischief',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 98,
+    name: 'Sapphire Wyrm',
+    description:
+      'A serpent-like dragon covered in shimmering sapphire scales, known to slumber within the heart of a mystical blue cavern.',
+    randomNumber: 876,
+    image:
+      'https://i.ibb.co/BPWLDGT/A-serpentlike-dragon-covered-in-shimmering-sapp.png',
+    inclination: 'Mischief',
+    effect: '',
+    biome: 'Cave',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 99,
+    name: 'Obsidian Direwolf',
+    description:
+      'A massive, jet-black wolf with eyes that gleam like polished obsidian, leading packs through the mystical forest.',
+    randomNumber: 876,
+    image:
+      'https://i.ibb.co/0Yv0B9X/A-massive-jetblack-wolf-with-eyes-that-gleam-l.png',
+    inclination: 'Mischief',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
   },
   {
     id: 101,
@@ -1745,6 +1846,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 102,
@@ -1762,6 +1864,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 103,
@@ -1779,6 +1882,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 104,
@@ -1796,6 +1900,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 105,
@@ -1813,6 +1918,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 106,
@@ -1830,6 +1936,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 107,
@@ -1847,6 +1954,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 300,
     hp: 400,
+    cost: 0,
   },
   {
     id: 108,
@@ -1864,6 +1972,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 109,
@@ -1881,6 +1990,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 110,
@@ -1898,6 +2008,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 111,
@@ -1915,40 +2026,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 112,
-    name: 'Aurora Armored Antelope',
-    description:
-      'An antelope with armor that reflects the colors of the aurora borealis, leaping through meadows with grace.',
-    randomNumber: 823,
-    image:
-      'https://i.ibb.co/T4KjnKD/An-antelope-with-armor-that-reflects-the-colors.png',
-    inclination: 'Pride',
-    effect: '',
-    biome: 'Grassland',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 113,
-    name: 'Obsidian Ocelot',
-    description:
-      'A sleek ocelot with fur as dark as obsidian, stalking silently through the shadows of ancient ruins.',
-    randomNumber: 576,
-    image:
-      'https://i.ibb.co/PT4j6bL/A-of-sleek-ocelot-with-fur-as-dark-as-obsidian-w.png',
-    inclination: 'Pride',
-    effect: '',
-    biome: 'Desert',
-    rarity: 'Uncommon',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 114,
@@ -1966,23 +2044,43 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
-    id: 115,
-    name: 'Warhammer Wolf',
+    id: 112,
+    name: 'Aurora Armored Antelope',
     description:
-      'A majestic wolf carrying a warhammer, leading a pack of armored wolves through medieval forests on moonlit patrols.',
-    randomNumber: 742,
+      'An antelope with armor that reflects the colors of the aurora borealis, leaping through meadows with grace.',
+    randomNumber: 823,
     image:
-      'https://i.ibb.co/VjLLd33/A-majestic-wolf-carrying-a-warhammer-leading-a.png',
+      'https://i.ibb.co/T4KjnKD/An-antelope-with-armor-that-reflects-the-colors.png',
     inclination: 'Pride',
     effect: '',
-    biome: 'Forest',
-    rarity: 'Rare',
+    biome: 'Grassland',
+    rarity: 'Uncommon',
     type: 'creature',
     effectFunction: '',
-    attackPower: 700,
-    hp: 700,
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 113,
+    name: 'Obsidian Ocelot',
+    description:
+      'A sleek ocelot with fur as dark as obsidian, stalking silently through the shadows of ancient ruins.',
+    randomNumber: 576,
+    image:
+      'https://i.ibb.co/PT4j6bL/A-of-sleek-ocelot-with-fur-as-dark-as-obsidian-w.png',
+    inclination: 'Pride',
+    effect: '',
+    biome: 'Desert',
+    rarity: 'Uncommon',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
   },
   {
     id: 116,
@@ -2000,6 +2098,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 117,
@@ -2017,40 +2116,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 118,
-    name: 'Luminous Liger',
-    description:
-      'A hybrid creature with the strength of a lion and the grace of a tiger, its fur radiating a gentle glow.',
-    randomNumber: 455,
-    image:
-      'https://i.ibb.co/9HBSqZs/A-hybrid-creature-with-the-strength-of-a-lion-an.png',
-    inclination: 'Pride',
-    effect: '',
-    biome: 'Jungle',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 119,
-    name: 'Ironhide Rhino',
-    description:
-      'A massive rhinoceros with a hide as tough as iron, charging through medieval battlefields with unwavering strength.',
-    randomNumber: 246,
-    image:
-      'https://i.ibb.co/mGhXx2k/A-massive-rhinoceros-with-a-hide-as-tough-as-iro.png',
-    inclination: 'Pride',
-    effect: '',
-    biome: 'Jungle',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 120,
@@ -2068,6 +2134,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 121,
@@ -2085,6 +2152,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
   {
     id: 122,
@@ -2102,40 +2170,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-  },
-  {
-    id: 123,
-    name: 'Frostfall Fennec Fox',
-    description:
-      'A small fox with fur that changes color with the seasons, blending seamlessly into snow-covered medieval landscapes.',
-    randomNumber: 321,
-    image:
-      'https://i.ibb.co/BfZzR71/A-small-white-fox-with-fur-that-changes-color-wi.png',
-    inclination: 'Pride',
-    effect: '',
-    biome: 'Tundra',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-  },
-  {
-    id: 124,
-    name: 'Lunar Griffin',
-    description:
-      'A graceful creature with the body of a lion and wings resembling a crescent moon, said to be guardians of ancient celestial secrets.',
-    randomNumber: 321,
-    image:
-      'https://i.ibb.co/PCs6JDt/A-graceful-creature-with-the-body-of-a-lion-and.png',
-    inclination: 'Pride',
-    effect: '',
-    biome: 'Alpine',
-    rarity: 'Rare',
-    type: 'creature',
-    effectFunction: '',
-    attackPower: 0,
-    hp: 0,
+    cost: 0,
   },
   {
     id: 125,
@@ -2153,6 +2188,97 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
+  },
+  {
+    id: 115,
+    name: 'Warhammer Wolf',
+    description:
+      'A majestic wolf carrying a warhammer, leading a pack of armored wolves through medieval forests on moonlit patrols.',
+    randomNumber: 742,
+    image:
+      'https://i.ibb.co/VjLLd33/A-majestic-wolf-carrying-a-warhammer-leading-a.png',
+    inclination: 'Pride',
+    effect: '',
+    biome: 'Forest',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 700,
+    hp: 700,
+    cost: 0,
+  },
+  {
+    id: 118,
+    name: 'Luminous Liger',
+    description:
+      'A hybrid creature with the strength of a lion and the grace of a tiger, its fur radiating a gentle glow.',
+    randomNumber: 455,
+    image:
+      'https://i.ibb.co/9HBSqZs/A-hybrid-creature-with-the-strength-of-a-lion-an.png',
+    inclination: 'Pride',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 119,
+    name: 'Ironhide Rhino',
+    description:
+      'A massive rhinoceros with a hide as tough as iron, charging through medieval battlefields with unwavering strength.',
+    randomNumber: 246,
+    image:
+      'https://i.ibb.co/mGhXx2k/A-massive-rhinoceros-with-a-hide-as-tough-as-iro.png',
+    inclination: 'Pride',
+    effect: '',
+    biome: 'Jungle',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 123,
+    name: 'Frostfall Fennec Fox',
+    description:
+      'A small fox with fur that changes color with the seasons, blending seamlessly into snow-covered medieval landscapes.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/BfZzR71/A-small-white-fox-with-fur-that-changes-color-wi.png',
+    inclination: 'Pride',
+    effect: '',
+    biome: 'Tundra',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
+  },
+  {
+    id: 124,
+    name: 'Lunar Griffin',
+    description:
+      'A graceful creature with the body of a lion and wings resembling a crescent moon, said to be guardians of ancient celestial secrets.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/PCs6JDt/A-graceful-creature-with-the-body-of-a-lion-and.png',
+    inclination: 'Pride',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Rare',
+    type: 'creature',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 0,
   },
   {
     id: 126,
@@ -2170,6 +2296,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
+    cost: 0,
   },
 ];
 
@@ -2253,17 +2380,12 @@ export async function GET(req: Request) {
     .concat(uncommonPride)
     .concat(rarePride)
     .concat(superPride);
-  // const newCards = [];
-  // for (let i = 0; i <= cardSet.length - 1; i++) {
-  //   const cardEdit = cardSet[i];
+  const newCards = [];
+
+  // for (let i = 0; i <= newSet.length - 1; i++) {
+  //   const cardEdit = newSet[i];
   //   console.log(cardEdit, i);
-  //   cardEdit.effect = '';
-  //   cardEdit.biome = '';
-  //   cardEdit.rarity = '';
-  //   cardEdit.attackPower = 0;
-  //   cardEdit.hp = 0;
-  //   cardEdit.type = 'creature';
-  //   cardEdit.effectFunction = '';
+  //   cardEdit.cost = 0;
   //   newCards.push(cardEdit);
   // }
   console.log(listRarity);
@@ -2273,5 +2395,5 @@ export async function GET(req: Request) {
   //   cardSet2[i].id = i + 1;
   // }
 
-  return NextResponse.json(newSet);
+  return NextResponse.json(cardSet);
 }
