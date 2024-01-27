@@ -543,7 +543,7 @@ const cardSet: Card[] = [
       'A winged creature with scales that mirror the deep blue of the sky, soaring gracefully over medieval landscapes.',
     randomNumber: 645,
     image:
-      'https://i.ibb.co/d53tjY6/A-winged-creature-with-scales-that-mirror-the-de.png',
+      'https://i.ibb.co/vZ5BbT0/wyvern-A-winged-creature-with-scales-that-mirror.png',
     inclination: 'Wisdom',
     effect: '',
     biome: 'Alpine',
@@ -1416,7 +1416,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 78,
@@ -1434,7 +1434,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 300,
     hp: 300,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 79,
@@ -1452,7 +1452,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 80,
@@ -1470,7 +1470,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 81,
@@ -1488,7 +1488,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 82,
@@ -1506,7 +1506,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 83,
@@ -1524,7 +1524,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 84,
@@ -1542,7 +1542,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 85,
@@ -1560,7 +1560,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 86,
@@ -1578,7 +1578,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 87,
@@ -1596,7 +1596,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 88,
@@ -1614,7 +1614,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 89,
@@ -1632,7 +1632,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 90,
@@ -1650,7 +1650,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 91,
@@ -1668,7 +1668,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 92,
@@ -1686,7 +1686,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 93,
@@ -1704,7 +1704,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 94,
@@ -1722,7 +1722,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
     id: 95,

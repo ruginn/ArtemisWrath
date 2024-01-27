@@ -550,7 +550,7 @@ const cardSet: Card[] = [
       'A winged creature with scales that mirror the deep blue of the sky, soaring gracefully over medieval landscapes.',
     randomNumber: 645,
     image:
-      'https://i.ibb.co/d53tjY6/A-winged-creature-with-scales-that-mirror-the-de.png',
+      'https://i.ibb.co/vZ5BbT0/wyvern-A-winged-creature-with-scales-that-mirror.png',
     inclination: 'Wisdom',
     effect: '',
     biome: 'Alpine',
