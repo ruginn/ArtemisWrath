@@ -948,7 +948,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 52,
@@ -966,7 +966,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 53,
@@ -984,7 +984,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 54,
@@ -1002,7 +1002,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 55,
@@ -1020,7 +1020,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 56,
@@ -1038,7 +1038,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 57,
@@ -1056,7 +1056,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 58,
@@ -1074,7 +1074,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 59,
@@ -1092,7 +1092,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 60,
@@ -1110,7 +1110,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 61,
@@ -1128,7 +1128,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 62,
@@ -1146,7 +1146,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 63,
@@ -1164,7 +1164,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 64,
@@ -1182,7 +1182,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 65,
@@ -1200,7 +1200,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 66,
@@ -1218,7 +1218,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 67,
@@ -1236,7 +1236,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
     id: 68,
@@ -1254,7 +1254,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 69,
@@ -1272,7 +1272,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 70,
@@ -1290,7 +1290,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 71,
@@ -1308,7 +1308,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
     id: 72,
@@ -1326,7 +1326,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
     id: 73,
@@ -1344,7 +1344,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 6,
   },
   {
     id: 74,
@@ -1362,7 +1362,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 7,
   },
   {
     id: 75,
@@ -1380,7 +1380,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 7,
   },
   {
     id: 76,
@@ -1398,7 +1398,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 6,
   },
   {
     id: 77,
