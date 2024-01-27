@@ -46,14 +46,15 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/5RhmnbV/A-small-agile-sparrow-wielding-a-tiny-sword-wit.png',
     inclination: 'Love',
-    effect: '',
+    effect:
+      'When this card is played search your deck for a forest biome creature with 3 or less nectar cost.',
     biome: 'Alpine',
     rarity: 'Common',
     type: 'creature',
     effectFunction: '',
-    attackPower: 200,
+    attackPower: 100,
     hp: 200,
-    cost: 2,
+    cost: 1,
   },
   {
     id: 2,
@@ -64,14 +65,15 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/LJfbXvy/A-tiny-mouse-gripping-a-morningstar-bravely-sta.png',
     inclination: 'Love',
-    effect: '',
+    effect:
+      'This creature may attack twice if you have another cave creature in play.',
     biome: 'Cave',
     rarity: 'Common',
     type: 'creature',
     effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-    cost: 0,
+    attackPower: 200,
+    hp: 150,
+    cost: 2,
   },
   {
     id: 3,
@@ -88,8 +90,8 @@ const cardSet: Card[] = [
     type: 'creature',
     effectFunction: '',
     attackPower: 0,
-    hp: 0,
-    cost: 0,
+    hp: 100,
+    cost: 1,
   },
   {
     id: 4,
@@ -105,9 +107,9 @@ const cardSet: Card[] = [
     rarity: 'Common',
     type: 'creature',
     effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-    cost: 0,
+    attackPower: 300,
+    hp: 300,
+    cost: 2,
   },
   {
     id: 5,
@@ -123,9 +125,9 @@ const cardSet: Card[] = [
     rarity: 'Common',
     type: 'creature',
     effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-    cost: 0,
+    attackPower: 200,
+    hp: 400,
+    cost: 2,
   },
   {
     id: 6,
@@ -141,9 +143,9 @@ const cardSet: Card[] = [
     rarity: 'Common',
     type: 'creature',
     effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-    cost: 0,
+    attackPower: 400,
+    hp: 500,
+    cost: 3,
   },
   {
     id: 7,
@@ -159,9 +161,9 @@ const cardSet: Card[] = [
     rarity: 'Common',
     type: 'creature',
     effectFunction: '',
-    attackPower: 0,
-    hp: 0,
-    cost: 0,
+    attackPower: 150,
+    hp: 200,
+    cost: 2,
   },
   {
     id: 8,
@@ -179,7 +181,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 9,
@@ -197,10 +199,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 17,
+    id: 10,
     name: 'Harmonic Hummingbird',
     description:
       'A hummingbird with feathers that emit melodic tones, bringing music to enchanted gardens.',
@@ -215,10 +217,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 23,
+    id: 11,
     name: 'Ebon Pegasus',
     description:
       'A majestic black-winged horse with a mane that flows like shadows, only appearing to those with pure hearts.',
@@ -233,10 +235,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 10,
+    id: 12,
     name: 'Whip Weasel',
     description:
       'A weasel with a tiny whip, agilely navigating through medieval castle corridors.',
@@ -251,10 +253,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 11,
+    id: 13,
     name: 'Whisperwind Weasel',
     description:
       'A small weasel with fur that ripples like the wind, known for its elusive and playful nature.',
@@ -269,10 +271,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 12,
+    id: 14,
     name: 'Stellar Skunk',
     description:
       'A small skunk with a tail that releases stardust, leaving behind a trail of celestial fragrance in medieval meadows.',
@@ -287,7 +289,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 15,
@@ -305,7 +307,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 16,
@@ -323,10 +325,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 18,
+    id: 17,
     name: 'Whispering Wisp Wombat',
     description:
       'A small, furry creature with the ability to communicate through ethereal wisps, aiding those in need.',
@@ -341,10 +343,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 20,
+    id: 18,
     name: 'Mystic Mole',
     description:
       'A subterranean creature with fur that glows in the dark, navigating through medieval tunnels with unseen magical senses.',
@@ -360,10 +362,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 22,
+    id: 19,
     name: 'Gilded Gryphon',
     description:
       'A gryphon adorned with golden feathers and a mane that glows like the sun, known to guard ancient treasures.',
@@ -378,10 +380,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
-    id: 13,
+    id: 20,
     name: 'Glowshroom Gazelle',
     description:
       'A graceful gazelle with bioluminescent spots, grazing in mystical meadows filled with giant luminescent mushrooms.',
@@ -396,10 +398,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
-    id: 14,
+    id: 21,
     name: 'Silvershade Sloth',
     description:
       'A slow-moving sloth with fur that shimmers like moonlight, often spotted hanging from ancient trees.',
@@ -414,10 +416,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 19,
+    id: 22,
     name: 'Solar Seraphim Butterfly',
     description:
       'A radiant butterfly with wings that resemble stained glass, said to be messengers from the celestial realms.',
@@ -432,10 +434,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 21,
+    id: 23,
     name: 'Ebonwinged Echidna',
     description:
       'A spiky creature with wings as dark as night, said to be guardians of ancient subterranean treasures.',
@@ -450,7 +452,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 6,
   },
   {
     id: 24,
@@ -468,7 +470,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 25,
@@ -486,7 +488,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 7,
   },
   {
     id: 26,
@@ -504,7 +506,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 27,
@@ -523,7 +525,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 28,
@@ -541,7 +543,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 29,
@@ -559,7 +561,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 30,
@@ -577,7 +579,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 31,
@@ -595,7 +597,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 32,
@@ -613,10 +615,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 39,
+    id: 33,
     name: 'Scepter Snail',
     description:
       'A snail with a small scepter, slowly making its way through medieval gardens as a dignified ruler of the miniature realm.',
@@ -631,10 +633,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 40,
+    id: 34,
     name: 'Ebon Eelhound',
     description:
       'A sleek aquatic creature with the body of an eel and the loyalty of a hound, patrolling underwater realms.',
@@ -649,10 +651,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
-    id: 44,
+    id: 35,
     name: 'Eldritch Elk',
     description:
       'An elk with antlers that channel otherworldly energies, said to have the ability to open portals to distant realms.',
@@ -667,10 +669,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 46,
+    id: 36,
     name: 'Timeless Tortoise',
     description:
       'A wise tortoise with a shell that reflects the changing seasons, said to have witnessed centuries unfold.',
@@ -685,10 +687,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
-    id: 33,
+    id: 37,
     name: 'Coral Crested Griffin',
     description:
       'A griffin with feathers resembling vibrant coral, found perched on the cliffs overlooking medieval coastal kingdoms.',
@@ -703,10 +705,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
-    id: 34,
+    id: 38,
     name: 'Venomous Vine Viper',
     description:
       'A snake with vines growing from its scales, camouflaging it within overgrown enchanted forests.',
@@ -721,10 +723,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 35,
+    id: 39,
     name: 'Molten Gryphon',
     description:
       'A gryphon with feathers that resemble flowing lava, perched on the peaks of volcanoes as a guardian of the fiery realms.',
@@ -739,10 +741,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 36,
+    id: 40,
     name: 'Sable Shapeshifter Snake',
     description:
       'A serpent with the ability to transform into various shapes, rumored to be a guardian of ancient magical artifacts.',
@@ -757,10 +759,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 37,
+    id: 41,
     name: 'Aetherial Angelfish',
     description:
       'A celestial fish with iridescent scales, swimming in medieval ponds and bringing a sense of enchantment.',
@@ -775,10 +777,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 38,
+    id: 42,
     name: 'Stone Sentinel Tortoise',
     description:
       'A massive tortoise with a shell resembling ancient ruins, believed to carry the wisdom of the ages.',
@@ -793,10 +795,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
-    id: 45,
+    id: 43,
     name: 'Ephemeral Elephant',
     description:
       'An elephant with a transparent, ghostly appearance, said to be a manifestation of the spirits of the forest.',
@@ -811,10 +813,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 41,
+    id: 44,
     name: 'Astral Axolotl',
     description:
       'An aquatic creature with translucent skin, adorned with celestial patterns, swimming in sacred medieval lakes.',
@@ -829,10 +831,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
-    id: 42,
+    id: 45,
     name: 'Ethereal Elephant Eel',
     description:
       'A majestic aquatic creature with the body of an elephant and the tail of an eel, gliding through mysterious underwater realms.',
@@ -847,10 +849,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
-    id: 43,
+    id: 46,
     name: 'Sapphire Snail',
     description:
       'A slow-moving snail with a shell that glistens like precious sapphire, leaving a trail of magical luminescence.',
@@ -865,7 +867,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 47,
@@ -883,7 +885,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 48,
@@ -901,7 +903,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 7,
   },
   {
     id: 49,
@@ -919,7 +921,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 7,
   },
   {
     id: 50,
@@ -937,7 +939,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
     id: 51,
@@ -955,25 +957,25 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 52,
     name: 'Flanged Falcon',
     description:
-      'A falcon with a flanged mace, diving from the skies to strike with powerful blows in medieval skirmishes.',
+      'A noble seal with icy patterns adorning its sleek coat, perched on a medieval ice floe. As a guardian of frozen realms, it exudes an aura of frosty magic, its whiskers sensing the whispers of the chilly winds in the enchanted landscape',
     randomNumber: 234,
     image:
-      'https://i.ibb.co/gvMM9fy/A-falcon-with-a-flanged-mace-diving-from-the-sk.png',
+      'https://i.ibb.co/brD2DM5/Picture-a-noble-seal-with-icy-patterns-adorning.png',
     inclination: 'Wrath',
     effect: '',
-    biome: 'Alpine',
+    biome: 'Aquatic',
     rarity: 'Common',
     type: 'creature',
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 53,
@@ -991,7 +993,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 54,
@@ -1009,7 +1011,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 55,
@@ -1027,7 +1029,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 56,
@@ -1045,7 +1047,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 57,
@@ -1063,7 +1065,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 58,
@@ -1081,10 +1083,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 60,
+    id: 59,
     name: 'Cudgel Crow',
     description:
       'A crow wielding a cudgel, using its intelligence to outsmart opponents in medieval castle courtyards.',
@@ -1099,10 +1101,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 61,
+    id: 60,
     name: 'Thorned Basilisk',
     description:
       'A serpent with thorny scales and the ability to turn creatures to stone with a single gaze, inhabiting ancient gardens.',
@@ -1117,10 +1119,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 65,
+    id: 61,
     name: 'Amethyst Armadillo',
     description:
       'A mystical armadillo with a shell made of shimmering amethyst, rolling into a protective ball when threatened.',
@@ -1135,10 +1137,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 70,
+    id: 62,
     name: 'Wraithwing Raven',
     description:
       'A spectral raven with feathers that carry whispers of the afterlife, guiding lost souls to their eternal rest.',
@@ -1153,10 +1155,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 71,
+    id: 63,
     name: 'Tempest Tortoise',
     description:
       'A giant tortoise with a shell that generates storms, creating swirling winds and rain as it travels through the medieval countryside.',
@@ -1171,10 +1173,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 59,
+    id: 64,
     name: 'Warhorn Hornet',
     description:
       'A giant hornet sounding a warhorn, leading swarms into battle against medieval intruders.',
@@ -1189,10 +1191,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 62,
+    id: 65,
     name: 'Axe Anteater',
     description:
       'An anteater with a small battle axe, using its powerful claws and weapon to defend against medieval threats.',
@@ -1207,10 +1209,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 64,
+    id: 66,
     name: 'Grove Guardian Gargoyle',
     description:
       'A stone gargoyle brought to life by ancient magic, protecting sacred groves and medieval monuments.',
@@ -1225,10 +1227,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 68,
+    id: 67,
     name: 'Abyssal Leviathan',
     description:
       'A colossal sea serpent with bioluminescent patterns, lurking in the depths of a mysterious underwater abyss.',
@@ -1243,10 +1245,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
-    id: 69,
+    id: 68,
     name: 'Vorpal Viper',
     description:
       'A venomous snake with fangs so sharp they can cut through reality itself, often associated with ancient curses.',
@@ -1261,10 +1263,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 73,
+    id: 69,
     name: 'Shadow Weaver Spider',
     description:
       'A giant spider with the ability to manipulate shadows, lurking in dark corners of forgotten castles.',
@@ -1279,10 +1281,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 74,
+    id: 70,
     name: 'Frostbite Wyvern',
     description:
       'A fearsome dragon-like creature with icy breath, dwelling in the frosty peaks of a distant mountain range.',
@@ -1297,10 +1299,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 63,
+    id: 71,
     name: 'Balefire Bat',
     description:
       'A bat with wings that flicker like flames, dwelling in ancient caverns where magical fire deposits illuminate the darkness.',
@@ -1315,10 +1317,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
-    id: 66,
+    id: 72,
     name: 'Thunderstrike Tarantula',
     description:
       'A giant tarantula with legs that generate electric charges, dwelling in stormy caverns and guarding ancient artifacts.',
@@ -1333,10 +1335,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
-    id: 67,
+    id: 73,
     name: 'Thunderclaw Roc',
     description:
       'A colossal bird with thunderstorm feathers, creating storms as it soars across the medieval skies.',
@@ -1351,10 +1353,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 6,
   },
   {
-    id: 72,
+    id: 74,
     name: 'Aetherial Serpent',
     description:
       'A serpent that glides through the air, leaving trails of sparkling stardust as it weaves through the clouds.',
@@ -1369,7 +1371,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 7,
   },
   {
     id: 75,
@@ -1387,7 +1389,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 7,
   },
   {
     id: 76,
@@ -1405,10 +1407,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 6,
   },
   {
-    id: 78,
+    id: 77,
     name: 'Starwhisper Spider',
     description:
       'A spider with webs that echo the patterns of constellations, weaving ethereal traps in hidden corners of medieval castles.',
@@ -1423,10 +1425,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 79,
+    id: 78,
     name: 'Lancewielder Lemur',
     description:
       'A lemur brandishing a lance, leaping between treetops in medieval jungles as a guardian of the ancient canopy.',
@@ -1441,10 +1443,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 300,
     hp: 300,
-    cost: 0,
+    cost: 1,
   },
   {
-    id: 80,
+    id: 79,
     name: 'Halberd Hawk',
     description:
       'A hawk with a halberd in its talons, soaring above medieval landscapes as the aerial protector of castle realms.',
@@ -1459,16 +1461,16 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
-    id: 81,
+    id: 80,
     name: 'Mace Macaque',
     description:
       'A mischievous macaque wielding a mace, known for causing chaos in medieval marketplaces with its unexpected swings.',
     randomNumber: 173,
     image:
-      'https://i.ibb.co/djFxfCp/A-mischievous-macaque-wielding-a-mace-known-for.png',
+      'https://i.ibb.co/H4JpZs5/a-Black-Spider-Monkey-as-a-knight-doing-somethin.png',
     inclination: 'Mischief',
     effect: '',
     biome: 'Jungle',
@@ -1477,10 +1479,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 82,
+    id: 81,
     name: 'Javelin Jackal',
     description:
       'A jackal with a javelin, skillfully throwing it at approaching threats in the medieval deserts.',
@@ -1495,10 +1497,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 83,
+    id: 82,
     name: 'Giant Crossbow Gecko',
     description:
       'A large gecko operating a giant crossbow, stationed on medieval castle walls to defend against aerial threats.',
@@ -1513,10 +1515,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 84,
+    id: 83,
     name: 'Ironbark Ibis',
     description:
       'A bird with wings made of living ironbark, nesting in the ancient branches of mystical trees.',
@@ -1531,10 +1533,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 85,
+    id: 84,
     name: 'Whimsical Woodpecker Warg',
     description:
       'A large, colorful woodpecker with the intelligence of a wolf, often tamed by woodland elves as loyal companions.',
@@ -1549,10 +1551,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 86,
+    id: 85,
     name: 'Vortex Vulture',
     description:
       'A scavenger bird with wings that create miniature tornadoes, soaring above battlefields to pick at the remnants of war.',
@@ -1567,10 +1569,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
-    id: 87,
+    id: 86,
     name: 'Amberwinged Dragonfly',
     description:
       'A delicate dragonfly with wings resembling transparent amber, weaving through sunbeams and spreading a sense of tranquility.',
@@ -1585,16 +1587,16 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 88,
+    id: 87,
     name: 'Eclipse Hare',
     description:
       'A magical hare with fur that changes color during solar and lunar eclipses, appearing in sacred groves.',
     randomNumber: 213,
     image:
-      'https://i.ibb.co/ZSXGZhk/A-magical-hare-with-fur-that-changes-color-durin.png',
+      'https://i.ibb.co/n1RjdP0/A-magical-hare-looking-in-the-distance-with-fur.png',
     inclination: 'Mischief',
     effect: '',
     biome: 'Grassland',
@@ -1603,10 +1605,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 94,
+    id: 88,
     name: 'Quicksilver Quetzal',
     description:
       'A magnificent bird with iridescent feathers that mimic the appearance of liquid mercury, soaring through ancient jungles.',
@@ -1621,7 +1623,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 89,
@@ -1639,7 +1641,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 90,
@@ -1657,7 +1659,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 91,
@@ -1675,7 +1677,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 92,
@@ -1693,7 +1695,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 93,
@@ -1711,10 +1713,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 96,
+    id: 94,
     name: 'Verdant Drake',
     description:
       'A dragon with scales that mimic the lush greenery of the forest, dwelling in hidden glades and protecting the woodland creatures.',
@@ -1729,10 +1731,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
-    id: 100,
+    id: 95,
     name: 'Ember Phoenix',
     description:
       'A mythical bird with feathers that flicker like embers, said to rise from the ashes of great fires to bring both destruction and renewal.',
@@ -1747,10 +1749,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 77,
+    id: 96,
     name: 'Spectral Stag',
     description:
       'A ghostly stag with antlers that emit an otherworldly glow, appearing in mist-covered medieval woodlands.',
@@ -1765,10 +1767,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 95,
+    id: 97,
     name: 'Thunderstrike Tarsier',
     description:
       'A small primate with eyes that flash with lightning, inhabiting the stormy reaches of medieval canopies.',
@@ -1783,10 +1785,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 97,
+    id: 98,
     name: 'Moonshadow Lynx',
     description:
       'A stealthy lynx with fur that absorbs and reflects moonlight, becoming nearly invisible as it stalks its prey.',
@@ -1804,7 +1806,7 @@ const cardSet: Card[] = [
     cost: 0,
   },
   {
-    id: 98,
+    id: 99,
     name: 'Sapphire Wyrm',
     description:
       'A serpent-like dragon covered in shimmering sapphire scales, known to slumber within the heart of a mystical blue cavern.',
@@ -1819,10 +1821,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
-    id: 99,
+    id: 100,
     name: 'Obsidian Direwolf',
     description:
       'A massive, jet-black wolf with eyes that gleam like polished obsidian, leading packs through the mystical forest.',
@@ -1837,7 +1839,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
     id: 101,
@@ -1846,7 +1848,7 @@ const cardSet: Card[] = [
       'A slender dragon with wings made of floating, glowing orbs, drifting through medieval skies like a constellation.',
     randomNumber: 732,
     image:
-      'https://i.ibb.co/8g3BnvW/A-slender-dragon-with-wings-made-of-floating-gl.png',
+      'https://i.ibb.co/vxMWYzz/A-wingless-dragon-floating-with-glowing-orbs-dr.png',
     inclination: 'Mischief',
     effect: '',
     biome: 'Alpine',
@@ -1855,7 +1857,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 7,
   },
   {
     id: 102,
@@ -1873,7 +1875,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 103,
@@ -1891,7 +1893,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 104,
@@ -1909,7 +1911,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 105,
@@ -1927,7 +1929,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 106,
@@ -1945,7 +1947,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 107,
@@ -1963,7 +1965,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 300,
     hp: 400,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 108,
@@ -1981,7 +1983,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 109,
@@ -1999,7 +2001,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 110,
@@ -2017,7 +2019,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 111,
@@ -2035,10 +2037,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
-    id: 114,
+    id: 112,
     name: 'Runebound Raven',
     description:
       'A raven with feathers inscribed with ancient runes, carrying messages between wizards in medieval realms.',
@@ -2053,10 +2055,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 112,
+    id: 113,
     name: 'Aurora Armored Antelope',
     description:
       'An antelope with armor that reflects the colors of the aurora borealis, leaping through meadows with grace.',
@@ -2071,10 +2073,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 113,
+    id: 114,
     name: 'Obsidian Ocelot',
     description:
       'A sleek ocelot with fur as dark as obsidian, stalking silently through the shadows of ancient ruins.',
@@ -2089,10 +2091,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 116,
+    id: 115,
     name: 'Spearfish Swordfish',
     description:
       'A swordfish using its sharp bill as a spear, patrolling the coastal waters of medieval kingdoms.',
@@ -2107,10 +2109,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 117,
+    id: 116,
     name: 'Topaz Tiger Beetle',
     description:
       'A large beetle with a carapace that gleams like golden topaz, scuttling through sunlit medieval gardens.',
@@ -2125,10 +2127,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 120,
+    id: 117,
     name: 'Celestial Cheetah',
     description:
       'A swift cheetah with fur that sparkles like stars, racing through the night under the gaze of the moon.',
@@ -2143,10 +2145,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 121,
+    id: 118,
     name: 'Labyrinthine Minotaur Beetle',
     description:
       'A giant beetle with an intricate maze pattern on its shell, dwelling in ancient ruins and guarding hidden passages.',
@@ -2161,10 +2163,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
-    id: 122,
+    id: 119,
     name: 'Lava Lizard Lynx',
     description:
       'A lynx adapted to volcanic landscapes, with fur resembling flowing lava and eyes that burn like molten rock.',
@@ -2179,28 +2181,28 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 125,
-    name: 'Crimson Griffin',
+    id: 120,
+    name: 'Enchanted Gorilla King',
     description:
-      'A rare breed of griffin with fiery red plumage, associated with the legendary Phoenix and thought to bring good fortune.',
+      'A massive gorilla with fur etched in glowing runes, reigning in a medieval forest.',
     randomNumber: 210,
     image:
-      'https://i.ibb.co/swLC6C0/A-rare-breed-of-griffin-with-fiery-red-plumage.png',
+      'https://i.ibb.co/3pt0jB0/a-Mountain-Gorilla-as-a-knight-fighting-in-an-an.png',
     inclination: 'Pride',
     effect: '',
-    biome: 'Alpine',
+    biome: 'Jungle',
     rarity: 'Uncommon',
     type: 'creature',
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
-    id: 115,
+    id: 121,
     name: 'Warhammer Wolf',
     description:
       'A majestic wolf carrying a warhammer, leading a pack of armored wolves through medieval forests on moonlit patrols.',
@@ -2215,10 +2217,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 700,
     hp: 700,
-    cost: 0,
+    cost: 7,
   },
   {
-    id: 118,
+    id: 122,
     name: 'Luminous Liger',
     description:
       'A hybrid creature with the strength of a lion and the grace of a tiger, its fur radiating a gentle glow.',
@@ -2233,10 +2235,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 6,
   },
   {
-    id: 119,
+    id: 123,
     name: 'Ironhide Rhino',
     description:
       'A massive rhinoceros with a hide as tough as iron, charging through medieval battlefields with unwavering strength.',
@@ -2251,10 +2253,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 6,
   },
   {
-    id: 123,
+    id: 124,
     name: 'Frostfall Fennec Fox',
     description:
       'A small fox with fur that changes color with the seasons, blending seamlessly into snow-covered medieval landscapes.',
@@ -2269,10 +2271,10 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
-    id: 124,
+    id: 125,
     name: 'Lunar Griffin',
     description:
       'A graceful creature with the body of a lion and wings resembling a crescent moon, said to be guardians of ancient celestial secrets.',
@@ -2287,7 +2289,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
     id: 126,
@@ -2305,7 +2307,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 6,
   },
 ];
 

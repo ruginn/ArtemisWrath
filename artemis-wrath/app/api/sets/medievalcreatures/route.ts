@@ -954,13 +954,13 @@ const cardSet: Card[] = [
     id: 52,
     name: 'Flanged Falcon',
     description:
-      'A falcon with a flanged mace, diving from the skies to strike with powerful blows in medieval skirmishes.',
+      'A noble seal with icy patterns adorning its sleek coat, perched on a medieval ice floe. As a guardian of frozen realms, it exudes an aura of frosty magic, its whiskers sensing the whispers of the chilly winds in the enchanted landscape',
     randomNumber: 234,
     image:
-      'https://i.ibb.co/gvMM9fy/A-falcon-with-a-flanged-mace-diving-from-the-sk.png',
+      'https://i.ibb.co/brD2DM5/Picture-a-noble-seal-with-icy-patterns-adorning.png',
     inclination: 'Wrath',
     effect: '',
-    biome: 'Alpine',
+    biome: 'Aquatic',
     rarity: 'Common',
     type: 'creature',
     effectFunction: '',
@@ -1461,7 +1461,7 @@ const cardSet: Card[] = [
       'A mischievous macaque wielding a mace, known for causing chaos in medieval marketplaces with its unexpected swings.',
     randomNumber: 173,
     image:
-      'https://i.ibb.co/djFxfCp/A-mischievous-macaque-wielding-a-mace-known-for.png',
+      'https://i.ibb.co/H4JpZs5/a-Black-Spider-Monkey-as-a-knight-doing-somethin.png',
     inclination: 'Mischief',
     effect: '',
     biome: 'Jungle',
@@ -1587,7 +1587,7 @@ const cardSet: Card[] = [
       'A magical hare with fur that changes color during solar and lunar eclipses, appearing in sacred groves.',
     randomNumber: 213,
     image:
-      'https://i.ibb.co/ZSXGZhk/A-magical-hare-with-fur-that-changes-color-durin.png',
+      'https://i.ibb.co/n1RjdP0/A-magical-hare-looking-in-the-distance-with-fur.png',
     inclination: 'Mischief',
     effect: '',
     biome: 'Grassland',
@@ -1740,7 +1740,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 96,
@@ -1758,7 +1758,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 97,
@@ -1776,7 +1776,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 98,
@@ -1812,7 +1812,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
     id: 100,
@@ -1830,7 +1830,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
     id: 101,
@@ -1839,7 +1839,7 @@ const cardSet: Card[] = [
       'A slender dragon with wings made of floating, glowing orbs, drifting through medieval skies like a constellation.',
     randomNumber: 732,
     image:
-      'https://i.ibb.co/8g3BnvW/A-slender-dragon-with-wings-made-of-floating-gl.png',
+      'https://i.ibb.co/vxMWYzz/A-wingless-dragon-floating-with-glowing-orbs-dr.png',
     inclination: 'Mischief',
     effect: '',
     biome: 'Alpine',
@@ -1848,7 +1848,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 7,
   },
   {
     id: 102,
@@ -1866,7 +1866,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 1,
   },
   {
     id: 103,
@@ -1884,7 +1884,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 104,
@@ -1902,7 +1902,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 105,
@@ -1920,7 +1920,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 106,
@@ -1938,7 +1938,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 107,
@@ -1956,7 +1956,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 300,
     hp: 400,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 108,
@@ -1974,7 +1974,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 109,
@@ -1992,7 +1992,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 110,
@@ -2010,7 +2010,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 111,
@@ -2028,7 +2028,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 3,
   },
   {
     id: 112,
@@ -2046,7 +2046,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 113,
@@ -2064,7 +2064,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 114,
@@ -2082,7 +2082,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 115,
@@ -2100,7 +2100,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 116,
@@ -2118,7 +2118,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 117,
@@ -2136,7 +2136,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 118,
@@ -2154,7 +2154,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
     id: 119,
@@ -2172,25 +2172,25 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 120,
-    name: 'Crimson Griffin',
+    name: 'Enchanted Gorilla King',
     description:
-      'A rare breed of griffin with fiery red plumage, associated with the legendary Phoenix and thought to bring good fortune.',
+      'A massive gorilla with fur etched in glowing runes, reigning in a medieval forest.',
     randomNumber: 210,
     image:
-      'https://i.ibb.co/swLC6C0/A-rare-breed-of-griffin-with-fiery-red-plumage.png',
+      'https://i.ibb.co/3pt0jB0/a-Mountain-Gorilla-as-a-knight-fighting-in-an-an.png',
     inclination: 'Pride',
     effect: '',
-    biome: 'Alpine',
+    biome: 'Jungle',
     rarity: 'Uncommon',
     type: 'creature',
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 4,
   },
   {
     id: 121,
@@ -2208,7 +2208,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 700,
     hp: 700,
-    cost: 0,
+    cost: 7,
   },
   {
     id: 122,
@@ -2226,7 +2226,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 6,
   },
   {
     id: 123,
@@ -2244,7 +2244,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 6,
   },
   {
     id: 124,
@@ -2262,7 +2262,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 2,
   },
   {
     id: 125,
@@ -2280,7 +2280,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 5,
   },
   {
     id: 126,
@@ -2298,7 +2298,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 0,
+    cost: 6,
   },
 ];
 
