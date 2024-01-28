@@ -35,15 +35,15 @@ const CardElement = ({ card }: { card: Card }) => {
       className={cn(
         'h-96 w-72 bg-amber-200 flex flex-col rounded-xl items-center border-gray-800 border-8 relative',
         card.inclination === 'Wrath' &&
-          ' bg-gradient-to-bl to-red-600 via-red-800 from-[#75352F]',
+          ' bg-gradient-to-bl to-[#814242] via-red-800 from-[#75352F]',
         card.inclination === 'Wisdom' &&
-          'bg-gradient-to-r via-[#5876b2] from-blue-800 to-cyan-900',
+          'bg-gradient-to-bl via-[#5876b2] from-blue-800 to-cyan-900',
         card.inclination === 'Love' &&
-          'bg-gradient-to-r from-[#f58a87] to-pink-700 via-[#f58a87]',
+          'bg-gradient-to-bl from-[#f58a87] via-[#B3989F] to-[#f58a87]',
         card.inclination === 'Mischief' &&
           'bg-gradient-to-bl via-[#3f392c] to-gray-700 from-slate-600',
         card.inclination === 'Pride' &&
-          'bg-gradient-to-bl from-purple-600 to-indigo-500 via-[#454380]'
+          'bg-gradient-to-bl from-[#686A81] to-indigo-900 via-[#454380]'
       )}
       key={card.id}
     >

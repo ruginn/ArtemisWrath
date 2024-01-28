@@ -633,7 +633,7 @@ const cardSet: Card[] = [
       'A sleek aquatic creature with the body of an eel and the loyalty of a hound, patrolling underwater realms.',
     randomNumber: 324,
     image:
-      'https://i.ibb.co/9NQGt35/A-sleek-aquatic-creature-with-the-body-of-an-eel.png',
+      'https://i.ibb.co/0mj22Fr/A-sleek-aquatic-creature-with-the-body-of-an-eel.png',
     inclination: 'Wisdom',
     effect: '',
     biome: 'Aquatic',
@@ -867,7 +867,7 @@ const cardSet: Card[] = [
       'A regal stag with antlers made of enchanted crystal, said to be the spirit of the forest itself.',
     randomNumber: 654,
     image:
-      'https://i.ibb.co/8m5sdhP/A-regal-stag-with-antlers-made-of-enchanted-crys.png',
+      'https://i.ibb.co/HdzdkHS/A-regal-stag-with-antlers-made-of-enchanted-crys.png',
     inclination: 'Wisdom',
     effect: '',
     biome: 'Forest',
@@ -952,7 +952,7 @@ const cardSet: Card[] = [
   },
   {
     id: 52,
-    name: 'Flanged Falcon',
+    name: 'Frostfin Seal',
     description:
       'A noble seal with icy patterns adorning its sleek coat, perched on a medieval ice floe. As a guardian of frozen realms, it exudes an aura of frosty magic, its whiskers sensing the whispers of the chilly winds in the enchanted landscape',
     randomNumber: 234,

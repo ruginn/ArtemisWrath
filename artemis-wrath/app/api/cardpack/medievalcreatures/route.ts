@@ -876,7 +876,7 @@ const cardSet: Card[] = [
       'A regal stag with antlers made of enchanted crystal, said to be the spirit of the forest itself.',
     randomNumber: 654,
     image:
-      'https://i.ibb.co/8m5sdhP/A-regal-stag-with-antlers-made-of-enchanted-crys.png',
+      'https://i.ibb.co/HdzdkHS/A-regal-stag-with-antlers-made-of-enchanted-crys.png',
     inclination: 'Wisdom',
     effect: '',
     biome: 'Forest',
@@ -961,7 +961,7 @@ const cardSet: Card[] = [
   },
   {
     id: 52,
-    name: 'Flanged Falcon',
+    name: 'Frostfin Seal',
     description:
       'A noble seal with icy patterns adorning its sleek coat, perched on a medieval ice floe. As a guardian of frozen realms, it exudes an aura of frosty magic, its whiskers sensing the whispers of the chilly winds in the enchanted landscape',
     randomNumber: 234,
@@ -2340,6 +2340,7 @@ export async function POST(req: Request) {
     Uncommon: 3,
     Rare: 2,
   };
+
   const getCards = () => {
     // for (let i = 0; i < 10; i++) {
     //   let cardCount = cardSet.length - i;
