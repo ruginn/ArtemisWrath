@@ -58,8 +58,7 @@ const cardSet: Card[] = [
   {
     id: 131,
     name: 'Demeter',
-    description:
-      'Once per turn you may add a card from your hell into your hand',
+    description: 'Once per turn you may search your deck for an relic.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/GRXzCym/can-you-generate-an-image-of-the-goddess-Demeter.png',
@@ -1485,7 +1484,7 @@ const cardSet: Card[] = [
     id: 132,
     name: 'Hermes',
     description:
-      'Once per turn at choose a card in your opponents hand they musit return it to their deck, You may not look at the card.',
+      'Once per turn choose a card in your opponents hand they musit return it to their deck, You may not look at the card.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/ySKxK31/can-you-generate-an-image-of-the-god-Hermes-with.png',
