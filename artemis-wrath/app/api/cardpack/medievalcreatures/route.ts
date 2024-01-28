@@ -7,7 +7,8 @@ interface Card {
   description: string;
   randomNumber: number;
   image?: string;
-  inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+  inclination?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+  inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
   effect?: string;
   biome?:
     | 'Jungle'
@@ -37,6 +38,42 @@ interface userInfo {
 }
 
 const cardSet: Card[] = [
+  {
+    id: 129,
+    name: 'Aceso',
+    description: 'You may play two nectars per turn.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/yBjrN9B/can-you-generate-an-image-of-the-goddess-Aceso-w-copy.png',
+    inclination: 'Love',
+    effect: '',
+    biome: '',
+    rarity: 'SuperRare',
+    type: 'Immortal',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 6,
+  },
+  {
+    id: 131,
+    name: 'Demeter',
+    description:
+      'Once per turn you may add a card from your hell into your hand',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/GRXzCym/can-you-generate-an-image-of-the-goddess-Demeter.png',
+    inclination: 'Wisdom',
+    inclination2: 'Love',
+    effect: '',
+    biome: '',
+    rarity: 'SuperRare',
+    type: 'Immortal',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 6,
+  },
   {
     id: 1,
     name: 'Swordsworn Sparrow',
@@ -491,6 +528,23 @@ const cardSet: Card[] = [
     cost: 7,
   },
   {
+    id: 128,
+    name: 'Coeus',
+    description: 'You may have any number cards in your hand.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/Ksc6tJC/can-you-generate-an-image-of-the-god-coeus-with.png',
+    inclination: 'Wisdom',
+    effect: '',
+    biome: '',
+    rarity: 'SuperRare',
+    type: 'Immortal',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 6,
+  },
+  {
     id: 26,
     name: 'Lunar Lantern Lemur',
     description:
@@ -642,7 +696,7 @@ const cardSet: Card[] = [
       'A sleek aquatic creature with the body of an eel and the loyalty of a hound, patrolling underwater realms.',
     randomNumber: 324,
     image:
-      'https://i.ibb.co/9NQGt35/A-sleek-aquatic-creature-with-the-body-of-an-eel.png',
+      'https://i.ibb.co/0mj22Fr/A-sleek-aquatic-creature-with-the-body-of-an-eel.png',
     inclination: 'Wisdom',
     effect: '',
     biome: 'Aquatic',
@@ -940,6 +994,24 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 5,
+  },
+  {
+    id: 127,
+    name: 'Hades',
+    description:
+      'Once per turn you may add a card from your hell into your hand',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/ynHHCTg/can-you-generate-an-image-of-hades-with-long-cur.png',
+    inclination: 'Wrath',
+    effect: '',
+    biome: '',
+    rarity: 'SuperRare',
+    type: 'Immortal',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 6,
   },
   {
     id: 51,
@@ -1410,6 +1482,25 @@ const cardSet: Card[] = [
     cost: 6,
   },
   {
+    id: 132,
+    name: 'Hermes',
+    description:
+      'Once per turn at choose a card in your opponents hand they musit return it to their deck, You may not look at the card.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/ySKxK31/can-you-generate-an-image-of-the-god-Hermes-with.png',
+    inclination: 'Mischief',
+    inclination2: 'Pride',
+    effect: '',
+    biome: '',
+    rarity: 'SuperRare',
+    type: 'Immortal',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 6,
+  },
+  {
     id: 77,
     name: 'Starwhisper Spider',
     description:
@@ -1858,6 +1949,23 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 7,
+  },
+  {
+    id: 130,
+    name: 'Ares',
+    description: 'All your creatures attacks are increased by 1000.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/P17fZ8N/The-god-eres-in-battle-in-golden-jewels-armor-he.png',
+    inclination: 'Pride',
+    effect: '',
+    biome: '',
+    rarity: 'SuperRare',
+    type: 'Immortal',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 6,
   },
   {
     id: 102,

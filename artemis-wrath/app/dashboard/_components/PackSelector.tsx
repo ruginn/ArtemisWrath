@@ -16,6 +16,7 @@ interface Card {
   randomNumber: number;
   image?: string;
   inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+  inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
   effect?: string;
   biome?:
     | 'Jungle'
