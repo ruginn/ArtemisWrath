@@ -45,12 +45,13 @@ const CardElement = ({ card }: { card: Card }) => {
         card.inclination === 'Mischief' &&
           'bg-gradient-to-bl via-[#3f392c] to-gray-700 from-slate-600',
         card.inclination === 'Pride' &&
-          'bg-gradient-to-bl from-[#686A81] to-indigo-900 via-[#454380]',
+          // 'bg-gradient-to-bl from-[#686A81] to-indigo-900 via-[#454380]',
+          'bg-gradient-to-bl from-[#ffcd76] to-[#a8813e] via-[#e0c05e]',
         card.inclination2 === 'Love' && 'to-[#f58a87]',
         card.inclination2 === 'Wisdom' && 'to-[#5876b2]',
         card.inclination2 === 'Wrath' && 'to-[#814242]',
         card.inclination2 === 'Mischief' && 'to-[#3f392c]',
-        card.inclination2 === 'Pride' && 'to-[#454380]'
+        card.inclination2 === 'Pride' && 'to-[#e0c05e]'
       )}
       key={card.id}
     >
@@ -75,6 +76,17 @@ const CardElement = ({ card }: { card: Card }) => {
         ></Image>
       )}
       {card.image && card.type === 'Immortal' && (
+        <Image
+          src={card.image}
+          alt=''
+          width={256}
+          height={256}
+          placeholder='empty'
+          className='object-cover h-[368px] rounded-lg border-4 border-gray-800 mt-2'
+          // className="w-60 h-auto"
+        ></Image>
+      )}
+      {card.image && card.type === 'Nectar' && (
         <Image
           src={card.image}
           alt=''
@@ -120,9 +132,19 @@ const CardElement = ({ card }: { card: Card }) => {
           <h1 className='text-base self-start ml-2 font-extrabold text-amber-200 drop-shadow-[1.2px_1.2px_1.2px_rgba(0,0,0,0.8)]'>
             {card.name}
           </h1>
-          <p className='pl-3 text-[11px] leading-none  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+          <p className='pl-3 text-[10px] leading-none text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
             {card.description}
           </p>
+        </div>
+      )}
+      {card.type === 'Nectar' && (
+        <div className='absolute bottom-2 w-[255px] h-[30px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50'></div>
+      )}
+      {card.type === 'Nectar' && (
+        <div className='absolute bottom-2 w-[255px] h-[30px] border-2 border-black mt-1 rounded flex justify-center items-center'>
+          <h1 className='text-xl self-start ml-2 font-extrabold text-amber-200 drop-shadow-[1.2px_1.2px_1.2px_rgba(0,0,0,0.8)]'>
+            {card.name}
+          </h1>
         </div>
       )}
     </div>
