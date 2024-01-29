@@ -1,4 +1,4 @@
-import { create } from "zustand";
+import { create } from 'zustand';
 
 type UserInfo = {
   name: string;
@@ -19,10 +19,10 @@ interface userObject {
 }
 
 export const useUserInfo = create<UserInfo>((set) => ({
-  name: "",
-  userId: "",
-  lastPackDate: "",
-  createdAt: "",
+  name: '',
+  userId: '',
+  lastPackDate: '',
+  createdAt: '',
   starterDeck: false,
   UpdateAll: (object: userObject) =>
     set({

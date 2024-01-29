@@ -23,7 +23,7 @@ interface Card {
     | 'Desert'
     | '';
   effectFunction?: string;
-  rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare';
+  rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
   type?: string;
   attackPower?: number;
   hp?: number;
@@ -2416,6 +2416,96 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
   },
+  {
+    id: 133,
+    name: 'Nectar of Love',
+    description:
+      'Only one nectar may be used per turn, unless otherwise specified by another card effect.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/ncjMGfW/can-you-generate-a-pink-nectar-in-a-intricate-gl.png',
+    inclination: 'Love',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Nectar',
+    type: 'Nectar',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 6,
+  },
+  {
+    id: 134,
+    name: 'Nectar of Wisdom',
+    description:
+      'Only one nectar may be used per turn, unless otherwise specified by another card effect.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/4g8kqhZ/can-you-generate-a-blue-nectar-in-a-glass-intric.png',
+    inclination: 'Wisdom',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Nectar',
+    type: 'Nectar',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 6,
+  },
+  {
+    id: 135,
+    name: 'Nectar of Wrath',
+    description:
+      'Only one nectar may be used per turn, unless otherwise specified by another card effect.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/sCXXBDt/can-you-generate-a-red-nectar-in-a-glass-intrica.png',
+    inclination: 'Wrath',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Nectar',
+    type: 'Nectar',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 6,
+  },
+  {
+    id: 136,
+    name: 'Nectar of Mischief',
+    description:
+      'Only one nectar may be used per turn, unless otherwise specified by another card effect.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/LYVksY4/can-you-generate-a-black-nectar-in-a-intricate-g.png',
+    inclination: 'Mischief',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Nectar',
+    type: 'Nectar',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 6,
+  },
+  {
+    id: 137,
+    name: 'Nectar of Pride',
+    description:
+      'Only one nectar may be used per turn, unless otherwise specified by another card effect.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/q0rspcQ/can-you-generate-a-yellow-nectar-in-a-intricate.png',
+    inclination: 'Pride',
+    effect: '',
+    biome: 'Alpine',
+    rarity: 'Common',
+    type: 'Nectar',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 6,
+  },
 ];
 
 export async function POST(req: Request) {
@@ -2465,6 +2555,7 @@ export async function POST(req: Request) {
     const RareCards = cardSet.filter(
       (card) => card.rarity === 'Rare' || card.rarity === 'SuperRare'
     );
+    const nectarCards = cardSet.filter((card) => card.rarity === 'Nectar');
     // const SuperCards = cardSet.filter((card) => card.rarity === 'SuperRare');
 
     while (setTotal.Common > 0) {
@@ -2485,6 +2576,8 @@ export async function POST(req: Request) {
       randomCards.push(newCard[0]);
       setTotal.Rare -= 1;
     }
+    let randomNectarNum = Math.floor(Math.random() * (nectarCards.length + 1));
+    randomCards.push(nectarCards[randomNectarNum]);
   };
   console.log(
     establishedUser?.lastPackDate?.toString(),

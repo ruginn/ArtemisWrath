@@ -31,7 +31,7 @@ interface Card {
     | 'Desert'
     | '';
   effectFunction?: string;
-  rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare';
+  rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
   type?: string;
   attackPower?: number;
   hp?: number;
@@ -68,6 +68,7 @@ const PackSelector: FC<Props> = (props) => {
     // .then((res) => res.json())
     const cards: Card[] = await res.json();
     // console.log(typeof cards === 'object')
+    console.log(cards);
     if (typeof cards === 'object') {
       setCollectedCards(cards);
       gatheredCards.addCards(cards);
@@ -76,6 +77,7 @@ const PackSelector: FC<Props> = (props) => {
       setTimeout(() => {
         userInfo.UpdateLastPack(props.todayDate);
       }, 2000);
+      // userInfo.UpdateLastPack(props.todayDate);
       console.log(collectedCards);
     } else {
       setGetCards(false);

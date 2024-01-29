@@ -22,7 +22,7 @@ interface Card {
     | 'Desert'
     | '';
   effectFunction?: string;
-  rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare';
+  rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
   type?: string;
   attackPower?: number;
   hp?: number;
@@ -2419,7 +2419,7 @@ const cardSet: Card[] = [
     inclination: 'Love',
     effect: '',
     biome: 'Alpine',
-    rarity: 'Common',
+    rarity: 'Nectar',
     type: 'Nectar',
     effectFunction: '',
     attackPower: 0,
@@ -2437,7 +2437,7 @@ const cardSet: Card[] = [
     inclination: 'Wisdom',
     effect: '',
     biome: 'Alpine',
-    rarity: 'Common',
+    rarity: 'Nectar',
     type: 'Nectar',
     effectFunction: '',
     attackPower: 0,
@@ -2455,7 +2455,7 @@ const cardSet: Card[] = [
     inclination: 'Wrath',
     effect: '',
     biome: 'Alpine',
-    rarity: 'Common',
+    rarity: 'Nectar',
     type: 'Nectar',
     effectFunction: '',
     attackPower: 0,
@@ -2473,7 +2473,7 @@ const cardSet: Card[] = [
     inclination: 'Mischief',
     effect: '',
     biome: 'Alpine',
-    rarity: 'Common',
+    rarity: 'Nectar',
     type: 'Nectar',
     effectFunction: '',
     attackPower: 0,
@@ -2491,7 +2491,7 @@ const cardSet: Card[] = [
     inclination: 'Pride',
     effect: '',
     biome: 'Alpine',
-    rarity: 'Common',
+    rarity: 'Nectar',
     type: 'Nectar',
     effectFunction: '',
     attackPower: 0,
@@ -2514,6 +2514,7 @@ export async function GET(req: Request) {
     Uncommon: 0,
     Rare: 0,
     SuperRare: 0,
+    Nectar: 0,
   };
 
   cardSet.map((card) => {
@@ -2521,7 +2522,8 @@ export async function GET(req: Request) {
       let inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief' =
         card.inclination;
       listInclination[inclination] += 1;
-      let rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' = card.rarity;
+      let rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar' =
+        card.rarity;
       listRarity[rarity] += 1;
     }
   });
