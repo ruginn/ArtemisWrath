@@ -38,11 +38,11 @@ interface Card {
   cost?: number;
 }
 
-interface Props {
+interface Date {
   todayDate: string;
 }
 
-const PackSelector: FC<Props> = (props) => {
+const PackSelector: FC<Date> = (props) => {
   const [selectedPack, setSelectedPack] = useState(false);
   const { user } = useUser();
   const gatheredCards = useCollectedCards();
@@ -74,10 +74,10 @@ const PackSelector: FC<Props> = (props) => {
       gatheredCards.addCards(cards);
       gatheredCards.setCollected(true);
       setGetCards(true);
-      setTimeout(() => {
-        userInfo.UpdateLastPack(props.todayDate);
-      }, 2000);
-      // userInfo.UpdateLastPack(props.todayDate);
+      // setTimeout(() => {
+      //   userInfo.UpdateLastPack(props.todayDate);
+      // }, 2000);
+      userInfo.UpdateLastPack(props.todayDate);
       console.log(collectedCards);
     } else {
       setGetCards(false);
