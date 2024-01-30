@@ -2559,24 +2559,24 @@ export async function POST(req: Request) {
     // const SuperCards = cardSet.filter((card) => card.rarity === 'SuperRare');
 
     while (setTotal.Common > 0) {
-      let randomNumber = Math.floor(Math.random() * (CommonCards.length + 1));
+      let randomNumber = Math.floor(Math.random() * CommonCards.length);
       const newCard = CommonCards.splice(randomNumber, 1);
       randomCards.push(newCard[0]);
       setTotal.Common -= 1;
     }
     while (setTotal.Uncommon > 0) {
-      let randomNumber = Math.floor(Math.random() * (UncommonCards.length + 1));
+      let randomNumber = Math.floor(Math.random() * UncommonCards.length);
       const newCard = UncommonCards.splice(randomNumber, 1);
       randomCards.push(newCard[0]);
       setTotal.Uncommon -= 1;
     }
     while (setTotal.Rare > 0) {
-      let randomNumber = Math.floor(Math.random() * (RareCards.length + 1));
+      let randomNumber = Math.floor(Math.random() * RareCards.length);
       const newCard = RareCards.splice(randomNumber, 1);
       randomCards.push(newCard[0]);
       setTotal.Rare -= 1;
     }
-    let randomNectarNum = Math.floor(Math.random() * (nectarCards.length + 1));
+    let randomNectarNum = Math.floor(Math.random() * nectarCards.length);
     randomCards.push(nectarCards[randomNectarNum]);
   };
   console.log(

@@ -1,6 +1,6 @@
 'use client';
 import Image, { StaticImageData } from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import ReactCardFlip from 'react-card-flip';
 import CardBack from '@/public/Images/Cardback2.png';
@@ -40,6 +40,12 @@ const CardFlipElement = ({ card }: { card: Card }) => {
   const flipCard = () => {
     setIsFlipped(!isFlipped);
   };
+
+  //   useEffect(() => {
+  //     setTimeout(() => {
+  //       setIsFlipped(true);
+  //     }, 1000);
+  //   }, []);
 
   return (
     <ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>
