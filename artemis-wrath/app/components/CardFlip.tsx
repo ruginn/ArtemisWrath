@@ -44,7 +44,7 @@ const CardFlipElement = ({ card }: { card: Card }) => {
   return (
     <ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>
       <div
-        className='h-[400.5px] w-72 rounded-xl border-gray-800 border-8 cursor-pointer'
+        className='h-[400.5px] w-72 rounded-xl border-gray-800 border-8 cursor-pointer bg-gray-800'
         onClick={flipCard}
       >
         <Image
@@ -52,7 +52,7 @@ const CardFlipElement = ({ card }: { card: Card }) => {
           height={256}
           width={256}
           alt=''
-          className='object-stretch h-full w-full'
+          className='object-stretch h-full w-full rounded-lg'
         ></Image>
       </div>
       <div
