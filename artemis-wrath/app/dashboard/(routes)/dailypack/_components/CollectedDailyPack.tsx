@@ -1,4 +1,4 @@
-import CardElement from '@/app/components/Card';
+import CardFlipElement from '@/app/components/CardFlip';
 import { useCollectedCards } from '@/hooks/use-collectedCards';
 
 const CollectedDailyPack = () => {
@@ -25,7 +25,7 @@ const CollectedDailyPack = () => {
             //         <p className="text-sm leading-none">{card.description}</p>
             //     </div>
             // </div>
-            <CardElement card={card} key={card.id} />
+            <CardFlipElement card={card} key={card.id} />
           );
         })}
     </div>

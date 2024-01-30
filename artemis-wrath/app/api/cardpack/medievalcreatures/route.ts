@@ -2499,7 +2499,7 @@ const cardSet: Card[] = [
     inclination: 'Pride',
     effect: '',
     biome: 'Alpine',
-    rarity: 'Common',
+    rarity: 'Nectar',
     type: 'Nectar',
     effectFunction: '',
     attackPower: 0,
