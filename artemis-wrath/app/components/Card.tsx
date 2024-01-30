@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from 'next/image';
 import { cn } from '@/lib/utils';
-import { Divide } from 'lucide-react';
 
 interface Card {
   id: number;
