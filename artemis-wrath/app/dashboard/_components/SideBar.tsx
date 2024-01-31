@@ -129,7 +129,7 @@ const SideBar = () => {
         <div
           className={cn(
             'w-11/12 flex sm:flex-col flex-row lg:flex-row items-center justify-start sm:justify-center lg:justify-start ml-4 sm:ml-1 lg:ml-4 cursor-pointer rounded-md hover:bg-gray-700 py-1 pl-2 sm:pl-0 lg:pl-2 my-1',
-            activeSidebar.selected === 'home' && 'bg-gray-700'
+            activeSidebar.selected === 'shop' && 'bg-gray-700'
           )}
         >
           <Store className='lg:mr-2' />
