@@ -59,8 +59,8 @@ const CardElement = ({ card }: { card: Card }) => {
       {/* <p className='mr-2'>{card.id}</p> */}
       {/* </div> */}
       {card.type === 'creature' && (
-        <div className='absolute rounded-full bg-amber-200 text-black w-10 h-10 flex justify-center items-center right-0.5 top-0.5 border-4 border-gray-800 font-serif'>
-          {card.cost}
+        <div className='absolute rounded-full bg-amber-200 text-black w-10 h-10 flex justify-center items-center right-0.5 top-0.5 border-4 border-gray-800 font-serif text-2xl'>
+          <p className='font-bold'>{card.cost}</p>
         </div>
       )}
       {card.image && card.type === 'creature' && (

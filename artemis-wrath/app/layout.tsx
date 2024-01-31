@@ -4,7 +4,7 @@ import './globals.css';
 import NavBar from '@/components/Navbar';
 import { ClerkProvider } from '@clerk/nextjs';
 
-const poppins = Ysabeau_SC({
+const ysabeau = Ysabeau_SC({
   subsets: ['latin'],
   weight: ['100', '200', '500', '300', '400', '600', '700', '800', '900'],
   display: 'swap',
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang='en'>
-        <body className={poppins.className}>
+        <body className={ysabeau.className}>
           <NavBar />
           <div className='mt-20'>{children}</div>
         </body>
