@@ -2557,7 +2557,8 @@ export async function POST(req: Request) {
     );
     const nectarCards = cardSet.filter((card) => card.rarity === 'Nectar');
     // const SuperCards = cardSet.filter((card) => card.rarity === 'SuperRare');
-
+    let randomNectarNum = Math.floor(Math.random() * nectarCards.length);
+    randomCards.push(nectarCards[randomNectarNum]);
     while (setTotal.Common > 0) {
       let randomNumber = Math.floor(Math.random() * CommonCards.length);
       const newCard = CommonCards.splice(randomNumber, 1);
@@ -2576,8 +2577,6 @@ export async function POST(req: Request) {
       randomCards.push(newCard[0]);
       setTotal.Rare -= 1;
     }
-    let randomNectarNum = Math.floor(Math.random() * nectarCards.length);
-    randomCards.push(nectarCards[randomNectarNum]);
   };
   console.log(
     establishedUser?.lastPackDate?.toString(),

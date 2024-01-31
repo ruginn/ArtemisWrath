@@ -10,6 +10,7 @@ import {
   Library,
   Home,
   Globe,
+  Store,
 } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useState, useRef, MutableRefObject } from 'react';
@@ -116,6 +117,24 @@ const SideBar = () => {
           <Calendar className='lg:mr-2' />
           <h3 className='text-[18px] ml-3 sm:ml-0 sm:text-[12px] lg:ml-3 lg:text-[18px]'>
             Daily Pack
+          </h3>
+        </div>
+      </Link>
+      <Link
+        href={'/dashboard/shop'}
+        onClick={() => {
+          clickSideTab('shop');
+        }}
+      >
+        <div
+          className={cn(
+            'w-11/12 flex sm:flex-col flex-row lg:flex-row items-center justify-start sm:justify-center lg:justify-start ml-4 sm:ml-1 lg:ml-4 cursor-pointer rounded-md hover:bg-gray-700 py-1 pl-2 sm:pl-0 lg:pl-2 my-1',
+            activeSidebar.selected === 'home' && 'bg-gray-700'
+          )}
+        >
+          <Store className='lg:mr-2' />
+          <h3 className='text-[18px] ml-3 sm:ml-0 sm:text-[12px] lg:ml-3 lg:text-[18px]'>
+            Shop
           </h3>
         </div>
       </Link>
