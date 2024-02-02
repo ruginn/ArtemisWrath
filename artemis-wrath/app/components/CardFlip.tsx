@@ -74,7 +74,8 @@ const CardFlipElement = ({ card }: { card: Card }) => {
             'bg-gradient-to-bl via-[#3f392c] to-gray-700 from-slate-600',
           card.inclination === 'Pride' &&
             // 'bg-gradient-to-bl from-[#686A81] to-indigo-900 via-[#454380]',
-            'bg-gradient-to-bl from-[#ffcd76] to-[#a8813e] via-[#e0c05e]',
+            // 'bg-gradient-to-bl from-[#ffcd76] to-[#a8813e] via-[#e0c05e]',
+            'bg-gradient-to-bl from-amber-600 to-yellow-600 via-amber-500',
           card.inclination2 === 'Love' && 'to-[#f58a87]',
           card.inclination2 === 'Wisdom' && 'to-[#5876b2]',
           card.inclination2 === 'Wrath' && 'to-[#814242]',
