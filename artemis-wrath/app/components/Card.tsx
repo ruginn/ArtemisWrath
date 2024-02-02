@@ -107,10 +107,20 @@ const CardElement = ({ card }: { card: Card }) => {
         </div>
       )}
       {card.type === 'creature' && (
-        <div className='w-[260px] h-[90px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50 '>
-          <p className='px-1 pt-1 text-[11px] leading-none  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+        <div className='flex flex-col w-[260px] h-[90px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50 justify-between items-center'>
+          <p className='px-1 pt-[2px] text-[11px] leading-none  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
             {card.description}
           </p>
+          <div className='w-[98%] flex flex-row text-base justify-between px-3 mb-1'>
+            <div className='flex flex-row'>
+              <p className='font-extrabold mr-1'>Life:</p>
+              <p>{card.hp}</p>
+            </div>
+            <div className='flex flex-row'>
+              <p className='font-extrabold mr-1'>Attack:</p>
+              <p>{card.attackPower}</p>
+            </div>
+          </div>
         </div>
       )}
       {card.type === 'creature' && (
