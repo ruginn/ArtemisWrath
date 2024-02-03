@@ -2529,9 +2529,9 @@ export async function POST(req: Request) {
   const todayDate = dayStart.getDate();
   const todayMonth = dayStart.getMonth();
   // create new date to set time to zero
-  const realDateStart = new Date(todayYear, todayMonth, todayDate, 24, 0, 0, 0);
+  const realDateStart = new Date(todayYear, todayMonth, todayDate, 0, 0, 0, 0);
   console.log(cardSet.length);
-  console.log(realDateStart);
+  console.log(realDateStart.toDateString(), 'today');
   const setTotal = {
     Common: 5,
     Uncommon: 3,
