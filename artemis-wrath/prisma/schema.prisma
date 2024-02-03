@@ -18,4 +18,5 @@ model User {
   createdAt    DateTime  @default(now())
   lastPackDate DateTime?
   starterDeck  Boolean   @default(false)
+  crystals Int? @default(500)
 }
