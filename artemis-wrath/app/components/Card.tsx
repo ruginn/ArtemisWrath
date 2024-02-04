@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import { cn } from '@/lib/utils';
+import { useCardModal } from '@/hooks/use-cardModal';
 
 interface Card {
   id: number;
@@ -31,10 +32,12 @@ interface Card {
 }
 
 const CardElement = ({ card }: { card: Card }) => {
+  const CardModal = useCardModal();
+
   return (
     <div
       className={cn(
-        'h-[400.5px] w-72 bg-amber-200 flex flex-col rounded-xl items-center border-gray-800 border-8 relative',
+        'h-[400.5px] w-72 bg-amber-200 flex flex-col rounded-xl items-center border-gray-800 border-8 relative cursor-pointer',
         card.inclination === 'Wrath' &&
           ' bg-gradient-to-bl to-[#814242] via-red-800 from-[#75352F]',
         card.inclination === 'Wisdom' &&
@@ -53,6 +56,7 @@ const CardElement = ({ card }: { card: Card }) => {
         card.inclination2 === 'Pride' && 'to-[#e0c05e]'
       )}
       key={card.id}
+      onClick={CardModal.onOpen}
     >
       {/* <div className='flex w-full flex-row justify-between'> */}
       {/* <h1 className='text-l self-start ml-2 font-extrabold'>{card.name}</h1> */}
