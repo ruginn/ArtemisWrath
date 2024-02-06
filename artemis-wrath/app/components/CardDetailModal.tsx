@@ -17,7 +17,6 @@ const CardDetailModal = () => {
 
   return (
     <Dialog open={cardModal.isOpen} onOpenChange={closeModal}>
-      <DialogTrigger>Open</DialogTrigger>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Are you absolutely sure?</DialogTitle>

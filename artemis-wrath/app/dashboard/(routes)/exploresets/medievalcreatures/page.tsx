@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useSideBar } from '@/hooks/use-sidebar';
 import { cn } from '@/lib/utils';
 import CardElement from '@/app/components/Card';
+import CardDetailModal from '@/app/components/CardDetailModal';
 
 interface Card {
   id: number;
@@ -98,6 +99,7 @@ const MedievalCreaturesSet = () => {
             );
           })}
       </div>
+      <CardDetailModal />
     </div>
   );
 };
