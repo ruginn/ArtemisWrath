@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
 import { cn } from '@/lib/utils';
 import { useCardModal } from '@/hooks/use-cardModal';
+import CardDetailModal from './CardDetailModal';
 
 interface Card {
   id: number;
@@ -160,6 +161,7 @@ const CardElement = ({ card }: { card: Card }) => {
           </h1>
         </div>
       )}
+      {/* <CardDetailModal /> */}
     </div>
   );
 };

@@ -50,6 +50,7 @@ const MedievalCreaturesSet = () => {
       }).then((res) => res.json());
       // console.log(res)
       setCardSet(res);
+      // need to set card set as global state
       console.log(res);
       setCardsLoaded(true);
     };
