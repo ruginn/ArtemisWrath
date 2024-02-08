@@ -5,6 +5,7 @@ import { useSideBar } from '@/hooks/use-sidebar';
 import { cn } from '@/lib/utils';
 import CardElement from '@/app/components/Card';
 import CardDetailModal from '@/app/components/CardDetailModal';
+import { useCardSet } from '@/hooks/use-cardSets';
 
 interface Card {
   id: number;
@@ -35,6 +36,7 @@ interface Card {
 }
 
 const MedievalCreaturesSet = () => {
+  const globalCardSet = useCardSet();
   const [cardSet, setCardSet] = useState<Card[]>([]);
   const [cardsLoaded, setCardsLoaded] = useState(false);
   const activeSidebar = useSideBar();
@@ -51,6 +53,7 @@ const MedievalCreaturesSet = () => {
       // console.log(res)
       setCardSet(res);
       // need to set card set as global state
+      globalCardSet.addCards(res);
       console.log(res);
       setCardsLoaded(true);
     };
