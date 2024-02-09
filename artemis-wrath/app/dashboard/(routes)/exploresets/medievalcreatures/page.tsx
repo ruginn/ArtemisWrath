@@ -53,7 +53,7 @@ const MedievalCreaturesSet = () => {
       // console.log(res)
       setCardSet(res);
       // need to set card set as global state
-      globalCardSet.addCards(res);
+      // globalCardSet.addCards(res);
       console.log(res);
       setCardsLoaded(true);
     };

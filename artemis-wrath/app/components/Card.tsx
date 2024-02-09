@@ -2,6 +2,7 @@ import Image, { StaticImageData } from 'next/image';
 import { cn } from '@/lib/utils';
 import { useCardModal } from '@/hooks/use-cardModal';
 import CardDetailModal from './CardDetailModal';
+import { useCardSet } from '@/hooks/use-cardSets';
 
 interface Card {
   id: number;
@@ -35,6 +36,15 @@ interface Card {
 const CardElement = ({ card }: { card: Card }) => {
   const CardModal = useCardModal();
 
+  const globalCardSet = useCardSet();
+
+  const onOpenModal = () => {
+    globalCardSet.addCards([card]);
+    console.log(globalCardSet.cards);
+    CardModal.onOpen();
+    // console.log(CardModal);
+  };
+
   return (
     <div
       className={cn(
@@ -57,7 +67,7 @@ const CardElement = ({ card }: { card: Card }) => {
         card.inclination2 === 'Pride' && 'to-[#e0c05e]'
       )}
       key={card.id}
-      onClick={CardModal.onOpen}
+      onClick={onOpenModal}
     >
       {/* <div className='flex w-full flex-row justify-between'> */}
       {/* <h1 className='text-l self-start ml-2 font-extrabold'>{card.name}</h1> */}

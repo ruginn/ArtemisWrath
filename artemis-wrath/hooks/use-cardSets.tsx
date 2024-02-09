@@ -22,7 +22,7 @@ interface Card {
     | 'Desert'
     | '';
   effectFunction?: string;
-  rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
+  rarity?: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
   type?: string;
   attackPower?: number;
   hp?: number;
