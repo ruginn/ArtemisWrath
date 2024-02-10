@@ -20,3 +20,7 @@ model User {
   starterDeck  Boolean   @default(false)
   crystals Int? @default(500)
 }
+
+// need to make trades 
+// need to make cards
+// battle
