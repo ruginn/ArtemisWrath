@@ -28,7 +28,7 @@ const CardDetailModal = () => {
             <DialogHeader>
               <DialogTitle>{currentCard.name}</DialogTitle>
               <DialogDescription>
-                <div>
+                <div className=''>
                   {currentCard.image && (
                     <Image
                       src={currentCard.image}
@@ -38,6 +38,7 @@ const CardDetailModal = () => {
                       // className='w-[200px] h-[200px] object-cover'
                     ></Image>
                   )}
+                  <h1>{currentCard.name}</h1>
                   <p>{currentCard.description}</p>
                 </div>
               </DialogDescription>
