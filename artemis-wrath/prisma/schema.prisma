@@ -23,4 +23,23 @@ model User {
 
 // need to make trades 
 // need to make cards
+model Card {
+  id String @unique
+  name String? 
+  description String
+  randomNumber Int
+  image String
+  inclination String
+  effect String
+  biome String
+  effectFunction String
+  rarity String
+  type String
+  attackPower Int
+  hp Int
+  cost Int
+}
+
+
+
 // battle
