@@ -38,6 +38,7 @@ model Card {
   attackPower Int
   hp Int
   cost Int
+  set String
 }
 
 
