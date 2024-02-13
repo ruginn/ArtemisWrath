@@ -2499,6 +2499,24 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
   },
+  {
+    id: 138,
+    name: 'Divine Thunderstrike',
+    description:
+      'When your opponent declares an attack, negate the attack and destroy all monsters they control. This turn, your opponent cannot summon monsters from their hand or hell.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/q0rspcQ/can-you-generate-a-yellow-nectar-in-a-intricate.png',
+    inclination: 'Pride',
+    effect: '',
+    biome: '',
+    rarity: 'Rare',
+    type: 'Divine Intervention',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 4,
+  },
 ];
 
 export async function GET(req: Request) {
@@ -2508,6 +2526,7 @@ export async function GET(req: Request) {
     Wrath: 0,
     Mischief: 0,
     Pride: 0,
+    Neutral: 0,
   };
 
   const listRarity = {
@@ -2520,8 +2539,13 @@ export async function GET(req: Request) {
 
   cardSet.map((card) => {
     if (card.inclination) {
-      let inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief' =
-        card.inclination;
+      let inclination:
+        | 'Love'
+        | 'Wisdom'
+        | 'Wrath'
+        | 'Pride'
+        | 'Mischief'
+        | 'Neutral' = card.inclination;
       listInclination[inclination] += 1;
       let rarity = card.rarity;
       if (rarity !== undefined) {
