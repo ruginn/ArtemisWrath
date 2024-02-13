@@ -4,35 +4,36 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import ReactCardFlip from 'react-card-flip';
 import CardBack from '@/public/Images/Cardback2.png';
+import { Card } from '@/types/CardType';
 
-interface Card {
-  id: number;
-  name: string;
-  description: string;
-  randomNumber: number;
-  image?: string;
-  inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
-  inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
-  effect?: string;
-  biome?:
-    | 'Jungle'
-    | 'Tundra'
-    | 'Alpine'
-    | 'Forest'
-    | 'Wetland'
-    | 'Grassland'
-    | 'Aquatic'
-    | 'Island'
-    | 'Cave'
-    | 'Desert'
-    | '';
-  effectFunction?: string;
-  rarity?: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
-  type?: string;
-  attackPower?: number;
-  hp?: number;
-  cost?: number;
-}
+// interface Card {
+//   id: number;
+//   name: string;
+//   description: string;
+//   randomNumber: number;
+//   image?: string;
+//   inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+//   inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+//   effect?: string;
+//   biome?:
+//     | 'Jungle'
+//     | 'Tundra'
+//     | 'Alpine'
+//     | 'Forest'
+//     | 'Wetland'
+//     | 'Grassland'
+//     | 'Aquatic'
+//     | 'Island'
+//     | 'Cave'
+//     | 'Desert'
+//     | '';
+//   effectFunction?: string;
+//   rarity?: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
+//   type?: string;
+//   attackPower?: number;
+//   hp?: number;
+//   cost?: number;
+// }
 
 const CardFlipElement = ({ card }: { card: Card }) => {
   const [isFlipped, setIsFlipped] = useState(false);

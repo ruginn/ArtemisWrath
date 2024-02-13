@@ -1,33 +1,34 @@
 import { NextResponse } from 'next/server';
+import { Card } from '@/types/CardType';
 
-interface Card {
-  id: number;
-  name: string;
-  description: string;
-  randomNumber: number;
-  image?: string;
-  inclination?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
-  inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
-  effect?: string;
-  biome?:
-    | 'Jungle'
-    | 'Tundra'
-    | 'Alpine'
-    | 'Forest'
-    | 'Wetland'
-    | 'Grassland'
-    | 'Aquatic'
-    | 'Island'
-    | 'Cave'
-    | 'Desert'
-    | '';
-  effectFunction?: string;
-  rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
-  type?: string;
-  attackPower?: number;
-  hp?: number;
-  cost?: number;
-}
+// interface Card {
+//   id: number;
+//   name: string;
+//   description: string;
+//   randomNumber: number;
+//   image?: string;
+//   inclination?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+//   inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+//   effect?: string;
+//   biome?:
+//     | 'Jungle'
+//     | 'Tundra'
+//     | 'Alpine'
+//     | 'Forest'
+//     | 'Wetland'
+//     | 'Grassland'
+//     | 'Aquatic'
+//     | 'Island'
+//     | 'Cave'
+//     | 'Desert'
+//     | '';
+//   effectFunction?: string;
+//   rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
+//   type?: string;
+//   attackPower?: number;
+//   hp?: number;
+//   cost?: number;
+// }
 
 const cardSet: Card[] = [
   {
@@ -2522,9 +2523,10 @@ export async function GET(req: Request) {
       let inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief' =
         card.inclination;
       listInclination[inclination] += 1;
-      let rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar' =
-        card.rarity;
-      listRarity[rarity] += 1;
+      let rarity = card.rarity;
+      if (rarity !== undefined) {
+        listRarity[rarity] += 1;
+      }
     }
   });
   // probably need to make a loop to make this better

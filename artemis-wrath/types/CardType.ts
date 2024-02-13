@@ -5,6 +5,7 @@ export interface Card {
   randomNumber: number;
   image?: string;
   inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+  inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
   effect?: string;
   biome?:
     | 'Jungle'
@@ -19,7 +20,7 @@ export interface Card {
     | 'Desert'
     | '';
   effectFunction?: string;
-  rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare';
+  rarity?: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
   type?: string;
   attackPower?: number;
   hp?: number;
