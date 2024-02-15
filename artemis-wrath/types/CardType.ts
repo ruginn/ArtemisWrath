@@ -4,6 +4,7 @@ export interface Card {
   description: string;
   randomNumber: number;
   image?: string;
+  tinyImage?: string;
   inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief' | 'Neutral';
   inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
   effect?: string;

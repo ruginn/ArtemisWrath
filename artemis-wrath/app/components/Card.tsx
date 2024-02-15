@@ -91,6 +91,17 @@ const CardElement = ({ card }: { card: Card }) => {
           // className="w-60 h-auto"
         ></Image>
       )}
+      {card.image && card.type === 'Divine Intervention' && (
+        <Image
+          src={card.image}
+          alt=''
+          width={256}
+          height={256}
+          placeholder='empty'
+          className='object-cover rounded-lg border-4 border-gray-800 mt-2'
+          // className="w-60 h-auto"
+        ></Image>
+      )}
       {card.image && card.type === 'Immortal' && (
         <Image
           src={card.image}
