@@ -61,6 +61,8 @@ const CardElement = ({ card }: { card: Card }) => {
         card.inclination === 'Pride' &&
           // 'bg-gradient-to-bl from-[#686A81] to-indigo-900 via-[#454380]',
           'bg-gradient-to-bl from-amber-600 to-yellow-600 via-amber-500',
+        card.type === 'Divine Intervention' &&
+          'bg-gradient-to-bl from-green-900 to-emerald-800 via-teal-700',
 
         card.inclination2 === 'Love' && 'to-[#f58a87]',
         card.inclination2 === 'Wisdom' && 'to-[#5876b2]',
@@ -76,6 +78,11 @@ const CardElement = ({ card }: { card: Card }) => {
       {/* <p className='mr-2'>{card.id}</p> */}
       {/* </div> */}
       {card.type === 'creature' && (
+        <div className='absolute rounded-full bg-amber-200 text-black w-10 h-10 flex justify-center items-center right-0.5 top-0.5 border-4 border-gray-800 font-serif text-2xl'>
+          <p className='font-bold'>{card.cost}</p>
+        </div>
+      )}
+      {card.type === 'Divine Intervention' && (
         <div className='absolute rounded-full bg-amber-200 text-black w-10 h-10 flex justify-center items-center right-0.5 top-0.5 border-4 border-gray-800 font-serif text-2xl'>
           <p className='font-bold'>{card.cost}</p>
         </div>
@@ -134,6 +141,13 @@ const CardElement = ({ card }: { card: Card }) => {
           </p>
         </div>
       )}
+      {card.type === 'Divine Intervention' && (
+        <div className='flex w-full flex-row justify-between items-center'>
+          <h1 className='text-sm self-start ml-2 font-extrabold text-amber-200 drop-shadow-[1.2px_1.2px_1.2px_rgba(0,0,0,0.8)]'>
+            {card.name}
+          </h1>
+        </div>
+      )}
       {card.type === 'creature' && (
         <div className='flex flex-col w-[260px] h-[90px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50 justify-between items-center'>
           <p className='px-1 pt-[2px] text-[11px] leading-none  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
@@ -149,6 +163,13 @@ const CardElement = ({ card }: { card: Card }) => {
               <p>{card.attackPower}</p>
             </div>
           </div>
+        </div>
+      )}
+      {card.type === 'Divine Intervention' && (
+        <div className='flex flex-col w-[260px] h-[90px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50 justify-between items-center'>
+          <p className='px-1 pt-[2px] text-[11px] leading-none  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+            {card.description}
+          </p>
         </div>
       )}
       {card.type === 'creature' && (
