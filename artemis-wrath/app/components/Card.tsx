@@ -182,6 +182,16 @@ const CardElement = ({ card }: { card: Card }) => {
           </p>
         </div>
       )}
+      {card.type === 'Divine Intervention' && (
+        <div className='flex flex-row w-full justify-between items-center'>
+          <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
+            MC-{card.id}/126
+          </p>
+          <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+            {card.rarity?.split('')[0]}
+          </p>
+        </div>
+      )}
       {card.type === 'Immortal' && (
         <div className='absolute bottom-2 w-[255px] h-[90px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50 '></div>
       )}
