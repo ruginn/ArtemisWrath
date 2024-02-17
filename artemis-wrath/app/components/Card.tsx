@@ -62,8 +62,8 @@ const CardElement = ({ card }: { card: Card }) => {
           // 'bg-gradient-to-bl from-[#686A81] to-indigo-900 via-[#454380]',
           'bg-gradient-to-bl from-amber-600 to-yellow-600 via-amber-500',
         card.type === 'Divine Intervention' &&
-          'bg-gradient-to-bl from-green-900 to-emerald-800 via-teal-700',
-
+          // 'bg-gradient-to-bl from-green-900 to-emerald-800 via-teal-700',
+          'bg-gradient-bl from-[#8d6f57] to-[#7a5135] via-[#654729]',
         card.inclination2 === 'Love' && 'to-[#f58a87]',
         card.inclination2 === 'Wisdom' && 'to-[#5876b2]',
         card.inclination2 === 'Wrath' && 'to-[#814242]',
