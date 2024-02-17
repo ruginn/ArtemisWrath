@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Poppins, Ysabeau_SC } from 'next/font/google';
+import { Poppins, Ysabeau_SC, Cormorant_SC } from 'next/font/google';
 import './globals.css';
 import NavBar from '@/components/Navbar';
 import { ClerkProvider } from '@clerk/nextjs';
@@ -7,7 +7,7 @@ import { ClerkProvider } from '@clerk/nextjs';
 const ysabeau = Ysabeau_SC({
   subsets: ['latin'],
   weight: ['100', '200', '500', '300', '400', '600', '700', '800', '900'],
-  display: 'swap',
+  // display: 'swap',
   adjustFontFallback: false,
 });
 
