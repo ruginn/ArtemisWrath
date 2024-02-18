@@ -2413,7 +2413,7 @@ const cardSet: Card[] = [
     id: 138,
     name: 'Divine Thunderstrike',
     description:
-      'When your opponent declares an attack, negate the attack and destroy all monsters they control. This turn, your opponent cannot summon monsters from their hand or hell.',
+      'When your opponent declares an attack, negate the attack and destroy all creatures on both players feilds.',
     randomNumber: 321,
     image: 'https://i.ibb.co/tz0tLC4/Tstrike.png',
     inclination: 'Pride',
@@ -2424,13 +2424,13 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 4,
+    cost: 5,
   },
   {
     id: 139,
     name: "Athena's Wisdom",
     description:
-      "When your opponent activates a spell or trap card, negate the activation and destroy it. If this card is destroyed by your opponent's card effect, you can banish one card from their graveyard.",
+      "When your opponent activates a divine intervention or relic card, negate the activation and destroy it. If this card is destroyed by your opponent's card effect, you can banish one card from their hell.",
     randomNumber: 321,
     image: 'https://i.ibb.co/VBTdmms/Athena-s-wisdom.png',
     inclination: 'Pride',
@@ -2446,7 +2446,7 @@ const cardSet: Card[] = [
   {
     id: 140,
     name: "Apollo's Light",
-    description: `Activate only when your opponent declares a direct attack. Gain life points equal to the attacking monster's attack points. You can only activate one "Radiant Protection" per turn.`,
+    description: `Activate only when your opponent declares a direct attack. Gain one life.`,
     randomNumber: 321,
     image: 'https://i.ibb.co/Lk99ph8/apollos-light.png',
     inclination: 'Pride',
@@ -2463,7 +2463,7 @@ const cardSet: Card[] = [
     id: 141,
     name: "Hades' Judgment",
     description:
-      'When a monster declares an attack, banish that monster and inflict damage to your opponent equal to its attack points.',
+      'When a monster declares an attack banish after the damage step.',
     randomNumber: 321,
     image: 'https://i.ibb.co/8zNZgFn/Eternal-Judgement.png',
     inclination: 'Pride',
@@ -2515,7 +2515,7 @@ const cardSet: Card[] = [
     id: 144,
     name: "Hera's Retribution",
     description:
-      'When your opponent controls a monster with 3000 or more ATK and declares an attack, negate the attack, destroy the attacking monster, and inflict damage to your opponent equal to its ATK.',
+      'When your opponent controls a creature with 600 or more ATK and declares an attack, negate the attack, destroy the attacking creature, and summon a creature from your hand without spending nectar.',
     randomNumber: 321,
     image: 'https://i.ibb.co/yVhtShG/hera-retribution.png',
     inclination: 'Pride',
@@ -2549,7 +2549,7 @@ const cardSet: Card[] = [
     id: 146,
     name: "Demeter's Seal",
     description:
-      'When your opponent summons a monster(s) from their Extra Deck, negate the summon(s) and banish the summoned monster(s).',
+      'When your opponent summon a creature, negate the summon and banish the summoned monster.',
     randomNumber: 321,
     image: 'https://i.ibb.co/jVxgDzS/demeters-seal.png',
     inclination: 'Pride',
@@ -2566,7 +2566,7 @@ const cardSet: Card[] = [
     id: 147,
     name: "Dionysus's Revelry",
     description:
-      'When your opponent activates a Spell or Trap card, negate the activation and destroy it. If you do, your opponent must discard 1 random card from their hand.',
+      'When your opponent activates a Divine Intervention or Relic card, negate the activation and destroy it and discard a card.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/nPVMvD8/The-artwork-depicts-a-lavish-banquet-hall-filled-1.png',
@@ -2584,7 +2584,7 @@ const cardSet: Card[] = [
     id: 148,
     name: "Ares's Fury",
     description:
-      'Activate only when your opponent declares an attack. Destroy all Attack Position monsters on the field, then inflict 500 damage to your opponent for each monster destroyed by this effect.',
+      'Activate only when your opponent declares an attack. Inflict 300 damage to all of your opponents creatures.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/64DRLZZ/The-god-aeres-in-battle-in-golden-jewels-armor-h.png',
@@ -2602,7 +2602,7 @@ const cardSet: Card[] = [
     id: 149,
     name: "Hephaestus's Forge",
     description:
-      "When a monster effect is activated, negate the effect, and if you do, destroy that monster. If this card is destroyed by your opponent's card effect, you can Special Summon 1 Level 4 or lower monster from your graveyard.",
+      "When a creature effect is activated, negate the effect, and if you do, destroy that creature. If this card is destroyed by your opponent's card effect, you can summon a 4 cost creature.",
     randomNumber: 321,
     image:
       'https://i.ibb.co/Jx3hNv5/The-artwork-portrays-the-god-Hephaestus-at-his-f.png',
@@ -2620,7 +2620,7 @@ const cardSet: Card[] = [
     id: 150,
     name: "Hestia's Sanctuary",
     description:
-      'When your opponent declares an attack, negate the attack and end the Battle Phase. You can then add 1 FIRE Attribute monster from your deck to your hand.',
+      'When your opponent declares an attack, increase the life by 500 to the defending creature.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/1QWLJY7/In-the-artwork-a-serene-temple-dedicated-to-the.png',
@@ -2632,13 +2632,13 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 5,
+    cost: 3,
   },
   {
     id: 151,
     name: "Persephone's Embrace",
     description:
-      "Activate only when a monster(s) is Special Summoned from the Graveyard. Banish all monsters in your opponent's Graveyard, then Special Summon 1 DARK Attribute monster from your own Graveyard.",
+      'Activate only when a creature is summoned from hell. That creature gains 500 attack.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/8dQybFY/hyper-realistic-painting-of-the-beautiful-goddes.png',
@@ -2650,13 +2650,13 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 7,
+    cost: 3,
   },
   {
     id: 152,
     name: "Nike's Triumph",
     description:
-      'When your opponent declares an attack, negate the attack and destroy the attacking monster. You can then Special Summon 1 Level 4 or lower monster from your hand.',
+      'When your opponent declares an attack, negate the attack and destroy the attacking creature.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/DLzW86Q/hyper-realistic-painting-of-a-beautiful-women-wh.png',
@@ -2674,7 +2674,7 @@ const cardSet: Card[] = [
     id: 153,
     name: "Aphrodite's Charm",
     description:
-      'When your opponent controls a monster with 3000 or more ATK and declares an attack, negate the attack, destroy the attacking monster, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/WFwM2rd/hyper-realistic-painting-of-a-beautiful-women-th.png',
