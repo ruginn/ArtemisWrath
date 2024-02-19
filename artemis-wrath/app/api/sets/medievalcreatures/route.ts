@@ -185,7 +185,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/8gHL9kq/A-small-ferret-with-fur-that-freezes-anything-it.png',
     inclination: 'Love',
-    effect: '',
+    effect:
+      'When Frostbite Ferret is played, if you have another Frostbite Ferret in your hand you may play it without cost.',
     biome: 'Tundra',
     rarity: 'Common',
     type: 'creature',
@@ -221,7 +222,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/d7bBwgw/A-seahorse-with-a-mane-of-stardust-swimming-gra.png',
     inclination: 'Love',
-    effect: '',
+    effect:
+      'While attacking this creature gains 500 Attack against dessert biome creatures.',
     biome: 'Aquatic',
     rarity: 'Common',
     type: 'creature',
@@ -275,7 +277,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/4RN4VCh/A-weasel-with-a-tiny-whip-agile-and-cunning-in.png',
     inclination: 'Love',
-    effect: '',
+    effect: 'If this creatures slains another creature you may draw a card.',
     biome: 'Grassland',
     rarity: 'Uncommon',
     type: 'creature',
