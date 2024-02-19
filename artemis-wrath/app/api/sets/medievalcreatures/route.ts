@@ -367,7 +367,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/jR39PvX/A-small-furry-creature-with-the-ability-to-comm.png',
     inclination: 'Love',
-    effect: '',
+    effect:
+      'If you have 3 more less divine essence you may play this card without paying nectar.',
     biome: 'Tundra',
     rarity: 'Uncommon',
     type: 'creature',
@@ -440,7 +441,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/gT6C8wz/A-slowmoving-sloth-with-fur-that-shimmers-like.png',
     inclination: 'Love',
-    effect: '',
+    effect:
+      'When this creature is summoned return one creature to full health and increase that creatures health by 100.',
     biome: 'Jungle',
     rarity: 'Rare',
     type: 'creature',
@@ -476,7 +478,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/JKgJVN0/a-dark-spiky-Echidna-with-giant-angel-like-wings.png',
     inclination: 'Love',
-    effect: '',
+    effect: 'When this is played remove one relic in play.',
     biome: 'Cave',
     rarity: 'Rare',
     type: 'creature',
@@ -494,7 +496,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/sgL73NC/A-graceful-stingray-with-a-pattern-of-glowing-st.png',
     inclination: 'Love',
-    effect: '',
+    effect:
+      'When this creatured is played, draw one card if it is a nectar you may play it for free. If it is anything else you may choose to put it on the top or bottom of your deck.',
     biome: 'Aquatic',
     rarity: 'Rare',
     type: 'creature',
