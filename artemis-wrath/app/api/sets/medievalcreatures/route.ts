@@ -460,7 +460,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/kGsCH4h/A-radiant-fuzzy-butterfly-with-wings-that-resemb.png',
     inclination: 'Love',
-    effect: '',
+    effect:
+      'Once per you turn you can search your deck for a creature, reveal it, and put it in you hand. Shuffle your deck.  ',
     biome: 'Grassland',
     rarity: 'Rare',
     type: 'creature',
