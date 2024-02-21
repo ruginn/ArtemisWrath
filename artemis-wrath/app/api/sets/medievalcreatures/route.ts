@@ -2819,6 +2819,7 @@ const cardSet: Card[] = [
     cost: 6,
   },
 ];
+// need to add relics
 
 export async function GET(req: Request) {
   const listInclination = {
