@@ -22,7 +22,7 @@ export interface Card {
     | '';
   effectFunction?: string;
   rarity?: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
-  type?: string;
+  type?: 'creature' | 'Immortal' | 'Divine Intervention' | 'Relic' | 'Nectar';
   attackPower?: number;
   hp?: number;
   cost?: number;
