@@ -8,35 +8,36 @@ import { useUser } from '@clerk/nextjs';
 import CardElement from '@/app/components/Card';
 import { useUserInfo } from '@/hooks/use-userInfo';
 import { useCollectedCards } from '@/hooks/use-collectedCards';
+import { Card } from '@/types/CardType';
 
-interface Card {
-  id: number;
-  name: string;
-  description: string;
-  randomNumber: number;
-  image?: string;
-  inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
-  inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
-  effect?: string;
-  biome?:
-    | 'Jungle'
-    | 'Tundra'
-    | 'Alpine'
-    | 'Forest'
-    | 'Wetland'
-    | 'Grassland'
-    | 'Aquatic'
-    | 'Island'
-    | 'Cave'
-    | 'Desert'
-    | '';
-  effectFunction?: string;
-  rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
-  type?: string;
-  attackPower?: number;
-  hp?: number;
-  cost?: number;
-}
+// interface Card {
+//   id: number;
+//   name: string;
+//   description: string;
+//   randomNumber: number;
+//   image?: string;
+//   inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+//   inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
+//   effect?: string;
+//   biome?:
+//     | 'Jungle'
+//     | 'Tundra'
+//     | 'Alpine'
+//     | 'Forest'
+//     | 'Wetland'
+//     | 'Grassland'
+//     | 'Aquatic'
+//     | 'Island'
+//     | 'Cave'
+//     | 'Desert'
+//     | '';
+//   effectFunction?: string;
+//   rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
+//   type?: string;
+//   attackPower?: number;
+//   hp?: number;
+//   cost?: number;
+// }
 
 interface Date {
   todayDate: string;
