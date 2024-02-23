@@ -75,8 +75,12 @@ const CardFlipElement = ({ card }: { card: Card }) => {
             'bg-gradient-to-bl via-[#3f392c] to-gray-700 from-slate-600',
           card.inclination === 'Pride' &&
             // 'bg-gradient-to-bl from-[#686A81] to-indigo-900 via-[#454380]',
-            // 'bg-gradient-to-bl from-[#ffcd76] to-[#a8813e] via-[#e0c05e]',
             'bg-gradient-to-bl from-amber-600 to-yellow-600 via-amber-500',
+          card.type === 'Divine Intervention' &&
+            // 'bg-gradient-to-bl from-green-900 to-emerald-800 via-teal-700',
+            'bg-gradient-bl from-[#8d6f57] to-[#7a5135] via-[#654729]',
+          card.type === 'Relic' &&
+            'bg-gradient-to-bl from-[#515031] to-[#929876] via-[#879464]',
           card.inclination2 === 'Love' && 'to-[#f58a87]',
           card.inclination2 === 'Wisdom' && 'to-[#5876b2]',
           card.inclination2 === 'Wrath' && 'to-[#814242]',
@@ -84,15 +88,24 @@ const CardFlipElement = ({ card }: { card: Card }) => {
           card.inclination2 === 'Pride' && 'to-[#e0c05e]'
         )}
         key={card.id}
-        onClick={flipCard}
       >
         {/* <div className='flex w-full flex-row justify-between'> */}
         {/* <h1 className='text-l self-start ml-2 font-extrabold'>{card.name}</h1> */}
         {/* <p className='mr-2'>{card.id}</p> */}
         {/* </div> */}
         {card.type === 'creature' && (
-          <div className='absolute rounded-full bg-amber-200 text-black w-10 h-10 flex justify-center items-center right-0.5 top-0.5 border-4 border-gray-800 font-serif'>
-            {card.cost}
+          <div className='absolute rounded-full bg-amber-200 text-black w-10 h-10 flex justify-center items-center right-0.5 top-0.5 border-4 border-gray-800 font-serif text-2xl'>
+            <p className='font-bold'>{card.cost}</p>
+          </div>
+        )}
+        {card.type === 'Divine Intervention' && (
+          <div className='absolute rounded-full bg-amber-200 text-black w-10 h-10 flex justify-center items-center right-0.5 top-0.5 border-4 border-gray-800 font-serif text-2xl'>
+            <p className='font-bold'>{card.cost}</p>
+          </div>
+        )}
+        {card.type === 'Relic' && (
+          <div className='absolute rounded-full bg-amber-200 text-black w-10 h-10 flex justify-center items-center right-0.5 top-0.5 border-4 border-gray-800 font-serif text-2xl'>
+            <p className='font-bold'>{card.cost}</p>
           </div>
         )}
         {card.image && card.type === 'creature' && (
@@ -106,6 +119,29 @@ const CardFlipElement = ({ card }: { card: Card }) => {
             // className="w-60 h-auto"
           ></Image>
         )}
+        {card.image && card.type === 'Divine Intervention' && (
+          <Image
+            src={card.image}
+            alt=''
+            width={256}
+            height={256}
+            placeholder='empty'
+            className='object-cover rounded-lg border-4 border-gray-800 mt-2'
+            // className="w-60 h-auto"
+          ></Image>
+        )}
+        {card.image && card.type === 'Relic' && (
+          <Image
+            src={card.image}
+            alt=''
+            width={256}
+            height={256}
+            placeholder='empty'
+            className='object-cover rounded-lg border-4 border-gray-800 mt-2'
+            // className="w-60 h-auto"
+          ></Image>
+        )}
+
         {card.image && card.type === 'Immortal' && (
           <Image
             src={card.image}
@@ -138,12 +174,31 @@ const CardFlipElement = ({ card }: { card: Card }) => {
             </p>
           </div>
         )}
+        {card.type === 'Divine Intervention' && (
+          <div className='flex w-full flex-row justify-between items-center'>
+            <h1 className='text-sm self-start ml-2 font-extrabold text-amber-200 drop-shadow-[1.2px_1.2px_1.2px_rgba(0,0,0,0.8)]'>
+              {card.name}
+            </h1>
+          </div>
+        )}
+        {card.type === 'Relic' && (
+          <div className='flex w-full flex-row justify-between items-center'>
+            <h1 className='text-sm self-start ml-2 font-extrabold text-amber-200 drop-shadow-[1.2px_1.2px_1.2px_rgba(0,0,0,0.8)]'>
+              {card.name}
+            </h1>
+          </div>
+        )}
         {card.type === 'creature' && (
-          <div className='flex flex-col w-[260px] h-[90px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50 justify-between'>
+          <div className='flex flex-col w-[260px] h-[90px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50 justify-between items-center'>
+            {card.effect && (
+              <p className='px-1 pt-[2px] text-[11px] leading-none font-bold text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+                Effect: {card.effect}
+              </p>
+            )}
             <p className='px-1 pt-[2px] text-[11px] leading-none  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
               {card.description}
             </p>
-            <div className='w-full flex flex-row text-base justify-between px-1 mb-1'>
+            <div className='w-[98%] flex flex-row text-base justify-between px-3 mb-1'>
               <div className='flex flex-row'>
                 <p className='font-extrabold mr-1'>Life:</p>
                 <p>{card.hp}</p>
@@ -155,7 +210,31 @@ const CardFlipElement = ({ card }: { card: Card }) => {
             </div>
           </div>
         )}
+        {card.type === 'Divine Intervention' && (
+          <div className='flex flex-col w-[260px] h-[90px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50 justify-between items-center'>
+            <p className='px-1 pt-[2px] text-[11px] leading-none  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+              {card.description}
+            </p>
+          </div>
+        )}
+        {card.type === 'Relic' && (
+          <div className='flex flex-col w-[260px] h-[90px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50 justify-between items-center'>
+            <p className='px-1 pt-[2px] text-[11px] leading-none  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+              {card.description}
+            </p>
+          </div>
+        )}
         {card.type === 'creature' && (
+          <div className='flex flex-row w-full justify-between items-center'>
+            <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
+              MC-{card.id}/126
+            </p>
+            <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+              {card.rarity?.split('')[0]}
+            </p>
+          </div>
+        )}
+        {card.type === 'Divine Intervention' && (
           <div className='flex flex-row w-full justify-between items-center'>
             <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
               MC-{card.id}/126
@@ -188,6 +267,7 @@ const CardFlipElement = ({ card }: { card: Card }) => {
             </h1>
           </div>
         )}
+        {/* <CardDetailModal /> */}
       </div>
     </ReactCardFlip>
   );
