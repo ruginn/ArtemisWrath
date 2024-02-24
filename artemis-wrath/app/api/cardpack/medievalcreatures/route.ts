@@ -2433,7 +2433,7 @@ const cardSet: Card[] = [
     inclination: 'Pride',
     effect: '',
     biome: '',
-    rarity: 'Rare',
+    rarity: 'Uncommon',
     type: 'Divine Intervention',
     effectFunction: '',
     attackPower: 0,
