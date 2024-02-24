@@ -2798,8 +2798,7 @@ const cardSet: Card[] = [
   {
     id: 148,
     name: "Hermes's Caduceus",
-    description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+    description: 'Heal 400 health to one of your creatures.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/QX4RhQf/Caduceus-a-legendary-staff-adorned-with-intertw.png',
@@ -2818,7 +2817,7 @@ const cardSet: Card[] = [
     id: 149,
     name: "Demeter's Sickle",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Discard your hand and draw the same amount cards you discarded',
     randomNumber: 321,
     image:
       'https://i.ibb.co/qnjvWrF/Sickle-a-mighty-harvesting-tool-imbued-with-the.png',
@@ -2856,7 +2855,7 @@ const cardSet: Card[] = [
     id: 151,
     name: "Ares's War Drum",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Increase the attack of all your creatures on the field by 300.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/RpD9WK8/War-Drum-a-powerful-instrument-of-war-adorned-w.png',
