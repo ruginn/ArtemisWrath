@@ -213,7 +213,17 @@ const CardElement = ({ card }: { card: Card }) => {
       {card.type === 'creature' && (
         <div className='flex flex-row w-full justify-between items-center'>
           <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
-            MC-{card.id}/126
+            MC-{card.id}/167
+          </p>
+          <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+            {card.rarity?.split('')[0]}
+          </p>
+        </div>
+      )}
+      {card.type === 'Immortal' && (
+        <div className='flex flex-row w-full justify-between items-center'>
+          <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
+            MC-{card.id}/167
           </p>
           <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
             {card.rarity?.split('')[0]}
@@ -223,7 +233,17 @@ const CardElement = ({ card }: { card: Card }) => {
       {card.type === 'Divine Intervention' && (
         <div className='flex flex-row w-full justify-between items-center'>
           <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
-            MC-{card.id}/126
+            MC-{card.id}/167
+          </p>
+          <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+            {card.rarity?.split('')[0]}
+          </p>
+        </div>
+      )}
+      {card.type === 'Relic' && (
+        <div className='flex flex-row w-full justify-between items-center'>
+          <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
+            MC-{card.id}/167
           </p>
           <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
             {card.rarity?.split('')[0]}
@@ -251,6 +271,16 @@ const CardElement = ({ card }: { card: Card }) => {
           <h1 className='text-xl self-start ml-2 font-extrabold text-amber-200 drop-shadow-[1.2px_1.2px_1.2px_rgba(0,0,0,0.8)]'>
             {card.name}
           </h1>
+        </div>
+      )}
+      {card.type === 'Nectar' && (
+        <div className='flex flex-row w-full justify-between items-center'>
+          <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
+            MC-{card.id}/167
+          </p>
+          <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
+            {card.rarity?.split('')[0]}
+          </p>
         </div>
       )}
       {/* <CardDetailModal /> */}
