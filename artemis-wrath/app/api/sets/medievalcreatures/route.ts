@@ -550,7 +550,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/DRHbnv7/A-lemur-with-a-tail-that-glows-softly-like-a-lan.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'On play search your deck for a creature with the biome of Forest with a cost of 4.',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -608,7 +609,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/vZ5BbT0/wyvern-A-winged-creature-with-scales-that-mirror.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'Increase the attack and health of this creature by 100 for every card in your hand.',
     biome: 'Alpine',
     rarity: 'Common',
     type: 'creature',
@@ -646,7 +648,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/WDjyJpQ/A-wise-owl-with-feathers-that-change-colors-base.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'On play if your immortal has 3 or less divine essence draw a cards.',
     biome: 'Desert',
     rarity: 'Common',
     type: 'creature',
@@ -684,7 +687,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/4pfF8xq/A-snail-with-a-small-scepter-slowly-making-its.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'On play you may look at your divine essence cards. Place the cards face down after.',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -703,7 +707,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/0mj22Fr/A-sleek-aquatic-creature-with-the-body-of-an-eel.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'This creature gains 300 life and attack when another creature with the biome of aquatic is in play',
     biome: 'Aquatic',
     rarity: 'Common',
     type: 'creature',
@@ -722,7 +727,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/4ZJmxJM/An-elk-with-antlers-that-channel-otherworldly-en.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect: 'On play heal damage on one of your creatures',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -741,7 +746,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/q7n2nK1/A-wise-tortoise-with-a-shell-that-reflects-the-c.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect: 'On play you may add a card from your hell into your hand',
     biome: 'Wetland',
     rarity: 'Common',
     type: 'creature',
@@ -779,7 +784,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/LChDWLm/A-snake-with-vines-growing-from-its-scales-camo.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'This card may not be slayed in battle by other creatures with a jungle biome.',
     biome: 'Jungle',
     rarity: 'Uncommon',
     type: 'creature',
@@ -855,7 +861,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/WtdjBXJ/A-massive-tortoise-with-a-shell-resembling-ancie.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect: 'On play draw 2 cards and discard 3 cards',
     biome: 'Desert',
     rarity: 'Uncommon',
     type: 'creature',
@@ -893,7 +899,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/dgwMYXc/An-aquatic-creature-with-translucent-skin-adorn.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'On play search your deck for an aquatic biome creature with a cost of 3 or less. Play that card on the field.',
     biome: 'Aquatic',
     rarity: 'Rare',
     type: 'creature',
@@ -912,7 +919,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/DQxSt0F/A-majestic-aquatic-creature-with-the-body-of-an.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect: 'If this creature is slayed in battle draw 2 cards.',
     biome: 'Aquatic',
     rarity: 'Rare',
     type: 'creature',
@@ -931,7 +938,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ggq2QXD/A-slowmoving-snail-with-a-shell-that-glistens-l.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect: 'On play draw until you have 5 cards in your hand.',
     biome: 'Forest',
     rarity: 'Rare',
     type: 'creature',
@@ -950,7 +957,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/HdzdkHS/A-regal-stag-with-antlers-made-of-enchanted-crys.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'On play search your deck for a Forrest biome creature with 4 cost or less and play it. You may not search for "Stoneheart Stag."',
     biome: 'Forest',
     rarity: 'Rare',
     type: 'creature',
@@ -969,7 +977,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/YtNkwtz/An-oceandwelling-creature-with-iridescent-tendr.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'This creature can not be slayed by relics or divine interventions.',
     biome: 'Aquatic',
     rarity: 'SuperRare',
     type: 'creature',
@@ -1007,7 +1016,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/F8hTZXK/A-mythical-creature-with-the-body-of-a-deer-and.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'On play choose a creature on your opponents field, that creature can not attack on the next turn.',
     biome: 'Alpine',
     rarity: 'SuperRare',
     type: 'creature',
