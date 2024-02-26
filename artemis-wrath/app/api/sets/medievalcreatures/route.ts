@@ -2038,7 +2038,7 @@ const cardSet: Card[] = [
   {
     id: 107,
     name: 'Ares',
-    description: 'All your creatures attacks are increased by 1000.',
+    description: 'All your creatures attacks are increased by 200.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/P17fZ8N/The-god-eres-in-battle-in-golden-jewels-armor-he.png',
@@ -2062,7 +2062,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/FnF8fmF/A-butterfly-with-wings-resembling-broadswords-f.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'When this creature is in play, no other ceratures can be targeted for battle.',
     biome: 'Grassland',
     rarity: 'Common',
     type: 'creature',
@@ -2100,7 +2101,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/br42wP9/A-fiery-salamander-that-glides-through-rivers-of.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'This creature gains 100 attack if "Chormatic Chameleon" is in play.',
     biome: 'Alpine',
     rarity: 'Common',
     type: 'creature',
@@ -2119,7 +2121,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/c6P7MW0/A-chameleon-with-scales-that-shift-in-color-to-m.png',
     inclination: 'Pride',
-    effect: '',
+    effect: 'This creature gains 100 attack if "Molten Salamander" is in play.',
     biome: 'Desert',
     rarity: 'Common',
     type: 'creature',
@@ -2157,7 +2159,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/0jrpQLF/A-sturdy-badger-in-blue-armor-carrying-a-miniatu.png',
     inclination: 'Pride',
-    effect: '',
+    effect: 'This creature gains 100 attack if an relic is attached to it.',
     biome: 'Cave',
     rarity: 'Common',
     type: 'creature',
@@ -2176,7 +2178,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/r7kvD4X/A-lynx-with-a-longbow-blending-into-the-shadows.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'On play search your deck for a Forrest biome card. Reveal it and add it to the top of your deck.',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -2252,7 +2255,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/Xx4rXSY/A-raven-with-feathers-inscribed-with-ancient-run.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'On play look at the top 5 cards on your deck. Place them in any order and return them to the top of your deck.',
     biome: 'Alpine',
     rarity: 'Common',
     type: 'creature',
@@ -2290,7 +2294,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/PT4j6bL/A-of-sleek-ocelot-with-fur-as-dark-as-obsidian-w.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'When your opponent actives a divine intervention, send this card to hell from the field and negate the effect of the divine intervention.',
     biome: 'Desert',
     rarity: 'Uncommon',
     type: 'creature',
@@ -2328,7 +2333,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/QXvc73k/A-large-beetle-with-a-carapace-that-gleams-like.png',
     inclination: 'Pride',
-    effect: '',
+    effect: 'While in play your creatures can only be slayed in battle.',
     biome: 'Jungle',
     rarity: 'Uncommon',
     type: 'creature',
@@ -2423,7 +2428,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/VjLLd33/A-majestic-wolf-carrying-a-warhammer-leading-a.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'This creature can only be slayed in battle and not other card effects.',
     biome: 'Forest',
     rarity: 'Rare',
     type: 'creature',
@@ -2461,7 +2467,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/mGhXx2k/A-massive-rhinoceros-with-a-hide-as-tough-as-iro.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'If this creature has less than 200 or less health increase its attack by 200',
     biome: 'Jungle',
     rarity: 'Rare',
     type: 'creature',
@@ -2480,7 +2487,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/BfZzR71/A-small-white-fox-with-fur-that-changes-color-wi.png',
     inclination: 'Pride',
-    effect: '',
+    effect: 'On play search you deck for a nectar. Play that nectar for free.',
     biome: 'Tundra',
     rarity: 'Rare',
     type: 'creature',
@@ -2518,7 +2525,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/bbqnKbh/A-hybrid-creature-with-the-body-of-a-bear-wings.png',
     inclination: 'Pride',
-    effect: '',
+    effect: 'On play send any creature on the field to hell.',
     biome: 'Alpine',
     rarity: 'SuperRare',
     type: 'creature',
@@ -2922,7 +2929,7 @@ const cardSet: Card[] = [
     id: 154,
     name: "Poseidon's Conch Shell",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Search your deck for a creature with a aquatic biome with a cost of 4 or less place that card on the field.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/VLvXSsR/Conch-Shell-a-magnificent-shell-adorned-with-sw.png',
@@ -3035,8 +3042,7 @@ const cardSet: Card[] = [
   {
     id: 160,
     name: 'Sandals of Hermes',
-    description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+    description: 'Choose a creature to be returned to the players hand.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/m0ns4Zb/A-pair-of-winged-slippers-crafted-from-supple-le.png',
