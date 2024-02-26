@@ -1588,7 +1588,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/PN7MymF/A-lemur-brandishing-a-lance-leaping-between-tre.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'On play search your deck for a Forest biome creature. Reveal it and place it on the top of your deck.',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -1607,7 +1608,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/JKxxgyj/A-hawk-with-a-halberd-in-its-talons-soaring-abo.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'If an relic is attached to this creature it gains 100 life and attack.',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -1626,7 +1628,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/H4JpZs5/a-Black-Spider-Monkey-as-a-knight-doing-somethin.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'When this creature slays a creature in battle, your opponent must discard a card in their hand into their hell.',
     biome: 'Jungle',
     rarity: 'Common',
     type: 'creature',
@@ -1664,7 +1667,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ZzYK3s1/A-large-gecko-operating-a-giant-crossbow-statio.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'This creature gains 200 life and attack if "Glaice Gecko" is also in play.',
     biome: 'Grassland',
     rarity: 'Common',
     type: 'creature',
@@ -1816,7 +1820,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/FxkxBKN/A-gecko-with-a-glaive-climbing-medieval-walls-a.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'This creature gains 200 life and attack when "Giant Crossbow Gecko" is also in play.',
     biome: 'Forest',
     rarity: 'Uncommon',
     type: 'creature',
