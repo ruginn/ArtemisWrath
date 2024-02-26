@@ -1706,7 +1706,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/rtpy6M8/A-large-colorful-woodpecker-with-the-intelligen.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'On play discard a card into your hell and search your deck for a Divine Intervention, reveal it and place it in your hand',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -1763,7 +1764,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/n1RjdP0/A-magical-hare-looking-in-the-distance-with-fur.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'On play search your deck for a grassland biome creature with a cost of 3 or less, play that card without cost.',
     biome: 'Grassland',
     rarity: 'Common',
     type: 'creature',
@@ -1878,7 +1880,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/zxzV9Kd/A-tranquil-tortoise-with-a-shell-resembling-a-bl.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'On play discard 5 cards from your hand into your hell, special play a card from your hell. It can not be a card that was just discarded.',
     biome: 'Wetland',
     rarity: 'Uncommon',
     type: 'creature',
@@ -1935,7 +1938,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/y59VYSY/A-ghostly-stag-with-antlers-that-emit-an-otherwo.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'When this card is in play all Forest biome creatures gain 100 life and attack.',
     biome: 'Forest',
     rarity: 'Rare',
     type: 'creature',
@@ -1954,7 +1958,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/yVV34m5/A-small-primate-with-eyes-that-flash-with-lightn.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'When this creature is slayed in battle, your opponent must discard a card into their hell.',
     biome: 'Jungle',
     rarity: 'Rare',
     type: 'creature',
@@ -2030,7 +2035,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/vxMWYzz/A-wingless-dragon-floating-with-glowing-orbs-dr.png',
     inclination: 'Mischief',
-    effect: '',
+    effect: 'This creature can only be slayed in battle.',
     biome: 'Alpine',
     rarity: 'SuperRare',
     type: 'creature',
