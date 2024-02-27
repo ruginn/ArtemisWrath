@@ -1055,7 +1055,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/4j6XzDT/A-swift-rabbit-with-a-rapier-showcasing-dazzlin.png',
     inclination: 'Wrath',
-    effect: '',
+    effect: 'Discard a card to negate the effect of a Divine Intervention.',
     biome: 'Grassland',
     rarity: 'Common',
     type: 'creature',
@@ -1074,7 +1074,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/brD2DM5/Picture-a-noble-seal-with-icy-patterns-adorning.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'You may attach relics to this card without paying the nectar cost.',
     biome: 'Aquatic',
     rarity: 'Common',
     type: 'creature',
@@ -1112,7 +1113,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/Sc6fwbG/A-silver-fox-with-fur-that-blends-seamlessly-wit.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'On play you may look at the top 3 cards in your deck you may reorder them or place them to your hell.',
     biome: 'Tundra',
     rarity: 'Common',
     type: 'creature',
@@ -1188,7 +1190,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/PTZcs5k/A-dragonfly-with-miniature-daggers-attached-to-i.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'This creature can be summoned without cost by discarding 2 cards from your hand into your hell.',
     biome: 'Grassland',
     rarity: 'Common',
     type: 'creature',
@@ -1264,7 +1267,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/DKYBT9b/A-spectral-raven-with-feathers-that-carry-whispe.png',
     inclination: 'Wrath',
-    effect: '',
+    effect: 'When this card is on play card effects can only target this card.',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -1302,7 +1305,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/HKc9Nny/A-giant-hornet-sounding-a-warhorn-leading-swarm.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'When this creature is on the field your Grassland and Forest biome creatures gain 100 life and attack.',
     biome: 'Grassland',
     rarity: 'Uncommon',
     type: 'creature',
@@ -1340,7 +1344,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/2tkgG9F/A-stone-gargoyle-brought-to-life-by-ancient-magi.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'If this creature is destroyed in battle the opposing creature loses 200 life.',
     biome: 'Cave',
     rarity: 'Uncommon',
     type: 'creature',
@@ -1378,7 +1383,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ygLYvrK/A-venomous-snake-with-fangs-so-sharp-they-can-cu.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'Search your deck for a cave biome creature, place that card in your hell.',
     biome: 'Cave',
     rarity: 'Uncommon',
     type: 'creature',
@@ -1416,7 +1422,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/S6k9pZH/A-fearsome-dragonlike-creature-with-icy-breath.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'If this creatures deals damage to an oppposing creature and that creature is not slayed, the defending creature cannot attack on their next turn.',
     biome: 'Tundra',
     rarity: 'Uncommon',
     type: 'creature',
@@ -1454,7 +1461,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/7ypX5mF/A-giant-tarantula-with-legs-that-generate-electr.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'If you have less than 3 divine essence, you may discard this card from your hand to negate one of your opponents attacks.',
     biome: 'Cave',
     rarity: 'Rare',
     type: 'creature',
@@ -1511,7 +1519,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/0KKQ8w5/A-mythical-creature-with-the-body-of-a-lion-win-1.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'This creature gains 100 attack for every Tundra biome creature in your hell.',
     biome: 'Tundra',
     rarity: 'SuperRare',
     type: 'creature',
@@ -1530,7 +1539,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/kX2WbRq/A-maroon-multiheaded-beast-in-green-armor-n-gre.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'If this is the only creature on your side of the field, this creature can attack 3 times.',
     biome: 'Tundra',
     rarity: 'SuperRare',
     type: 'creature',
