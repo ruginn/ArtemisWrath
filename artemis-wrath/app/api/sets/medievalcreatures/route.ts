@@ -2873,7 +2873,7 @@ const cardSet: Card[] = [
     id: 150,
     name: "Apollo's Sun Chariot",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Choose an creature on your opponents side of the field, move that creature to your side of the field until the end of this turn.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/rfgbXfC/golden-chariot-in-medieval-times-in-the-sky-ill.png',
@@ -2911,7 +2911,7 @@ const cardSet: Card[] = [
     id: 152,
     name: "Hephaestus's Anvil",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Discard a card from your hand to your hell, search your deck for a nectar and play it on the field without cost.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/kJbzfr8/Anvil-a-massive-forge-surrounded-by-billowing-c.png',
@@ -2930,7 +2930,7 @@ const cardSet: Card[] = [
     id: 153,
     name: "Hera's Diadem",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Attach this relic on a creature, increase the attack of the creature by 300.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/Y0j8HFW/Diadem-a-regal-crown-adorned-with-gleaming-jewe.png',
@@ -2968,7 +2968,7 @@ const cardSet: Card[] = [
     id: 155,
     name: "Nike's Laurel Wreath",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Attach this item to a creature, each time a creature slays an opponent with this relic attached, the attached creature gains 100 attack and life.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/1vp92q7/Laurel-Wreath-in-medieval-times-3d-render-pain.png',
@@ -2987,7 +2987,7 @@ const cardSet: Card[] = [
     id: 156,
     name: 'Aegis of Zeus',
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Attach this relic to a creature, the creature can not be targeted by divine interventions.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/3YWC0bf/A-majestic-shield-adorned-with-the-thunderbolt-s.png',
@@ -3006,7 +3006,7 @@ const cardSet: Card[] = [
     id: 157,
     name: 'Owl of Athena',
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Attach this relic to a creature, change the biome this creature can be found in.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/9hT01LH/A-wise-and-regal-owl-perches-upon-a-tree-branch.png',
@@ -3025,7 +3025,7 @@ const cardSet: Card[] = [
     id: 158,
     name: 'Lyre of Apollo',
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Choose a creature from your hell with a cost 4 or less, play that card on the field.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/TKGDtr3/A-golden-lyre-bathed-in-celestial-light-its-str.png',
@@ -3044,7 +3044,7 @@ const cardSet: Card[] = [
     id: 159,
     name: 'Trident of Poseidon',
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'In an exchange for a divine essence, search your deck for any card, place that card on the top of your deck.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/5McvFzB/A-trident-spear-forged-from-shimmering-gold-jew.png',
@@ -3081,7 +3081,7 @@ const cardSet: Card[] = [
     id: 161,
     name: 'Cornucopia of Demeter',
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Select 5 cards from your hell, return them to deck and shuffle your deck.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/JQTf2cg/A-bountiful-cornucopia-overflowing-with-ripe-fru.png',
@@ -3100,7 +3100,7 @@ const cardSet: Card[] = [
     id: 162,
     name: 'Mirror of Aphrodite',
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Reveal a card in your hand, exchange that card with any of your divine essences. You may not look at your divine essence unless otherwise stated by another card.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/BN7hWjG/A-gleaming-mirror-crafted-from-polished-silver-a.png',
