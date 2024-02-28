@@ -40,7 +40,7 @@ interface userInfo {
 
 const cardSet: Card[] = [
   {
-    id: 129,
+    id: 1,
     name: 'Aceso',
     description: 'You may play two nectars per turn.',
     randomNumber: 321,
@@ -55,9 +55,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 131,
+    id: 2,
     name: 'Demeter',
     description: 'Once per turn you may search your deck for an relic.',
     randomNumber: 321,
@@ -73,9 +74,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 1,
+    id: 3,
     name: 'Swordsworn Sparrow',
     description:
       'A small, agile sparrow wielding a tiny sword, known for its swift and precise strikes in aerial duels.',
@@ -92,9 +94,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 200,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 2,
+    id: 4,
     name: 'Morningstar Mouse',
     description:
       'A tiny mouse gripping a morningstar, bravely standing against larger foes in the corners of medieval barns.',
@@ -111,9 +114,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 150,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 3,
+    id: 5,
     name: 'Shieldbearer Shrew',
     description:
       'A shrew carrying a tiny shield, leading underground defenses against threats in medieval burrows.',
@@ -129,9 +133,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 100,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 4,
+    id: 6,
     name: 'Staffed Stoat',
     description:
       'A stoat with a staff, leading other woodland creatures in medieval quests for justice.',
@@ -147,9 +152,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 300,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 5,
+    id: 7,
     name: 'Quasar Quokka',
     description:
       'A small, adorable creature with fur that twinkles like distant quasars, hopping through magical meadows.',
@@ -165,9 +171,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 6,
+    id: 8,
     name: 'Iridescent Iguana',
     description:
       'A lizard with scales that shimmer in a myriad of colors, basking in the medieval sun on ancient castle walls.',
@@ -183,9 +190,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 500,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 7,
+    id: 9,
     name: 'Frostbite Ferret',
     description:
       'A small ferret with fur that freezes anything it touches, often kept as a companion by ice sorcerers.',
@@ -202,9 +210,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 200,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 8,
+    id: 10,
     name: 'Silverhorn Unicorn',
     description:
       'A unicorn with a silver horn that radiates healing energy, often sought after for its mythical powers.',
@@ -220,9 +229,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 500,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 9,
+    id: 11,
     name: 'Stardust Seahorse',
     description:
       'A seahorse with a mane of stardust, swimming gracefully in celestial seas beneath a starlit sky.',
@@ -239,9 +249,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 400,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 10,
+    id: 12,
     name: 'Harmonic Hummingbird',
     description:
       'A hummingbird with feathers that emit melodic tones, bringing music to enchanted gardens.',
@@ -257,9 +268,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 100,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 11,
+    id: 13,
     name: 'Ebon Pegasus',
     description:
       'A majestic black-winged horse with a mane that flows like shadows, only appearing to those with pure hearts.',
@@ -275,9 +287,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 12,
+    id: 14,
     name: 'Whip Weasel',
     description:
       'A weasel with a tiny whip, agilely navigating through medieval castle corridors.',
@@ -293,9 +306,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 100,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 13,
+    id: 15,
     name: 'Whisperwind Weasel',
     description:
       'A small weasel with fur that ripples like the wind, known for its elusive and playful nature.',
@@ -311,9 +325,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 400,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 14,
+    id: 16,
     name: 'Stellar Skunk',
     description:
       'A small skunk with a tail that releases stardust, leaving behind a trail of celestial fragrance in medieval meadows.',
@@ -329,9 +344,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 500,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 15,
+    id: 17,
     name: 'Starshade Squirrel',
     description:
       'A squirrel with a tail that sparkles with the brilliance of distant stars, leaping between medieval treetops.',
@@ -347,9 +363,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 300,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 16,
+    id: 18,
     name: 'Nebula Nymph',
     description:
       'A small, ethereal creature with wings resembling swirling galaxies, bringing cosmic magic to enchanted gardens.',
@@ -365,9 +382,10 @@ const cardSet: Card[] = [
     attackPower: 500,
     hp: 200,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 17,
+    id: 19,
     name: 'Whispering Wisp Wombat',
     description:
       'A small, furry creature with the ability to communicate through ethereal wisps, aiding those in need.',
@@ -384,9 +402,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 200,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 18,
+    id: 20,
     name: 'Mystic Mole',
     description:
       'A subterranean creature with fur that glows in the dark, navigating through medieval tunnels with unseen magical senses.',
@@ -403,9 +422,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 200,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 19,
+    id: 21,
     name: 'Gilded Gryphon',
     description:
       'A gryphon adorned with golden feathers and a mane that glows like the sun, known to guard ancient treasures.',
@@ -421,9 +441,10 @@ const cardSet: Card[] = [
     attackPower: 700,
     hp: 400,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 20,
+    id: 22,
     name: 'Glowshroom Gazelle',
     description:
       'A graceful gazelle with bioluminescent spots, grazing in mystical meadows filled with giant luminescent mushrooms.',
@@ -439,9 +460,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 500,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 21,
+    id: 23,
     name: 'Silvershade Sloth',
     description:
       'A slow-moving sloth with fur that shimmers like moonlight, often spotted hanging from ancient trees.',
@@ -458,9 +480,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 200,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 22,
+    id: 24,
     name: 'Solar Seraphim Butterfly',
     description:
       'A radiant butterfly with wings that resemble stained glass, said to be messengers from the celestial realms.',
@@ -477,9 +500,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 100,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 23,
+    id: 25,
     name: 'Ebonwinged Echidna',
     description:
       'A spiky creature with wings as dark as night, said to be guardians of ancient subterranean treasures.',
@@ -495,9 +519,10 @@ const cardSet: Card[] = [
     attackPower: 700,
     hp: 400,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 24,
+    id: 26,
     name: 'Starlight Stingray',
     description:
       'A graceful stingray with a pattern of glowing stars on its back, gliding through medieval rivers.',
@@ -514,9 +539,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 300,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 25,
+    id: 27,
     name: 'Aurora Elk',
     description:
       'A majestic elk with antlers that light up with the colors of the aurora borealis, roaming the northernmost realms.',
@@ -532,9 +558,10 @@ const cardSet: Card[] = [
     attackPower: 900,
     hp: 500,
     cost: 7,
+    tinyImage: '',
   },
   {
-    id: 128,
+    id: 28,
     name: 'Coeus',
     description: 'You may have any number cards in your hand.',
     randomNumber: 321,
@@ -549,9 +576,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 26,
+    id: 29,
     name: 'Lunar Lantern Lemur',
     description:
       'A lemur with a tail that glows softly like a lantern, guiding nocturnal travelers through medieval jungles.',
@@ -559,7 +587,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/DRHbnv7/A-lemur-with-a-tail-that-glows-softly-like-a-lan.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'On play search your deck for a creature with the biome of Forest with a cost of 4.',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -567,9 +596,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 300,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 27,
+    id: 30,
     name: 'Frostbite Firefly Fox',
     description:
       'A fox with fur that mimics the luminescence of fireflies, flickering in the frosty air of ancient woodlands.',
@@ -586,9 +616,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 300,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 28,
+    id: 31,
     name: 'Abyssal Albatross',
     description:
       'A giant bird with feathers that absorb light, soaring over medieval seas and disappearing into the dark abyss below.',
@@ -604,9 +635,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 29,
+    id: 32,
     name: 'Cerulean Wyvern',
     description:
       'A winged creature with scales that mirror the deep blue of the sky, soaring gracefully over medieval landscapes.',
@@ -614,7 +646,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/vZ5BbT0/wyvern-A-winged-creature-with-scales-that-mirror.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'Increase the attack and health of this creature by 100 for every card in your hand.',
     biome: 'Alpine',
     rarity: 'Common',
     type: 'creature',
@@ -622,9 +655,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 100,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 30,
+    id: 33,
     name: 'Chrono Chameleon',
     description:
       'A chameleon with scales that shift through the colors of time, blending into the temporal fabric of medieval landscapes.',
@@ -640,9 +674,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 100,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 31,
+    id: 34,
     name: 'Arcane Owl',
     description:
       'A wise owl with feathers that change colors based on the type of magic present in its surroundings.',
@@ -650,7 +685,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/WDjyJpQ/A-wise-owl-with-feathers-that-change-colors-base.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'On play if your immortal has 3 or less divine essence draw a cards.',
     biome: 'Desert',
     rarity: 'Common',
     type: 'creature',
@@ -658,9 +694,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 32,
+    id: 35,
     name: 'Celestial Seahorse',
     description:
       'A seahorse that navigates the skies, trailing stardust in its wake, protecting sailors from mystical storms.',
@@ -676,9 +713,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 200,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 33,
+    id: 36,
     name: 'Scepter Snail',
     description:
       'A snail with a small scepter, slowly making its way through medieval gardens as a dignified ruler of the miniature realm.',
@@ -686,7 +724,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/4pfF8xq/A-snail-with-a-small-scepter-slowly-making-its.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'On play you may look at your divine essence cards. Place the cards face down after.',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -694,9 +733,10 @@ const cardSet: Card[] = [
     attackPower: 500,
     hp: 300,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 34,
+    id: 37,
     name: 'Ebon Eelhound',
     description:
       'A sleek aquatic creature with the body of an eel and the loyalty of a hound, patrolling underwater realms.',
@@ -704,7 +744,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/0mj22Fr/A-sleek-aquatic-creature-with-the-body-of-an-eel.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'This creature gains 300 life and attack when another creature with the biome of aquatic is in play',
     biome: 'Aquatic',
     rarity: 'Common',
     type: 'creature',
@@ -712,9 +753,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 100,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 35,
+    id: 38,
     name: 'Eldritch Elk',
     description:
       'An elk with antlers that channel otherworldly energies, said to have the ability to open portals to distant realms.',
@@ -722,7 +764,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/4ZJmxJM/An-elk-with-antlers-that-channel-otherworldly-en.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect: 'On play heal damage on one of your creatures',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -730,9 +772,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 200,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 36,
+    id: 39,
     name: 'Timeless Tortoise',
     description:
       'A wise tortoise with a shell that reflects the changing seasons, said to have witnessed centuries unfold.',
@@ -740,7 +783,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/q7n2nK1/A-wise-tortoise-with-a-shell-that-reflects-the-c.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect: 'On play you may add a card from your hell into your hand',
     biome: 'Wetland',
     rarity: 'Common',
     type: 'creature',
@@ -748,9 +791,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 100,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 37,
+    id: 40,
     name: 'Coral Crested Griffin',
     description:
       'A griffin with feathers resembling vibrant coral, found perched on the cliffs overlooking medieval coastal kingdoms.',
@@ -766,9 +810,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 400,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 38,
+    id: 41,
     name: 'Venomous Vine Viper',
     description:
       'A snake with vines growing from its scales, camouflaging it within overgrown enchanted forests.',
@@ -776,7 +821,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/LChDWLm/A-snake-with-vines-growing-from-its-scales-camo.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'This card may not be slayed in battle by other creatures with a jungle biome.',
     biome: 'Jungle',
     rarity: 'Uncommon',
     type: 'creature',
@@ -784,9 +830,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 100,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 39,
+    id: 42,
     name: 'Molten Gryphon',
     description:
       'A gryphon with feathers that resemble flowing lava, perched on the peaks of volcanoes as a guardian of the fiery realms.',
@@ -802,9 +849,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 500,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 40,
+    id: 43,
     name: 'Sable Shapeshifter Snake',
     description:
       'A serpent with the ability to transform into various shapes, rumored to be a guardian of ancient magical artifacts.',
@@ -820,9 +868,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 100,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 41,
+    id: 44,
     name: 'Aetherial Angelfish',
     description:
       'A celestial fish with iridescent scales, swimming in medieval ponds and bringing a sense of enchantment.',
@@ -838,9 +887,10 @@ const cardSet: Card[] = [
     attackPower: 100,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 42,
+    id: 45,
     name: 'Stone Sentinel Tortoise',
     description:
       'A massive tortoise with a shell resembling ancient ruins, believed to carry the wisdom of the ages.',
@@ -848,7 +898,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/WtdjBXJ/A-massive-tortoise-with-a-shell-resembling-ancie.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect: 'On play draw 2 cards and discard 3 cards',
     biome: 'Desert',
     rarity: 'Uncommon',
     type: 'creature',
@@ -856,9 +906,10 @@ const cardSet: Card[] = [
     attackPower: 500,
     hp: 800,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 43,
+    id: 46,
     name: 'Ephemeral Elephant',
     description:
       'An elephant with a transparent, ghostly appearance, said to be a manifestation of the spirits of the forest.',
@@ -874,9 +925,10 @@ const cardSet: Card[] = [
     attackPower: 100,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 44,
+    id: 47,
     name: 'Astral Axolotl',
     description:
       'An aquatic creature with translucent skin, adorned with celestial patterns, swimming in sacred medieval lakes.',
@@ -884,7 +936,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/dgwMYXc/An-aquatic-creature-with-translucent-skin-adorn.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'On play search your deck for an aquatic biome creature with a cost of 3 or less. Play that card on the field.',
     biome: 'Aquatic',
     rarity: 'Rare',
     type: 'creature',
@@ -892,9 +945,10 @@ const cardSet: Card[] = [
     attackPower: 700,
     hp: 400,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 45,
+    id: 48,
     name: 'Ethereal Elephant Eel',
     description:
       'A majestic aquatic creature with the body of an elephant and the tail of an eel, gliding through mysterious underwater realms.',
@@ -902,7 +956,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/DQxSt0F/A-majestic-aquatic-creature-with-the-body-of-an.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect: 'If this creature is slayed in battle draw 2 cards.',
     biome: 'Aquatic',
     rarity: 'Rare',
     type: 'creature',
@@ -910,9 +964,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 500,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 46,
+    id: 49,
     name: 'Sapphire Snail',
     description:
       'A slow-moving snail with a shell that glistens like precious sapphire, leaving a trail of magical luminescence.',
@@ -920,7 +975,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ggq2QXD/A-slowmoving-snail-with-a-shell-that-glistens-l.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect: 'On play draw until you have 5 cards in your hand.',
     biome: 'Forest',
     rarity: 'Rare',
     type: 'creature',
@@ -928,9 +983,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 500,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 47,
+    id: 50,
     name: 'Stoneheart Stag',
     description:
       'A regal stag with antlers made of enchanted crystal, said to be the spirit of the forest itself.',
@@ -938,7 +994,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/HdzdkHS/A-regal-stag-with-antlers-made-of-enchanted-crys.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'On play search your deck for a Forrest biome creature with 4 cost or less and play it. You may not search for "Stoneheart Stag."',
     biome: 'Forest',
     rarity: 'Rare',
     type: 'creature',
@@ -946,9 +1003,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 200,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 48,
+    id: 51,
     name: 'Nebula Nudibranch',
     description:
       'An ocean-dwelling creature with iridescent tendrils that mimic swirling nebulae, drifting through underwater kingdoms.',
@@ -956,7 +1014,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/YtNkwtz/An-oceandwelling-creature-with-iridescent-tendr.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'This creature can not be slayed by relics or divine interventions.',
     biome: 'Aquatic',
     rarity: 'SuperRare',
     type: 'creature',
@@ -964,9 +1023,10 @@ const cardSet: Card[] = [
     attackPower: 900,
     hp: 700,
     cost: 7,
+    tinyImage: '',
   },
   {
-    id: 49,
+    id: 52,
     name: 'Frostfire Phoenix',
     description:
       'A phoenix with feathers that alternate between icy blue and fiery red, symbolizing the eternal dance of winter and summer.',
@@ -982,9 +1042,10 @@ const cardSet: Card[] = [
     attackPower: 800,
     hp: 800,
     cost: 7,
+    tinyImage: '',
   },
   {
-    id: 50,
+    id: 53,
     name: 'Celestial Peryton',
     description:
       'A mythical creature with the body of a deer and wings of an angel, said to embody the union of earth and sky.',
@@ -992,7 +1053,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/F8hTZXK/A-mythical-creature-with-the-body-of-a-deer-and.png',
     inclination: 'Wisdom',
-    effect: '',
+    effect:
+      'On play choose a creature on your opponents field, that creature can not attack on the next turn.',
     biome: 'Alpine',
     rarity: 'SuperRare',
     type: 'creature',
@@ -1000,9 +1062,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 600,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 127,
+    id: 54,
     name: 'Hades',
     description:
       'Once per turn you may add a card from your hell into your hand',
@@ -1018,9 +1081,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 51,
+    id: 55,
     name: 'Rapier Rabbit',
     description:
       'A swift rabbit with a rapier, showcasing dazzling swordplay in the open fields of medieval landscapes.',
@@ -1028,7 +1092,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/4j6XzDT/A-swift-rabbit-with-a-rapier-showcasing-dazzlin.png',
     inclination: 'Wrath',
-    effect: '',
+    effect: 'Discard a card to negate the effect of a Divine Intervention.',
     biome: 'Grassland',
     rarity: 'Common',
     type: 'creature',
@@ -1036,9 +1100,10 @@ const cardSet: Card[] = [
     attackPower: 100,
     hp: 100,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 52,
+    id: 56,
     name: 'Frostfin Seal',
     description:
       'A noble seal with icy patterns adorning its sleek coat, perched on a medieval ice floe. As a guardian of frozen realms, it exudes an aura of frosty magic, its whiskers sensing the whispers of the chilly winds in the enchanted landscape',
@@ -1046,7 +1111,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/brD2DM5/Picture-a-noble-seal-with-icy-patterns-adorning.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'You may attach relics to this card without paying the nectar cost.',
     biome: 'Aquatic',
     rarity: 'Common',
     type: 'creature',
@@ -1054,9 +1120,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 100,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 53,
+    id: 57,
     name: 'Mystic Mantis',
     description:
       'A giant mantis with eyes that glow with ancient knowledge, often sought by alchemists for its mystical properties.',
@@ -1072,9 +1139,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 200,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 54,
+    id: 58,
     name: 'Silvershade Fox',
     description:
       'A silver fox with fur that blends seamlessly with moonlit shadows, rumored to guide lost travelers to safety.',
@@ -1082,7 +1150,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/Sc6fwbG/A-silver-fox-with-fur-that-blends-seamlessly-wit.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'On play you may look at the top 3 cards in your deck you may reorder them or place them to your hell.',
     biome: 'Tundra',
     rarity: 'Common',
     type: 'creature',
@@ -1090,9 +1159,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 300,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 55,
+    id: 59,
     name: 'Thunderstrike Thorny Toad',
     description:
       'A toad with thorns that crackle with electricity, lurking in medieval swamps and wetlands.',
@@ -1108,9 +1178,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 56,
+    id: 60,
     name: 'Mystical Moonlight Moth',
     description:
       'A majestic moth with wings that shimmer like moonlight, often spotted near enchanted meadows.',
@@ -1126,9 +1197,10 @@ const cardSet: Card[] = [
     attackPower: 100,
     hp: 200,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 57,
+    id: 61,
     name: 'Flail Falcon',
     description:
       'A falcon with a flail attached to its talons, performing aerial acrobatics while defending its medieval territory.',
@@ -1144,9 +1216,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 300,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 58,
+    id: 62,
     name: 'Daggered Dragonfly',
     description:
       'A dragonfly with miniature daggers attached to its wings, hovering over medieval ponds as a tiny aerial knight.',
@@ -1154,7 +1227,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/PTZcs5k/A-dragonfly-with-miniature-daggers-attached-to-i.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'This creature can be summoned without cost by discarding 2 cards from your hand into your hell.',
     biome: 'Grassland',
     rarity: 'Common',
     type: 'creature',
@@ -1162,9 +1236,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 300,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 59,
+    id: 63,
     name: 'Cudgel Crow',
     description:
       'A crow wielding a cudgel, using its intelligence to outsmart opponents in medieval castle courtyards.',
@@ -1180,9 +1255,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 400,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 60,
+    id: 64,
     name: 'Thorned Basilisk',
     description:
       'A serpent with thorny scales and the ability to turn creatures to stone with a single gaze, inhabiting ancient gardens.',
@@ -1198,9 +1274,10 @@ const cardSet: Card[] = [
     attackPower: 500,
     hp: 200,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 61,
+    id: 65,
     name: 'Amethyst Armadillo',
     description:
       'A mystical armadillo with a shell made of shimmering amethyst, rolling into a protective ball when threatened.',
@@ -1216,9 +1293,10 @@ const cardSet: Card[] = [
     attackPower: 100,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 62,
+    id: 66,
     name: 'Wraithwing Raven',
     description:
       'A spectral raven with feathers that carry whispers of the afterlife, guiding lost souls to their eternal rest.',
@@ -1226,7 +1304,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/DKYBT9b/A-spectral-raven-with-feathers-that-carry-whispe.png',
     inclination: 'Wrath',
-    effect: '',
+    effect: 'When this card is on play card effects can only target this card.',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -1234,9 +1312,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 200,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 63,
+    id: 67,
     name: 'Tempest Tortoise',
     description:
       'A giant tortoise with a shell that generates storms, creating swirling winds and rain as it travels through the medieval countryside.',
@@ -1252,9 +1331,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 600,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 64,
+    id: 68,
     name: 'Warhorn Hornet',
     description:
       'A giant hornet sounding a warhorn, leading swarms into battle against medieval intruders.',
@@ -1262,7 +1342,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/HKc9Nny/A-giant-hornet-sounding-a-warhorn-leading-swarm.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'When this creature is on the field your Grassland and Forest biome creatures gain 100 life and attack.',
     biome: 'Grassland',
     rarity: 'Uncommon',
     type: 'creature',
@@ -1270,9 +1351,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 300,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 65,
+    id: 69,
     name: 'Axe Anteater',
     description:
       'An anteater with a small battle axe, using its powerful claws and weapon to defend against medieval threats.',
@@ -1288,9 +1370,10 @@ const cardSet: Card[] = [
     attackPower: 700,
     hp: 200,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 66,
+    id: 70,
     name: 'Grove Guardian Gargoyle',
     description:
       'A stone gargoyle brought to life by ancient magic, protecting sacred groves and medieval monuments.',
@@ -1298,7 +1381,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/2tkgG9F/A-stone-gargoyle-brought-to-life-by-ancient-magi.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'If this creature is destroyed in battle the opposing creature loses 200 life.',
     biome: 'Cave',
     rarity: 'Uncommon',
     type: 'creature',
@@ -1306,9 +1390,10 @@ const cardSet: Card[] = [
     attackPower: 500,
     hp: 200,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 67,
+    id: 71,
     name: 'Abyssal Leviathan',
     description:
       'A colossal sea serpent with bioluminescent patterns, lurking in the depths of a mysterious underwater abyss.',
@@ -1324,9 +1409,10 @@ const cardSet: Card[] = [
     attackPower: 700,
     hp: 400,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 68,
+    id: 72,
     name: 'Vorpal Viper',
     description:
       'A venomous snake with fangs so sharp they can cut through reality itself, often associated with ancient curses.',
@@ -1334,7 +1420,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ygLYvrK/A-venomous-snake-with-fangs-so-sharp-they-can-cu.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'Search your deck for a cave biome creature, place that card in your hell.',
     biome: 'Cave',
     rarity: 'Uncommon',
     type: 'creature',
@@ -1342,9 +1429,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 400,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 69,
+    id: 73,
     name: 'Shadow Weaver Spider',
     description:
       'A giant spider with the ability to manipulate shadows, lurking in dark corners of forgotten castles.',
@@ -1360,9 +1448,10 @@ const cardSet: Card[] = [
     attackPower: 500,
     hp: 500,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 70,
+    id: 74,
     name: 'Frostbite Wyvern',
     description:
       'A fearsome dragon-like creature with icy breath, dwelling in the frosty peaks of a distant mountain range.',
@@ -1370,7 +1459,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/S6k9pZH/A-fearsome-dragonlike-creature-with-icy-breath.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'If this creatures deals damage to an oppposing creature and that creature is not slayed, the defending creature cannot attack on their next turn.',
     biome: 'Tundra',
     rarity: 'Uncommon',
     type: 'creature',
@@ -1378,9 +1468,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 700,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 71,
+    id: 75,
     name: 'Balefire Bat',
     description:
       'A bat with wings that flicker like flames, dwelling in ancient caverns where magical fire deposits illuminate the darkness.',
@@ -1396,9 +1487,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 500,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 72,
+    id: 76,
     name: 'Thunderstrike Tarantula',
     description:
       'A giant tarantula with legs that generate electric charges, dwelling in stormy caverns and guarding ancient artifacts.',
@@ -1406,7 +1498,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/7ypX5mF/A-giant-tarantula-with-legs-that-generate-electr.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'If you have less than 3 divine essence, you may discard this card from your hand to negate one of your opponents attacks.',
     biome: 'Cave',
     rarity: 'Rare',
     type: 'creature',
@@ -1414,9 +1507,10 @@ const cardSet: Card[] = [
     attackPower: 500,
     hp: 800,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 73,
+    id: 77,
     name: 'Thunderclaw Roc',
     description:
       'A colossal bird with thunderstorm feathers, creating storms as it soars across the medieval skies.',
@@ -1432,9 +1526,10 @@ const cardSet: Card[] = [
     attackPower: 800,
     hp: 400,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 74,
+    id: 78,
     name: 'Aetherial Serpent',
     description:
       'A serpent that glides through the air, leaving trails of sparkling stardust as it weaves through the clouds.',
@@ -1450,9 +1545,10 @@ const cardSet: Card[] = [
     attackPower: 900,
     hp: 600,
     cost: 7,
+    tinyImage: '',
   },
   {
-    id: 75,
+    id: 79,
     name: 'Majestic Manticore',
     description:
       'A mythical creature with the body of a lion, wings of a dragon, and a tail ending in a cluster of venomous spikes.',
@@ -1460,7 +1556,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/0KKQ8w5/A-mythical-creature-with-the-body-of-a-lion-win-1.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'This creature gains 100 attack for every Tundra biome creature in your hell.',
     biome: 'Tundra',
     rarity: 'SuperRare',
     type: 'creature',
@@ -1468,9 +1565,10 @@ const cardSet: Card[] = [
     attackPower: 1000,
     hp: 400,
     cost: 7,
+    tinyImage: '',
   },
   {
-    id: 76,
+    id: 80,
     name: 'Verdant Chimera',
     description:
       'A multi-headed beast with each head representing a different element, dwelling in caverns filled with molten lava.',
@@ -1478,7 +1576,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/kX2WbRq/A-maroon-multiheaded-beast-in-green-armor-n-gre.png',
     inclination: 'Wrath',
-    effect: '',
+    effect:
+      'If this is the only creature on your side of the field, this creature can attack 3 times.',
     biome: 'Tundra',
     rarity: 'SuperRare',
     type: 'creature',
@@ -1486,9 +1585,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 500,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 132,
+    id: 81,
     name: 'Hermes',
     description:
       'Once per turn choose a card in your opponents hand they musit return it to their deck, You may not look at the card.',
@@ -1505,9 +1605,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 77,
+    id: 82,
     name: 'Starwhisper Spider',
     description:
       'A spider with webs that echo the patterns of constellations, weaving ethereal traps in hidden corners of medieval castles.',
@@ -1523,9 +1624,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 300,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 78,
+    id: 83,
     name: 'Lancewielder Lemur',
     description:
       'A lemur brandishing a lance, leaping between treetops in medieval jungles as a guardian of the ancient canopy.',
@@ -1533,7 +1635,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/PN7MymF/A-lemur-brandishing-a-lance-leaping-between-tre.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'On play search your deck for a Forest biome creature. Reveal it and place it on the top of your deck.',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -1541,9 +1644,10 @@ const cardSet: Card[] = [
     attackPower: 100,
     hp: 300,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 79,
+    id: 84,
     name: 'Halberd Hawk',
     description:
       'A hawk with a halberd in its talons, soaring above medieval landscapes as the aerial protector of castle realms.',
@@ -1551,7 +1655,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/JKxxgyj/A-hawk-with-a-halberd-in-its-talons-soaring-abo.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'If an relic is attached to this creature it gains 100 life and attack.',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -1559,9 +1664,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 200,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 80,
+    id: 85,
     name: 'Sword Macaque',
     description:
       'A mischievous macaque wielding a sword, known for causing chaos in medieval marketplaces with its unexpected swings.',
@@ -1569,7 +1675,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/H4JpZs5/a-Black-Spider-Monkey-as-a-knight-doing-somethin.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'When this creature slays a creature in battle, your opponent must discard a card in their hand into their hell.',
     biome: 'Jungle',
     rarity: 'Common',
     type: 'creature',
@@ -1577,9 +1684,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 200,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 81,
+    id: 86,
     name: 'Javelin Jackal',
     description:
       'A jackal with a javelin, skillfully throwing it at approaching threats in the medieval deserts.',
@@ -1595,9 +1703,10 @@ const cardSet: Card[] = [
     attackPower: 100,
     hp: 500,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 82,
+    id: 87,
     name: 'Giant Crossbow Gecko',
     description:
       'A large gecko operating a giant crossbow, stationed on medieval castle walls to defend against aerial threats.',
@@ -1605,7 +1714,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/ZzYK3s1/A-large-gecko-operating-a-giant-crossbow-statio.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'This creature gains 200 life and attack if "Glaice Gecko" is also in play.',
     biome: 'Grassland',
     rarity: 'Common',
     type: 'creature',
@@ -1613,9 +1723,10 @@ const cardSet: Card[] = [
     attackPower: 100,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 83,
+    id: 88,
     name: 'Ironbark Ibis',
     description:
       'A bird with wings made of living ironbark, nesting in the ancient branches of mystical trees.',
@@ -1631,9 +1742,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 300,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 84,
+    id: 89,
     name: 'Whimsical Woodpecker Warg',
     description:
       'A large, colorful woodpecker with the intelligence of a wolf, often tamed by woodland elves as loyal companions.',
@@ -1641,7 +1753,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/rtpy6M8/A-large-colorful-woodpecker-with-the-intelligen.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'On play discard a card into your hell and search your deck for a Divine Intervention, reveal it and place it in your hand',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -1649,9 +1762,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 85,
+    id: 90,
     name: 'Vortex Vulture',
     description:
       'A scavenger bird with wings that create miniature tornadoes, soaring above battlefields to pick at the remnants of war.',
@@ -1667,9 +1781,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 100,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 86,
+    id: 91,
     name: 'Amberwinged Dragonfly',
     description:
       'A delicate dragonfly with wings resembling transparent amber, weaving through sunbeams and spreading a sense of tranquility.',
@@ -1685,9 +1800,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 400,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 87,
+    id: 92,
     name: 'Eclipse Hare',
     description:
       'A magical hare with fur that changes color during solar and lunar eclipses, appearing in sacred groves.',
@@ -1695,7 +1811,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/n1RjdP0/A-magical-hare-looking-in-the-distance-with-fur.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'On play search your deck for a grassland biome creature with a cost of 3 or less, play that card without cost.',
     biome: 'Grassland',
     rarity: 'Common',
     type: 'creature',
@@ -1703,9 +1820,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 88,
+    id: 93,
     name: 'Quicksilver Quetzal',
     description:
       'A magnificent bird with iridescent feathers that mimic the appearance of liquid mercury, soaring through ancient jungles.',
@@ -1721,9 +1839,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 500,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 89,
+    id: 94,
     name: 'Morningstar Moth',
     description:
       'A moth with wings that unfold into morningstars, resting peacefully in medieval lantern-lit gardens.',
@@ -1739,9 +1858,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 90,
+    id: 95,
     name: 'Glaive Gecko',
     description:
       'A gecko with a glaive, climbing medieval walls and striking from unexpected angles.',
@@ -1749,7 +1869,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/FxkxBKN/A-gecko-with-a-glaive-climbing-medieval-walls-a.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'This creature gains 200 life and attack when "Giant Crossbow Gecko" is also in play.',
     biome: 'Forest',
     rarity: 'Uncommon',
     type: 'creature',
@@ -1757,9 +1878,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 300,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 91,
+    id: 96,
     name: 'Crimson Claw Crab',
     description:
       'A crab with pincers that glow like rubies, scuttling along the shores of enchanted medieval beaches.',
@@ -1775,9 +1897,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 100,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 92,
+    id: 97,
     name: 'Spectral Panther',
     description:
       'A phantom panther that prowls the haunted forests, its ghostly form camouflaging with the mist.',
@@ -1793,9 +1916,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 400,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 93,
+    id: 98,
     name: 'Lunar Lotus Tortoise',
     description:
       'A tranquil tortoise with a shell resembling a blooming lotus, often found in serene moonlit ponds.',
@@ -1803,7 +1927,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/zxzV9Kd/A-tranquil-tortoise-with-a-shell-resembling-a-bl.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'On play discard 5 cards from your hand into your hell, special play a card from your hell. It can not be a card that was just discarded.',
     biome: 'Wetland',
     rarity: 'Uncommon',
     type: 'creature',
@@ -1811,9 +1936,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 600,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 94,
+    id: 99,
     name: 'Verdant Drake',
     description:
       'A dragon with scales that mimic the lush greenery of the forest, dwelling in hidden glades and protecting the woodland creatures.',
@@ -1829,9 +1955,10 @@ const cardSet: Card[] = [
     attackPower: 700,
     hp: 700,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 95,
+    id: 100,
     name: 'Ember Phoenix',
     description:
       'A mythical bird with feathers that flicker like embers, said to rise from the ashes of great fires to bring both destruction and renewal.',
@@ -1847,9 +1974,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 500,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 96,
+    id: 101,
     name: 'Spectral Stag',
     description:
       'A ghostly stag with antlers that emit an otherworldly glow, appearing in mist-covered medieval woodlands.',
@@ -1857,7 +1985,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/y59VYSY/A-ghostly-stag-with-antlers-that-emit-an-otherwo.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'When this card is in play all Forest biome creatures gain 100 life and attack.',
     biome: 'Forest',
     rarity: 'Rare',
     type: 'creature',
@@ -1865,9 +1994,10 @@ const cardSet: Card[] = [
     attackPower: 500,
     hp: 600,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 97,
+    id: 102,
     name: 'Thunderstrike Tarsier',
     description:
       'A small primate with eyes that flash with lightning, inhabiting the stormy reaches of medieval canopies.',
@@ -1875,7 +2005,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/yVV34m5/A-small-primate-with-eyes-that-flash-with-lightn.png',
     inclination: 'Mischief',
-    effect: '',
+    effect:
+      'When this creature is slayed in battle, your opponent must discard a card into their hell.',
     biome: 'Jungle',
     rarity: 'Rare',
     type: 'creature',
@@ -1883,9 +2014,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 300,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 98,
+    id: 103,
     name: 'Moonshadow Lynx',
     description:
       'A stealthy lynx with fur that absorbs and reflects moonlight, becoming nearly invisible as it stalks its prey.',
@@ -1901,9 +2033,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 700,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 99,
+    id: 104,
     name: 'Sapphire Wyrm',
     description:
       'A serpent-like dragon covered in shimmering sapphire scales, known to slumber within the heart of a mystical blue cavern.',
@@ -1919,9 +2052,10 @@ const cardSet: Card[] = [
     attackPower: 800,
     hp: 200,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 100,
+    id: 105,
     name: 'Obsidian Direwolf',
     description:
       'A massive, jet-black wolf with eyes that gleam like polished obsidian, leading packs through the mystical forest.',
@@ -1937,9 +2071,10 @@ const cardSet: Card[] = [
     attackPower: 800,
     hp: 500,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 101,
+    id: 106,
     name: 'Wispwing Wyrm',
     description:
       'A slender dragon with wings made of floating, glowing orbs, drifting through medieval skies like a constellation.',
@@ -1947,7 +2082,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/vxMWYzz/A-wingless-dragon-floating-with-glowing-orbs-dr.png',
     inclination: 'Mischief',
-    effect: '',
+    effect: 'This creature can only be slayed in battle.',
     biome: 'Alpine',
     rarity: 'SuperRare',
     type: 'creature',
@@ -1955,11 +2090,12 @@ const cardSet: Card[] = [
     attackPower: 1000,
     hp: 700,
     cost: 7,
+    tinyImage: '',
   },
   {
-    id: 130,
+    id: 107,
     name: 'Ares',
-    description: 'All your creatures attacks are increased by 1000.',
+    description: 'All your creatures attacks are increased by 200.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/P17fZ8N/The-god-eres-in-battle-in-golden-jewels-armor-he.png',
@@ -1972,9 +2108,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 102,
+    id: 108,
     name: 'Broadsword Butterfly',
     description:
       'A butterfly with wings resembling broadswords, fluttering gracefully in medieval meadows.',
@@ -1982,7 +2119,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/FnF8fmF/A-butterfly-with-wings-resembling-broadswords-f.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'When this creature is in play, no other ceratures can be targeted for battle.',
     biome: 'Grassland',
     rarity: 'Common',
     type: 'creature',
@@ -1990,9 +2128,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 300,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 103,
+    id: 109,
     name: 'Gilded Gorgon Cobra',
     description:
       'A serpent with scales that turn creatures to gold with a gaze, said to guard the entrance to hidden treasure troves.',
@@ -2008,9 +2147,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 300,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 104,
+    id: 110,
     name: 'Molten Salamander',
     description:
       'A fiery salamander that glides through rivers of molten lava, guarding the entrance to subterranean realms.',
@@ -2018,7 +2158,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/br42wP9/A-fiery-salamander-that-glides-through-rivers-of.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'This creature gains 100 attack if "Chormatic Chameleon" is in play.',
     biome: 'Alpine',
     rarity: 'Common',
     type: 'creature',
@@ -2026,9 +2167,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 100,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 105,
+    id: 111,
     name: 'Chromatic Chameleon',
     description:
       'A chameleon with scales that shift in color to match its surroundings, blending seamlessly into the vibrant medieval landscapes.',
@@ -2036,7 +2178,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/c6P7MW0/A-chameleon-with-scales-that-shift-in-color-to-m.png',
     inclination: 'Pride',
-    effect: '',
+    effect: 'This creature gains 100 attack if "Molten Salamander" is in play.',
     biome: 'Desert',
     rarity: 'Common',
     type: 'creature',
@@ -2044,9 +2186,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 200,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 106,
+    id: 112,
     name: 'Coral Crowned Crab',
     description:
       'A crab with a shell adorned with living coral, scuttling through the shallows of enchanted medieval shores.',
@@ -2062,9 +2205,10 @@ const cardSet: Card[] = [
     attackPower: 500,
     hp: 400,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 107,
+    id: 113,
     name: 'Battleaxe Badger',
     description:
       'A sturdy badger carrying a miniature battleaxe, often seen defending its burrow with unmatched ferocity.',
@@ -2072,7 +2216,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/0jrpQLF/A-sturdy-badger-in-blue-armor-carrying-a-miniatu.png',
     inclination: 'Pride',
-    effect: '',
+    effect: 'This creature gains 100 attack if an relic is attached to it.',
     biome: 'Cave',
     rarity: 'Common',
     type: 'creature',
@@ -2080,9 +2224,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 400,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 108,
+    id: 114,
     name: 'Longbow Lynx',
     description:
       'A lynx with a longbow, blending into the shadows of medieval forests while expertly sniping distant foes.',
@@ -2090,7 +2235,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/r7kvD4X/A-lynx-with-a-longbow-blending-into-the-shadows.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'On play search your deck for a Forrest biome card. Reveal it and add it to the top of your deck.',
     biome: 'Forest',
     rarity: 'Common',
     type: 'creature',
@@ -2098,9 +2244,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 300,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 109,
+    id: 115,
     name: 'Scepter Seahorse',
     description:
       'A seahorse with a tiny scepter, patrolling the depths of medieval oceans as a regal guardian.',
@@ -2116,9 +2263,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 100,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 110,
+    id: 116,
     name: 'Moonlit Meridian Mantis',
     description:
       'A praying mantis with lunar patterns on its exoskeleton, known to meditate under the light of the moon.',
@@ -2134,9 +2282,10 @@ const cardSet: Card[] = [
     attackPower: 100,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 111,
+    id: 117,
     name: 'Thunderhoof Toad',
     description:
       'A giant toad with thunderous croaks that echo through medieval valleys, heralding impending storms.',
@@ -2152,9 +2301,10 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 500,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 112,
+    id: 118,
     name: 'Runebound Raven',
     description:
       'A raven with feathers inscribed with ancient runes, carrying messages between wizards in medieval realms.',
@@ -2162,7 +2312,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/Xx4rXSY/A-raven-with-feathers-inscribed-with-ancient-run.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'On play look at the top 5 cards on your deck. Place them in any order and return them to the top of your deck.',
     biome: 'Alpine',
     rarity: 'Common',
     type: 'creature',
@@ -2170,9 +2321,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 113,
+    id: 119,
     name: 'Aurora Armored Antelope',
     description:
       'An antelope with armor that reflects the colors of the aurora borealis, leaping through meadows with grace.',
@@ -2188,9 +2340,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 600,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 114,
+    id: 120,
     name: 'Obsidian Ocelot',
     description:
       'A sleek ocelot with fur as dark as obsidian, stalking silently through the shadows of ancient ruins.',
@@ -2198,7 +2351,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/PT4j6bL/A-of-sleek-ocelot-with-fur-as-dark-as-obsidian-w.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'When your opponent actives a divine intervention, send this card to hell from the field and negate the effect of the divine intervention.',
     biome: 'Desert',
     rarity: 'Uncommon',
     type: 'creature',
@@ -2206,9 +2360,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 500,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 115,
+    id: 121,
     name: 'Spearfish Swordfish',
     description:
       'A swordfish using its sharp bill as a spear, patrolling the coastal waters of medieval kingdoms.',
@@ -2224,9 +2379,10 @@ const cardSet: Card[] = [
     attackPower: 500,
     hp: 200,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 116,
+    id: 122,
     name: 'Topaz Tiger Beetle',
     description:
       'A large beetle with a carapace that gleams like golden topaz, scuttling through sunlit medieval gardens.',
@@ -2234,7 +2390,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/QXvc73k/A-large-beetle-with-a-carapace-that-gleams-like.png',
     inclination: 'Pride',
-    effect: '',
+    effect: 'While in play your creatures can only be slayed in battle.',
     biome: 'Jungle',
     rarity: 'Uncommon',
     type: 'creature',
@@ -2242,9 +2398,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 200,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 117,
+    id: 123,
     name: 'Celestial Cheetah',
     description:
       'A swift cheetah with fur that sparkles like stars, racing through the night under the gaze of the moon.',
@@ -2260,9 +2417,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 200,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 118,
+    id: 124,
     name: 'Labyrinthine Minotaur Beetle',
     description:
       'A giant beetle with an intricate maze pattern on its shell, dwelling in ancient ruins and guarding hidden passages.',
@@ -2278,9 +2436,10 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 800,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 119,
+    id: 125,
     name: 'Lava Lizard Lynx',
     description:
       'A lynx adapted to volcanic landscapes, with fur resembling flowing lava and eyes that burn like molten rock.',
@@ -2296,9 +2455,10 @@ const cardSet: Card[] = [
     attackPower: 500,
     hp: 400,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 120,
+    id: 126,
     name: 'Enchanted Gorilla King',
     description:
       'A massive gorilla with fur etched in glowing runes, reigning in a medieval forest.',
@@ -2314,9 +2474,10 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 800,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 121,
+    id: 127,
     name: 'Warhammer Wolf',
     description:
       'A majestic wolf carrying a warhammer, leading a pack of armored wolves through medieval forests on moonlit patrols.',
@@ -2324,7 +2485,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/VjLLd33/A-majestic-wolf-carrying-a-warhammer-leading-a.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'This creature can only be slayed in battle and not other card effects.',
     biome: 'Forest',
     rarity: 'Rare',
     type: 'creature',
@@ -2332,9 +2494,10 @@ const cardSet: Card[] = [
     attackPower: 1000,
     hp: 700,
     cost: 7,
+    tinyImage: '',
   },
   {
-    id: 122,
+    id: 128,
     name: 'Luminous Liger',
     description:
       'A hybrid creature with the strength of a lion and the grace of a tiger, its fur radiating a gentle glow.',
@@ -2350,9 +2513,10 @@ const cardSet: Card[] = [
     attackPower: 800,
     hp: 400,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 123,
+    id: 129,
     name: 'Ironhide Rhino',
     description:
       'A massive rhinoceros with a hide as tough as iron, charging through medieval battlefields with unwavering strength.',
@@ -2360,7 +2524,8 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/mGhXx2k/A-massive-rhinoceros-with-a-hide-as-tough-as-iro.png',
     inclination: 'Pride',
-    effect: '',
+    effect:
+      'If this creature has less than 200 or less health increase its attack by 200',
     biome: 'Jungle',
     rarity: 'Rare',
     type: 'creature',
@@ -2368,9 +2533,10 @@ const cardSet: Card[] = [
     attackPower: 700,
     hp: 500,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 124,
+    id: 130,
     name: 'Frostfall Fennec Fox',
     description:
       'A small fox with fur that changes color with the seasons, blending seamlessly into snow-covered medieval landscapes.',
@@ -2378,7 +2544,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/BfZzR71/A-small-white-fox-with-fur-that-changes-color-wi.png',
     inclination: 'Pride',
-    effect: '',
+    effect: 'On play search you deck for a nectar. Play that nectar for free.',
     biome: 'Tundra',
     rarity: 'Rare',
     type: 'creature',
@@ -2386,9 +2552,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 400,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 125,
+    id: 131,
     name: 'Lunar Griffin',
     description:
       'A graceful creature with the body of a lion and wings resembling a crescent moon, said to be guardians of ancient celestial secrets.',
@@ -2404,9 +2571,10 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 600,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 126,
+    id: 132,
     name: 'Enchanted Griffin Owlbear',
     description:
       'A hybrid creature with the body of a bear, wings of a griffin, and the wisdom of an owl, often sought as a companion by adventurers.',
@@ -2414,7 +2582,7 @@ const cardSet: Card[] = [
     image:
       'https://i.ibb.co/bbqnKbh/A-hybrid-creature-with-the-body-of-a-bear-wings.png',
     inclination: 'Pride',
-    effect: '',
+    effect: 'On play send any creature on the field to hell.',
     biome: 'Alpine',
     rarity: 'SuperRare',
     type: 'creature',
@@ -2422,9 +2590,10 @@ const cardSet: Card[] = [
     attackPower: 800,
     hp: 400,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 138,
+    id: 133,
     name: 'Divine Thunderstrike',
     description:
       'When your opponent declares an attack, negate the attack and destroy all creatures on both players feilds.',
@@ -2433,15 +2602,16 @@ const cardSet: Card[] = [
     inclination: 'Pride',
     effect: '',
     biome: '',
-    rarity: 'Uncommon',
+    rarity: 'Rare',
     type: 'Divine Intervention',
     effectFunction: '',
     attackPower: 0,
     hp: 0,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 139,
+    id: 134,
     name: "Athena's Wisdom",
     description:
       "When your opponent activates a divine intervention or relic card, negate the activation and destroy it. If this card is destroyed by your opponent's card effect, you can banish one card from their hell.",
@@ -2456,11 +2626,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 7,
+    tinyImage: '',
   },
   {
-    id: 140,
+    id: 135,
     name: "Apollo's Light",
-    description: `Activate only when your opponent declares a direct attack. Gain one life.`,
+    description:
+      'Activate only when your opponent declares a direct attack. Gain one life.',
     randomNumber: 321,
     image: 'https://i.ibb.co/Lk99ph8/apollos-light.png',
     inclination: 'Pride',
@@ -2472,9 +2644,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 141,
+    id: 136,
     name: "Hades' Judgment",
     description:
       'When a monster declares an attack banish after the damage step.',
@@ -2489,27 +2662,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 3,
+    tinyImage: '',
   },
-  // {
-  //   id: 142,
-  //   name: "Guardian's Intervention",
-  //   description:
-  //     'When your opponent activates a monster effect, negate the effect and destroy the monster. If you do, draw 1 card.',
-  //   randomNumber: 321,
-  //   image:
-  //     'https://i.ibb.co/q0rspcQ/can-you-generate-a-yellow-nectar-in-a-intricate.png',
-  //   inclination: 'Pride',
-  //   effect: '',
-  //   biome: '',
-  //   rarity: 'Rare',
-  //   type: 'Divine Intervention',
-  //   effectFunction: '',
-  //   attackPower: 0,
-  //   hp: 0,
-  //   cost: 6,
-  // },
   {
-    id: 143,
+    id: 137,
     name: "Poseidon's Shield",
     description:
       'When your opponent declares an attack, negate the attack and end the Battle Phase.',
@@ -2524,9 +2680,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 144,
+    id: 138,
     name: "Hera's Retribution",
     description:
       'When your opponent controls a creature with 600 or more ATK and declares an attack, negate the attack, destroy the attacking creature, and summon a creature from your hand without spending nectar.',
@@ -2541,9 +2698,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 145,
+    id: 139,
     name: "Hermes' Blessing",
     description:
       'When a monster you control is destroyed by battle or card effect, special summon one monster from your hand or graveyard with equal or lower ATK.',
@@ -2558,9 +2716,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 1,
+    tinyImage: '',
   },
   {
-    id: 146,
+    id: 140,
     name: "Demeter's Seal",
     description:
       'When your opponent summon a creature, negate the summon and banish the summoned monster.',
@@ -2575,9 +2734,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 9,
+    tinyImage: '',
   },
   {
-    id: 147,
+    id: 141,
     name: "Dionysus's Revelry",
     description:
       'When your opponent activates a Divine Intervention or Relic card, negate the activation and destroy it and discard a card.',
@@ -2593,9 +2753,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 148,
+    id: 142,
     name: "Ares's Fury",
     description:
       'Activate only when your opponent declares an attack. Inflict 300 damage to all of your opponents creatures.',
@@ -2611,9 +2772,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 5,
+    tinyImage: '',
   },
   {
-    id: 149,
+    id: 143,
     name: "Hephaestus's Forge",
     description:
       "When a creature effect is activated, negate the effect, and if you do, destroy that creature. If this card is destroyed by your opponent's card effect, you can summon a 4 cost creature.",
@@ -2629,9 +2791,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 4,
+    tinyImage: '',
   },
   {
-    id: 150,
+    id: 144,
     name: "Hestia's Sanctuary",
     description:
       'When your opponent declares an attack, increase the life by 500 to the defending creature.',
@@ -2647,9 +2810,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 151,
+    id: 145,
     name: "Persephone's Embrace",
     description:
       'Activate only when a creature is summoned from hell. That creature gains 500 attack.',
@@ -2665,9 +2829,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 3,
+    tinyImage: '',
   },
   {
-    id: 152,
+    id: 146,
     name: "Nike's Triumph",
     description:
       'When your opponent declares an attack, negate the attack and destroy the attacking creature.',
@@ -2683,9 +2848,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 2,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 147,
     name: "Aphrodite's Charm",
     description:
       'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
@@ -2701,12 +2867,12 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 148,
     name: "Hermes's Caduceus",
-    description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+    description: 'Heal 400 health to one of your creatures.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/QX4RhQf/Caduceus-a-legendary-staff-adorned-with-intertw.png',
@@ -2719,12 +2885,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 149,
     name: "Demeter's Sickle",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Discard your hand and draw the same amount cards you discarded',
     randomNumber: 321,
     image:
       'https://i.ibb.co/qnjvWrF/Sickle-a-mighty-harvesting-tool-imbued-with-the.png',
@@ -2737,12 +2904,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 150,
     name: "Apollo's Sun Chariot",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Choose an creature on your opponents side of the field, move that creature to your side of the field until the end of this turn.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/rfgbXfC/golden-chariot-in-medieval-times-in-the-sky-ill.png',
@@ -2755,12 +2923,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 151,
     name: "Ares's War Drum",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Increase the attack of all your creatures on the field by 300.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/RpD9WK8/War-Drum-a-powerful-instrument-of-war-adorned-w.png',
@@ -2773,12 +2942,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 152,
     name: "Hephaestus's Anvil",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Discard a card from your hand to your hell, search your deck for a nectar and play it on the field without cost.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/kJbzfr8/Anvil-a-massive-forge-surrounded-by-billowing-c.png',
@@ -2791,12 +2961,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
     id: 153,
     name: "Hera's Diadem",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Attach this relic on a creature, increase the attack of the creature by 300.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/Y0j8HFW/Diadem-a-regal-crown-adorned-with-gleaming-jewe.png',
@@ -2809,12 +2980,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 154,
     name: "Poseidon's Conch Shell",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Search your deck for a creature with a aquatic biome with a cost of 4 or less place that card on the field.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/VLvXSsR/Conch-Shell-a-magnificent-shell-adorned-with-sw.png',
@@ -2827,12 +2999,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 155,
     name: "Nike's Laurel Wreath",
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Attach this item to a creature, each time a creature slays an opponent with this relic attached, the attached creature gains 100 attack and life.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/1vp92q7/Laurel-Wreath-in-medieval-times-3d-render-pain.png',
@@ -2845,12 +3018,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 156,
     name: 'Aegis of Zeus',
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Attach this relic to a creature, the creature can not be targeted by divine interventions.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/3YWC0bf/A-majestic-shield-adorned-with-the-thunderbolt-s.png',
@@ -2863,12 +3037,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 157,
     name: 'Owl of Athena',
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Attach this relic to a creature, change the biome this creature can be found in.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/9hT01LH/A-wise-and-regal-owl-perches-upon-a-tree-branch.png',
@@ -2881,12 +3056,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 158,
     name: 'Lyre of Apollo',
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Choose a creature from your hell with a cost 4 or less, play that card on the field.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/TKGDtr3/A-golden-lyre-bathed-in-celestial-light-its-str.png',
@@ -2899,12 +3075,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 159,
     name: 'Trident of Poseidon',
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'In an exchange for a divine essence, search your deck for any card, place that card on the top of your deck.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/5McvFzB/A-trident-spear-forged-from-shimmering-gold-jew.png',
@@ -2917,12 +3094,12 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 160,
     name: 'Sandals of Hermes',
-    description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+    description: 'Choose a creature to be returned to the players hand.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/m0ns4Zb/A-pair-of-winged-slippers-crafted-from-supple-le.png',
@@ -2935,12 +3112,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 161,
     name: 'Cornucopia of Demeter',
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Select 5 cards from your hell, return them to deck and shuffle your deck.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/JQTf2cg/A-bountiful-cornucopia-overflowing-with-ripe-fru.png',
@@ -2953,12 +3131,13 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
   {
-    id: 153,
+    id: 162,
     name: 'Mirror of Aphrodite',
     description:
-      'When your opponent controls a monster with 600 or more attack and declares an attack, negate the attack, destroy the attacking creature, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
+      'Reveal a card in your hand, exchange that card with any of your divine essences. You may not look at your divine essence unless otherwise stated by another card.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/BN7hWjG/A-gleaming-mirror-crafted-from-polished-silver-a.png',
@@ -2971,44 +3150,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
+    tinyImage: '',
   },
-
-  // {
-  //   id: 154,
-  //   name: "Apollo's Arrow",
-  //   description:
-  //     'When your opponent controls a monster with 3000 or more ATK and declares an attack, negate the attack, destroy the attacking monster, and if you do, Special Summon 1 Level 4 or lower monster from your deck.',
-  //   randomNumber: 321,
-  //   image: 'https://i.ibb.co/jVxgDzS/demeters-seal.png',
-  //   inclination: 'Pride',
-  //   effect: '',
-  //   biome: '',
-  //   rarity: 'Rare',
-  //   type: 'Divine Intervention',
-  //   effectFunction: '',
-  //   attackPower: 0,
-  //   hp: 0,
-  //   cost: 8,
-  // },
-  // {
-  //   id: 155,
-  //   name: "Artemis's Hunt",
-  //   description:
-  //     'When your opponent activates a monster effect that targets a card(s) you control, negate the activation, and if you do, destroy that monster. Then, you can Special Summon 1 Level 4 or lower monster from your Graveyard.',
-  //   randomNumber: 321,
-  //   image: 'https://i.ibb.co/jVxgDzS/demeters-seal.png',
-  //   inclination: 'Pride',
-  //   effect: '',
-  //   biome: '',
-  //   rarity: 'Rare',
-  //   type: 'Divine Intervention',
-  //   effectFunction: '',
-  //   attackPower: 0,
-  //   hp: 0,
-  //   cost: 9,
-  // },
   {
-    id: 133,
+    id: 163,
     name: 'Nectar of Love',
     description:
       'Only one nectar may be used per turn, unless otherwise specified by another card effect.',
@@ -3024,9 +3169,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 134,
+    id: 164,
     name: 'Nectar of Wisdom',
     description:
       'Only one nectar may be used per turn, unless otherwise specified by another card effect.',
@@ -3042,9 +3188,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 135,
+    id: 165,
     name: 'Nectar of Wrath',
     description:
       'Only one nectar may be used per turn, unless otherwise specified by another card effect.',
@@ -3060,9 +3207,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 136,
+    id: 166,
     name: 'Nectar of Mischief',
     description:
       'Only one nectar may be used per turn, unless otherwise specified by another card effect.',
@@ -3078,9 +3226,10 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
+    tinyImage: '',
   },
   {
-    id: 137,
+    id: 167,
     name: 'Nectar of Pride',
     description:
       'Only one nectar may be used per turn, unless otherwise specified by another card effect.',
@@ -3096,6 +3245,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
+    tinyImage: '',
   },
 ];
 
