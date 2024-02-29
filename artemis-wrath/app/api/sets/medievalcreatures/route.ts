@@ -2835,7 +2835,7 @@ const cardSet: Card[] = [
   {
     id: 148,
     name: "Hermes's Caduceus",
-    description: 'Heal 400 health to one of your creatures.',
+    description: 'Heal 400 LIFE to one of your creatures.',
     randomNumber: 321,
     image:
       'https://i.ibb.co/QX4RhQf/Caduceus-a-legendary-staff-adorned-with-intertw.png',
@@ -2847,7 +2847,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 4,
     tinyImage: '',
   },
   {
@@ -2866,7 +2866,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 4,
     tinyImage: '',
   },
   {
@@ -2885,7 +2885,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 5,
     tinyImage: '',
   },
   {
@@ -2904,7 +2904,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 7,
     tinyImage: '',
   },
   {
@@ -2923,7 +2923,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 6,
     tinyImage: '',
   },
   {
@@ -2942,7 +2942,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 3,
     tinyImage: '',
   },
   {
@@ -2961,7 +2961,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 5,
     tinyImage: '',
   },
   {
@@ -2980,7 +2980,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 5,
     tinyImage: '',
   },
   {
@@ -3037,7 +3037,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 6,
     tinyImage: '',
   },
   {
@@ -3056,7 +3056,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 5,
     tinyImage: '',
   },
   {
@@ -3074,7 +3074,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 3,
     tinyImage: '',
   },
   {
@@ -3093,7 +3093,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 4,
     tinyImage: '',
   },
   {
@@ -3112,7 +3112,7 @@ const cardSet: Card[] = [
     effectFunction: '',
     attackPower: 0,
     hp: 0,
-    cost: 8,
+    cost: 4,
     tinyImage: '',
   },
   {

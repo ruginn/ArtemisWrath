@@ -60,7 +60,7 @@ const CardElement = ({ card }: { card: Card }) => {
           'bg-gradient-to-bl via-[#3f392c] to-gray-700 from-slate-600',
         card.inclination === 'Pride' &&
           // 'bg-gradient-to-bl from-[#686A81] to-indigo-900 via-[#454380]',
-          'bg-gradient-to-bl from-amber-600 to-yellow-600 via-amber-500',
+          'bg-gradient-to-bl from-amber-600 to-[#e0c05e]',
         card.type === 'Divine Intervention' &&
           // 'bg-gradient-to-bl from-green-900 to-emerald-800 via-teal-700',
           'bg-gradient-bl from-[#8d6f57] to-[#7a5135] via-[#654729]',
@@ -205,7 +205,7 @@ const CardElement = ({ card }: { card: Card }) => {
         </div>
       )}
       {card.type === 'Relic' && (
-        <div className='flex flex-col w-[260px] h-[90px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50 justify-between items-center'>
+        <div className='flex flex-col w-[260px] h-[90px] border-2 border-black mt-1 rounded bg-gray-100 z-0 opacity-50 justify-between items-start'>
           <p className='px-1 pt-[2px] text-[11px] leading-none  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
             {card.description}
           </p>
