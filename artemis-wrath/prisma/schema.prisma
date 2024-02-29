@@ -29,7 +29,9 @@ model Card {
   description String
   randomNumber Int
   image String
+  tinyImage String
   inclination String
+  inclination2 String
   effect String
   biome String
   effectFunction String
