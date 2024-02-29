@@ -2937,7 +2937,7 @@ const cardSet: Card[] = [
     inclination: 'Pride',
     effect: '',
     biome: '',
-    rarity: 'Commmon',
+    rarity: 'Common',
     type: 'Relic',
     effectFunction: '',
     attackPower: 0,
