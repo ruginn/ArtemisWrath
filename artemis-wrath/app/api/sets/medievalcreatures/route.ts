@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Card } from '@/types/CardType';
+import { prisma } from '@/lib/prisma';
+import { describe } from 'node:test';
 
 const cardSet: Card[] = [
   {
@@ -19,6 +21,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 2,
@@ -38,6 +41,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 3,
@@ -58,6 +62,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 4,
@@ -78,6 +83,7 @@ const cardSet: Card[] = [
     hp: 150,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 5,
@@ -97,6 +103,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 6,
@@ -116,6 +123,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 7,
@@ -135,6 +143,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 8,
@@ -154,6 +163,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 9,
@@ -174,6 +184,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 10,
@@ -193,6 +204,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 11,
@@ -213,6 +225,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 12,
@@ -232,6 +245,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 13,
@@ -251,6 +265,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 14,
@@ -270,6 +285,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 15,
@@ -289,6 +305,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 16,
@@ -308,6 +325,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 17,
@@ -327,6 +345,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 18,
@@ -346,6 +365,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 19,
@@ -366,6 +386,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 20,
@@ -386,6 +407,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 21,
@@ -405,6 +427,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 22,
@@ -424,6 +447,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 23,
@@ -444,6 +468,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 24,
@@ -464,6 +489,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 25,
@@ -483,6 +509,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 26,
@@ -503,6 +530,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 27,
@@ -522,6 +550,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 7,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 28,
@@ -540,6 +569,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 29,
@@ -560,6 +590,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 30,
@@ -580,6 +611,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 31,
@@ -599,6 +631,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 32,
@@ -619,6 +652,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 33,
@@ -638,6 +672,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 34,
@@ -658,6 +693,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 35,
@@ -677,6 +713,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 36,
@@ -697,6 +734,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 37,
@@ -717,6 +755,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 38,
@@ -736,6 +775,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 39,
@@ -755,6 +795,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 40,
@@ -774,6 +815,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 41,
@@ -794,6 +836,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 42,
@@ -813,6 +856,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 43,
@@ -832,6 +876,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 44,
@@ -851,6 +896,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 45,
@@ -870,6 +916,7 @@ const cardSet: Card[] = [
     hp: 800,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 46,
@@ -889,6 +936,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 47,
@@ -909,6 +957,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 48,
@@ -928,6 +977,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 49,
@@ -947,6 +997,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 50,
@@ -967,6 +1018,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 51,
@@ -987,6 +1039,7 @@ const cardSet: Card[] = [
     hp: 700,
     cost: 7,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 52,
@@ -1006,6 +1059,7 @@ const cardSet: Card[] = [
     hp: 800,
     cost: 7,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 53,
@@ -1026,6 +1080,7 @@ const cardSet: Card[] = [
     hp: 600,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 54,
@@ -1045,6 +1100,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 55,
@@ -1064,6 +1120,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 56,
@@ -1084,6 +1141,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 57,
@@ -1103,6 +1161,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 58,
@@ -1123,6 +1182,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 59,
@@ -1142,6 +1202,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 60,
@@ -1161,6 +1222,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 61,
@@ -1180,6 +1242,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 62,
@@ -1200,6 +1263,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 63,
@@ -1219,6 +1283,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 64,
@@ -1238,6 +1303,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 65,
@@ -1257,6 +1323,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 66,
@@ -1276,6 +1343,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 67,
@@ -1295,6 +1363,7 @@ const cardSet: Card[] = [
     hp: 600,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 68,
@@ -1315,6 +1384,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 69,
@@ -1334,6 +1404,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 70,
@@ -1354,6 +1425,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 71,
@@ -1373,6 +1445,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 72,
@@ -1393,6 +1466,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 73,
@@ -1412,6 +1486,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 74,
@@ -1432,6 +1507,7 @@ const cardSet: Card[] = [
     hp: 700,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 75,
@@ -1451,6 +1527,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 76,
@@ -1471,6 +1548,7 @@ const cardSet: Card[] = [
     hp: 800,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 77,
@@ -1490,6 +1568,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 78,
@@ -1509,6 +1588,7 @@ const cardSet: Card[] = [
     hp: 600,
     cost: 7,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 79,
@@ -1529,6 +1609,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 7,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 80,
@@ -1549,6 +1630,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 81,
@@ -1569,6 +1651,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 82,
@@ -1588,6 +1671,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 83,
@@ -1608,6 +1692,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 84,
@@ -1628,6 +1713,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 85,
@@ -1648,6 +1734,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 86,
@@ -1667,6 +1754,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 87,
@@ -1687,6 +1775,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 88,
@@ -1706,6 +1795,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 89,
@@ -1726,6 +1816,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 90,
@@ -1745,6 +1836,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 91,
@@ -1764,6 +1856,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 92,
@@ -1784,6 +1877,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 93,
@@ -1803,6 +1897,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 94,
@@ -1822,6 +1917,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 95,
@@ -1842,6 +1938,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 96,
@@ -1861,6 +1958,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 97,
@@ -1880,6 +1978,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 98,
@@ -1900,6 +1999,7 @@ const cardSet: Card[] = [
     hp: 600,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 99,
@@ -1919,6 +2019,7 @@ const cardSet: Card[] = [
     hp: 700,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 100,
@@ -1938,6 +2039,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 101,
@@ -1958,6 +2060,7 @@ const cardSet: Card[] = [
     hp: 600,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 102,
@@ -1978,6 +2081,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 103,
@@ -1997,6 +2101,7 @@ const cardSet: Card[] = [
     hp: 700,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 104,
@@ -2016,6 +2121,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 105,
@@ -2035,6 +2141,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 106,
@@ -2054,6 +2161,7 @@ const cardSet: Card[] = [
     hp: 700,
     cost: 7,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 107,
@@ -2072,6 +2180,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 108,
@@ -2092,6 +2201,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 109,
@@ -2111,6 +2221,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 110,
@@ -2131,6 +2242,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 111,
@@ -2150,6 +2262,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 112,
@@ -2169,6 +2282,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 113,
@@ -2188,6 +2302,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 114,
@@ -2208,6 +2323,7 @@ const cardSet: Card[] = [
     hp: 300,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 115,
@@ -2227,6 +2343,7 @@ const cardSet: Card[] = [
     hp: 100,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 116,
@@ -2246,6 +2363,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 117,
@@ -2265,6 +2383,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 118,
@@ -2285,6 +2404,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 119,
@@ -2304,6 +2424,7 @@ const cardSet: Card[] = [
     hp: 600,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 120,
@@ -2324,6 +2445,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 121,
@@ -2343,6 +2465,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 122,
@@ -2362,6 +2485,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 123,
@@ -2381,6 +2505,7 @@ const cardSet: Card[] = [
     hp: 200,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 124,
@@ -2400,6 +2525,7 @@ const cardSet: Card[] = [
     hp: 800,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 125,
@@ -2419,6 +2545,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 126,
@@ -2438,6 +2565,7 @@ const cardSet: Card[] = [
     hp: 800,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 127,
@@ -2458,6 +2586,7 @@ const cardSet: Card[] = [
     hp: 700,
     cost: 7,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 128,
@@ -2477,6 +2606,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 129,
@@ -2497,6 +2627,7 @@ const cardSet: Card[] = [
     hp: 500,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 130,
@@ -2516,6 +2647,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 131,
@@ -2535,6 +2667,7 @@ const cardSet: Card[] = [
     hp: 600,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 132,
@@ -2554,6 +2687,7 @@ const cardSet: Card[] = [
     hp: 400,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 133,
@@ -2572,6 +2706,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 134,
@@ -2590,6 +2725,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 7,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 135,
@@ -2608,6 +2744,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 136,
@@ -2626,6 +2763,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 137,
@@ -2644,6 +2782,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 138,
@@ -2662,6 +2801,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 8,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 139,
@@ -2680,6 +2820,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 1,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 140,
@@ -2698,6 +2839,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 9,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 141,
@@ -2717,6 +2859,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 142,
@@ -2736,6 +2879,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 143,
@@ -2755,6 +2899,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 144,
@@ -2774,6 +2919,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 145,
@@ -2793,6 +2939,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 146,
@@ -2812,6 +2959,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 2,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 147,
@@ -2831,6 +2979,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 8,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 148,
@@ -2849,6 +2998,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 149,
@@ -2868,6 +3018,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 150,
@@ -2887,6 +3038,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 151,
@@ -2906,6 +3058,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 7,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 152,
@@ -2925,6 +3078,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 153,
@@ -2944,6 +3098,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 154,
@@ -2963,6 +3118,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 155,
@@ -2982,6 +3138,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 156,
@@ -3001,6 +3158,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 8,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 157,
@@ -3020,6 +3178,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 8,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 158,
@@ -3039,6 +3198,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 159,
@@ -3058,6 +3218,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 5,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 160,
@@ -3076,6 +3237,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 3,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 161,
@@ -3095,6 +3257,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 162,
@@ -3114,6 +3277,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 4,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 163,
@@ -3133,6 +3297,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 164,
@@ -3152,6 +3317,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 165,
@@ -3171,6 +3337,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 166,
@@ -3190,6 +3357,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
   {
     id: 167,
@@ -3209,6 +3377,7 @@ const cardSet: Card[] = [
     hp: 0,
     cost: 6,
     tinyImage: '',
+    set: 'Medieval Creatures',
   },
 ];
 
@@ -3313,8 +3482,49 @@ export async function GET(req: Request) {
   console.log(listInclination);
 
   // for (let i = 0; i < cardSet.length; i++) {
-  //   cardSet[i].tinyImage = '';
-  // }
+  //   console.log(cardSet[i]);
+  //   const currentCard = await prisma.card.create({
+  //     data: {
+  //       id: i.toString(),
+  //       name: cardSet[i].name,
+  //       description: cardSet[i].description,
+  //       randomNumber: cardSet[i].randomNumber,
+  //       image: cardSet[i].image,
+  //       tinyImage: cardSet[i].tinyImage,
+  //       inclination: cardSet[i].inclination,
+  //       inclination2: cardSet[i].inclination2,
+  //       effect: cardSet[i].effect,
+  //       biome: cardSet[i].biome,
+  //       rarity: cardSet[i].rarity,
+  //       type: cardSet[i].type,
+  //       hp: cardSet[i].hp,
+  //       cost: cardSet[i].cost,
+  //       attackPower: cardSet[i].attackPower,
+  //       set: cardSet[i].set,
+  //       effectFunction: cardSet[i].effectFunction,
+  //     },
+  //   });
+  // const currentCard = await prisma.card.create({
+  //   data: {
+  //     id: (1).toString(),
+  //     name: cardSet[0].name,
+  //     description: cardSet[0].description,
+  //     randomNumber: cardSet[0].randomNumber,
+  //     image: cardSet[0].image,
+  //     tinyImage: cardSet[0].tinyImage,
+  //     inclination: cardSet[0].inclination,
+  //     inclination2: cardSet[0].inclination2,
+  //     effect: cardSet[0].effect,
+  //     biome: cardSet[0].biome,
+  //     rarity: cardSet[0].rarity,
+  //     type: cardSet[0].type,
+  //     hp: cardSet[0].hp,
+  //     cost: cardSet[0].cost,
+  //     attackPower: cardSet[0].attackPower,
+  //     set: cardSet[0].set,
+  //     effectFunction: cardSet[0].effectFunction,
+  //   },
+  // });
 
   return NextResponse.json(cardSet);
 }

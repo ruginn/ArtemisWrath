@@ -26,4 +26,5 @@ export interface Card {
   attackPower?: number;
   hp?: number;
   cost?: number;
+  set?: string;
 }

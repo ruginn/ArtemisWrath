@@ -26,21 +26,21 @@ model User {
 model Card {
   id String @unique
   name String? 
-  description String
-  randomNumber Int
-  image String
-  tinyImage String
-  inclination String
-  inclination2 String
-  effect String
-  biome String
-  effectFunction String
-  rarity String
-  type String
-  attackPower Int
-  hp Int
-  cost Int
-  set String
+  description String?
+  randomNumber Int?
+  image String?
+  tinyImage String?
+  inclination String?
+  inclination2 String?
+  effect String?
+  biome String?
+  effectFunction String?
+  rarity String?
+  type String?
+  attackPower Int?
+  hp Int?
+  cost Int?
+  set String?
 }
 
 
