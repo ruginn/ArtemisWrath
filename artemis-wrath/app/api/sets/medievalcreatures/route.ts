@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import { Card } from '@/types/CardType';
 import { prisma } from '@/lib/prisma';
-import { describe } from 'node:test';
 
 const cardSet: Card[] = [
   {
@@ -3504,6 +3503,15 @@ export async function GET(req: Request) {
   //       effectFunction: cardSet[i].effectFunction,
   //     },
   //   });
+
+  console.log(cardSet[0]);
+
+  // const Set = await prisma.set.create({
+  //   data: {
+  //     id: 'fjkdsl',
+  //     name: 'Medieval Creatures',
+  //   },
+  // });
   // const currentCard = await prisma.card.create({
   //   data: {
   //     id: (1).toString(),
@@ -3521,8 +3529,8 @@ export async function GET(req: Request) {
   //     hp: cardSet[0].hp,
   //     cost: cardSet[0].cost,
   //     attackPower: cardSet[0].attackPower,
-  //     set: cardSet[0].set,
   //     effectFunction: cardSet[0].effectFunction,
+  //     setId: Set.id,
   //   },
   // });
 

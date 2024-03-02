@@ -21,8 +21,13 @@ model User {
   crystals Int? @default(500)
 }
 
-// need to make trades 
-// need to make cards
+model Jefftron {
+  id String @unique
+  name String?
+  test Int?
+}
+
+
 model Card {
   id String @unique
   name String? 
@@ -40,9 +45,13 @@ model Card {
   attackPower Int?
   hp Int?
   cost Int?
-  set String?
+  set Set @relation(fields: [setId], references: [id])
+  setId String
 }
 
+model Set {
+  id String @unique
+  name String
+  cards Card[]
+}
 
-
-// battle
