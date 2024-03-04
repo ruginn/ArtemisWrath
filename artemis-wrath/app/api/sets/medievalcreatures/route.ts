@@ -2704,7 +2704,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 5,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/SVq2GWx/divine-thunderstrike.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2723,7 +2723,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 7,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/MsVqHPQ/athenas-wisdom.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2742,7 +2742,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 5,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/6v4x3NW/apollos-light.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2761,7 +2761,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 3,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/4dNtz0G/hades-judgment.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2780,7 +2780,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 4,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/n0dZyQ5/poseidons-shield.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2799,7 +2799,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/D5tMtVX/heras-retribution.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2818,7 +2818,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 1,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/6btq8FL/hermes-blessing.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2837,7 +2837,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 9,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/Lktvj17/demeter-seal.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2857,7 +2857,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/B2ccvCK/dionysus-revelry.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2877,7 +2877,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 5,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/nMx0Yzw/aress-fury.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2897,7 +2897,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 4,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/L0ZCbpC/hephaestus-forge.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2917,7 +2917,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 3,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/wBKyhBg/hestia-sanctuary.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2937,7 +2937,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 3,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/BTHPmRf/persephone-embrace.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2957,7 +2957,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 2,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/RpCwmBk/nikes-triumph.png',
     set: 'Medieval Creatures',
   },
   {
@@ -2977,7 +2977,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 8,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/WyQzDcF/aphrodite-charm.png',
     set: 'Medieval Creatures',
   },
   {
