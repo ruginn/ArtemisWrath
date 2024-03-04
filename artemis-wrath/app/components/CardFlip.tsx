@@ -47,6 +47,32 @@ const CardFlipElement = ({ card }: { card: Card }) => {
   //       setIsFlipped(true);
   //     }, 1000);
   //   }, []);
+  console.log(card);
+  if (card.tinyImage) {
+    return (
+      <ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>
+        <div
+          className='h-[400.5px] w-72 rounded-xl border-gray-800 border-8 cursor-pointer bg-gray-800'
+          onClick={flipCard}
+        >
+          <Image
+            src={CardBack}
+            height={256}
+            width={256}
+            alt=''
+            className='object-stretch h-full w-full rounded-lg'
+          ></Image>
+        </div>
+        <Image
+          src={card.tinyImage}
+          height={400.5}
+          width={288}
+          alt={card.name}
+          className='h-[400.5px] w-72 object-contain cursor-pointer'
+        ></Image>
+      </ReactCardFlip>
+    );
+  }
 
   return (
     <ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>
