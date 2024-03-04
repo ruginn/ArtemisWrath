@@ -263,7 +263,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 4,
-    tinyImage: 'https://i.ibb.co/qJ3f43G/ebon-pegasus.png',
+    tinyImage: 'https://i.ibb.co/BB144wV/ebon-pegasus-real.png',
     set: 'Medieval Creatures',
   },
   {
@@ -343,7 +343,7 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 300,
     cost: 2,
-    tinyImage: 'https://i.ibb.co/q9M796D/starshade-squirrel.png',
+    tinyImage: 'https://i.ibb.co/WfVgW9M/starshade-squirrel-real.png',
     set: 'Medieval Creatures',
   },
   {

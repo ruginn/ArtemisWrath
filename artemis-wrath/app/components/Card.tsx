@@ -46,6 +46,19 @@ const CardElement = ({ card }: { card: Card }) => {
     // console.log(CardModal);
   };
 
+  if (card.tinyImage) {
+    return (
+      <Image
+        src={card.tinyImage}
+        height={400.5}
+        width={288}
+        alt={card.name}
+        className='h-[400.5px] w-72 object-contain cursor-pointer'
+        onClick={onOpenModal}
+      ></Image>
+    );
+  }
+
   return (
     <div
       className={cn(
