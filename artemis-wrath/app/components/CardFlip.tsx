@@ -47,7 +47,6 @@ const CardFlipElement = ({ card }: { card: Card }) => {
   //       setIsFlipped(true);
   //     }, 1000);
   //   }, []);
-  console.log(card);
   if (card.tinyImage) {
     return (
       <ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>

@@ -19,6 +19,7 @@ model User {
   lastPackDate DateTime?
   starterDeck  Boolean   @default(false)
   crystals Int? @default(500)
+  cards PlayerCard[]
 }
 
 model Jefftron {
@@ -47,6 +48,27 @@ model Card {
   cost Int?
   set Set @relation(fields: [setId], references: [id])
   setId String
+}
+
+model PlayerCard {
+  id String @unique
+  name String? 
+  description String?
+  randomNumber Int?
+  image String?
+  tinyImage String?
+  inclination String?
+  inclination2 String?
+  effect String?
+  biome String?
+  effectFunction String?
+  rarity String?
+  type String?
+  attackPower Int?
+  hp Int?
+  cost Int?
+  userId String
+  user User @relation(fields: [userId], references: [id])
 }
 
 model Set {
