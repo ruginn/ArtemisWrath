@@ -3477,34 +3477,43 @@ export async function GET(req: Request) {
   //   cardEdit.cost = 0;
   //   newCards.push(cardEdit);
   // }
-  console.log(listRarity);
-  console.log(listInclination);
+  // console.log(listRarity);
+  // console.log(listInclination);
 
-  // for (let i = 0; i < cardSet.length; i++) {
-  //   console.log(cardSet[i]);
-  //   const currentCard = await prisma.card.create({
-  //     data: {
-  //       id: i.toString(),
-  //       name: cardSet[i].name,
-  //       description: cardSet[i].description,
-  //       randomNumber: cardSet[i].randomNumber,
-  //       image: cardSet[i].image,
-  //       tinyImage: cardSet[i].tinyImage,
-  //       inclination: cardSet[i].inclination,
-  //       inclination2: cardSet[i].inclination2,
-  //       effect: cardSet[i].effect,
-  //       biome: cardSet[i].biome,
-  //       rarity: cardSet[i].rarity,
-  //       type: cardSet[i].type,
-  //       hp: cardSet[i].hp,
-  //       cost: cardSet[i].cost,
-  //       attackPower: cardSet[i].attackPower,
-  //       set: cardSet[i].set,
-  //       effectFunction: cardSet[i].effectFunction,
-  //     },
-  //   });
+  // const Set = await prisma.set.findUnique({
+  //   where: {
+  //     id: 'fjkdsl',
+  //   },
+  // });
 
-  console.log(cardSet[0]);
+  // if (Set) {
+  //   for (let i = 0; i < cardSet.length; i++) {
+  //     console.log(cardSet[i]);
+  //     const currentCard = await prisma.card.create({
+  //       data: {
+  //         id: (i + 1).toString(),
+  //         name: cardSet[i].name,
+  //         description: cardSet[i].description,
+  //         randomNumber: cardSet[i].randomNumber,
+  //         image: cardSet[i].image,
+  //         tinyImage: cardSet[i].tinyImage,
+  //         inclination: cardSet[i].inclination,
+  //         inclination2: cardSet[i].inclination2,
+  //         effect: cardSet[i].effect,
+  //         biome: cardSet[i].biome,
+  //         rarity: cardSet[i].rarity,
+  //         type: cardSet[i].type,
+  //         hp: cardSet[i].hp,
+  //         cost: cardSet[i].cost,
+  //         attackPower: cardSet[i].attackPower,
+  //         setId: Set.id,
+  //         effectFunction: cardSet[i].effectFunction,
+  //       },
+  //     });
+  //   }
+  // }
+
+  // console.log(cardSet[0]);
 
   // const Set = await prisma.set.create({
   //   data: {
