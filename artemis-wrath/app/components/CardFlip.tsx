@@ -59,7 +59,7 @@ const CardFlipElement = ({ card }: { card: Card }) => {
             height={256}
             width={256}
             alt=''
-            className='object-stretch h-full w-full rounded-lg'
+            className='h-full w-full object-fit rounded-lg'
           ></Image>
         </div>
         <Image
@@ -84,7 +84,7 @@ const CardFlipElement = ({ card }: { card: Card }) => {
           height={256}
           width={256}
           alt=''
-          className='object-stretch h-full w-full rounded-lg'
+          className='object-stretch h-[400.5px] w-72 rounded-lg'
         ></Image>
       </div>
       <div

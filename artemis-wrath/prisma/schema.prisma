@@ -31,12 +31,12 @@ model Jefftron {
 
 model Card {
   id String @unique
-  name String? 
+  name String?
   description String?
   randomNumber Int?
   image String?
   tinyImage String?
-  inclination String?
+  inclination String
   inclination2 String?
   effect String?
   biome String?
@@ -52,7 +52,7 @@ model Card {
 
 model PlayerCard {
   id String @unique
-  name String? 
+  name String?
   description String?
   randomNumber Int?
   image String?

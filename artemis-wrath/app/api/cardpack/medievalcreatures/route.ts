@@ -3446,7 +3446,7 @@ export async function POST(req: Request) {
     Rare: 2,
   };
 
-  const getCards = () => {
+  const getCards = async () => {
     // for (let i = 0; i < 10; i++) {
     //   let cardCount = cardSet.length - i;
     //   let randomNumber = Math.floor(Math.random() * (cardCount + 1));
@@ -3456,6 +3456,14 @@ export async function POST(req: Request) {
     //   // randomCards.push(cardSet[randomNumber])
     //   randomCards.push(newCard[0]);
     // }
+
+    // const cardSet2 = await prisma.card.findMany({
+    //   where: {
+    //     setId: 'fjkdsl',
+    //   },
+    // });
+    // console.log('below is cardset2');
+    // console.log(cardSet2);
 
     // Maybe i should just filter out different rarities first then while loop
     const CommonCards = cardSet.filter((card) => card.rarity === 'Common');
@@ -3486,10 +3494,10 @@ export async function POST(req: Request) {
       setTotal.Rare -= 1;
     }
   };
-  console.log(
-    establishedUser?.lastPackDate?.toString(),
-    realDateStart.toString()
-  );
+  // console.log(
+  //   establishedUser?.lastPackDate?.toString(),
+  //   realDateStart.toString()
+  // );
   if (establishedUser?.lastPackDate?.toString() !== realDateStart.toString()) {
     getCards();
     await prisma.user.update({
@@ -3500,6 +3508,7 @@ export async function POST(req: Request) {
         lastPackDate: realDateStart,
       },
     });
+
     console.log('pack updated');
     return NextResponse.json(randomCards);
   } else {
