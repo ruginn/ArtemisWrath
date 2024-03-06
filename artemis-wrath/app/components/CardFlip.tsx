@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import ReactCardFlip from 'react-card-flip';
 import CardBack from '@/public/Images/Cardback2.png';
+import CardBack2 from '@/public/Images/cardBackTiny.png';
 import { Card } from '@/types/CardType';
 
 // interface Card {
@@ -50,24 +51,22 @@ const CardFlipElement = ({ card }: { card: Card }) => {
   if (card.tinyImage) {
     return (
       <ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>
-        <div
-          className='h-[400.5px] w-72 rounded-xl border-gray-800 border-8 cursor-pointer bg-gray-800'
+        <Image
+          src={CardBack2}
+          height={400.5}
+          width={288}
+          alt=''
+          className='object-contain cursor-pointer self-start'
           onClick={flipCard}
-        >
-          <Image
-            src={CardBack}
-            height={256}
-            width={256}
-            alt=''
-            className='h-full w-full object-fit rounded-lg'
-          ></Image>
-        </div>
+        ></Image>
+
         <Image
           src={card.tinyImage}
           height={400.5}
           width={288}
           alt={card.name}
-          className='h-[400.5px] w-72 object-contain cursor-pointer'
+          className=' object-contain cursor-pointer self-start'
+          onClick={flipCard}
         ></Image>
       </ReactCardFlip>
     );
