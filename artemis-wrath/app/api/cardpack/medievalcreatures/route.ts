@@ -3465,6 +3465,8 @@ export async function POST(req: Request) {
     // console.log('below is cardset2');
     // console.log(cardSet2);
 
+    // need to fix null from inclination 2
+
     // Maybe i should just filter out different rarities first then while loop
     const CommonCards = cardSet.filter((card) => card.rarity === 'Common');
     const UncommonCards = cardSet.filter((card) => card.rarity === 'Uncommon');

@@ -1,10 +1,10 @@
 export interface Card {
   id?: number | string;
   name: string;
-  description?: string;
-  randomNumber?: number;
-  image?: string;
-  tinyImage?: string;
+  description?: string | null;
+  randomNumber?: number | null;
+  image?: string | null;
+  tinyImage?: string | null;
   inclination?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief' | 'Neutral';
   inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
   effect?: string;
