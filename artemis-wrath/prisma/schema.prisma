@@ -29,6 +29,38 @@ model Jefftron {
 }
 
 
+enum Rarity {
+  Common
+  Uncommon
+  Rare 
+  SuperRare
+  Nectar
+}
+
+
+enum Inclination {
+  Love
+  Wrath
+  Wisdom
+  Pride
+  Mischief
+  Neutral
+}
+
+enum Biome {
+  Jungle
+  Tundra
+  Alpine
+  Forest 
+  Wetland 
+  Grassland 
+  Aquatic
+  Island
+  Cave 
+  Desert
+
+}
+
 model Card {
   id String @unique
   name String?
@@ -36,12 +68,12 @@ model Card {
   randomNumber Int?
   image String?
   tinyImage String?
-  inclination String
+  inclination Inclination?
   inclination2 String?
   effect String?
   biome String?
   effectFunction String?
-  rarity String?
+  rarity Rarity
   type String?
   attackPower Int?
   hp Int?
@@ -57,12 +89,12 @@ model PlayerCard {
   randomNumber Int?
   image String?
   tinyImage String?
-  inclination String?
+  inclination Inclination?
   inclination2 String?
   effect String?
   biome String?
   effectFunction String?
-  rarity String?
+  rarity Rarity
   type String?
   attackPower Int?
   hp Int?

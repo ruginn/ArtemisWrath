@@ -64,7 +64,7 @@ const CardFlipElement = ({ card }: { card: Card }) => {
           src={card.tinyImage}
           height={400.5}
           width={288}
-          alt={card.name}
+          alt={card.name ? card.name : 'card'}
           className=' object-contain cursor-pointer self-start'
           onClick={flipCard}
         ></Image>
