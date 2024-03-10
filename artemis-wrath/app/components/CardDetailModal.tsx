@@ -34,7 +34,7 @@ const CardDetailModal = () => {
                       src={currentCard.image}
                       width={500}
                       height={500}
-                      alt={currentCard.name}
+                      alt={currentCard.name ? currentCard.name : 'card'}
                       // className='w-[200px] h-[200px] object-cover'
                     ></Image>
                   )}
