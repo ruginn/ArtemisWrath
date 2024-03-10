@@ -3543,5 +3543,10 @@ export async function GET(req: Request) {
   //   },
   // });
 
+  // const deletePlayerCards = await prisma.playerCard.deleteMany({
+  //   where: {
+  //     userId: 'user_2ZNAek97R9bBh0ysJySmBoRVfl9',
+  //   },
+  // });
   return NextResponse.json(cardSet);
 }

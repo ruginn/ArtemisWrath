@@ -3499,7 +3499,7 @@ export async function POST(req: Request) {
     for (let i = 0; i < randomCards.length; i++) {
       const playerCards = await prisma.playerCard.create({
         data: {
-          id: randomCards[i].id.toString(),
+          cardId: randomCards[i].id.toString(),
           name: randomCards[i].name,
           description: randomCards[i].description,
           randomNumber: randomCards[i].randomNumber,

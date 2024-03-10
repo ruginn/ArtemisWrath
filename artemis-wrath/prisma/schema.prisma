@@ -47,20 +47,6 @@ enum Inclination {
   Neutral
 }
 
-enum Biome {
-  Jungle
-  Tundra
-  Alpine
-  Forest 
-  Wetland 
-  Grassland 
-  Aquatic
-  Island
-  Cave 
-  Desert
-
-}
-
 model Card {
   id String @unique
   name String?
@@ -83,7 +69,8 @@ model Card {
 }
 
 model PlayerCard {
-  id String @unique
+  id String @id @default(cuid()) @unique
+  cardId String
   name String?
   description String?
   randomNumber Int?
@@ -99,6 +86,7 @@ model PlayerCard {
   attackPower Int?
   hp Int?
   cost Int?
+  createdAt    DateTime  @default(now())
   userId String
   user User @relation(fields: [userId], references: [id])
 }
