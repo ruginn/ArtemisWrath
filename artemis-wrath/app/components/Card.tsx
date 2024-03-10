@@ -52,7 +52,7 @@ const CardElement = ({ card }: { card: Card }) => {
         src={card.tinyImage}
         height={400.5}
         width={288}
-        alt={card.name}
+        alt={card.name ? card.name : 'card'}
         className='h-[400.5px] w-72 object-contain cursor-pointer'
         onClick={onOpenModal}
       ></Image>
