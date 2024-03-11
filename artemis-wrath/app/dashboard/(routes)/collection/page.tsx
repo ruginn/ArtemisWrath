@@ -4,6 +4,7 @@ import { useSideBar } from '@/hooks/use-sidebar';
 import { useUser } from '@clerk/nextjs';
 import { PlayerCard } from '@/types/PlayerCardType';
 import CardElement from '@/app/components/Card';
+import CardDetailModal from '@/app/components/CardDetailModal';
 
 const Collection = () => {
   const activeSidebar = useSideBar();
@@ -49,6 +50,7 @@ const Collection = () => {
       ) : (
         <h1>no cards</h1>
       )}
+      <CardDetailModal />
     </div>
   );
 };
