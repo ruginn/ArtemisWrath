@@ -50,9 +50,11 @@ const PackSelector: FC<Date> = (props) => {
   // const [collectedCards, setCollectedCards] = useState<Card[]>([{id: 1, name: 'fsda', description: 'fsda', randomNumber: 1, image: AwSet1}])
   const [collectedCards, setCollectedCards] = useState<Card[]>([]);
   const [getCards, setGetCards] = useState<boolean>(false);
+  const [loadingCards, setLoadingCards] = useState<boolean>(false);
   const userInfo = useUserInfo();
 
   const CollectPack = async () => {
+    setLoadingCards(true);
     const userData = {
       id: user?.id,
       firstName: user?.firstName,
@@ -75,9 +77,11 @@ const PackSelector: FC<Date> = (props) => {
       gatheredCards.addCards(cards);
       gatheredCards.setCollected(true);
       setGetCards(true);
+
       // setTimeout(() => {
       //   userInfo.UpdateLastPack(props.todayDate);
       // }, 2000);
+      setLoadingCards(false);
       userInfo.UpdateLastPack(props.todayDate);
       console.log(collectedCards);
     } else {
