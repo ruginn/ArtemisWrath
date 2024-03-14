@@ -9,6 +9,7 @@ import CardElement from '@/app/components/Card';
 import { useUserInfo } from '@/hooks/use-userInfo';
 import { useCollectedCards } from '@/hooks/use-collectedCards';
 import { Card } from '@/types/CardType';
+import Loader from './Loader';
 
 // interface Card {
 //   id: number;
@@ -55,6 +56,7 @@ const PackSelector: FC<Date> = (props) => {
 
   const CollectPack = async () => {
     setLoadingCards(true);
+    setSelectedPack(true);
     const userData = {
       id: user?.id,
       firstName: user?.firstName,
@@ -115,7 +117,9 @@ const PackSelector: FC<Date> = (props) => {
           />
         </div>
       )}
-      {selectedPack && (
+      {loadingCards && <Loader />}
+
+      {selectedPack && !loadingCards && (
         <div>
           <h3>You have already selected your pack for the day</h3>
         </div>
