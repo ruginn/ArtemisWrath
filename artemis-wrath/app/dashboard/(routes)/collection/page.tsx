@@ -50,7 +50,14 @@ const Collection = () => {
 
   const loveFilter = () => {
     const loveCards = userCards?.filter((card) => card.inclination === 'Love');
+    const inclination2 = userCards?.filter(
+      (card) => card.inclination2 === 'Love'
+    );
     setFilterCards(loveCards);
+    if (inclination2) {
+      const allLoveCards = loveCards?.concat(inclination2);
+      setFilterCards(allLoveCards);
+    }
     setFiltered(true);
   };
 
