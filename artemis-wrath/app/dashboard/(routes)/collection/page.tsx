@@ -168,7 +168,7 @@ const Collection = () => {
           })}
         </div>
       ) : (
-        <h1>no cards</h1>
+        !filterCards && <h1>no cards</h1>
       )}
       {filtered && filterCards && (
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10'>
