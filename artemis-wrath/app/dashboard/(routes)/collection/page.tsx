@@ -5,6 +5,7 @@ import { useUser } from '@clerk/nextjs';
 import { PlayerCard } from '@/types/PlayerCardType';
 import CardElement from '@/app/components/Card';
 import CardDetailModal from '@/app/components/CardDetailModal';
+import Loader from '../../_components/Loader';
 
 const Collection = () => {
   const activeSidebar = useSideBar();
@@ -12,6 +13,8 @@ const Collection = () => {
   const [userCards, setUserCards] = useState<PlayerCard[]>();
   const [filtered, setFiltered] = useState(false);
   const [filterCards, setFilterCards] = useState<PlayerCard[]>();
+  const [loadingCards, setLoadingCards] = useState<boolean>(false);
+
   useEffect(() => {
     activeSidebar.onChange('collection');
   }, []);
@@ -21,6 +24,7 @@ const Collection = () => {
   }, []);
 
   const getCards = async () => {
+    setLoadingCards(true);
     const userData = {
       id: user?.id,
       firstName: user?.firstName,
@@ -36,6 +40,7 @@ const Collection = () => {
     });
 
     const usersCards = await res.json();
+    setLoadingCards(false);
     setUserCards(usersCards);
   };
 
@@ -148,6 +153,7 @@ const Collection = () => {
         </button>
       </div>
       {/* <button onClick={getCards}>click me</button> */}
+      {loadingCards && <Loader />}
       {userCards && !filtered ? (
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10'>
           {userCards.map((card) => {
