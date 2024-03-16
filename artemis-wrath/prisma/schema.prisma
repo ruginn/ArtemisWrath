@@ -97,3 +97,17 @@ model Set {
   cards Card[]
 }
 
+model Trade {
+  id String @id @default(cuid()) @unique
+  completed Boolean @default(false)
+  // userID
+  postUser String 
+  // CardID ==> from set
+  postCard String?
+  // 
+  wantedCard String?
+  tradeUser String?
+  offerCard String?
+  createdAt DateTime @default(now())
+  dateCompleted DateTime?
+}
