@@ -110,4 +110,12 @@ model Trade {
   offerCard String?
   createdAt DateTime @default(now())
   dateCompleted DateTime?
+  offered TradeOffer[]
+}
+
+model TradeOffer {
+  id String @id @default(cuid()) @unique
+  trade Trade @relation(fields: [tradeId], references: [id])
+  tradeId String
+  createdAt DateTime @default(now())
 }
