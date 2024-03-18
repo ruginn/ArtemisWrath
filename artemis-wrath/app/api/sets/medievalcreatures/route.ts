@@ -2139,7 +2139,7 @@ const cardSet: Card[] = [
     attackPower: 800,
     hp: 500,
     cost: 5,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/9qj7Snk/obsidian-direwolf.png',
     set: 'Medieval Creatures',
   },
   {

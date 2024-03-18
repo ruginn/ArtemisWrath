@@ -1,5 +1,5 @@
-"use client";
-import { useEffect, useState } from "react";
+'use client';
+import { useEffect, useState } from 'react';
 
 const Timer = () => {
   const [hours, setHour] = useState<number>();
@@ -8,7 +8,7 @@ const Timer = () => {
 
   const getDate = async () => {
     const today = await fetch(
-      "https://worldtimeapi.org/api/timezone/America/New_York",
+      'https://worldtimeapi.org/api/timezone/America/New_York'
     ).then((res) => res.json());
     const actualToday = new Date(today.datetime);
     const secondsLeft = 59 - actualToday.getSeconds();
@@ -41,26 +41,30 @@ const Timer = () => {
   }, [seconds]);
 
   return (
-    <div className="w-full items-center flex flex-col">
+    <div className='w-full items-center flex flex-col'>
       <h1>Its seems like you&apos;ve already collected your pack for today.</h1>
       <h3>Your next pack will be availible in </h3>
-      <div className="flex flex-row gap-5">
-        <div className="flex flex-col items-center">
+      <div className='flex flex-row gap-5'>
+        <div className='flex flex-col items-center'>
           {/* horrendousinlinecode.com */}
-          <p>{hours && hours.toString().length === 1 ? `0${hours}` : hours}</p>
-          <p>{hours === 1 ? "Hour" : "Hours"}</p>
+          <p className='text-6xl'>
+            {hours && hours.toString().length === 1 ? `0${hours}` : hours}
+          </p>
+          <p>{hours === 1 ? 'Hour' : 'Hours'}</p>
         </div>
-        <div className="flex flex-col items-center">
-          <p>
-            {typeof minutes === "number" && minutes.toString().length === 1
+        <div className='text-5xl mt-2'>:</div>
+        <div className='flex flex-col items-center'>
+          <p className='text-6xl'>
+            {typeof minutes === 'number' && minutes.toString().length === 1
               ? `0${minutes}`
               : minutes}
           </p>
           <p>Minutes</p>
         </div>
-        <div className="flex flex-col items-center">
-          <p>
-            {typeof seconds === "number" && seconds.toString().length === 1
+        <div className='text-5xl mt-2'>:</div>
+        <div className='flex flex-col items-center'>
+          <p className='text-6xl'>
+            {typeof seconds === 'number' && seconds.toString().length === 1
               ? `0${seconds}`
               : seconds}
           </p>

@@ -53,10 +53,14 @@ const Collection = () => {
     const inclination2 = userCards?.filter(
       (card) => card.inclination2 === 'Love'
     );
-    setFilterCards(loveCards);
+
     if (inclination2) {
       const allLoveCards = loveCards?.concat(inclination2);
+      allLoveCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
       setFilterCards(allLoveCards);
+    } else {
+      loveCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      setFilterCards(loveCards);
     }
     setFiltered(true);
   };
@@ -65,7 +69,17 @@ const Collection = () => {
     const wisdomCards = userCards?.filter(
       (card) => card.inclination === 'Wisdom'
     );
-    setFilterCards(wisdomCards);
+    const inclination2 = userCards?.filter(
+      (card) => card.inclination2 === 'Wisdom'
+    );
+    if (inclination2) {
+      const allWisdomCards = wisdomCards?.concat(inclination2);
+      allWisdomCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      setFilterCards(allWisdomCards);
+    } else {
+      wisdomCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      setFilterCards(wisdomCards);
+    }
     setFiltered(true);
   };
 
@@ -73,7 +87,17 @@ const Collection = () => {
     const wrathCards = userCards?.filter(
       (card) => card.inclination === 'Wrath'
     );
-    setFilterCards(wrathCards);
+    const inclination2 = userCards?.filter(
+      (card) => card.inclination2 === 'Wrath'
+    );
+    if (inclination2) {
+      const allWrathCards = wrathCards?.concat(inclination2);
+      allWrathCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      setFilterCards(allWrathCards);
+    } else {
+      wrathCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      setFilterCards(wrathCards);
+    }
     setFiltered(true);
   };
 
@@ -81,7 +105,17 @@ const Collection = () => {
     const mischiefCards = userCards?.filter(
       (card) => card.inclination === 'Mischief'
     );
-    setFilterCards(mischiefCards);
+    const inclination2 = userCards?.filter(
+      (card) => card.inclination2 === 'Mischief'
+    );
+    if (inclination2) {
+      const allMischiefCards = mischiefCards?.concat(inclination2);
+      allMischiefCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      setFilterCards(allMischiefCards);
+    } else {
+      mischiefCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      setFilterCards(mischiefCards);
+    }
     setFiltered(true);
   };
 
@@ -89,7 +123,17 @@ const Collection = () => {
     const prideCards = userCards?.filter(
       (card) => card.inclination === 'Pride'
     );
-    setFilterCards(prideCards);
+    const inclination2 = userCards?.filter(
+      (card) => card.inclination2 === 'Pride'
+    );
+    if (inclination2) {
+      const allPrideCards = prideCards?.concat(inclination2);
+      allPrideCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      setFilterCards(allPrideCards);
+    } else {
+      prideCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      setFilterCards(prideCards);
+    }
     setFiltered(true);
   };
 
@@ -97,17 +141,19 @@ const Collection = () => {
     const DICards = userCards?.filter(
       (card) => card.type === 'Divine Intervention'
     );
+    DICards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
     setFilterCards(DICards);
     setFiltered(true);
   };
   const relicFilter = () => {
     const relicCards = userCards?.filter((card) => card.type === 'Relic');
+    relicCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
     setFilterCards(relicCards);
     setFiltered(true);
   };
 
   return (
-    <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px)]'>
+    <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px) flex flex-col items-center sm:items-start'>
       <h1 className='text-5xl'>Collection</h1>
       <div className='flex-row'>
         <button
@@ -162,7 +208,7 @@ const Collection = () => {
       {/* <button onClick={getCards}>click me</button> */}
       {loadingCards && <Loader />}
       {userCards && !filtered ? (
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10 justify-center items-center'>
           {userCards.map((card) => {
             return <CardElement card={card} key={card.id} />;
           })}
@@ -171,7 +217,7 @@ const Collection = () => {
         !filterCards && <h1>no cards</h1>
       )}
       {filtered && filterCards && (
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10 justify-center items-center'>
           {filterCards.map((card) => {
             return <CardElement card={card} key={card.id} />;
           })}
