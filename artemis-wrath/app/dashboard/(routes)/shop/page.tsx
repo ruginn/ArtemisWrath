@@ -10,6 +10,7 @@ import Crystals from './_components/Crystals';
 import ShopPacks from './_components/Packs';
 import ShopDecks from './_components/Decks';
 import Bundles from './_components/Bundles';
+import { cn } from '@/lib/utils';
 
 const Settings = () => {
   const activeSidebar = useSideBar();
@@ -38,16 +39,40 @@ const Settings = () => {
     <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px)] flex flex-col items-center justify-center'>
       <h1 className='text-6xl'>Welcome to the Shop!</h1>
       <div className='flex gap-8 cursor-pointer text-2xl'>
-        <p className='hover:scale-110 select-none' onClick={PackPanel}>
+        <p
+          className={cn(
+            'hover:scale-110 select-none',
+            shopPanel === 'Pack' && 'border-b-gray-900 border-b-[5px]'
+          )}
+          onClick={PackPanel}
+        >
           Packs
         </p>
-        <p className='hover:scale-110 select-none' onClick={DeckPanel}>
+        <p
+          className={cn(
+            'hover:scale-110 select-none',
+            shopPanel === 'Deck' && 'border-b-gray-900 border-b-[5px]'
+          )}
+          onClick={DeckPanel}
+        >
           Decks
         </p>
-        <p className='hover:scale-110 select-none' onClick={crystalPanel}>
+        <p
+          className={cn(
+            'hover:scale-110 select-none',
+            shopPanel === 'Crystal' && 'border-b-gray-900 border-b-[5px]'
+          )}
+          onClick={crystalPanel}
+        >
           Crystals
         </p>
-        <p className='hover:scale-110 select-none' onClick={BundlePanel}>
+        <p
+          className={cn(
+            'hover:scale-110 select-none',
+            shopPanel === 'Bundle' && 'border-b-gray-900 border-b-[5px]'
+          )}
+          onClick={BundlePanel}
+        >
           Bundles
         </p>
       </div>
