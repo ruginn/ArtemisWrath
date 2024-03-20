@@ -153,9 +153,9 @@ const Collection = () => {
   };
 
   return (
-    <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px) flex flex-col items-center sm:items-start'>
+    <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px)] flex flex-col items-center'>
       <h1 className='text-5xl'>Collection</h1>
-      <div className='flex-row'>
+      <div className='mx-[30px]'>
         <button
           onClick={allCards}
           className='border-4 border-black rounded-xl px-4 cursor-pointer'
@@ -208,7 +208,7 @@ const Collection = () => {
       {/* <button onClick={getCards}>click me</button> */}
       {loadingCards && <Loader />}
       {userCards && !filtered ? (
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10 justify-center items-center'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10'>
           {userCards.map((card) => {
             return <CardElement card={card} key={card.id} />;
           })}
@@ -217,7 +217,7 @@ const Collection = () => {
         !filterCards && <h1>no cards</h1>
       )}
       {filtered && filterCards && (
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10 justify-center items-center'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10'>
           {filterCards.map((card) => {
             return <CardElement card={card} key={card.id} />;
           })}

@@ -108,6 +108,7 @@ model Trade {
   wantedCard String?
   tradeUser String?
   offerCard String?
+  message String?
   createdAt DateTime @default(now())
   dateCompleted DateTime?
   offered TradeOffer[]
@@ -116,6 +117,7 @@ model Trade {
 model TradeOffer {
   id String @id @default(cuid()) @unique
   trade Trade @relation(fields: [tradeId], references: [id])
+  message String?
   tradeId String
   createdAt DateTime @default(now())
 }
