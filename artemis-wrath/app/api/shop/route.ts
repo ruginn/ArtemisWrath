@@ -2,34 +2,6 @@ import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { Card } from '@/types/CardType';
 
-// interface Card {
-//   id: number;
-//   name: string;
-//   description: string;
-//   randomNumber: number;
-//   image?: string;
-//   inclination?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
-//   inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
-//   effect?: string;
-//   biome?:
-//     | 'Jungle'
-//     | 'Tundra'
-//     | 'Alpine'
-//     | 'Forest'
-//     | 'Wetland'
-//     | 'Grassland'
-//     | 'Aquatic'
-//     | 'Island'
-//     | 'Cave'
-//     | 'Desert'
-//     | '';
-//   effectFunction?: string;
-//   rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
-//   type?: string;
-//   attackPower?: number;
-//   hp?: number;
-//   cost?: number;
-// }
 
 interface userInfo {
   id: string;
@@ -55,16 +27,7 @@ export async function POST(req: Request) {
   };
 
   const getCards = async () => {
-    // for (let i = 0; i < 10; i++) {
-    //   let cardCount = cardSet.length - i;
-    //   let randomNumber = Math.floor(Math.random() * (cardCount + 1));
-    //   const newCard = cardSet.splice(randomNumber, 1);
-    //   console.log(randomNumber);
-    //   console.log(cardSet[randomNumber]);
-    //   // randomCards.push(cardSet[randomNumber])
-    //   randomCards.push(newCard[0]);
-    // }
-
+ 
     const cardSet2 = await prisma.card.findMany({
       where: {
         setId: 'fjkdsl',
@@ -73,7 +36,6 @@ export async function POST(req: Request) {
     console.log('below is cardset2');
     console.log(cardSet2);
 
-    // need to fix null from inclination 2
 
     // Maybe i should just filter out different rarities first then while loop
     const CommonCards = cardSet2.filter((card) => card.rarity === 'Common');
