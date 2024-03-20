@@ -20,6 +20,8 @@ model User {
   starterDeck  Boolean   @default(false)
   crystals Int? @default(500)
   cards PlayerCard[]
+  trades Trade[] @relation("TradePoster")
+  offers TradeOffer[] @relation("TradeOfferUser")
 }
 
 model Jefftron {
@@ -89,6 +91,7 @@ model PlayerCard {
   createdAt    DateTime  @default(now())
   userId String
   user User @relation(fields: [userId], references: [id])
+  trade Trade[] @relation("TradeCard")
 }
 
 model Set {
@@ -100,9 +103,10 @@ model Set {
 model Trade {
   id String @id @default(cuid()) @unique
   completed Boolean @default(false)
-  // userID
-  postUser String 
-  // CardID ==> from set
+  poster User @relation("TradePoster", fields: [userId], references: [id])
+  userId String 
+  playerCard PlayerCard @relation("TradeCard", fields:[cardId], references: [id])
+  cardId String
   postCard String?
   // 
   wantedCard String?
@@ -116,8 +120,10 @@ model Trade {
 
 model TradeOffer {
   id String @id @default(cuid()) @unique
-  trade Trade @relation(fields: [tradeId], references: [id])
-  message String?
   tradeId String
+  trade Trade @relation(fields: [tradeId], references: [id])
+  poster User @relation("TradeOfferUser", fields: [userId], references: [id])
+  userId String
+  message String?
   createdAt DateTime @default(now())
 }
