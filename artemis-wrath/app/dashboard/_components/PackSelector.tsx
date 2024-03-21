@@ -60,7 +60,7 @@ const PackSelector: FC<Date> = (props) => {
     } else {
       setGetCards(false);
       gatheredCards.setCollected(false);
-      setLoadingCards(true);
+      setLoadingCards(false);
     }
   };
 
