@@ -24,12 +24,6 @@ model User {
   offers TradeOffer[] @relation("TradeOfferUser")
 }
 
-model Jefftron {
-  id String @unique
-  name String?
-  test Int?
-}
-
 
 enum Rarity {
   Common
