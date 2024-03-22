@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useSideBar } from '@/hooks/use-sidebar';
 
-const Guild = () => {
+const House = () => {
   const activeSidebar = useSideBar();
 
   useEffect(() => {
@@ -11,9 +11,9 @@ const Guild = () => {
   }, []);
   return (
     <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px)]'>
-      <h1>Guild</h1>
+      <h1>House</h1>
     </div>
   );
 };
 
-export default Guild;
+export default House;

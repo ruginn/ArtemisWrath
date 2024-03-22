@@ -53,7 +53,6 @@ const SideBar = () => {
     let handler = (e: any) => {
       if (!sideBarRef.current.contains(e.target) && e.clientY > 60) {
         activeSidebar.toggleMobileClose();
-        console.log('clicked outside');
       }
     };
 
@@ -211,9 +210,9 @@ const SideBar = () => {
         </div>
       </Link>
       <Link
-        href={'/dashboard/guild'}
+        href={'/dashboard/house'}
         onClick={() => {
-          clickSideTab('guild');
+          clickSideTab('house');
         }}
       >
         <div
@@ -224,7 +223,7 @@ const SideBar = () => {
         >
           <Shield className='lg:mr-2' />
           <h3 className='text-[18px] ml-3 sm:ml-0 sm:text-[12px] lg:ml-3 lg:text-[18px]'>
-            Guild
+            House
           </h3>
         </div>
       </Link>
