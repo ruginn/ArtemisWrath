@@ -3,9 +3,11 @@ import mediumChest from '@/public/Images/crystalChests/mediumChest.png';
 import largeChest from '@/public/Images/crystalChests/largeChest.png';
 import Image from 'next/image';
 import { useUser } from '@clerk/nextjs';
+import { useCrystalModal } from '@/hooks/use-crystalModal';
 
 const Crystals = () => {
   const { user } = useUser();
+  const crystalModal = useCrystalModal();
 
   const getCrystals = async (crystals: number) => {
     const userData = {
@@ -22,7 +24,9 @@ const Crystals = () => {
       },
       cache: 'no-cache',
     });
-    const resultString = await res.json();
+    const resultString = await res.json().then(() => {
+      crystalModal.onOpen();
+    });
     console.log(resultString);
   };
 

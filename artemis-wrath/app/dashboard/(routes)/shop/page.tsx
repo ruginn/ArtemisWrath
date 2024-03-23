@@ -11,6 +11,7 @@ import ShopPacks from './_components/Packs';
 import ShopDecks from './_components/Decks';
 import Bundles from './_components/Bundles';
 import { cn } from '@/lib/utils';
+import CrystalModal from '@/app/components/CrystalModal';
 
 const Settings = () => {
   const activeSidebar = useSideBar();
@@ -80,6 +81,7 @@ const Settings = () => {
       {shopPanel === 'Pack' && <ShopPacks />}
       {shopPanel === 'Bundle' && <Bundles />}
       {shopPanel === 'Deck' && <ShopDecks />}
+      <CrystalModal />
     </div>
   );
 };
