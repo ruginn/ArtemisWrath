@@ -32,14 +32,17 @@ const Crystals = () => {
 
   const getSmallChest = () => {
     getCrystals(500);
+    crystalModal.setCrystalAmount(500);
   };
 
   const getMediumChest = () => {
     getCrystals(1200);
+    crystalModal.setCrystalAmount(1200);
   };
 
   const getLargeChest = () => {
     getCrystals(2500);
+    crystalModal.setCrystalAmount(2500);
   };
 
   return (
