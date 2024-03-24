@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { SignInButton, UserButton, SignedIn, SignedOut } from '@clerk/nextjs';
 import { Menu } from 'lucide-react';
 import { useSideBar } from '@/hooks/use-sidebar';
+import Link from 'next/link';
 
 const NavBar = () => {
   const sidebar = useSideBar();
@@ -30,12 +31,14 @@ const NavBar = () => {
             className='sm:hidden text-amber-400 w-8 h-8 mr-3 cursor-pointer'
           />
         </SignedIn>
-        <Image src={Logo} alt='Logo' className='w-14 h-14 sm:w-16 sm:h-16' />
-        <Image
-          src={WordLogo}
-          alt="Artemis' Wrath"
-          className='h-8 w-56 ml-1 sm:h-10 sm:w-64 sm:ml-3'
-        />
+        <Link href={'/dashboard'} className='flex items-center'>
+          <Image src={Logo} alt='Logo' className='w-14 h-14 sm:w-16 sm:h-16' />
+          <Image
+            src={WordLogo}
+            alt="Artemis' Wrath"
+            className='h-8 w-56 ml-1 sm:h-10 sm:w-64 sm:ml-3'
+          />
+        </Link>
         {/* <h1 className="text-white ml-2">Artemis&apos; Wrath</h1> */}
       </div>
       <div>

@@ -6,10 +6,10 @@ import smallChest from '@/public/Images/crystalChests/smallChest.png';
 import mediumChest from '@/public/Images/crystalChests/mediumChest.png';
 import largeChest from '@/public/Images/crystalChests/largeChest.png';
 import Image from 'next/image';
-import Crystals from './_components/Crystals';
-import ShopPacks from './_components/Packs';
-import ShopDecks from './_components/Decks';
-import Bundles from './_components/Bundles';
+import Crystals from './_views/Crystals';
+import ShopPacks from './_views/Packs';
+import ShopDecks from './_views/Decks';
+import Bundles from './_views/Bundles';
 import { cn } from '@/lib/utils';
 import CrystalModal from '@/app/components/CrystalModal';
 

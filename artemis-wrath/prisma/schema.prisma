@@ -20,6 +20,7 @@ model User {
   lastPackDate DateTime?
   starterDeck  Boolean   @default(false)
   crystals Int? @default(500)
+  isAdmin Boolean @default(false)
   cards PlayerCard[]
   trades Trade[] @relation("TradePoster")
   offers TradeOffer[] @relation("TradeOfferUser")

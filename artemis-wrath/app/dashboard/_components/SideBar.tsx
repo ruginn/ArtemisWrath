@@ -157,7 +157,7 @@ const SideBar = () => {
         </div>
       </Link>
       <Link
-        href={'/dashboard/exploresets'}
+        href={'/dashboard/explorecards'}
         onClick={() => {
           clickSideTab('explore');
         }}
@@ -170,7 +170,7 @@ const SideBar = () => {
         >
           <Globe className='lg:mr-2' />
           <h3 className='text-[18px] ml-3 sm:ml-0 sm:text-[12px] lg:ml-3 lg:text-[18px]'>
-            Explore Sets
+            Explore Cards
           </h3>
         </div>
       </Link>
