@@ -13,7 +13,7 @@ import {
   Store,
 } from 'lucide-react';
 import Link from 'next/link';
-import { useEffect, useState, useRef, MutableRefObject } from 'react';
+import { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { useUser } from '@clerk/nextjs';
 import { useUserInfo } from '@/hooks/use-userInfo';

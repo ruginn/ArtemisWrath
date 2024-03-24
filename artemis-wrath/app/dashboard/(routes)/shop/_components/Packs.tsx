@@ -8,8 +8,8 @@ const ShopPacks = () => {
   return (
     <div className='flex flex-col justify-center items-center'>
       <h1>Shop Packs</h1>
-      <div className='flex flex-col md:flex-row gap-4 w-full justify-center items-center my-8'>
-        <div className='flex flex-col bg-gray-300 p-6 rounded-lg hover:scale-105 cursor-pointer'>
+      <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 w-full justify-center items-center my-8'>
+        <div className='flex flex-col bg-gray-900 p-6 rounded-lg hover:scale-105 cursor-pointer text-amber-400'>
           <Image
             src={AwSet1}
             alt='Medieval Creatures'
@@ -20,7 +20,7 @@ const ShopPacks = () => {
           <h3 className='text-l'>Medieval Creatures</h3>
           <p>100 Crystals</p>
         </div>
-        <div className='flex flex-col bg-gray-300 p-6 rounded-lg hover:scale-105 cursor-pointer'>
+        <div className='flex flex-col bg-gray-900 p-6 rounded-lg hover:scale-105 cursor-pointern text-amber-400'>
           <Image
             src={AwSet2}
             alt='Bushido Blades'
@@ -31,7 +31,7 @@ const ShopPacks = () => {
           <h3 className='text-l'>Bushido Blades</h3>
           <p>100 Crystals</p>
         </div>
-        <div className='flex flex-col bg-gray-300 p-6 rounded-lg hover:scale-105 cursor-pointer'>
+        <div className='flex flex-col bg-gray-900 p-6 rounded-lg hover:scale-105 cursor-pointer text-amber-400'>
           <Image
             src={AwSet3}
             alt='Desert Past'
