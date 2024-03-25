@@ -45,6 +45,20 @@ enum Inclination {
   Neutral
 }
 
+
+enum Biomoe {
+    Jungle
+    Tundra
+    Alpine
+    Forest
+    Wetland
+    Grassland
+    Aquatic
+    Island
+    Cave
+    Desert
+}
+
 model Card {
   id String @unique
   name String?

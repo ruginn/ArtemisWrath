@@ -22,6 +22,7 @@ export interface Card {
     | null
     | string;
   effect?: string | null;
+  // need to remove or string
   biome?:
     | 'Jungle'
     | 'Tundra'
@@ -34,16 +35,19 @@ export interface Card {
     | 'Cave'
     | 'Desert'
     | ''
-    | null;
+    | null
+    | string;
   effectFunction?: string | null;
   rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
+  // need to remove or string
   type?:
     | 'creature'
     | 'Immortal'
     | 'Divine Intervention'
     | 'Relic'
     | 'Nectar'
-    | null;
+    | null
+    | string;
   attackPower?: number | null;
   hp?: number | null;
   cost?: number | null;
