@@ -34,8 +34,7 @@ export interface Card {
     | 'Cave'
     | 'Desert'
     | ''
-    | null
-    | string;
+    | null;
   effectFunction?: string | null;
   rarity: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
   type?:
@@ -44,8 +43,7 @@ export interface Card {
     | 'Divine Intervention'
     | 'Relic'
     | 'Nectar'
-    | null
-    | string;
+    | null;
   attackPower?: number | null;
   hp?: number | null;
   cost?: number | null;
