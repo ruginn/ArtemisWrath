@@ -48,6 +48,29 @@ const Collection = () => {
     setFiltered(false);
   };
 
+  const multipleCards = (list: PlayerCard[] | undefined) => {
+    console.log(list);
+    if (list) {
+      const cardQty: PlayerCard[] = [];
+      list.map((card: PlayerCard) => {
+        if (cardQty[cardQty.length - 1]?.name === card.name) {
+          // const popped = cardQty.pop();
+          const arrayLength = cardQty.length - 1;
+          if (cardQty[cardQty.length - 1].qty) {
+            cardQty[arrayLength].qty = Number(cardQty[arrayLength].qty) + 1;
+            console.log('it was true');
+          }
+        } else {
+          cardQty.push({
+            ...card,
+            qty: 1,
+          });
+        }
+      });
+      console.log(cardQty);
+    }
+  };
+
   const loveFilter = () => {
     const loveCards = userCards?.filter((card) => card.inclination === 'Love');
     const inclination2 = userCards?.filter(
@@ -58,9 +81,11 @@ const Collection = () => {
       const allLoveCards = loveCards?.concat(inclination2);
       allLoveCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
       setFilterCards(allLoveCards);
+      multipleCards(allLoveCards);
     } else {
       loveCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
       setFilterCards(loveCards);
+      multipleCards(loveCards);
     }
     setFiltered(true);
   };

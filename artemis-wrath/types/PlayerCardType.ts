@@ -53,4 +53,5 @@ export interface PlayerCard {
   set?: string | null;
   setId?: string | null;
   createdAt: Date;
+  qty?: number;
 }
