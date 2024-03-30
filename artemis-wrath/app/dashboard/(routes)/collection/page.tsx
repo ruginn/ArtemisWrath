@@ -182,7 +182,7 @@ const Collection = () => {
   return (
     <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px)] flex flex-col items-center'>
       <h1 className='text-5xl'>Collection</h1>
-      <div className='mx-[30px]'>
+      <div className='mx-[30px] w-screen flex justify-center items-center flex-wrap'>
         <button
           onClick={allCards}
           className='border-4 border-black rounded-xl px-4 cursor-pointer'
