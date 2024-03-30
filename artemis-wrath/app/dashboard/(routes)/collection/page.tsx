@@ -6,6 +6,7 @@ import { PlayerCard } from '@/types/PlayerCardType';
 import CardElement from '@/app/components/Card';
 import CardDetailModal from '@/app/components/CardDetailModal';
 import Loader from '../../_components/Loader';
+import StackCard from '@/app/components/StackCard';
 
 const Collection = () => {
   const activeSidebar = useSideBar();
@@ -68,6 +69,7 @@ const Collection = () => {
         }
       });
       console.log(cardQty);
+      setFilterCards(cardQty);
     }
   };
 
@@ -80,11 +82,11 @@ const Collection = () => {
     if (inclination2) {
       const allLoveCards = loveCards?.concat(inclination2);
       allLoveCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
-      setFilterCards(allLoveCards);
+      // setFilterCards(allLoveCards);
       multipleCards(allLoveCards);
     } else {
       loveCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
-      setFilterCards(loveCards);
+      // setFilterCards(loveCards);
       multipleCards(loveCards);
     }
     setFiltered(true);
@@ -100,10 +102,10 @@ const Collection = () => {
     if (inclination2) {
       const allWisdomCards = wisdomCards?.concat(inclination2);
       allWisdomCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
-      setFilterCards(allWisdomCards);
+      multipleCards(allWisdomCards);
     } else {
       wisdomCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
-      setFilterCards(wisdomCards);
+      multipleCards(wisdomCards);
     }
     setFiltered(true);
   };
@@ -118,10 +120,10 @@ const Collection = () => {
     if (inclination2) {
       const allWrathCards = wrathCards?.concat(inclination2);
       allWrathCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
-      setFilterCards(allWrathCards);
+      multipleCards(allWrathCards);
     } else {
       wrathCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
-      setFilterCards(wrathCards);
+      multipleCards(wrathCards);
     }
     setFiltered(true);
   };
@@ -136,10 +138,10 @@ const Collection = () => {
     if (inclination2) {
       const allMischiefCards = mischiefCards?.concat(inclination2);
       allMischiefCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
-      setFilterCards(allMischiefCards);
+      multipleCards(allMischiefCards);
     } else {
       mischiefCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
-      setFilterCards(mischiefCards);
+      multipleCards(mischiefCards);
     }
     setFiltered(true);
   };
@@ -154,10 +156,10 @@ const Collection = () => {
     if (inclination2) {
       const allPrideCards = prideCards?.concat(inclination2);
       allPrideCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
-      setFilterCards(allPrideCards);
+      multipleCards(allPrideCards);
     } else {
       prideCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
-      setFilterCards(prideCards);
+      multipleCards(prideCards);
     }
     setFiltered(true);
   };
@@ -167,13 +169,13 @@ const Collection = () => {
       (card) => card.type === 'Divine Intervention'
     );
     DICards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
-    setFilterCards(DICards);
+    multipleCards(DICards);
     setFiltered(true);
   };
   const relicFilter = () => {
     const relicCards = userCards?.filter((card) => card.type === 'Relic');
     relicCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
-    setFilterCards(relicCards);
+    multipleCards(relicCards);
     setFiltered(true);
   };
 
@@ -189,43 +191,43 @@ const Collection = () => {
         </button>
         <button
           onClick={loveFilter}
-          className='border-4 border-black rounded-xl px-4 cursor-pointer'
+          className='text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl from-[#f58a87] via-[#B3989F] to-[#f58a87]'
         >
           Love
         </button>
         <button
           onClick={WisdomFilter}
-          className='border-4 border-black rounded-xl px-4 cursor-pointer'
+          className='text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl via-[#5876b2] from-blue-800 to-cyan-900'
         >
           Wisdom
         </button>
         <button
           onClick={WrathFilter}
-          className='border-4 border-black rounded-xl px-4 cursor-pointer'
+          className='text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl to-[#814242] via-red-800 from-[#75352F]'
         >
           Wrath
         </button>
         <button
           onClick={MischiefFilter}
-          className='border-4 border-black rounded-xl px-4 cursor-pointer'
+          className='text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl via-[#3f392c] to-gray-700 from-slate-600'
         >
           Mischief
         </button>
         <button
           onClick={PrideFilter}
-          className='border-4 border-black rounded-xl px-4 cursor-pointer'
+          className='text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl from-amber-600 to-[#e0c05e]'
         >
           Pride
         </button>
         <button
           onClick={DivineInterventionFilter}
-          className='border-4 border-black rounded-xl px-4 cursor-pointer'
+          className=' text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl from-[#8d6f57] to-[#7a5135] via-[#654729]'
         >
           Divine Interventions
         </button>
         <button
           onClick={relicFilter}
-          className='border-4 border-black rounded-xl px-4 cursor-pointer'
+          className='text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl from-[#515031] to-[#929876] via-[#879464]'
         >
           Relic
         </button>
@@ -244,7 +246,8 @@ const Collection = () => {
       {filtered && filterCards && (
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10'>
           {filterCards.map((card) => {
-            return <CardElement card={card} key={card.id} />;
+            // return <CardElement card={card} key={card.id} />;
+            return <StackCard card={card} key={card.id} />;
           })}
         </div>
       )}
