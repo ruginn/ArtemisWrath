@@ -3482,7 +3482,7 @@ export async function GET(req: Request) {
 
   // const Set = await prisma.set.findUnique({
   //   where: {
-  //     id: 'fjkdsl',
+  //     id: '810fa548-ccf0-4f17-94c9-e33c1d9982f6',
   //   },
   // });
 
@@ -3491,7 +3491,7 @@ export async function GET(req: Request) {
   //     console.log(cardSet[i]);
   //     const currentCard = await prisma.card.create({
   //       data: {
-  //         id: (i + 1).toString(),
+  //         cardSetId: (i + 1).toString(),
   //         name: cardSet[i].name,
   //         description: cardSet[i].description,
   //         randomNumber: cardSet[i].randomNumber,
@@ -3517,8 +3517,8 @@ export async function GET(req: Request) {
 
   // const Set = await prisma.set.create({
   //   data: {
-  //     id: 'fjkdsl',
   //     name: 'Medieval Creatures',
+  //     miniName: 'MC',
   //   },
   // });
   // const currentCard = await prisma.card.create({
@@ -3548,5 +3548,6 @@ export async function GET(req: Request) {
   //     userId: 'user_2ZNAek97R9bBh0ysJySmBoRVfl9',
   //   },
   // });
+
   return NextResponse.json(cardSet);
 }

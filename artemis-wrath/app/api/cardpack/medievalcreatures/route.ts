@@ -3459,7 +3459,7 @@ export async function POST(req: Request) {
 
     const cardSet2 = await prisma.card.findMany({
       where: {
-        setId: 'fjkdsl',
+        setId: '810fa548-ccf0-4f17-94c9-e33c1d9982f6',
       },
     });
     console.log('below is cardset2');

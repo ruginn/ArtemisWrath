@@ -1,5 +1,6 @@
 export interface Card {
   id: number | string;
+  cardSetId?: string;
   name: string | null;
   description?: string | null;
   randomNumber?: number | null;

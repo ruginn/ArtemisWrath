@@ -5,35 +5,6 @@ import CardDetailModal from './CardDetailModal';
 import { useCardSet } from '@/hooks/use-cardSets';
 import { Card } from '@/types/CardType';
 
-// interface Card {
-//   id: number;
-//   name: string;
-//   description: string;
-//   randomNumber: number;
-//   image?: string;
-//   inclination: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
-//   inclination2?: 'Love' | 'Wisdom' | 'Wrath' | 'Pride' | 'Mischief';
-//   effect?: string;
-//   biome?:
-//     | 'Jungle'
-//     | 'Tundra'
-//     | 'Alpine'
-//     | 'Forest'
-//     | 'Wetland'
-//     | 'Grassland'
-//     | 'Aquatic'
-//     | 'Island'
-//     | 'Cave'
-//     | 'Desert'
-//     | '';
-//   effectFunction?: string;
-//   rarity?: 'Common' | 'Uncommon' | 'Rare' | 'SuperRare' | 'Nectar';
-//   type?: string;
-//   attackPower?: number;
-//   hp?: number;
-//   cost?: number;
-// }
-
 const CardElement = ({ card }: { card: Card }) => {
   const CardModal = useCardModal();
 
@@ -227,7 +198,7 @@ const CardElement = ({ card }: { card: Card }) => {
       {card.type === 'creature' && (
         <div className='flex flex-row w-full justify-between items-center'>
           <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
-            MC-{card.id}/167
+            NR-{card.id}/16
           </p>
           <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
             {card.rarity?.split('')[0]}
@@ -237,7 +208,7 @@ const CardElement = ({ card }: { card: Card }) => {
       {card.type === 'Immortal' && (
         <div className='flex flex-row w-full justify-between items-center'>
           <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
-            MC-{card.id}/167
+            NR-{card.id}/16
           </p>
           <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
             {card.rarity?.split('')[0]}
@@ -247,7 +218,7 @@ const CardElement = ({ card }: { card: Card }) => {
       {card.type === 'Divine Intervention' && (
         <div className='flex flex-row w-full justify-between items-center'>
           <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
-            MC-{card.id}/167
+            NR-{card.id}/16
           </p>
           <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
             {card.rarity?.split('')[0]}
@@ -257,7 +228,7 @@ const CardElement = ({ card }: { card: Card }) => {
       {card.type === 'Relic' && (
         <div className='flex flex-row w-full justify-between items-center'>
           <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
-            MC-{card.id}/167
+            NR-{card.id}/16
           </p>
           <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
             {card.rarity?.split('')[0]}
@@ -290,7 +261,7 @@ const CardElement = ({ card }: { card: Card }) => {
       {card.type === 'Nectar' && (
         <div className='flex flex-row w-full justify-between items-center'>
           <p className='leading-none ml-1 text-[8px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)] font-sans'>
-            MC-{card.id}/167
+            NR-{card.id}/16
           </p>
           <p className='leading-none mr-1 text-[10px] font-bold  text-black drop-shadow-[1.2px_1.2px_1.2px_rgba(255,255,255,0.8)]'>
             {card.rarity?.split('')[0]}

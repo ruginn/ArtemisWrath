@@ -2,10 +2,13 @@
 import { useUser } from '@clerk/nextjs';
 import { useEffect, useState } from 'react';
 import { useUserInfo } from '@/hooks/use-userInfo';
+import StarterDeckModal from '../components/StarterDeckModal';
+import { useStarterDeck } from '@/hooks/use-starterDeck';
 
 const Dashboard = () => {
   const { user } = useUser();
   const userInfo = useUserInfo();
+  const starterDeck = useStarterDeck();
 
   // const userLogin = async () => {
   //     const userData = {
@@ -31,9 +34,16 @@ const Dashboard = () => {
   //     }
   // },[user])
 
+  useEffect(() => {
+    if (!userInfo.starterDeck) {
+      starterDeck.onOpen();
+    }
+  }, []);
+
   return (
     <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px)] flex flex-col items-center'>
       <h1 className='text-7xl'>Welcome {userInfo?.name.split(' ')[0]}!</h1>
+      {!userInfo.starterDeck && <StarterDeckModal />}
     </div>
   );
 };

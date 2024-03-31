@@ -60,7 +60,8 @@ enum Biomoe {
 }
 
 model Card {
-  id String @unique
+  id String @default(uuid()) @unique
+  cardSetId String 
   name String?
   description String?
   randomNumber Int?
@@ -105,8 +106,9 @@ model PlayerCard {
 }
 
 model Set {
-  id String @unique
+  id String @default(uuid()) @unique
   name String
+  miniName String
   cards Card[]
 }
 
