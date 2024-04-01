@@ -24,7 +24,7 @@ const StarterDeckModal = () => {
         <DialogHeader>
           <DialogTitle>Choose a starter deck!</DialogTitle>
           <DialogDescription>
-            <p>Seem like you haven't choosen a starter deck.</p>
+            <p>Seem like you haven&apos;t choosen a starter deck.</p>
           </DialogDescription>
         </DialogHeader>
       </DialogContent>
