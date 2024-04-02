@@ -6,9 +6,10 @@ import StarterDeckModal from '../components/StarterDeckModal';
 import { useStarterDeck } from '@/hooks/use-starterDeck';
 
 const Dashboard = () => {
-  const { user } = useUser();
+  const { user, isLoaded } = useUser();
   const userInfo = useUserInfo();
   const starterDeck = useStarterDeck();
+  const [collectedSD, setCollectedSD] = useState<boolean>(true);
 
   // const userLogin = async () => {
   //     const userData = {
@@ -35,15 +36,21 @@ const Dashboard = () => {
   // },[user])
 
   useEffect(() => {
-    if (!userInfo.starterDeck) {
+    console.log(isLoaded, userInfo.starterDeck);
+    if (userInfo.starterDeck) {
+      ('it is false');
+      setCollectedSD(false);
+    }
+    if (!collectedSD) {
+      console.log('it is true');
       starterDeck.onOpen();
     }
-  }, []);
+  }, [userInfo]);
 
   return (
     <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px)] flex flex-col items-center'>
       <h1 className='text-7xl'>Welcome {userInfo?.name.split(' ')[0]}!</h1>
-      {!userInfo.starterDeck && <StarterDeckModal />}
+      {!collectedSD && <StarterDeckModal />}
     </div>
   );
 };

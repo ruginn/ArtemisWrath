@@ -142,6 +142,7 @@ const Collection = () => {
     } else {
       mischiefCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
       multipleCards(mischiefCards);
+      console.log(mischiefCards);
     }
     setFiltered(true);
   };
