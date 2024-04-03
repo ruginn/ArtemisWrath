@@ -183,52 +183,52 @@ const Collection = () => {
   return (
     <div className='w-screen sm:w-[calc(100vw-96px)] lg:w-[calc(100vw-256px)] flex flex-col items-center'>
       <h1 className='text-5xl'>Collection</h1>
-      <div className='mx-[30px] w-screen flex justify-center items-center flex-wrap'>
+      <div className='mx-8 md:mx-24 w-screen md:w-[80vw] flex justify-center items-center flex-wrap gap-2'>
         <button
           onClick={allCards}
-          className='border-4 border-black rounded-xl px-4 cursor-pointer'
+          className='border-2 border-black rounded-xl px-4 cursor-pointer'
         >
           All Cards
         </button>
         <button
           onClick={loveFilter}
-          className='text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl from-[#f58a87] via-[#B3989F] to-[#f58a87]'
+          className='text-white border-2 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl from-[#f58a87] via-[#B3989F] to-[#f58a87]'
         >
           Love
         </button>
         <button
           onClick={WisdomFilter}
-          className='text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl via-[#5876b2] from-blue-800 to-cyan-900'
+          className='text-white border-2 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl via-[#5876b2] from-blue-800 to-cyan-900'
         >
           Wisdom
         </button>
         <button
           onClick={WrathFilter}
-          className='text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl to-[#814242] via-red-800 from-[#75352F]'
+          className='text-white border-2 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl to-[#814242] via-red-800 from-[#75352F]'
         >
           Wrath
         </button>
         <button
           onClick={MischiefFilter}
-          className='text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl via-[#3f392c] to-gray-700 from-slate-600'
+          className='text-white border-2 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl via-[#3f392c] to-gray-700 from-slate-600'
         >
           Mischief
         </button>
         <button
           onClick={PrideFilter}
-          className='text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl from-amber-600 to-[#e0c05e]'
+          className='text-white border-2 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl from-amber-600 to-[#e0c05e]'
         >
           Pride
         </button>
         <button
           onClick={DivineInterventionFilter}
-          className=' text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl from-[#8d6f57] to-[#7a5135] via-[#654729]'
+          className=' text-white border-2 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl from-[#8d6f57] to-[#7a5135] via-[#654729]'
         >
           Divine Interventions
         </button>
         <button
           onClick={relicFilter}
-          className='text-white border-4 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl from-[#515031] to-[#929876] via-[#879464]'
+          className='text-white border-2 border-black rounded-xl px-4 cursor-pointer bg-gradient-to-bl from-[#515031] to-[#929876] via-[#879464]'
         >
           Relic
         </button>
