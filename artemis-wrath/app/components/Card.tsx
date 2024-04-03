@@ -4,6 +4,7 @@ import { useCardModal } from '@/hooks/use-cardModal';
 import CardDetailModal from './CardDetailModal';
 import { useCardSet } from '@/hooks/use-cardSets';
 import { Card } from '@/types/CardType';
+import { motion } from 'framer-motion';
 
 const CardElement = ({ card }: { card: Card }) => {
   const CardModal = useCardModal();
@@ -19,14 +20,21 @@ const CardElement = ({ card }: { card: Card }) => {
 
   if (card.tinyImage) {
     return (
-      <Image
-        src={card.tinyImage}
-        height={400.5}
-        width={288}
-        alt={card.name ? card.name : 'card'}
-        className='object-contain cursor-pointer'
-        onClick={onOpenModal}
-      ></Image>
+      <motion.div
+        whileHover={{
+          translateY: -8,
+          transition: { duration: 0.1 },
+        }}
+      >
+        <Image
+          src={card.tinyImage}
+          height={400.5}
+          width={288}
+          alt={card.name ? card.name : 'card'}
+          className='object-contain cursor-pointer'
+          onClick={onOpenModal}
+        ></Image>
+      </motion.div>
     );
   }
 
