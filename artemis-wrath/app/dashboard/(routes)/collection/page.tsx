@@ -81,11 +81,13 @@ const Collection = () => {
 
     if (inclination2) {
       const allLoveCards = loveCards?.concat(inclination2);
-      allLoveCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      allLoveCards?.sort((a, b) =>
+        String(a.name)?.localeCompare(String(b.name))
+      );
       // setFilterCards(allLoveCards);
       multipleCards(allLoveCards);
     } else {
-      loveCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      loveCards?.sort((a, b) => String(a.name)?.localeCompare(String(b.name)));
       // setFilterCards(loveCards);
       multipleCards(loveCards);
     }
@@ -101,10 +103,15 @@ const Collection = () => {
     );
     if (inclination2) {
       const allWisdomCards = wisdomCards?.concat(inclination2);
-      allWisdomCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      // allWisdomCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      allWisdomCards?.sort((a, b) =>
+        String(a.name)?.localeCompare(String(b.name))
+      );
       multipleCards(allWisdomCards);
     } else {
-      wisdomCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      wisdomCards?.sort((a, b) =>
+        String(a.name)?.localeCompare(String(b.name))
+      );
       multipleCards(wisdomCards);
     }
     setFiltered(true);
@@ -119,10 +126,12 @@ const Collection = () => {
     );
     if (inclination2) {
       const allWrathCards = wrathCards?.concat(inclination2);
-      allWrathCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      allWrathCards?.sort((a, b) =>
+        String(a.name)?.localeCompare(String(b.name))
+      );
       multipleCards(allWrathCards);
     } else {
-      wrathCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      wrathCards?.sort((a, b) => String(a.name)?.localeCompare(String(b.name)));
       multipleCards(wrathCards);
     }
     setFiltered(true);
@@ -137,10 +146,14 @@ const Collection = () => {
     );
     if (inclination2) {
       const allMischiefCards = mischiefCards?.concat(inclination2);
-      allMischiefCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      allMischiefCards?.sort((a, b) =>
+        String(a.name)?.localeCompare(String(b.name))
+      );
       multipleCards(allMischiefCards);
     } else {
-      mischiefCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      mischiefCards?.sort((a, b) =>
+        String(a.name)?.localeCompare(String(b.name))
+      );
       multipleCards(mischiefCards);
       console.log(mischiefCards);
     }
@@ -156,10 +169,12 @@ const Collection = () => {
     );
     if (inclination2) {
       const allPrideCards = prideCards?.concat(inclination2);
-      allPrideCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      allPrideCards?.sort((a, b) =>
+        String(a.name)?.localeCompare(String(b.name))
+      );
       multipleCards(allPrideCards);
     } else {
-      prideCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+      prideCards?.sort((a, b) => String(a.name)?.localeCompare(String(b.name)));
       multipleCards(prideCards);
     }
     setFiltered(true);
@@ -169,13 +184,13 @@ const Collection = () => {
     const DICards = userCards?.filter(
       (card) => card.type === 'Divine Intervention'
     );
-    DICards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+    DICards?.sort((a, b) => String(a.name)?.localeCompare(String(b.name)));
     multipleCards(DICards);
     setFiltered(true);
   };
   const relicFilter = () => {
     const relicCards = userCards?.filter((card) => card.type === 'Relic');
-    relicCards?.sort((a, b) => Number(a.cardId) - Number(b.cardId));
+    relicCards?.sort((a, b) => String(a.name)?.localeCompare(String(b.name)));
     multipleCards(relicCards);
     setFiltered(true);
   };

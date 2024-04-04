@@ -10,6 +10,7 @@ import {
 import { useCardModal } from '@/hooks/use-cardModal';
 import { useCardSet } from '@/hooks/use-cardSets';
 import Image from 'next/image';
+import LoadingGif from '@/public/Images/loadingGif.gif';
 
 const CardDetailModal = () => {
   const cardModal = useCardModal();
