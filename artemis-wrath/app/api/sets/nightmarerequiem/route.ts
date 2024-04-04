@@ -25,16 +25,16 @@ const cardSet: Card[] = [
   },
   {
     id: 2,
-    name: 'Shadow Wyvern',
+    name: 'Abyssal Drake',
     description:
-      'A wyvern with wings cloaked in darkness, gliding silently through the twilight of a medieval canyon, its piercing gaze striking fear into the hearts of adventurers.',
+      "Slumbering in the depths of the cosmic abyss, the abyssal drake's scales absorb the darkness of the void, its ancient presence shrouded in mystery as it emerges from the shadows to traverse the infinite depths of space and time,",
     randomNumber: 321,
     image:
       'https://i.ibb.co/NrnrLzn/Shadow-Wyvern-Picture-a-shadow-wyvern-with-wing.png',
     inclination: 'Mischief',
     effect:
       'On play, when this creature is summoned by creature drain, your opponent must send the top card of their deck to their Hell.',
-    biome: 'Alpine',
+    biome: 'Cave',
     rarity: 'SuperRare',
     type: 'creature',
     effectFunction: '',
