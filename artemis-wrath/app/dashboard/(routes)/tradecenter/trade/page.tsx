@@ -24,9 +24,9 @@ const Trade = () => {
     return (
       <div>
         <h1>Which card(s) are you looking for?</h1>
-        <div className='grid grid-cols-5 sm:grid-cols-6 md:grid-cols-9 lg:grid-cols-12 gap-5 m-10'>
+        <div className='h-[50vh] overflow-y-scroll grid grid-cols-5 sm:grid-cols-6 md:grid-cols-9 lg:grid-cols-12 gap-5 m-10'>
           {allCards.map((card) => {
-            return <CardElement card={card} />;
+            return <CardElement card={card} key={card.id} />;
           })}
         </div>
       </div>

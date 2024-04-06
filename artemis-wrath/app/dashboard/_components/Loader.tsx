@@ -37,11 +37,36 @@ const BarLoader = () => {
       animate='animate'
       className='flex gap-1'
     >
-      <motion.div variants={variants} className='h-24 w-8 bg-gray-400' />
-      <motion.div variants={variants} className='h-24 w-8 bg-gray-400' />
-      <motion.div variants={variants} className='h-24 w-8 bg-gray-400' />
-      <motion.div variants={variants} className='h-24 w-8 bg-gray-400' />
-      <motion.div variants={variants} className='h-24 w-8 bg-gray-400' />
+      <motion.div
+        variants={variants}
+        className='h-24 w-8 bg-gray-400 flex justify-center items-center'
+      >
+        W
+      </motion.div>
+      <motion.div
+        variants={variants}
+        className='h-24 w-8 bg-gray-400 flex justify-center items-center'
+      >
+        R
+      </motion.div>
+      <motion.div
+        variants={variants}
+        className='h-24 w-8 bg-gray-400 flex justify-center items-center'
+      >
+        A
+      </motion.div>
+      <motion.div
+        variants={variants}
+        className='h-24 w-8 bg-gray-400 flex justify-center items-center'
+      >
+        T
+      </motion.div>
+      <motion.div
+        variants={variants}
+        className='h-24 w-8 bg-gray-400 flex justify-center items-center'
+      >
+        H
+      </motion.div>
     </motion.div>
   );
 };
