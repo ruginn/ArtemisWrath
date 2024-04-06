@@ -18,7 +18,9 @@ const TradeCenter = () => {
         <Button>
           <Link href={'tradecenter/active'}>View Active Trades</Link>
         </Button>
-        <Button>Open a Trade</Button>
+        <Button>
+          <Link href={'tradecenter/trade'}>Open a Trade</Link>
+        </Button>
         <Button>
           <Link href={'tradecenter/history'}>View Trade History</Link>
         </Button>
