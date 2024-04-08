@@ -6,6 +6,7 @@ import { useUser } from '@clerk/nextjs';
 import Loader from '@/app/dashboard/_components/Loader';
 import CardDetailModal from '@/app/components/CardDetailModal';
 import CardQuantity from '../_components/CardQuantity';
+import { Button } from '@/components/ui/button';
 
 const Trade = () => {
   const [allCards, setAllCards] = useState<Card[]>([]);
@@ -148,6 +149,11 @@ const Trade = () => {
           filterYour.map((card) => {
             return <CardElement card={card} key={card.id} />;
           })}
+      </div>
+      <div className='flex flex-col'>
+        <label htmlFor='message'>Create a message</label>
+        <input type='text' className='mx-8 outline-1 border-2' id='message' />
+        <Button className='mx-8 my-3'>Create Trade</Button>
       </div>
       <CardDetailModal />
     </div>

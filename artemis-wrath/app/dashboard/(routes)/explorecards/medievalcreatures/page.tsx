@@ -7,7 +7,6 @@ import CardElement from '@/app/components/Card';
 import CardDetailModal from '@/app/components/CardDetailModal';
 import { useCardSet } from '@/hooks/use-cardSets';
 import { Card } from '@/types/CardType';
-import { Inclination } from '@prisma/client';
 
 // interface Card {
 //   id: number;
