@@ -114,8 +114,8 @@ const Trade = () => {
           !filterQueryAll &&
           allCards.map((card) => {
             return (
-              <div>
-                <CardElement card={card} key={card.id} />
+              <div key={card.id}>
+                <CardElement card={card} />
                 <CardQuantity />
               </div>
             );
@@ -123,8 +123,8 @@ const Trade = () => {
         {filterQueryAll &&
           filterAll.map((card) => {
             return (
-              <div>
-                <CardElement card={card} key={card.id} />
+              <div key={card.id}>
+                <CardElement card={card} />
                 <CardQuantity />
               </div>
             );
