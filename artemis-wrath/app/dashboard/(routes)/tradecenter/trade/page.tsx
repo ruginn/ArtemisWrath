@@ -5,6 +5,7 @@ import CardElement from '@/app/components/Card';
 import { useUser } from '@clerk/nextjs';
 import Loader from '@/app/dashboard/_components/Loader';
 import CardDetailModal from '@/app/components/CardDetailModal';
+import CardQuantity from '../_components/CardQuantity';
 
 const Trade = () => {
   const [allCards, setAllCards] = useState<Card[]>([]);
@@ -106,16 +107,26 @@ const Trade = () => {
         onChange={FilterSearch}
         id='allFilter'
       />
-      <div className='h-[50vh] overflow-y-scroll grid grid-cols-5 sm:grid-cols-6 md:grid-cols-9 lg:grid-cols-12 gap-5 m-10 border-gray-800 p-2 border-2 border-solid rounded-md justify-center '>
+      <div className='h-[50vh] overflow-y-scroll grid grid-cols-5 content-start sm:grid-cols-6 md:grid-cols-9 lg:grid-cols-12 gap-5 m-10 border-gray-800 p-2 border-2 border-solid rounded-md justify-center '>
         {loadingAllCards && <Loader />}
         {!loadingAllCards &&
           !filterQueryAll &&
           allCards.map((card) => {
-            return <CardElement card={card} key={card.id} />;
+            return (
+              <div>
+                <CardElement card={card} key={card.id} />
+                <CardQuantity />
+              </div>
+            );
           })}
         {filterQueryAll &&
           filterAll.map((card) => {
-            return <CardElement card={card} key={card.id} />;
+            return (
+              <div>
+                <CardElement card={card} key={card.id} />
+                <CardQuantity />
+              </div>
+            );
           })}
       </div>
       <label htmlFor='yourCards'>Which card(s) are you offering?</label>
@@ -126,7 +137,7 @@ const Trade = () => {
         onChange={FilterSearchYour}
         id='yourCards'
       />
-      <div className='h-[50vh] overflow-y-scroll grid grid-cols-5 sm:grid-cols-6 md:grid-cols-9 lg:grid-cols-12 gap-5 m-10 border-gray-800 p-2 border-2 border-solid rounded-md justify-center'>
+      <div className='h-[50vh] overflow-y-scroll grid content-start  grid-cols-5 sm:grid-cols-6 md:grid-cols-9 lg:grid-cols-12 gap-5 m-10 border-gray-800 p-2 border-2 border-solid rounded-md justify-center'>
         {loadingYourCards && <Loader />}
         {!loadingYourCards &&
           !filterQueryYour &&
@@ -138,7 +149,7 @@ const Trade = () => {
             return <CardElement card={card} key={card.id} />;
           })}
       </div>
-      {/* <CardDetailModal /> */}
+      <CardDetailModal />
     </div>
   );
 };
