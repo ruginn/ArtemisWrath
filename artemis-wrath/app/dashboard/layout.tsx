@@ -1,7 +1,7 @@
 'use client';
 import SideBar from './_components/SideBar';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
-import background from '@/public/Images/backgrounds/background.png';
+import background from '@/public/Images/backgrounds/background2.png';
 import Image from 'next/image';
 
 const layout = ({ children }: { children: React.ReactNode }) => {
@@ -14,13 +14,13 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       '
       >
         <QueryClientProvider client={queryClient}>
-          <div className='bg-[#181818c0] w-[100vw] h-[100vh] fixed -z-10'></div>
+          {/* <div className='bg-[#181818c0] w-[100vw] h-[100vh] fixed -z-10'></div> */}
           <Image
             src={background}
             width={1000}
             height={1000}
             alt='background'
-            className='w-[100vw] h-[100vh] object-cover fixed -z-20'
+            className='w-[100vw] h-[100vh] object-cover fixed -z-20 blur-sm'
           ></Image>
           <div className='relative'>{children}</div>
         </QueryClientProvider>
