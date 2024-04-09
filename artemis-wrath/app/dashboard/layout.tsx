@@ -15,13 +15,13 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       >
         <QueryClientProvider client={queryClient}>
           {/* <div className='bg-[#181818c0] w-[100vw] h-[100vh] fixed -z-10'></div> */}
-          <Image
+          {/* <Image
             src={background}
             width={1000}
             height={1000}
             alt='background'
             className='w-[100vw] h-[100vh] object-cover fixed -z-20 blur-sm'
-          ></Image>
+          ></Image> */}
           <div className='relative'>{children}</div>
         </QueryClientProvider>
       </div>
