@@ -41,6 +41,7 @@ const CardPackModal = () => {
   };
 
   const CollectPack = async () => {
+    setLoadingCards(true);
     const userData = {
       id: user?.id,
       firstName: user?.firstName,
@@ -81,7 +82,7 @@ const CardPackModal = () => {
               )}
             </DialogTitle>
             <DialogDescription>
-              {!collecting ? (
+              {!collecting && (
                 <div className='flex flex-row justify-evenly my-4'>
                   <Button
                     className='w-24'
@@ -101,11 +102,10 @@ const CardPackModal = () => {
                     No
                   </Button>
                 </div>
-              ) : (
-                <Loader />
               )}
+              {loadingCards && <Loader />}
               {collectedCards && (
-                <div className='flex flex-row overflow-x-scroll'>
+                <div className='grid grid-cols-4 gap-1 overflow-x-hidden'>
                   {collectedCards.map((card) => {
                     return <CardFlipElement card={card} />;
                   })}
