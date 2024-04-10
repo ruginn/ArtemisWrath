@@ -1,15 +1,20 @@
 import Image from 'next/image';
-
 import AwSet1 from '@/public/Images/Packs/AWset1.jpg';
 import AwSet2 from '@/public/Images/Packs/AWset2CS.png';
 import AwSet3 from '@/public/Images/Packs/AWset3CS.png';
-
+import { useCardPackModal } from '@/hooks/use-cardPackModal';
 const ShopPacks = () => {
+  const cardPackModal = useCardPackModal();
   return (
     <div className='flex flex-col justify-center items-center'>
       <h1>Shop Packs</h1>
       <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 w-full justify-center items-center my-8'>
-        <div className='flex flex-col bg-gray-900 p-6 rounded-lg hover:scale-105 cursor-pointer text-amber-400'>
+        <div
+          className='flex flex-col bg-gray-900 p-6 rounded-lg hover:scale-105 cursor-pointer text-amber-400'
+          onClick={() => {
+            cardPackModal.onOpen();
+          }}
+        >
           <Image
             src={AwSet1}
             alt='Medieval Creatures'

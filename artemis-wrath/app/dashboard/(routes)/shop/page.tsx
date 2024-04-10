@@ -2,16 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import { useSideBar } from '@/hooks/use-sidebar';
-import smallChest from '@/public/Images/crystalChests/smallChest.png';
-import mediumChest from '@/public/Images/crystalChests/mediumChest.png';
-import largeChest from '@/public/Images/crystalChests/largeChest.png';
-import Image from 'next/image';
 import Crystals from './_views/Crystals';
 import ShopPacks from './_views/Packs';
 import ShopDecks from './_views/Decks';
 import Bundles from './_views/Bundles';
 import { cn } from '@/lib/utils';
 import CrystalModal from '@/app/components/CrystalModal';
+import CardPackModal from '@/app/components/CardPackModal';
 
 const Settings = () => {
   const activeSidebar = useSideBar();
@@ -82,6 +79,7 @@ const Settings = () => {
       {shopPanel === 'Bundle' && <Bundles />}
       {shopPanel === 'Deck' && <ShopDecks />}
       <CrystalModal />
+      <CardPackModal />
     </div>
   );
 };

@@ -244,7 +244,7 @@ const cardSet: Card[] = [
     set: 'Realm of Time',
   },
   {
-    id: 12,
+    id: 13,
     name: "Atlas' Domain",
     description: 'Negate the summoning of a creature by creature drain.',
     randomNumber: 321,
@@ -263,7 +263,7 @@ const cardSet: Card[] = [
     set: 'Realm of Time',
   },
   {
-    id: 12,
+    id: 14,
     name: "Atlas' Hammer",
     description: 'Negate the summoning of a creature by creature drain.',
     randomNumber: 321,
@@ -282,7 +282,7 @@ const cardSet: Card[] = [
     set: 'Realm of Time',
   },
   {
-    id: 12,
+    id: 15,
     name: "Atlas' Shield",
     description: 'Negate the summoning of a creature by creature drain.',
     randomNumber: 321,
@@ -301,7 +301,7 @@ const cardSet: Card[] = [
     set: 'Realm of Time',
   },
   {
-    id: 12,
+    id: 16,
     name: "Atlas' Cloak",
     description: 'Negate the summoning of a creature by creature drain.',
     randomNumber: 321,
@@ -312,6 +312,27 @@ const cardSet: Card[] = [
     biome: '',
     rarity: 'SuperRare',
     type: 'Relic',
+    effectFunction: '',
+    attackPower: 0,
+    hp: 0,
+    cost: 2,
+    tinyImage: '',
+    set: 'Realm of Time',
+  },
+  {
+    id: 17,
+    name: 'Mixed Nectar',
+    description:
+      'You may only have 4 mixed nectar in your deck. This nectar can be used twice in one turn for Wrath or Wisdom.',
+    randomNumber: 321,
+    image:
+      'https://i.ibb.co/tXd5mz1/a-mesmerizing-3d-render-of-a-beautifully-crafted-g-lk-Otu-Xme-QLy-N6qa4x-o-E9g-hj-Km-Y467-Tf-Okio-M.png',
+    inclination: 'Wisdom',
+    inclination2: 'Wrath',
+    effect: '',
+    biome: '',
+    rarity: 'Uncommon',
+    type: 'Immortal',
     effectFunction: '',
     attackPower: 0,
     hp: 0,

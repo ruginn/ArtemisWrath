@@ -6,9 +6,12 @@ import { SignInButton, UserButton, SignedIn, SignedOut } from '@clerk/nextjs';
 import { Menu } from 'lucide-react';
 import { useSideBar } from '@/hooks/use-sidebar';
 import Link from 'next/link';
+import DragonScale from '@/public/Images/dragonScales/dragonscale.png';
+import { useUserInfo } from '@/hooks/use-userInfo';
 
 const NavBar = () => {
   const sidebar = useSideBar();
+  const userInfo = useUserInfo();
 
   const toggleSidebar = () => {
     if (sidebar.mobile === false) {
@@ -32,7 +35,7 @@ const NavBar = () => {
           />
         </SignedIn>
         <Link href={'/dashboard'} className='flex items-center'>
-          <Image src={Logo} alt='Logo' className='w-14 h-14 sm:w-16 sm:h-16' />
+          <Image src={Logo} alt='Logo' className='w-12 h-12 sm:w-16 sm:h-16' />
           <Image
             src={WordLogo}
             alt="Artemis' Wrath"
@@ -41,7 +44,11 @@ const NavBar = () => {
         </Link>
         {/* <h1 className="text-white ml-2">Artemis&apos; Wrath</h1> */}
       </div>
-      <div>
+      <div className='flex flex-row cursor-pointer'>
+        <div className='hidden sm:flex flex-row items-center justify-center mr-5 bg-gray-600 rounded-full'>
+          <Image src={DragonScale} alt='dragon scale' className='w-8 h-8' />
+          <p className='text-amber-400 text-lg mx-3'>{userInfo.crystals}</p>
+        </div>
         <button className='text-lg text-amber-400 sm:mr-5 mr-2'>
           <SignedIn>
             <UserButton afterSignOutUrl='/' />
