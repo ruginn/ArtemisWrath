@@ -72,7 +72,7 @@ const CardPackModal = () => {
   return (
     <Dialog open={CardPackModal.isOpen} onOpenChange={closeModal}>
       <>
-        <DialogContent>
+        <DialogContent className='h-[600px] overflow-y-none'>
           <DialogHeader>
             <DialogTitle>
               {!collecting ? (
@@ -105,7 +105,10 @@ const CardPackModal = () => {
               )}
               {loadingCards && <Loader />}
               {collectedCards && (
-                <div className='grid grid-cols-4 gap-1 overflow-x-hidden'>
+                <div
+                  // className='grid grid-cols-4 gap-1 overflow-x-hidden'
+                  className='flex flex-col w-full items-center h-[550px] gap-2 overflow-y-scroll'
+                >
                   {collectedCards.map((card) => {
                     return <CardFlipElement card={card} key={card.id} />;
                   })}
