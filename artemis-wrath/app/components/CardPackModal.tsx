@@ -107,7 +107,7 @@ const CardPackModal = () => {
               {collectedCards && (
                 <div className='grid grid-cols-4 gap-1 overflow-x-hidden'>
                   {collectedCards.map((card) => {
-                    return <CardFlipElement card={card} />;
+                    return <CardFlipElement card={card} key={card.id} />;
                   })}
                 </div>
               )}
