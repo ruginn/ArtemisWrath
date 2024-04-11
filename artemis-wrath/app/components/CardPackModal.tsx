@@ -13,12 +13,14 @@ import Loader from '../dashboard/_components/Loader';
 import { useUser } from '@clerk/nextjs';
 import { Card } from '@/types/CardType';
 import CardFlipElement from './CardFlip';
+import { useUserInfo } from '@/hooks/use-userInfo';
 
 const CardPackModal = () => {
   const CardPackModal = useCardPackModal();
   const [confirmed, setConfirmed] = useState<Boolean>();
   const [collecting, setCollecting] = useState<Boolean>(false);
-  const { user } = useUser();
+  // const { user } = useUser();
+  const user = useUserInfo();
 
   // const [collectedCards, setCollectedCards] = useState<Card[]>([{id: 1, name: 'fsda', description: 'fsda', randomNumber: 1, image: AwSet1}])
   const [collectedCards, setCollectedCards] = useState<Card[]>([]);
@@ -27,6 +29,8 @@ const CardPackModal = () => {
 
   const closeModal = () => {
     CardPackModal.onClose();
+    setCollecting(false);
+    setCollectedCards([]);
   };
 
   const handleConfirm = (boolean: boolean) => {
@@ -43,9 +47,7 @@ const CardPackModal = () => {
   const CollectPack = async () => {
     setLoadingCards(true);
     const userData = {
-      id: user?.id,
-      firstName: user?.firstName,
-      lastName: user?.lastName,
+      id: user?.userId,
       crystals: 100,
     };
     const res = await fetch('/api/shop/pack', {
@@ -83,7 +85,7 @@ const CardPackModal = () => {
             </DialogTitle>
             <DialogDescription>
               {!collecting && (
-                <div className='flex flex-row justify-evenly my-4'>
+                <div className='flex h-full flex-row justify-evenly items-center'>
                   <Button
                     className='w-24'
                     onClick={() => {
