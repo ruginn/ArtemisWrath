@@ -31,32 +31,40 @@ const NavBar = () => {
         <SignedIn>
           <Menu
             onClick={toggleSidebar}
-            className='sm:hidden text-amber-400 w-8 h-8 mr-3 cursor-pointer'
+            className='sm:hidden text-amber-400 w-6 h-6 mr-3 cursor-pointer'
           />
         </SignedIn>
         <Link href={'/dashboard'} className='flex items-center'>
-          <Image src={Logo} alt='Logo' className='w-12 h-12 sm:w-16 sm:h-16' />
+          <Image src={Logo} alt='Logo' className='w-10 h-10 sm:w-16 sm:h-16' />
           <Image
             src={WordLogo}
             alt="Artemis' Wrath"
-            className='h-8 w-56 ml-1 sm:h-10 sm:w-64 sm:ml-3'
+            className='h-8 w-48 ml-1 sm:h-10 sm:w-64 sm:ml-3'
           />
         </Link>
         {/* <h1 className="text-white ml-2">Artemis&apos; Wrath</h1> */}
       </div>
       <div className='flex flex-row cursor-pointer'>
-        <div className='hidden sm:flex flex-row items-center justify-center mr-5 bg-gray-600 rounded-full'>
-          <Image src={DragonScale} alt='dragon scale' className='w-8 h-8' />
-          <p className='text-amber-400 text-lg mx-3'>{userInfo.crystals}</p>
-        </div>
-        <button className='text-lg text-amber-400 sm:mr-5 mr-2'>
+        <div className='text-lg text-amber-400 sm:mr-5 mr-2'>
           <SignedIn>
-            <UserButton afterSignOutUrl='/' />
+            <div className='flex'>
+              <div className='flex flex-row items-center justify-center  mr-1 sm:mr-5 bg-gray-600 rounded-full'>
+                <Image
+                  src={DragonScale}
+                  alt='dragon scale'
+                  className='w-8 h-8'
+                />
+                <p className='text-amber-400 text-sm sm:text-lg mx-3'>
+                  {userInfo.crystals}
+                </p>
+              </div>
+              <UserButton afterSignOutUrl='/' />
+            </div>
           </SignedIn>
           <SignedOut>
             <SignInButton mode='modal' />
           </SignedOut>
-        </button>
+        </div>
       </div>
     </nav>
   );
