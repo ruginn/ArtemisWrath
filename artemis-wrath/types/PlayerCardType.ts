@@ -34,6 +34,7 @@ export interface PlayerCard {
     | 'Island'
     | 'Cave'
     | 'Desert'
+    | 'Dimensional'
     | ''
     | null
     | string;

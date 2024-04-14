@@ -57,6 +57,7 @@ enum Biomoe {
     Island
     Cave
     Desert
+    Dimensional
 }
 
 model Card {

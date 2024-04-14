@@ -35,6 +35,7 @@ export interface Card {
     | 'Island'
     | 'Cave'
     | 'Desert'
+    | 'Dimensional'
     | ''
     | null
     | string;
