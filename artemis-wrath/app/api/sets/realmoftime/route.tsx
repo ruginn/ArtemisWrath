@@ -22,7 +22,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 6,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/0yzcKxS/Atlas.png',
     set: 'Realm of Time',
   },
   {
@@ -43,7 +43,7 @@ const cardSet: Card[] = [
     attackPower: 700,
     hp: 500,
     cost: 7,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/qBYs995/Abyssal-drake.png',
     set: 'Realm of Time',
   },
   {
@@ -64,7 +64,7 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 300,
     cost: 2,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/8KjRbBY/luminous-leviathan.png',
     set: 'Realm of Time',
   },
   {
@@ -84,7 +84,7 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 200,
     cost: 2,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/mSZHFYJ/eclipse-owl.png',
     set: 'Realm of Time',
   },
   {
@@ -105,7 +105,7 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 400,
     cost: 4,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/fHnSkcJ/stormbringer-stallion.png',
     set: 'Realm of Time',
   },
   {
@@ -125,7 +125,7 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 200,
     cost: 2,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/1MNL1FN/crystal-serpent.png',
     set: 'Realm of Time',
   },
   {
@@ -146,7 +146,7 @@ const cardSet: Card[] = [
     attackPower: 600,
     hp: 600,
     cost: 6,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/MsmN0Jb/eclipse-dragon.png',
     set: 'Realm of Time',
   },
   {
@@ -167,7 +167,7 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 500,
     cost: 4,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/xGjRH9M/stellar-gryphon.png',
     set: 'Realm of Time',
   },
   {
@@ -187,7 +187,7 @@ const cardSet: Card[] = [
     attackPower: 500,
     hp: 400,
     cost: 3,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/RY5cbpz/thunderclap-falcon.png',
     set: 'Realm of Time',
   },
   {
@@ -207,7 +207,7 @@ const cardSet: Card[] = [
     attackPower: 400,
     hp: 400,
     cost: 4,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/gzkFgWv/nebula-jaguar.png',
     set: 'Realm of Time',
   },
   {
@@ -228,7 +228,7 @@ const cardSet: Card[] = [
     attackPower: 200,
     hp: 200,
     cost: 3,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/nj44dJh/frostbite-phoenix.png',
     set: 'Realm of Time',
   },
   {
@@ -248,7 +248,7 @@ const cardSet: Card[] = [
     attackPower: 300,
     hp: 200,
     cost: 2,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/VY1JVDH/celestial-kraken.png',
     set: 'Realm of Time',
   },
   {
@@ -267,7 +267,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 3,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/HFXJ3qf/atlas-domain.png',
     set: 'Realm of Time',
   },
   {
@@ -286,7 +286,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 2,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/Pm5fQGg/atlas-hammer.png',
     set: 'Realm of Time',
   },
   {
@@ -305,7 +305,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 2,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/fnhPwMS/atlas-shield.png',
     set: 'Realm of Time',
   },
   {
@@ -325,7 +325,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 4,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/dtzWkL7/atlas-cloak.png',
     set: 'Realm of Time',
   },
   {
@@ -346,7 +346,7 @@ const cardSet: Card[] = [
     attackPower: 0,
     hp: 0,
     cost: 2,
-    tinyImage: '',
+    tinyImage: 'https://i.ibb.co/ZMB3YWG/Mixed-Nectart.png',
     set: 'Realm of Time',
   },
 ];
