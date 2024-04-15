@@ -107,7 +107,15 @@ const Trade = () => {
         value={filterQueryAll}
         onChange={FilterSearch}
         id='allFilter'
+        list='allCards'
       />
+      <datalist id='allCards'>
+        {allCards.map((card, i) => (
+          <option value={card.name ? card.name : ''} key={card.name}>
+            {card.name}
+          </option>
+        ))}
+      </datalist>
       <div className='h-[50vh] overflow-y-scroll grid grid-cols-5 content-start sm:grid-cols-6 md:grid-cols-9 lg:grid-cols-12 gap-5 m-10 border-gray-800 p-2 border-2 border-solid rounded-md justify-center '>
         {loadingAllCards && <Loader />}
         {!loadingAllCards &&
@@ -130,14 +138,22 @@ const Trade = () => {
             );
           })}
       </div>
-      <label htmlFor='yourCards'>Which card(s) are you offering?</label>
+      <label htmlFor='yourFilter'>Which card(s) are you offering?</label>
       <input
         type='text'
         className='outline-1 border-2'
         value={filterQueryYour}
         onChange={FilterSearchYour}
-        id='yourCards'
+        id='yourFilter'
+        list='yourCards'
       />
+      <datalist id='yourCards'>
+        {yourCards.map((card, i) => (
+          <option value={card.name ? card.name : ''} key={card.name}>
+            {card.name}
+          </option>
+        ))}
+      </datalist>
       <div className='h-[50vh] overflow-y-scroll grid content-start  grid-cols-5 sm:grid-cols-6 md:grid-cols-9 lg:grid-cols-12 gap-5 m-10 border-gray-800 p-2 border-2 border-solid rounded-md justify-center'>
         {loadingYourCards && <Loader />}
         {!loadingYourCards &&
