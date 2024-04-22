@@ -7,6 +7,7 @@ import Loader from '@/app/dashboard/_components/Loader';
 import CardDetailModal from '@/app/components/CardDetailModal';
 import CardQuantity from '../_components/CardQuantity';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const Trade = () => {
   const [allCards, setAllCards] = useState<Card[]>([]);
@@ -123,7 +124,15 @@ const Trade = () => {
           allCards.map((card) => {
             return (
               <div key={card.id}>
-                <CardElement card={card} />
+                {card.tinyImage && (
+                  <Image
+                    src={card.tinyImage}
+                    height={400.5}
+                    width={288}
+                    alt={card.name ? card.name : 'card'}
+                    className='object-contain'
+                  ></Image>
+                )}
                 <CardQuantity />
               </div>
             );
@@ -132,7 +141,15 @@ const Trade = () => {
           filterAll.map((card) => {
             return (
               <div key={card.id}>
-                <CardElement card={card} />
+                {card.tinyImage && (
+                  <Image
+                    src={card.tinyImage}
+                    height={400.5}
+                    width={288}
+                    alt={card.name ? card.name : 'card'}
+                    className='object-contain'
+                  ></Image>
+                )}
                 <CardQuantity />
               </div>
             );
@@ -159,11 +176,35 @@ const Trade = () => {
         {!loadingYourCards &&
           !filterQueryYour &&
           yourCards.map((card) => {
-            return <CardElement card={card} key={card.id} />;
+            return (
+              <div key={card.id}>
+                {card.tinyImage && (
+                  <Image
+                    src={card.tinyImage}
+                    height={400.5}
+                    width={288}
+                    alt={card.name ? card.name : 'card'}
+                    className='object-contain'
+                  ></Image>
+                )}
+              </div>
+            );
           })}
         {filterQueryYour &&
           filterYour.map((card) => {
-            return <CardElement card={card} key={card.id} />;
+            return (
+              <div key={card.id}>
+                {card.tinyImage && (
+                  <Image
+                    src={card.tinyImage}
+                    height={400.5}
+                    width={288}
+                    alt={card.name ? card.name : 'card'}
+                    className='object-contain'
+                  ></Image>
+                )}
+              </div>
+            );
           })}
       </div>
       <div className='flex flex-col'>
