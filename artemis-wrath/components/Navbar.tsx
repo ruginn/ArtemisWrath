@@ -34,7 +34,7 @@ const NavBar = () => {
             className='sm:hidden text-amber-400 w-6 h-6 mr-3 cursor-pointer'
           />
         </SignedIn>
-        <Link href={'/dashboard'} className='flex items-center'>
+        <Link href={'/'} className='flex items-center'>
           <Image src={Logo} alt='Logo' className='w-10 h-10 sm:w-16 sm:h-16' />
           <Image
             src={WordLogo}
