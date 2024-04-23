@@ -77,16 +77,11 @@ const SideBar = () => {
     }
   };
 
-  // need to rewrite this
-  const mediaMatch = window.matchMedia('min-width: 640');
-  console.log(mediaMatch);
-  const initialX = mediaMatch ? -200 : 0;
-
   return (
     <motion.div
-      initial={{ x: initialX }}
-      whileInView={{ x: 0 }}
-      transition={{ ease: 'easeOut', duration: 0.2 }}
+      // initial={{ x: activeSidebar.mobile ? 0 : -100 }}
+      // whileInView={{ x: 0 }}
+      // transition={{ ease: 'easeOut', duration: 0.2 }}
       ref={sideBarRef}
       className={cn(
         'w-64 sm:w-24 lg:w-64 h-[calc(100vh-80px)]  fixed bg-gray-900 text-amber-400 z-[99999]',
