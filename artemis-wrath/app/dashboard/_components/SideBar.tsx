@@ -17,6 +17,7 @@ import { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { useUser } from '@clerk/nextjs';
 import { useUserInfo } from '@/hooks/use-userInfo';
+import { motion } from 'framer-motion';
 
 const SideBar = () => {
   const activeSidebar = useSideBar();
@@ -76,8 +77,16 @@ const SideBar = () => {
     }
   };
 
+  // need to rewrite this
+  const mediaMatch = window.matchMedia('min-width: 640');
+  console.log(mediaMatch);
+  const initialX = mediaMatch ? -200 : 0;
+
   return (
-    <div
+    <motion.div
+      initial={{ x: initialX }}
+      whileInView={{ x: 0 }}
+      transition={{ ease: 'easeOut', duration: 0.2 }}
       ref={sideBarRef}
       className={cn(
         'w-64 sm:w-24 lg:w-64 h-[calc(100vh-80px)]  fixed bg-gray-900 text-amber-400 z-[99999]',
@@ -264,7 +273,7 @@ const SideBar = () => {
           </h3>
         </div>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
