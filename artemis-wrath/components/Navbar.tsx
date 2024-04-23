@@ -52,9 +52,9 @@ const NavBar = () => {
                 <Image
                   src={DragonScale}
                   alt='dragon scale'
-                  className='w-8 h-8'
+                  className='w-7 h-7 sm:w-8 sm:h-8'
                 />
-                <p className='text-amber-400 text-sm sm:text-lg mx-3'>
+                <p className='text-amber-400 text-xs sm:text-lg mx-1 sm:mx-3'>
                   {userInfo.crystals}
                 </p>
               </div>
