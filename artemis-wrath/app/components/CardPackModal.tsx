@@ -14,6 +14,7 @@ import { useUser } from '@clerk/nextjs';
 import { Card } from '@/types/CardType';
 import CardFlipElement from './CardFlip';
 import { useUserInfo } from '@/hooks/use-userInfo';
+import { useCrystalModal } from '@/hooks/use-crystalModal';
 
 const CardPackModal = () => {
   const CardPackModal = useCardPackModal();
@@ -64,6 +65,7 @@ const CardPackModal = () => {
       setCollectedCards(cards);
       setGetCards(true);
       setLoadingCards(false);
+      user.decrementCrystalAmount(100);
       console.log(collectedCards);
     } else {
       setGetCards(false);

@@ -5,6 +5,7 @@ type crystalStore = {
   onOpen: () => void;
   onClose: () => void;
   setCrystalAmount: (number: number) => void;
+
   crystalAmount: number;
 };
 
@@ -13,5 +14,6 @@ export const useCrystalModal = create<crystalStore>((set) => ({
   onOpen: () => set({ isOpen: true }),
   onClose: () => set({ isOpen: false }),
   setCrystalAmount: (number) => set({ crystalAmount: number }),
+
   crystalAmount: 0,
 }));

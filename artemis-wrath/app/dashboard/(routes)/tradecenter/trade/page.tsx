@@ -117,7 +117,7 @@ const Trade = () => {
           </option>
         ))}
       </datalist>
-      <div className='h-[50vh] overflow-y-scroll grid grid-cols-5 content-start sm:grid-cols-6 md:grid-cols-9 lg:grid-cols-12 gap-5 m-10 border-gray-800 p-2 border-2 border-solid rounded-md justify-center '>
+      <div className='h-[50vh] overflow-y-scroll grid grid-cols-5 content-start sm:grid-cols-6 md:grid-cols-9 lg:grid-cols-12 gap-5 m-10 border-gray-800 p-2 border-2 border-solid rounded-md justify-center'>
         {loadingAllCards && <Loader />}
         {!loadingAllCards &&
           !filterQueryAll &&
@@ -131,7 +131,7 @@ const Trade = () => {
                     width={288}
                     alt={card.name ? card.name : 'card'}
                     className='object-contain'
-                  ></Image>
+                  />
                 )}
                 <CardQuantity card={card} />
               </div>
@@ -148,7 +148,7 @@ const Trade = () => {
                     width={288}
                     alt={card.name ? card.name : 'card'}
                     className='object-contain'
-                  ></Image>
+                  />
                 )}
                 <CardQuantity card={card} />
               </div>
@@ -189,7 +189,7 @@ const Trade = () => {
                     alt={card.name ? card.name : 'card'}
                     className='object-contain'
                     onClick={() => console.log(card)}
-                  ></Image>
+                  />
                 )}
               </div>
             );
@@ -206,7 +206,7 @@ const Trade = () => {
                     alt={card.name ? card.name : 'card'}
                     className='object-contain'
                     onClick={() => console.log(card)}
-                  ></Image>
+                  />
                 )}
               </div>
             );

@@ -4,10 +4,12 @@ import largeChest from '@/public/Images/crystalChests/largeChest.png';
 import Image from 'next/image';
 import { useUser } from '@clerk/nextjs';
 import { useCrystalModal } from '@/hooks/use-crystalModal';
+import { useUserInfo } from '@/hooks/use-userInfo';
 
 const Crystals = () => {
   const { user } = useUser();
   const crystalModal = useCrystalModal();
+  const userInfo = useUserInfo();
 
   const getCrystals = async (crystals: number) => {
     const userData = {
@@ -33,16 +35,19 @@ const Crystals = () => {
   const getSmallChest = () => {
     getCrystals(500);
     crystalModal.setCrystalAmount(500);
+    userInfo.incrementCrystalAmount(500);
   };
 
   const getMediumChest = () => {
     getCrystals(1200);
     crystalModal.setCrystalAmount(1200);
+    userInfo.incrementCrystalAmount(1200);
   };
 
   const getLargeChest = () => {
     getCrystals(2500);
     crystalModal.setCrystalAmount(2500);
+    userInfo.incrementCrystalAmount(2500);
   };
 
   return (

@@ -10,6 +10,8 @@ type UserInfo = {
   username: string;
   UpdateAll: (object: userObject) => void;
   UpdateLastPack: (newDate: string) => void;
+  decrementCrystalAmount: (number: number) => void;
+  incrementCrystalAmount: (number: number) => void;
 };
 
 interface userObject {
@@ -40,5 +42,9 @@ export const useUserInfo = create<UserInfo>((set) => ({
       crystals: object.crystals,
       username: object.username,
     }),
+  decrementCrystalAmount: (number) =>
+    set((state) => ({ crystals: state.crystals - number })),
+  incrementCrystalAmount: (number) =>
+    set((state) => ({ crystals: state.crystals + number })),
   UpdateLastPack: (newDate: string) => set({ lastPackDate: newDate }),
 }));
