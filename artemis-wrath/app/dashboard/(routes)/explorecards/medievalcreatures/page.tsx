@@ -7,6 +7,7 @@ import CardElement from '@/app/components/Card';
 import CardDetailModal from '@/app/components/CardDetailModal';
 import { useCardSet } from '@/hooks/use-cardSets';
 import { Card } from '@/types/CardType';
+import { PlayerCard } from '@/types/PlayerCardType';
 
 // interface Card {
 //   id: number;
@@ -150,7 +151,7 @@ const MedievalCreaturesSet = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10'>
         {cardsLoaded &&
           !useFilter &&
-          cardSet.map((card) => {
+          cardSet.map((card, i) => {
             return (
               // <div className={cn("h-96 w-72 bg-amber-200 flex flex-col rounded-md items-center border-gray-800 border-8",
               //     card.inclination === 'Wrath' && 'bg-red-800',
@@ -180,7 +181,7 @@ const MedievalCreaturesSet = () => {
           })}
         {filteredCards &&
           useFilter &&
-          filteredCards.map((card) => {
+          filteredCards.map((card, i) => {
             return (
               // <div className={cn("h-96 w-72 bg-amber-200 flex flex-col rounded-md items-center border-gray-800 border-8",
               //     card.inclination === 'Wrath' && 'bg-red-800',

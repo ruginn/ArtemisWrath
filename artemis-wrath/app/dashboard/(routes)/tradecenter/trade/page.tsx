@@ -133,7 +133,7 @@ const Trade = () => {
                     className='object-contain'
                   ></Image>
                 )}
-                <CardQuantity />
+                <CardQuantity card={card} />
               </div>
             );
           })}
@@ -150,7 +150,7 @@ const Trade = () => {
                     className='object-contain'
                   ></Image>
                 )}
-                <CardQuantity />
+                <CardQuantity card={card} />
               </div>
             );
           })}
@@ -166,7 +166,10 @@ const Trade = () => {
       />
       <datalist id='yourCards'>
         {yourCards.map((card, i) => (
-          <option value={card.name ? card.name : ''} key={card.name}>
+          <option
+            value={card.name ? card.name : ''}
+            key={card.name + i.toString()}
+          >
             {card.name}
           </option>
         ))}
@@ -175,7 +178,7 @@ const Trade = () => {
         {loadingYourCards && <Loader />}
         {!loadingYourCards &&
           !filterQueryYour &&
-          yourCards.map((card) => {
+          yourCards.map((card, i) => {
             return (
               <div key={card.id}>
                 {card.tinyImage && (
@@ -185,13 +188,14 @@ const Trade = () => {
                     width={288}
                     alt={card.name ? card.name : 'card'}
                     className='object-contain'
+                    onClick={() => console.log(card)}
                   ></Image>
                 )}
               </div>
             );
           })}
         {filterQueryYour &&
-          filterYour.map((card) => {
+          filterYour.map((card, i) => {
             return (
               <div key={card.id}>
                 {card.tinyImage && (
@@ -201,6 +205,7 @@ const Trade = () => {
                     width={288}
                     alt={card.name ? card.name : 'card'}
                     className='object-contain'
+                    onClick={() => console.log(card)}
                   ></Image>
                 )}
               </div>

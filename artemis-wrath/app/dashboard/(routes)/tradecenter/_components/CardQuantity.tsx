@@ -1,11 +1,13 @@
+import { Card } from '@/types/CardType';
 import { Info, PlusCircle, MinusCircle } from 'lucide-react';
 import { useState } from 'react';
 
-const CardQuantity = () => {
+const CardQuantity = ({ card }: { card: Card }) => {
   const [quantity, setQuantity] = useState<number>(0);
 
   const increment = () => {
     setQuantity((prev) => prev + 1);
+    console.log(card);
   };
 
   const decrement = () => {
@@ -13,6 +15,7 @@ const CardQuantity = () => {
       return;
     }
     setQuantity((prev) => prev - 1);
+    console.log(card);
   };
 
   return (
