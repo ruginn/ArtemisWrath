@@ -18,6 +18,8 @@ const CardQuantity = ({ card }: { card: Card }) => {
     console.log(card);
   };
 
+  
+
   return (
     <div className='grid grid-cols-3 lg:mt-2 '>
       <MinusCircle
