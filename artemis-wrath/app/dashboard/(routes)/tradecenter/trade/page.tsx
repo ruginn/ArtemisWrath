@@ -100,7 +100,7 @@ const Trade = () => {
 
   return (
     <div>
-      <h1 className='text-4xl'>Create a trade?</h1>
+      <h1 className='text-4xl'>Open a trade</h1>
       <label htmlFor='allFilter'>Which card(s) are you looking for?</label>
       <input
         type='text'
@@ -112,7 +112,7 @@ const Trade = () => {
       />
       <datalist id='allCards'>
         {allCards.map((card, i) => (
-          <option value={card.name ? card.name : ''} key={card.name}>
+          <option value={card.name ? card.name : ''} key={card.id}>
             {card.name}
           </option>
         ))}
@@ -124,15 +124,7 @@ const Trade = () => {
           allCards.map((card) => {
             return (
               <div key={card.id}>
-                {card.tinyImage && (
-                  <Image
-                    src={card.tinyImage}
-                    height={400.5}
-                    width={288}
-                    alt={card.name ? card.name : 'card'}
-                    className='object-contain'
-                  />
-                )}
+                <CardElement card={card} />
                 <CardQuantity card={card} />
               </div>
             );
@@ -141,15 +133,7 @@ const Trade = () => {
           filterAll.map((card) => {
             return (
               <div key={card.id}>
-                {card.tinyImage && (
-                  <Image
-                    src={card.tinyImage}
-                    height={400.5}
-                    width={288}
-                    alt={card.name ? card.name : 'card'}
-                    className='object-contain'
-                  />
-                )}
+                <CardElement card={card} />
                 <CardQuantity card={card} />
               </div>
             );
@@ -166,10 +150,7 @@ const Trade = () => {
       />
       <datalist id='yourCards'>
         {yourCards.map((card, i) => (
-          <option
-            value={card.name ? card.name : ''}
-            key={card.name + i.toString()}
-          >
+          <option value={card.name ? card.name : ''} key={card.id}>
             {card.name}
           </option>
         ))}
