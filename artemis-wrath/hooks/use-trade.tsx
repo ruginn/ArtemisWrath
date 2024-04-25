@@ -14,6 +14,9 @@ interface tradeData {
   removeWantedCards: (id: string) => void;
 }
 
+// create item with qty and string
+// update qty to remove by pressing 1 if 0 it will fail backend will get a array of ids and qty
+
 export const useTradeData = create<tradeData>((set) => ({
   offerCards: [],
   wantedCards: [],
