@@ -45,6 +45,21 @@ const MedievalCreaturesSet = () => {
   const [cardsLoaded, setCardsLoaded] = useState(false);
   const activeSidebar = useSideBar();
 
+  const [range, setRange] = useState('1');
+  const [toggledGrid, setToggledGrid] = useState(false);
+  const [gridValue, setGridValue] = useState('');
+
+  const toggleGrid = (range: string) => {
+    setToggledGrid(true);
+    setGridValue(`grid-cols-${range}`);
+  };
+
+  useEffect(() => {
+    console.log(range);
+    const ranger = range;
+    toggleGrid(range);
+  }, [range]);
+
   useEffect(() => {
     activeSidebar.onChange('explore');
   }, []);
@@ -148,7 +163,19 @@ const MedievalCreaturesSet = () => {
           Relic
         </button>
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-10'>
+      {/* <div className='self-end mr-10'>
+        <label htmlFor=''>Test</label>
+        <input
+          type='range'
+          min='1'
+          max='2'
+          value={range}
+          onChange={(e) => setRange(e.target.value)}
+        />
+      </div> */}
+      <div
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 m-10`}
+      >
         {cardsLoaded &&
           !useFilter &&
           cardSet.map((card, i) => {
