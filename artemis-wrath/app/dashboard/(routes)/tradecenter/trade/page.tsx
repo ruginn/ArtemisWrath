@@ -23,6 +23,8 @@ const Trade = () => {
     fetch('');
   }, []);
 
+  // make function that will filterout same card then, pop last, then add back to regular deck
+
   useEffect(() => {
     const getCards = async () => {
       const res: Card[] = await fetch('/api/allcards', {
