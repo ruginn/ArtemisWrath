@@ -24,7 +24,8 @@ model User {
   cards PlayerCard[]
   trades Trade[] @relation("TradePoster")
   offers TradeOffer[] @relation("TradeOfferUser")
-  house House @relation(fields: [id], references: [id])
+  house House? @relation(fields: [houseId], references: [id])
+  houseId String
 }
 
 
@@ -145,5 +146,6 @@ model TradeOffer {
 model House {
   id String @id @default(cuid()) @unique
   name String
+  description String?
   members User[]
 }
