@@ -17,6 +17,9 @@ const House = () => {
       <Button>
         <Link href='/dashboard/house/create'>Create a House</Link>
       </Button>
+      <Button>
+        <Link href='/dashboard/house/browse'>Browse Houses</Link>
+      </Button>
     </div>
   );
 };
