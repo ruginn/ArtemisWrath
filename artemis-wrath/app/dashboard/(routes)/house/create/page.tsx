@@ -18,6 +18,30 @@ const CreateHouse = () => {
     console.log(houseName, houseSummary);
   };
 
+  // const createPost = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   const formData = new FormData(e.currentTarget);
+
+  //   const body = {
+  //     post: formData.get('post'),
+  //     potatoId: potato.id,
+  //     rating: starRating,
+  //     potatoName: potato.name,
+  //   };
+  //   const res = await fetch('/api/post', {
+  //     method: 'POST',
+  //     body: JSON.stringify(body),
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //   });
+  //   // await res.json()
+  //   setPost('');
+  //   setStarRating(0);
+  //   // router.refresh()
+  //   revalidateTag('posts');
+  // };
+
   return (
     <div>
       <h1>Create a House</h1>
