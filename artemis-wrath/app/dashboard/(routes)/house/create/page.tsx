@@ -32,8 +32,8 @@ const CreateHouse = () => {
       },
       cache: 'no-cache',
     });
-    // const test = await res.json();
-    // console.log(test);
+    const test = await res.json();
+    console.log(test);
   };
 
   return (

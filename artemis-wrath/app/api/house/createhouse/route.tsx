@@ -28,12 +28,12 @@ export async function POST(req: Request) {
 
   //   console.log(createdHouse);
 
-  //   const establishedUser = await prisma.user.update({
-  //     where: {
-  //       id: houseInfo.userId,
-  //     },
-  //     data: { houseId: createdHouse.id },
-  //   });
+  const establishedUser = await prisma.user.update({
+    where: {
+      id: houseInfo.userId,
+    },
+    data: { houseId: createdHouse.id },
+  });
 
   //   if (!establishedUser) {
   //     const user = await prisma.user.create({
@@ -45,5 +45,5 @@ export async function POST(req: Request) {
   //     return NextResponse.json(user);
   //   }
   //   console.log(establishedUser);
-  return NextResponse.json('hello');
+  return NextResponse.json(createdHouse);
 }
