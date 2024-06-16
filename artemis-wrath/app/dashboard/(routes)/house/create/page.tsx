@@ -1,8 +1,10 @@
 'use client';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
+import { useUserInfo } from '@/hooks/use-userInfo';
 
 const CreateHouse = () => {
+  const user = useUserInfo();
   const [houseName, setHouseName] = useState('');
   const [houseSummary, setHouseSummary] = useState('');
 
@@ -14,38 +16,30 @@ const CreateHouse = () => {
     setHouseSummary(e.target.value);
   };
 
-  const onSubmit = () => {
-    console.log(houseName, houseSummary);
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const houseInfo = {
+      userId: user.userId,
+      houseName,
+      houseSummary,
+    };
+    const res = await fetch('/api/house/createhouse', {
+      method: 'POST',
+      body: JSON.stringify(houseInfo),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      cache: 'no-cache',
+    });
+    // const test = await res.json();
+    // console.log(test);
   };
-
-  // const createPost = async (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-  //   const formData = new FormData(e.currentTarget);
-
-  //   const body = {
-  //     post: formData.get('post'),
-  //     potatoId: potato.id,
-  //     rating: starRating,
-  //     potatoName: potato.name,
-  //   };
-  //   const res = await fetch('/api/post', {
-  //     method: 'POST',
-  //     body: JSON.stringify(body),
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //   });
-  //   // await res.json()
-  //   setPost('');
-  //   setStarRating(0);
-  //   // router.refresh()
-  //   revalidateTag('posts');
-  // };
 
   return (
     <div>
       <h1>Create a House</h1>
-      <form action='' className='flex flex-col'>
+      <form onSubmit={onSubmit} className='flex flex-col'>
         <label htmlFor='houseName'>What will be the name of the House?</label>
         <input
           id='houseName'
@@ -62,8 +56,8 @@ const CreateHouse = () => {
           type='text'
           className='border-black border'
         />
+        <Button>Create House</Button>
       </form>
-      <Button onClick={onSubmit}>Create House</Button>
     </div>
   );
 };
