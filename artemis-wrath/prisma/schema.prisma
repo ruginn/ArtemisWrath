@@ -25,7 +25,7 @@ model User {
   trades Trade[] @relation("TradePoster")
   offers TradeOffer[] @relation("TradeOfferUser")
   house House? @relation(fields: [houseId], references: [id])
-  houseId String
+  houseId String?
 }
 
 
