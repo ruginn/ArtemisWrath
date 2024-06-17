@@ -7,9 +7,15 @@ export async function GET(
 ) {
   const slug = params.id;
   console.log(slug + 'fsdafsdfsdjjjjjj');
+  const House = await prisma.house.findUnique({
+    where: {
+      id: slug,
+    },
+  });
+
   // const houses = await prisma.house.findMany({
   //   include: { members: true },
   // });
   // console.log(houses);
-  return NextResponse.json('helllllll');
+  return NextResponse.json(House);
 }

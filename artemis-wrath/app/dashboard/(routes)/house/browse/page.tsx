@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 interface House {
   id: string;
@@ -29,6 +30,7 @@ const BrowseHouses = () => {
             <h1>{house.name}</h1>
             <p>{house.description}</p>
             <p>Members: {house.members.length}</p>
+            <Link href={`/dashboard/house/${house.id}`}>View more</Link>
           </div>
         );
       })}
