@@ -9,7 +9,6 @@ interface HouseInfo {
 
 export async function POST(req: Request) {
   const houseInfo: HouseInfo = await req.json();
-  console.log(houseInfo);
 
   const createdHouse = await prisma.house.create({
     data: {

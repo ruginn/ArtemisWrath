@@ -45,7 +45,6 @@ const SideBar = () => {
       cache: 'no-cache',
     });
     const finRes = await res.json();
-    console.log(finRes);
     userInfo.UpdateAll(finRes);
   };
 

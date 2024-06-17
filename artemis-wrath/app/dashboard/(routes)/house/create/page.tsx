@@ -2,6 +2,7 @@
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import { useUserInfo } from '@/hooks/use-userInfo';
+import { userInfo } from 'os';
 
 const CreateHouse = () => {
   const user = useUserInfo();
@@ -18,7 +19,10 @@ const CreateHouse = () => {
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    if (user.houseId) {
+      alert('You already belong to a house, you may not create a new house');
+      return;
+    }
     const houseInfo = {
       userId: user.userId,
       houseName,
