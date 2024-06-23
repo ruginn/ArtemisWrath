@@ -11,6 +11,7 @@ export async function GET(
     where: {
       id: slug,
     },
+    include: { members: true },
   });
 
   // const houses = await prisma.house.findMany({

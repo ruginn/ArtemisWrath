@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Loader from '@/app/dashboard/_components/Loader';
 
 interface House {
   id: string;
@@ -24,14 +25,16 @@ const HousePage = ({ params }: any) => {
   }, []);
 
   if (houseInfo) {
+    console.log(houseInfo);
     return (
       <div>
         <h1>{houseInfo.name}</h1>
         <p>{houseInfo.description}</p>
+        <p>Members: {houseInfo.members.length}</p>
       </div>
     );
   }
-  return <div>Loading</div>;
+  return <Loader />;
 };
 
 export default HousePage;
