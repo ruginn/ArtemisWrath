@@ -2,7 +2,6 @@
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import { useUserInfo } from '@/hooks/use-userInfo';
-import { userInfo } from 'os';
 
 const CreateHouse = () => {
   const user = useUserInfo();
