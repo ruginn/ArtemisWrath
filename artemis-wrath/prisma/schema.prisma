@@ -25,6 +25,8 @@ model User {
   trades Trade[] @relation("TradePoster")
   offers TradeOffer[] @relation("TradeOfferUser")
   house House? @relation(fields: [houseId], references: [id])
+  houseposts HousePost[] @relation("HousePost")
+  postComment PostComment[] @relation("PostComment")
   houseId String?
 }
 
@@ -148,4 +150,19 @@ model House {
   name String
   description String?
   members User[]
+}
+
+model HousePost {
+  id  String @id @default(cuid()) @unique
+  post String
+  userId String
+  user User @relation("HousePost", fields: [userId], references: [id])
+}
+
+model PostComment {
+  id  String @id @default(cuid()) @unique
+  post String
+  userId String
+  postId String
+  user User @relation("PostComment", fields: [userId], references: [id])
 }
